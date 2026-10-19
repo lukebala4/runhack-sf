@@ -12,7 +12,7 @@ The home page is `index.html`; press coverage is in `media.html`. Styles are in 
 
 ## Assets and deployment scope
 
-The current website and its required assets were copied from the San Francisco mockup on 19 October 2026. The local-only Creative workspace footer link was removed. Historical versions, planning documents, research, private evidence and unused artwork are excluded.
+The current website and its required assets were copied from the San Francisco mockup on 19 October 2026. The local-only Creative workspace footer link was removed from the initial deployment. The top navigation now includes a Creative workspace button to `http://127.0.0.1:5173/04%20Creative%20Warehouse/`. It opens the existing local collection in a new tab and requires its local preview server; the collection itself is not hosted by this repository. Historical versions, planning documents, research, private evidence and unused artwork are excluded.
 
 The London film streams from its existing public Vercel Blob URL, so continued playback depends on that external host. It has no supplied accurate caption track.
 
