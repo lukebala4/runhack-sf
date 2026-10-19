@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>Meadow lane · Subtle retro studies</title>
+  <link rel="icon" href="assets/running-hackathon-wordmark.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/geist.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="base-styles.css">
+  <link rel="stylesheet" href="base-hybrids.css">
+  <link rel="stylesheet" href="studies.css">
+  <script src="studies.js" type="module"></script>
+</head>
+<body>
+  <a class="skip" href="#page">Skip to the study</a>
+  <aside class="study-bar" aria-label="Meadow Lane study controls">
+    <a href="../04%20Creative%20Warehouse/">Creative warehouse ↗</a>
+    <div class="study-switch"><label for="version">Meadow lane</label><select id="version" aria-label="Choose a Meadow Lane version"><option value="compare">Compare the versions</option><option value="current">Current Meadow lane</option><option value="warm-negative">Warm negative</option><option value="club-print">Club print</option><option value="sun-faded">Sun-faded stock</option></select></div>
+    <button id="compare-button" type="button" aria-label="Compare all four" aria-pressed="true"><span class="compare-long">Compare all four</span><span class="compare-short" aria-hidden="true">Compare</span></button>
+  </aside>
+  <main id="page">
+    <section class="study-comparison" id="comparison" aria-labelledby="comparison-title">
+      <div class="comparison-heading"><h1 id="comparison-title">Meadow lane.<br>A little more retro.</h1><p>Three small shifts in film colour, type and paper.<br> The current version stays here to compare.</p></div>
+      <div class="studies-grid" id="studies-grid"></div>
+      <div class="comparison-end"><p>All four use the same Meadow lane photograph.</p><a href="../03%20Website%20Concepts/?concept=hybrid-2">Open the live Meadow lane ↗</a></div>
+    </section>
+    <div id="concept-root" hidden></div>
+    <section id="study-notes" class="study-notes" hidden aria-labelledby="study-title"><div><h2 id="study-title"></h2><p id="study-description"></p></div><a href="?version=compare">Compare the versions ↗</a></section>
+  </main>
+  <template id="shared-nav"><header class="site-header"><a href="#top" class="wordmark" aria-label="Running Hackathon home"><img src="assets/running-hackathon-wordmark.svg" alt="Running Hackathon" width="160" height="58"></a><nav aria-label="Main navigation"><a href="#idea">The idea</a><a href="#format">How it works</a></nav><a href="#sf" class="city-link">San Francisco <span aria-hidden="true">↗</span></a></header></template>
+</body>
+</html>

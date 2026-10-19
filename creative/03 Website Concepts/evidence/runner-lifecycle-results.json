@@ -1,0 +1,71 @@
+{
+  "checkedAt": "2026-10-16T22:01:06.013Z",
+  "method": "In-memory DOM and Rive runtime stubs exercising the actual runner-motion.js module; no browser or visual acceptance claimed.",
+  "checkedFile": "/Users/lukebalabanovic/Running/Runninghack SF Planning/03 Website Concepts/runner-motion.js",
+  "sourceSha256": "72da26d06f02a62d800bbd927e2f0517d60e93ecb0acc63a15b712cb09925bdb",
+  "status": "pass",
+  "passed": 4,
+  "total": 4,
+  "scenarios": [
+    {
+      "scenario": "rapid_preference_toggle",
+      "status": "pass",
+      "constructed": 1,
+      "cleaned": 1,
+      "leaked": 0,
+      "starts": 1,
+      "stops": 0,
+      "disconnectedObservers": 2,
+      "retainedListeners": 0,
+      "retainedTimers": 0,
+      "state": "still",
+      "scriptRequested": true,
+      "fallbackStillVisible": true
+    },
+    {
+      "scenario": "live_reduced_motion",
+      "status": "pass",
+      "constructed": 1,
+      "cleaned": 1,
+      "leaked": 0,
+      "starts": 1,
+      "stops": 0,
+      "disconnectedObservers": 2,
+      "retainedListeners": 0,
+      "retainedTimers": 0,
+      "state": "still",
+      "scriptRequested": true,
+      "fallbackStillVisible": true
+    },
+    {
+      "scenario": "initial_reduced_motion",
+      "status": "pass",
+      "constructed": 0,
+      "cleaned": 0,
+      "leaked": 0,
+      "starts": 0,
+      "stops": 0,
+      "disconnectedObservers": 2,
+      "retainedListeners": 0,
+      "retainedTimers": 0,
+      "state": "still",
+      "scriptRequested": false,
+      "fallbackStillVisible": true
+    },
+    {
+      "scenario": "pending_load_after_teardown",
+      "status": "pass",
+      "constructed": 0,
+      "cleaned": 0,
+      "leaked": 0,
+      "starts": 0,
+      "stops": 0,
+      "disconnectedObservers": 2,
+      "retainedListeners": 0,
+      "retainedTimers": 0,
+      "state": "still",
+      "scriptRequested": true,
+      "fallbackStillVisible": true
+    }
+  ]
+}

@@ -1,0 +1,141 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="720" viewBox="0 0 600 720" fill="none" stroke="#283831" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+  <title>Running Hackathon hare — editable character rig</title>
+  <desc>An original cream-furred athletic hare in a dark running singlet and brick-orange shoes. Articulated groups have local origins at their rotation pivots.</desc>
+  <g id="mascot" transform="translate(290 444)">
+    <g id="rear_thigh" transform="translate(-15 -4)">
+      <path id="rear_thigh_fur" fill="#CCBEA0" d="M-24-15C-9-24 16-20 25-6C34 10 18 43 2 64L-18 92C-29 106-47 100-51 87C-55 75-36 53-31 37C-25 18-37-5-24-15Z"/>
+      <path id="rear_thigh_shadow" fill="#AF9F81" stroke="none" d="M-26 13C-29 38-38 62-48 77C-53 87-43 99-32 98C-21 94-16 80-8 68C4 52 17 34 17 20C4 35-12 36-26 13Z"/>
+      <g id="rear_shin" transform="translate(-32 78)">
+        <path id="rear_shin_fur" fill="#CCBEA0" d="M-17-13C-5-21 10-17 16-5C20 6 9 27-5 44L-39 82C-46 91-64 84-67 74C-69 64-53 48-43 34L-27 6C-25-2-24-9-17-13Z"/>
+        <path id="rear_shin_light" fill="#E6DCC3" stroke="none" d="M-13-10C-4-13 4-9 5-2C6 7-9 27-20 39L-48 69L-56 65C-47 49-30 28-22 9Z"/>
+        <g id="rear_shoe" transform="translate(-53 73)">
+          <path id="rear_sock" fill="#F3EDD9" d="M-17-22L13-21L18 6L-11 15L-21 6Z"/>
+          <path id="rear_sock_stripe" d="M-19-9L15-10" stroke="#B64F31" stroke-width="5"/>
+          <path id="rear_shoe_upper" fill="#A84429" d="M-17-1C-7-5 5-4 13 2L28 15C36 21 39 31 29 39C17 48-2 53-24 51L-58 46C-71 44-78 36-75 27C-72 19-61 17-47 16L-30 12Z"/>
+          <path id="rear_shoe_panel" fill="#C96641" stroke="none" d="M-56 24C-35 24-28 7-17 4C-7 1 3 3 9 9L21 24C8 35-20 38-60 35Z"/>
+          <path id="rear_shoe_flash" fill="#E9D8B2" stroke="none" d="M-36 29L-8 16L5 20L-25 35Z"/>
+          <path id="rear_shoe_sole" fill="#E9DCC1" d="M-75 32C-55 39-29 42-7 39C7 38 22 33 34 28L35 38C26 49 2 57-25 56L-62 50C-71 48-77 41-75 32Z"/>
+          <path id="rear_shoe_tread" d="M-56 49L-53 43M-38 53L-36 47M-19 55L-18 49M1 52L0 46M19 46L16 41" stroke-width="3"/>
+          <path id="rear_shoe_laces" d="M-22 13L-9 18M-30 19L-17 24" stroke="#F1E4C7" stroke-width="4"/>
+        </g>
+      </g>
+    </g>
+
+    <g id="rear_upper_arm" transform="translate(5 -142)">
+      <path id="rear_upper_arm_fur" fill="#CCBEA0" d="M-8-18C4-23 18-13 17 0C16 15-4 35-19 51L-45 76C-54 83-67 78-71 68C-76 55-60 43-45 29L-24 4C-21-8-18-14-8-18Z"/>
+      <path id="rear_upper_arm_shadow" fill="#AC9C80" stroke="none" d="M-62 58C-46 49-19 29-8 13C-15 39-31 64-47 74C-56 81-67 70-62 58Z"/>
+      <g id="rear_forearm" transform="translate(-57 65)">
+        <path id="rear_forearm_fur" fill="#D6C8A9" d="M-12 10C-24-2-35-19-48-30C-56-38-52-52-42-56C-33-60-24-52-18-43L11-10C20 1 9 21-3 19Z"/>
+        <g id="rear_hand" transform="translate(-42 -44)">
+          <path id="rear_hand_fur" fill="#DED2B7" d="M-17-16C-27-12-26 0-20 8L-10 22C-3 31 10 31 17 23C24 15 22 4 14-3L3-16C-3-23-11-22-17-16Z"/>
+          <path id="rear_hand_fingers" d="M-14-4L-4 8M-5-11L5 1M7-12L15-4M-12 16C-5 9 2 12 7 19" stroke-width="4"/>
+        </g>
+      </g>
+    </g>
+
+    <g id="tail" transform="translate(-45 -31)">
+      <path id="tail_fur" fill="#E6DCC3" d="M12-18C-1-31-23-21-27-8L-34-5L-26 2C-24 18-5 25 9 15L17 18L15 6C25-1 21-13 12-18Z"/>
+      <path id="tail_shadow" fill="#C7B99C" stroke="none" d="M-25 0C-15 9-1 9 13-2C22 10 6 22-7 20C-18 19-26 12-25 0Z"/>
+    </g>
+
+    <g id="near_thigh" transform="translate(22 -1)">
+      <path id="near_thigh_fur" fill="#DED2B7" d="M-26-14C-12-26 7-23 18-11C29 0 31 20 43 35L67 58C79 72 71 91 57 93C42 94 28 77 15 65L-12 43C-27 30-39 1-26-14Z"/>
+      <path id="near_thigh_shadow" fill="#BFAF8F" stroke="none" d="M-19 19C-13 37 17 49 31 64L53 86C64 97 77 82 70 69C62 74 53 71 45 63L15 33C4 23-10 22-19 19Z"/>
+      <g id="near_shin" transform="translate(54 68)">
+        <path id="near_shin_fur" fill="#E4D9BD" d="M-17-6C-10-24 13-22 21-7C26 4 17 20 18 36L30 80C34 93 22 106 9 102C-3 99-5 84-8 72L-17 33C-22 18-23 5-17-6Z"/>
+        <path id="near_shin_shadow" fill="#C1B293" stroke="none" d="M13 14C10 43 23 71 25 87C26 96 17 102 9 97L-3 66L-9 36C-10 27 2 22 13 14Z"/>
+        <path id="near_shin_fur_lines" d="M-13 29L-6 34M-12 39L-5 43" stroke="#988B70" stroke-width="3"/>
+        <g id="near_shoe" transform="translate(17 99)">
+          <path id="near_sock" fill="#F5EFDA" d="M-17-28L14-29L19 4L-14 9Z"/>
+          <path id="near_sock_stripe" d="M-16-16L16-18" stroke="#B64F31" stroke-width="5"/>
+          <path id="near_shoe_upper" fill="#B64F31" d="M-17-4C-9-11 4-13 13-6L29 8C42 9 53 16 67 19C80 22 88 32 82 42C77 52 58 54 43 51L-5 43C-24 40-35 30-31 18Z"/>
+          <path id="near_shoe_toe" fill="#CE6A43" stroke="none" d="M34 12C48 13 59 20 68 22C79 25 82 33 76 38C67 44 48 39 32 35L15 27Z"/>
+          <path id="near_shoe_heel" fill="#91402B" stroke="none" d="M-19 4L-5 3L3 32L-22 28C-29 23-28 12-19 4Z"/>
+          <path id="near_shoe_flash" fill="#E9D8B2" stroke="none" d="M-2 24L25 19L40 27L7 31Z"/>
+          <path id="near_shoe_sole" fill="#EEE2C6" d="M-31 25C-16 32 8 35 30 39C52 44 73 45 85 37L84 48C78 59 55 59 35 55L-9 48C-23 46-34 39-31 25Z"/>
+          <path id="near_shoe_tread" d="M-17 45L-14 40M3 50L5 44M23 53L24 47M43 56L44 50M63 56L62 50M79 51L75 46" stroke-width="3"/>
+          <path id="near_shoe_laces" d="M12 7L22 13M5 13L16 19M-1 20L9 25" stroke="#F5E9CD" stroke-width="4"/>
+        </g>
+      </g>
+    </g>
+
+    <g id="torso" transform="translate(0 0)">
+      <path id="neck" fill="#DED2B7" d="M18-164L26-209L66-207L76-159L48-137Z"/>
+      <path id="neck_shadow" fill="#C3B494" stroke="none" d="M29-193L60-184L64-160L46-149L26-158Z"/>
+      <path id="singlet" fill="#293E38" d="M20-178C30-164 50-159 69-173L82-151C83-127 69-98 65-73L58-25C33-7 2-8-31-20L-21-77L-11-136C-7-158 3-173 20-178Z"/>
+      <path id="singlet_shadow" fill="#1D302C" stroke="none" d="M49-152C44-111 38-63 37-17L58-25L65-73C68-97 82-129 82-151L69-173C67-162 61-157 49-152Z"/>
+      <path id="singlet_neck_trim" d="M20-178C27-161 49-151 70-171" stroke="#E7DDC3" stroke-width="8"/>
+      <path id="singlet_rear_arm_trim" d="M-11-137C-1-127 1-119-4-101" stroke="#E7DDC3" stroke-width="7"/>
+      <path id="singlet_near_arm_trim" d="M78-154C58-154 49-143 51-127C51-116 57-108 67-104" stroke="#E7DDC3" stroke-width="8"/>
+      <path id="singlet_fold" d="M-8-48C4-41 17-39 30-41M29-130L17-77" stroke="#526055" stroke-width="4"/>
+      <path id="running_shorts" fill="#263B35" d="M-31-30C-7-21 29-19 58-33L59 0L29 28L9 8L-1 29L-41 15Z"/>
+      <path id="shorts_shadow" fill="#1B2F2A" stroke="none" d="M11-20L58-31L59 0L29 28L9 8Z"/>
+      <path id="shorts_hem" d="M-38 12L-3 24L9 3L29 23L55 0" stroke="#E7DDC3" stroke-width="6"/>
+      <path id="waistband" d="M-29-28C-1-17 31-18 57-31" stroke="#526055" stroke-width="4"/>
+    </g>
+
+    <g id="near_upper_arm" transform="translate(66 -142)">
+      <path id="near_upper_arm_fur" fill="#E1D5B9" d="M-5-17C8-20 18-11 19 2C20 20 27 32 40 48L52 63C61 76 49 91 36 88C23 86 14 68 5 57L-17 30C-27 14-24-10-5-17Z"/>
+      <path id="near_upper_arm_shadow" fill="#C1B292" stroke="none" d="M5 17C7 34 27 51 39 68C45 76 47 82 41 85C29 85 19 68 9 56L-10 32Z"/>
+      <path id="near_shoulder_highlight" d="M-8-6C-17 4-14 13-9 20" stroke="#F2E8CC" stroke-width="5"/>
+      <g id="near_forearm" transform="translate(40 72)">
+        <path id="near_forearm_fur" fill="#E7DDC3" d="M-9 12C-21 4-20-10-10-21L19-54C27-64 42-63 48-53C54-44 48-34 41-26L10 10C5 16-3 17-9 12Z"/>
+        <path id="near_forearm_shadow" fill="#C6B797" stroke="none" d="M5 3L36-35C40-40 45-45 47-51C53-43 47-34 39-25L10 10C5 16-5 16-10 11Z"/>
+        <g id="near_hand" transform="translate(38 -49)">
+          <path id="near_hand_fur" fill="#E7DDC3" d="M-14-21C-4-25 8-19 15-13L27-4C34 2 32 14 25 18L10 31C2 38-10 34-16 25L-27 10C-34 2-30-8-21-10C-21-15-18-19-14-21Z"/>
+          <path id="near_hand_thumb" fill="#F0E6CB" d="M-22-10C-14-14-5-7 0-1L5 7C8 13 2 19-4 17L-17 6" stroke-width="4"/>
+          <path id="near_hand_fingers" d="M0-15L14-4M10-11L23-1M8 19L16 26" stroke-width="4"/>
+          <path id="near_hand_highlight" d="M-14-17L-7-16" stroke="#F9F0D9" stroke-width="4"/>
+        </g>
+      </g>
+    </g>
+
+    <g id="head" transform="translate(36 -170)">
+      <g id="rear_ear" transform="translate(-37 -96)">
+        <path id="rear_ear_fur" fill="#CABB9B" d="M-12 13C-23-12-30-34-36-63C-43-89-40-109-29-114C-16-119-6-102 1-81C8-59 17-25 18-2C19 11-1 22-12 13Z"/>
+        <path id="rear_ear_inner" fill="#9A624D" stroke="none" d="M-12-10C-19-33-28-60-29-82C-29-92-25-98-23-94C-12-78-1-38 3-13Z"/>
+        <path id="rear_ear_ridge" d="M-17-73L-6-33" stroke="#AE846A" stroke-width="4"/>
+      </g>
+      <g id="near_ear" transform="translate(4 -109)">
+        <path id="near_ear_fur" fill="#E5DABD" d="M-14 14C-24-11-17-45-13-70C-8-102 2-124 15-124C30-125 36-106 31-82C28-57 20-36 18-11C17 9 3 23-14 14Z"/>
+        <path id="near_ear_inner" fill="#B76C51" stroke="none" d="M-5-9C-6-31-1-55 2-76C5-97 12-111 17-107C24-99 18-74 15-58L7-12Z"/>
+        <path id="near_ear_ridge" d="M7-87L2-46" stroke="#D3956F" stroke-width="4"/>
+      </g>
+      <path id="head_fur" fill="#E3D7BB" d="M -42 -106 C -19 -121 10 -115 28 -98 C 40 -87 43 -73 49 -62 L 68 -54 C 80 -47 80 -30 72 -20 C 59 -3 40 8 16 12 C -5 18 -30 7 -41 -9 L -57 -24 L -51 -34 C -67 -49 -68 -67 -58 -83 L -64 -91 L -51 -92 Z"/>
+      <path id="head_shadow" fill="#C7B899" stroke="none" d="M -49 -74 C -57 -47 -40 -29 -28 -23 C -20 0 1 10 20 11 C 0 19 -27 8 -41 -9 L -57 -24 L -51 -34 C -62 -45 -65 -60 -59 -75 Z"/>
+      <path id="cheek" fill="#F0E5C9" stroke="none" d="M -24 -49 C -14 -56 -3 -49 2 -40 C 16 -46 31 -43 37 -33 C 43 -22 33 -6 17 -2 C -1 2 -20 -10 -28 -22 C -34 -33 -32 -43 -24 -49 Z"/>
+      <g id="rear_eye" transform="translate(-2 -71)">
+        <path id="rear_eye_white" fill="#F9F3DF" d="M -13 -1 C -13 -14 -8 -23 0 -22 C 9 -21 14 -11 12 2 C 11 14 6 21 -2 20 C -10 19 -14 10 -13 -1 Z" stroke-width="4"/>
+        <g id="rear_pupil" transform="translate(6 0)">
+          <ellipse id="rear_pupil_fill" cx="0" cy="0" rx="5" ry="11" fill="#283831" stroke="none"/>
+          <ellipse id="rear_pupil_glint" cx="1" cy="-4" rx="1.6" ry="2.8" fill="#F9F3DF" stroke="none"/>
+        </g>
+      </g>
+      <g id="near_eye" transform="translate(29 -71)">
+        <path id="near_eye_white" fill="#F9F3DF" d="M -14 0 C -15 -15 -9 -26 0 -25 C 9 -24 16 -13 14 2 C 13 15 6 23 -2 22 C -10 20 -14 12 -14 0 Z" stroke-width="4"/>
+        <g id="near_pupil" transform="translate(6 0)">
+          <ellipse id="near_pupil_fill" cx="0" cy="0" rx="6" ry="12" fill="#283831" stroke="none"/>
+          <ellipse id="near_pupil_glint" cx="1" cy="-4" rx="2" ry="3" fill="#F9F3DF" stroke="none"/>
+        </g>
+      </g>
+      <g id="rear_brow" transform="translate(-4 -99)">
+        <path id="rear_brow_ink" d="M-13 4C-6-4 2-4 10 0" stroke-width="6"/>
+      </g>
+      <g id="near_brow" transform="translate(29 -103)">
+        <path id="near_brow_ink" d="M-13 1C-4-4 5-1 12 5" stroke-width="6"/>
+      </g>
+      <path id="muzzle" fill="#F0E5C9" d="M 39 -52 C 52 -59 69 -58 83 -54 C 96 -50 102 -42 97 -33 C 91 -24 79 -21 66 -21 L 48 -24" stroke-width="5"/>
+      <path id="nose" fill="#283831" d="M 82 -55 C 86 -63 99 -61 103 -54 C 106 -47 101 -40 92 -38 C 87 -42 83 -47 82 -55 Z" stroke-width="3"/>
+      <path id="nose_shine" d="M 90 -55 L 96 -53" stroke="#6D7867" stroke-width="3"/>
+      <g id="mouth" transform="translate(36 -20)">
+        <path id="mouth_smile" fill="#283831" d="M-15-8C-2 1 17 1 29-4C25 10 15 17 4 15C-5 14-12 5-15-8Z" stroke-width="3"/>
+        <path id="mouth_tooth" fill="#F9F3DF" stroke="none" d="M-4-1C2 1 10 1 16 0L12 10L1 9Z"/>
+        <path id="mouth_corner" d="M-20-8C-17-12-12-12-8-10" stroke-width="4"/>
+      </g>
+      <path id="cheek_hatch" d="M -29 -49 L -22 -45 M -33 -41 L -25 -38 M -32 -32 L -25 -30" stroke="#A99A7C" stroke-width="3"/>
+      <path id="muzzle_whisker_top" d="M 58 -41 C 70 -46 78 -45 84 -43" stroke-width="3"/>
+      <path id="muzzle_whisker_bottom" d="M 59 -34 L 80 -32" stroke-width="3"/>
+      <path id="forehead_fur" d="M -36 -91 L -30 -95 M -28 -85 L -21 -89" stroke="#AB9B7D" stroke-width="3"/>
+    </g>
+  </g>
+</svg>

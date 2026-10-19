@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f3f1e8">
+  <title>The cheetah · Running Hackathon</title>
+  <link rel="preload" href="assets/geist.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="mascot.css">
+</head>
+<body>
+  <a class="skip" href="#mascot">Skip to the cheetah</a>
+  <header class="header wrap">
+    <a class="brand" href="../04%20Creative%20Warehouse/index.html" aria-label="Running Hackathon creative warehouse">
+      <img src="assets/running-hackathon-wordmark.svg" alt="Running Hackathon" width="142" height="70">
+    </a>
+    <nav aria-label="Creative navigation">
+      <a href="../06%20Animal%20Mascot%20Choices/">Other animals <span aria-hidden="true">↗</span></a>
+      <a href="../04%20Creative%20Warehouse/index.html" aria-label="Creative warehouse">Warehouse <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+  <main class="studio wrap" id="mascot">
+    <div class="character-stage" id="character-stage" data-scene="paper" aria-label="Cheetah artwork on paper">
+      <img class="character" id="character" src="assets/cheetah-v1.png" alt="An original Running Hackathon cheetah character in a cream singlet, green shorts and brick-orange running shoes, with a long spotted tail." width="1024" height="1536">
+      <div class="image-error" id="image-error" role="status" hidden>
+        <p>The cheetah artwork hasn’t loaded.</p>
+        <p><a href="assets/cheetah-v1.png">Open the image directly</a> or reload this page.</p>
+      </div>
+    </div>
+    <div class="character-info">
+      <div class="intro">
+        <h1>Meet the<br>cheetah.</h1>
+        <p>A cheetah for the morning crew. Cream singlet, green shorts, brick-orange shoes and a long, unmistakable tail.</p>
+      </div>
+      <section class="scene-controls" aria-labelledby="scene-title">
+        <h2 id="scene-title">Choose the setting</h2>
+        <div class="scene-buttons" role="group" aria-label="Artwork setting">
+          <button type="button" data-scene="paper" aria-pressed="true">On paper</button>
+          <button type="button" data-scene="meadow" aria-pressed="false">On the meadow</button>
+        </div>
+        <p class="scene-status sr-only" id="scene-status" role="status" aria-live="polite"></p>
+      </section>
+      <a class="download" href="assets/cheetah-v1.png" download="running-hackathon-cheetah-v1.png">Download PNG <span aria-hidden="true">↓</span></a>
+      <p class="provenance">AI-generated character study. This is a still illustration, ready to explore before animation.</p>
+    </div>
+  </main>
+  <footer class="footer wrap">
+    <p>Running Hackathon · Character explorations</p>
+    <a href="../04%20Creative%20Warehouse/index.html">Back to the warehouse <span aria-hidden="true">↗</span></a>
+  </footer>
+  <script type="module" src="mascot.js"></script>
+</body>
+</html>

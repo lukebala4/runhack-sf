@@ -1,0 +1,3259 @@
+{
+  "schemaVersion": 1,
+  "rounds": [
+    {
+      "id": "2026-10-16-original-directions",
+      "title": "Original directions",
+      "description": "Track morning and Midsummer fields, kept as complete websites.",
+      "savedAt": "2026-10-16T22:40:42.850930+00:00",
+      "restored": false,
+      "path": "iterations/2026-10-16-original-directions/"
+    },
+    {
+      "id": "2026-10-16-first-merge",
+      "title": "First merged explorations",
+      "description": "The first track-and-meadow layouts, with their original headlines.",
+      "savedAt": "2026-10-16T22:40:42.884702+00:00",
+      "restored": true,
+      "path": "iterations/2026-10-16-first-merge/"
+    },
+    {
+      "id": "2026-10-16-fresh-air",
+      "title": "Good ideas need fresh air",
+      "description": "The five merged layouts with the chosen catchphrase.",
+      "savedAt": "2026-10-16T22:40:42.919864+00:00",
+      "restored": false,
+      "path": "iterations/2026-10-16-fresh-air/"
+    },
+    {
+      "id": "2026-10-17-meadow-retro",
+      "title": "Meadow lane · Subtle retro studies",
+      "description": "Three restrained variations in photographic colour, typography and paper tone, with the current Meadow lane preserved for comparison.",
+      "savedAt": "2026-10-17T09:52:48.083537+00:00",
+      "restored": false,
+      "path": "../13%20Meadow%20Lane%20Studies/"
+    },
+    {
+      "id": "2026-10-17-meadow-logos",
+      "title": "Meadow lane · With the logos",
+      "description": "The four Meadow lane treatments with Red Bull, PostHog and Cognition beneath the hero. Earlier logo-free studies remain available.",
+      "savedAt": "2026-10-17T10:06:03.258333+00:00",
+      "restored": false,
+      "path": "../14%20Meadow%20Lane%20Logos/"
+    },
+    {
+      "id": "2026-10-17-meadow-natural",
+      "title": "Meadow lane · More natural detail",
+      "description": "Compare the original with Juno and three retained generated passes. The second reconstruction is preferred, with remaining skin and hair polish noted.",
+      "savedAt": "2026-10-17T11:45:06.099814+00:00",
+      "restored": false,
+      "path": "../15%20Meadow%20Photo%20Study/"
+    },
+    {
+      "id": "2026-10-17-meadow-more-retro",
+      "title": "Meadow lane · Five retro directions",
+      "description": "Five more distinct retro layouts, with original typefaces, the preferred meadow photograph, the three brand logos and SF sponsorship email.",
+      "savedAt": "2026-10-17T14:12:15.779154+00:00",
+      "restored": false,
+      "path": "../17%20Meadow%20Retro%20Explorations/"
+    },
+    {
+      "id": "2026-10-17-sf-website-mockup",
+      "title": "San Francisco · Website mockup",
+      "description": "One clean standalone website with the original fonts, meadow, hedgehog, London film, past editions and SF sponsorship email.",
+      "savedAt": "2026-10-17T14:22:48.112294+00:00",
+      "restored": false,
+      "path": "../18%20SF%20Website%20Mockup/"
+    },
+    {
+      "id": "2026-10-17-mascot-sketchbook",
+      "title": "Mascot sketchbook · Thirty directions",
+      "description": "Original ten retained first, with twenty new simple character studies below. Generated through non-GPT Higgsfield models.",
+      "savedAt": "2026-10-17",
+      "restored": false,
+      "path": "../20%20Mascot%20Sketchbook/"
+    },
+    {
+      "id": "2026-10-18-sloth-tech-gear",
+      "title": "Sloth · Ten ways to wear tech",
+      "description": "Ten equipment variations of the selected Little momentum sloth, with the original character preserved for comparison.",
+      "savedAt": "2026-10-18",
+      "restored": false,
+      "path": "../21%20Sloth%20Tech%20Gear/"
+    },
+    {
+      "id": "2026-10-18-sloth-logo-studies",
+      "title": "Sloth on the logo · Ten directions",
+      "description": "The green-glasses sloth sits, waves and relaxes on the exact original stacked wordmark.",
+      "savedAt": "2026-10-18T16:39:50.716063+00:00",
+      "restored": false,
+      "path": "../22%20Sloth%20Logo%20Studies/"
+    },
+    {
+      "id": "2026-10-18-sloth-logo-quiet",
+      "title": "Quieter sloth directions · Ten more",
+      "description": "Smaller glasses, quieter expressions and easy seated poses on the original wordmark.",
+      "savedAt": "2026-10-18T16:51:59.329523+00:00",
+      "restored": false,
+      "path": "../22%20Sloth%20Logo%20Studies/#new-directions"
+    },
+    {
+      "id": "2026-10-18-giga-sloth",
+      "title": "Giga sloth · Wildcard",
+      "description": "A playful exaggerated athletic sloth with green glasses.",
+      "savedAt": "2026-10-18T16:58:51.792269+00:00",
+      "restored": false,
+      "path": "../23%20Sloth%20Wildcard/"
+    }
+  ],
+  "items": [
+    {
+      "id": "2026-10-18-sloth-logo-studies",
+      "kind": "images",
+      "round": "2026-10-18-sloth-logo-studies",
+      "title": "Sloth on the logo · Ten directions",
+      "description": "Ten ways for our sloth in green smart glasses to sit on the logo.",
+      "href": "../22%20Sloth%20Logo%20Studies/",
+      "image": "../22%20Sloth%20Logo%20Studies/compositions/cross-legged.svg",
+      "presentation": "contain",
+      "tags": [
+        "sloth",
+        "logo",
+        "glasses",
+        "Higgsfield"
+      ],
+      "action": "Explore all ten",
+      "secondary": {
+        "label": "Glasses reference",
+        "href": "../21%20Sloth%20Tech%20Gear/#study-smart-specs"
+      }
+    },
+    {
+      "id": "2026-10-18-sloth-logo-front-and-centre",
+      "kind": "images",
+      "round": "2026-10-18-sloth-logo-studies",
+      "title": "Sloth on the logo · Front and centre",
+      "description": "Both feet dangling over the top word.",
+      "href": "../22%20Sloth%20Logo%20Studies/#study-front-and-centre",
+      "image": "../22%20Sloth%20Logo%20Studies/compositions/front-and-centre.svg",
+      "presentation": "contain",
+      "tags": [
+        "sloth",
+        "logo",
+        "glasses",
+        "seated"
+      ],
+      "action": "Open study"
+    },
+    {
+      "id": "2026-10-18-sloth-logo-left-corner",
+      "kind": "images",
+      "round": "2026-10-18-sloth-logo-studies",
+      "title": "Sloth on the logo · Left corner",
+      "description": "A small perch on the first letter.",
+      "href": "../22%20Sloth%20Logo%20Studies/#study-left-corner",
+      "image": "../22%20Sloth%20Logo%20Studies/compositions/left-corner.svg",
+      "presentation": "contain",
+      "tags": [
+        "sloth",
+        "logo",
+        "glasses",
+        "seated"
+      ],
+      "action": "Open study"
+    },
+    {
+      "id": "2026-10-18-sloth-logo-right-corner",
+      "kind": "images",
+      "round": "2026-10-18-sloth-logo-studies",
+      "title": "Sloth on the logo · Right corner",
+      "description": "One hand waving from the far end.",
+      "href": "../22%20Sloth%20Logo%20Studies/#study-right-corner",
+      "image": "../22%20Sloth%20Logo%20Studies/compositions/right-corner.svg",
+      "presentation": "contain",
+      "tags": [
+        "sloth",
+        "logo",
+        "glasses",
+        "seated"
+      ],
+      "action": "Open study"
+    },
+    {
+      "id": "2026-10-18-sloth-logo-cross-legged",
+      "kind": "images",
+      "round": "2026-10-18-sloth-logo-studies",
+      "title": "Sloth on the logo · Cross-legged",
+      "description": "A calm cross-legged seat above the letters.",
+      "href": "../22%20Sloth%20Logo%20Studies/#study-cross-legged",
+      "image": "../22%20Sloth%20Logo%20Studies/compositions/cross-legged.svg",
+      "presentation": "contain",
+      "tags": [
+        "sloth",
+        "logo",
+        "glasses",
+        "seated"
+      ],
+      "action": "Open study"
+    },
+    {
+      "id": "2026-10-18-sloth-logo-side-saddle",
+      "kind": "images",
+      "round": "2026-10-18-sloth-logo-studies",
+      "title": "Sloth on the logo · Side saddle",
+      "description": "One foot out, the other dangling over the letters.",
+      "href": "../22%20Sloth%20Logo%20Studies/#study-side-saddle",
+      "image": "../22%20Sloth%20Logo%20Studies/compositions/side-saddle.svg",
+      "presentation": "contain",
+      "tags": [
+        "sloth",
+        "logo",
+        "glasses",
+        "seated"
+      ],
+      "action": "Open study"
+    },
+    {
+      "id": "2026-10-18-sloth-logo-lean-back",
+      "kind": "images",
+      "round": "2026-10-18-sloth-logo-studies",
+      "title": "Sloth on the logo · Lean back",
+      "description": "A longer, relaxed silhouette across the top.",
+      "href": "../22%20Sloth%20Logo%20Studies/#study-lean-back",
+      "image": "../22%20Sloth%20Logo%20Studies/compositions/lean-back.svg",
+      "presentation": "contain",
+      "tags": [
+        "sloth",
+        "logo",
+        "glasses",
+        "seated"
+      ],
+      "action": "Open study"
+    },
+    {
+      "id": "2026-10-18-sloth-logo-one-knee-up",
+      "kind": "images",
+      "round": "2026-10-18-sloth-logo-studies",
+      "title": "Sloth on the logo · One knee up",
+      "description": "One knee tucked in, the other foot hanging.",
+      "href": "../22%20Sloth%20Logo%20Studies/#study-one-knee-up",
+      "image": "../22%20Sloth%20Logo%20Studies/compositions/one-knee-up.svg",
+      "presentation": "contain",
+      "tags": [
+        "sloth",
+        "logo",
+        "glasses",
+        "seated"
+      ],
+      "action": "Open study"
+    },
+    {
+      "id": "2026-10-18-sloth-logo-elbows-on-knees",
+      "kind": "images",
+      "round": "2026-10-18-sloth-logo-studies",
+      "title": "Sloth on the logo · Leaning in",
+      "description": "Leaning forward, elbows on the knees.",
+      "href": "../22%20Sloth%20Logo%20Studies/#study-elbows-on-knees",
+      "image": "../22%20Sloth%20Logo%20Studies/compositions/elbows-on-knees.svg",
+      "presentation": "contain",
+      "tags": [
+        "sloth",
+        "logo",
+        "glasses",
+        "seated"
+      ],
+      "action": "Open study"
+    },
+    {
+      "id": "2026-10-18-sloth-logo-feet-up",
+      "kind": "images",
+      "round": "2026-10-18-sloth-logo-studies",
+      "title": "Sloth on the logo · Hands on the edge",
+      "description": "Both hands braced beside him, with his feet dangling.",
+      "href": "../22%20Sloth%20Logo%20Studies/#study-feet-up",
+      "image": "../22%20Sloth%20Logo%20Studies/compositions/feet-up.svg",
+      "presentation": "contain",
+      "tags": [
+        "sloth",
+        "logo",
+        "glasses",
+        "seated"
+      ],
+      "action": "Open study"
+    },
+    {
+      "id": "2026-10-18-sloth-logo-over-the-shoulder",
+      "kind": "images",
+      "round": "2026-10-18-sloth-logo-studies",
+      "title": "Sloth on the logo · Over the shoulder",
+      "description": "Sitting backwards and looking back through his glasses.",
+      "href": "../22%20Sloth%20Logo%20Studies/#study-over-the-shoulder",
+      "image": "../22%20Sloth%20Logo%20Studies/compositions/over-the-shoulder.svg",
+      "presentation": "contain",
+      "tags": [
+        "sloth",
+        "logo",
+        "glasses",
+        "seated"
+      ],
+      "action": "Open study"
+    },
+    {
+      "id": "2026-10-18-sloth-tech-gear",
+      "kind": "images",
+      "round": "2026-10-18-sloth-tech-gear",
+      "title": "Sloth, with tech · All ten",
+      "description": "Compare headphones, watch, armband, voice pendant, action camera, smart glasses, radio, battery, backpack and navigation screen.",
+      "href": "../21%20Sloth%20Tech%20Gear/",
+      "image": "../21%20Sloth%20Tech%20Gear/assets/smart-specs.png",
+      "presentation": "contain",
+      "tags": [
+        "mascot",
+        "Sloth",
+        "Higgsfield",
+        "tech gear"
+      ],
+      "action": "Compare all ten"
+    },
+    {
+      "id": "2026-10-18-sloth-tech-gear-open-ear-audio",
+      "kind": "images",
+      "round": "2026-10-18-sloth-tech-gear",
+      "title": "01 · Headphones",
+      "description": "Over-ear headphones.",
+      "href": "../21%20Sloth%20Tech%20Gear/#study-open-ear-audio",
+      "image": "../21%20Sloth%20Tech%20Gear/assets/open-ear-audio.png",
+      "presentation": "contain",
+      "tags": [
+        "mascot",
+        "Sloth",
+        "Higgsfield",
+        "Nano Banana 2.1",
+        "tech gear"
+      ],
+      "action": "Open drawing",
+      "secondary": {
+        "label": "PNG",
+        "href": "../21%20Sloth%20Tech%20Gear/assets/open-ear-audio.png"
+      }
+    },
+    {
+      "id": "2026-10-18-sloth-tech-gear-running-watch",
+      "kind": "images",
+      "round": "2026-10-18-sloth-tech-gear",
+      "title": "02 · Running watch",
+      "description": "A big, simple watch on the wrist.",
+      "href": "../21%20Sloth%20Tech%20Gear/#study-running-watch",
+      "image": "../21%20Sloth%20Tech%20Gear/assets/running-watch.png",
+      "presentation": "contain",
+      "tags": [
+        "mascot",
+        "Sloth",
+        "Higgsfield",
+        "Nano Banana 2.1",
+        "tech gear"
+      ],
+      "action": "Open drawing",
+      "secondary": {
+        "label": "PNG",
+        "href": "../21%20Sloth%20Tech%20Gear/assets/running-watch.png"
+      }
+    },
+    {
+      "id": "2026-10-18-sloth-tech-gear-phone-armband",
+      "kind": "images",
+      "round": "2026-10-18-sloth-tech-gear",
+      "title": "03 · Phone armband",
+      "description": "A phone strapped to the upper arm.",
+      "href": "../21%20Sloth%20Tech%20Gear/#study-phone-armband",
+      "image": "../21%20Sloth%20Tech%20Gear/assets/phone-armband.png",
+      "presentation": "contain",
+      "tags": [
+        "mascot",
+        "Sloth",
+        "Higgsfield",
+        "Nano Banana 2.1",
+        "tech gear"
+      ],
+      "action": "Open drawing",
+      "secondary": {
+        "label": "PNG",
+        "href": "../21%20Sloth%20Tech%20Gear/assets/phone-armband.png"
+      }
+    },
+    {
+      "id": "2026-10-18-sloth-tech-gear-voice-pendant",
+      "kind": "images",
+      "round": "2026-10-18-sloth-tech-gear",
+      "title": "04 · Voice pendant",
+      "description": "A small microphone, worn on the chest.",
+      "href": "../21%20Sloth%20Tech%20Gear/#study-voice-pendant",
+      "image": "../21%20Sloth%20Tech%20Gear/assets/voice-pendant.png",
+      "presentation": "contain",
+      "tags": [
+        "mascot",
+        "Sloth",
+        "Higgsfield",
+        "Nano Banana 2.1",
+        "tech gear"
+      ],
+      "action": "Open drawing",
+      "secondary": {
+        "label": "PNG",
+        "href": "../21%20Sloth%20Tech%20Gear/assets/voice-pendant.png"
+      }
+    },
+    {
+      "id": "2026-10-18-sloth-tech-gear-trail-camera",
+      "kind": "images",
+      "round": "2026-10-18-sloth-tech-gear",
+      "title": "05 · Trail camera",
+      "description": "An action camera above the eyes.",
+      "href": "../21%20Sloth%20Tech%20Gear/#study-trail-camera",
+      "image": "../21%20Sloth%20Tech%20Gear/assets/trail-camera.png",
+      "presentation": "contain",
+      "tags": [
+        "mascot",
+        "Sloth",
+        "Higgsfield",
+        "Nano Banana 2.1",
+        "tech gear"
+      ],
+      "action": "Open drawing",
+      "secondary": {
+        "label": "PNG",
+        "href": "../21%20Sloth%20Tech%20Gear/assets/trail-camera.png"
+      }
+    },
+    {
+      "id": "2026-10-18-sloth-tech-gear-smart-specs",
+      "kind": "images",
+      "round": "2026-10-18-sloth-tech-gear",
+      "title": "06 · Smart specs",
+      "description": "Light frames with a discreet camera.",
+      "href": "../21%20Sloth%20Tech%20Gear/#study-smart-specs",
+      "image": "../21%20Sloth%20Tech%20Gear/assets/smart-specs.png",
+      "presentation": "contain",
+      "tags": [
+        "mascot",
+        "Sloth",
+        "Higgsfield",
+        "Nano Banana 2.1",
+        "tech gear"
+      ],
+      "action": "Open drawing",
+      "secondary": {
+        "label": "PNG",
+        "href": "../21%20Sloth%20Tech%20Gear/assets/smart-specs.png"
+      }
+    },
+    {
+      "id": "2026-10-18-sloth-tech-gear-pocket-radio",
+      "kind": "images",
+      "round": "2026-10-18-sloth-tech-gear",
+      "title": "07 · Pocket radio",
+      "description": "A walkie-talkie in one raised claw.",
+      "href": "../21%20Sloth%20Tech%20Gear/#study-pocket-radio",
+      "image": "../21%20Sloth%20Tech%20Gear/assets/pocket-radio.png",
+      "presentation": "contain",
+      "tags": [
+        "mascot",
+        "Sloth",
+        "Higgsfield",
+        "Nano Banana 2.1",
+        "tech gear"
+      ],
+      "action": "Open drawing",
+      "secondary": {
+        "label": "PNG",
+        "href": "../21%20Sloth%20Tech%20Gear/assets/pocket-radio.png"
+      }
+    },
+    {
+      "id": "2026-10-18-sloth-tech-gear-power-pack",
+      "kind": "images",
+      "round": "2026-10-18-sloth-tech-gear",
+      "title": "08 · Power pack",
+      "description": "A compact battery clipped at the hip.",
+      "href": "../21%20Sloth%20Tech%20Gear/#study-power-pack",
+      "image": "../21%20Sloth%20Tech%20Gear/assets/power-pack.png",
+      "presentation": "contain",
+      "tags": [
+        "mascot",
+        "Sloth",
+        "Higgsfield",
+        "Nano Banana 2.1",
+        "tech gear"
+      ],
+      "action": "Open drawing",
+      "secondary": {
+        "label": "PNG",
+        "href": "../21%20Sloth%20Tech%20Gear/assets/power-pack.png"
+      }
+    },
+    {
+      "id": "2026-10-18-sloth-tech-gear-agent-backpack",
+      "kind": "images",
+      "round": "2026-10-18-sloth-tech-gear",
+      "title": "09 · Agent backpack",
+      "description": "A small pack for a portable setup.",
+      "href": "../21%20Sloth%20Tech%20Gear/#study-agent-backpack",
+      "image": "../21%20Sloth%20Tech%20Gear/assets/agent-backpack.png",
+      "presentation": "contain",
+      "tags": [
+        "mascot",
+        "Sloth",
+        "Higgsfield",
+        "Nano Banana 2.1",
+        "tech gear"
+      ],
+      "action": "Open drawing",
+      "secondary": {
+        "label": "PNG",
+        "href": "../21%20Sloth%20Tech%20Gear/assets/agent-backpack.png"
+      }
+    },
+    {
+      "id": "2026-10-18-sloth-tech-gear-trail-map",
+      "kind": "images",
+      "round": "2026-10-18-sloth-tech-gear",
+      "title": "10 · Trail map",
+      "description": "A navigation screen in one raised claw.",
+      "href": "../21%20Sloth%20Tech%20Gear/#study-trail-map",
+      "image": "../21%20Sloth%20Tech%20Gear/assets/trail-map.png",
+      "presentation": "contain",
+      "tags": [
+        "mascot",
+        "Sloth",
+        "Higgsfield",
+        "Nano Banana 2.1",
+        "tech gear"
+      ],
+      "action": "Open drawing",
+      "secondary": {
+        "label": "PNG",
+        "href": "../21%20Sloth%20Tech%20Gear/assets/trail-map.png"
+      }
+    },
+    {
+      "id": "2026-10-17-mascot-sketchbook",
+      "kind": "images",
+      "round": "2026-10-17-mascot-sketchbook",
+      "title": "30 mascot directions · Sketchbook",
+      "description": "The original ten remain at the top. Twenty more animal personalities and drawing styles below, with large previews and downloads.",
+      "href": "../20%20Mascot%20Sketchbook/",
+      "image": "../20%20Mascot%20Sketchbook/evidence/desktop.png",
+      "presentation": "contain",
+      "tags": [
+        "latest",
+        "mascot",
+        "Higgsfield",
+        "sketchbook",
+        "10"
+      ],
+      "action": "Compare all 30"
+    },
+    {
+      "id": "2026-10-17-mascot-sketchbook-sloth-easy-pace",
+      "kind": "images",
+      "round": "2026-10-17-mascot-sketchbook",
+      "title": "01 · Sloth · Easy pace",
+      "description": "Unhurried, quietly confident. Original still character study through Higgsfield.",
+      "href": "../20%20Mascot%20Sketchbook/#study-sloth-easy-pace",
+      "image": "../20%20Mascot%20Sketchbook/assets/sloth-easy-pace.png",
+      "presentation": "contain",
+      "tags": [
+        "mascot",
+        "Higgsfield",
+        "Sloth",
+        "Nano Banana 2.1"
+      ],
+      "action": "Open drawing",
+      "secondary": {
+        "label": "PNG",
+        "href": "../20%20Mascot%20Sketchbook/assets/sloth-easy-pace.png"
+      }
+    },
+    {
+      "id": "2026-10-17-mascot-sketchbook-sloth-long-way",
+      "kind": "images",
+      "round": "2026-10-17-mascot-sketchbook",
+      "title": "02 · Sloth · Long way round",
+      "description": "Gangly, calm, always up for it. Original still character study through Higgsfield.",
+      "href": "../20%20Mascot%20Sketchbook/#study-sloth-long-way",
+      "image": "../20%20Mascot%20Sketchbook/assets/sloth-long-way.png",
+      "presentation": "contain",
+      "tags": [
+        "mascot",
+        "Higgsfield",
+        "Sloth",
+        "Seedream 5.0 Pro"
+      ],
+      "action": "Open drawing",
+      "secondary": {
+        "label": "PNG",
+        "href": "../20%20Mascot%20Sketchbook/assets/sloth-long-way.png"
+      }
+    },
+    {
+      "id": "2026-10-17-mascot-sketchbook-hare-false-start",
+      "kind": "images",
+      "round": "2026-10-17-mascot-sketchbook",
+      "title": "03 · Hare · False start",
+      "description": "Restless, curious, looking back for you. Original still character study through Higgsfield.",
+      "href": "../20%20Mascot%20Sketchbook/#study-hare-false-start",
+      "image": "../20%20Mascot%20Sketchbook/assets/hare-false-start.png",
+      "presentation": "contain",
+      "tags": [
+        "mascot",
+        "Higgsfield",
+        "Hare",
+        "Nano Banana 2.1"
+      ],
+      "action": "Open drawing",
+      "secondary": {
+        "label": "PNG",
+        "href": "../20%20Mascot%20Sketchbook/assets/hare-false-start.png"
+      }
+    },
+    {
+      "id": "2026-10-17-mascot-sketchbook-snail-still-going",
+      "kind": "images",
+      "round": "2026-10-17-mascot-sketchbook",
+      "title": "04 · Snail · Still going",
+      "description": "Determined. Enjoying the long route. Original still character study through Higgsfield.",
+      "href": "../20%20Mascot%20Sketchbook/#study-snail-still-going",
+      "image": "../20%20Mascot%20Sketchbook/assets/snail-still-going.png",
+      "presentation": "contain",
+      "tags": [
+        "mascot",
+        "Higgsfield",
+        "Snail",
+        "Seedream 5.0 Pro"
+      ],
+      "action": "Open drawing",
+      "secondary": {
+        "label": "PNG",
+        "href": "../20%20Mascot%20Sketchbook/assets/snail-still-going.png"
+      }
+    },
+    {
+      "id": "2026-10-17-mascot-sketchbook-crow-new-idea-v2",
+      "kind": "images",
+      "round": "2026-10-17-mascot-sketchbook",
+      "title": "05 · Crow · New idea",
+      "description": "Clever, inquisitive, a little untidy. Original still character study through Higgsfield.",
+      "href": "../20%20Mascot%20Sketchbook/#study-crow-new-idea-v2",
+      "image": "../20%20Mascot%20Sketchbook/assets/crow-new-idea-v2.png",
+      "presentation": "contain",
+      "tags": [
+        "mascot",
+        "Higgsfield",
+        "Crow",
+        "Seedream 5.0 Pro"
+      ],
+      "action": "Open drawing",
+      "secondary": {
+        "label": "PNG",
+        "href": "../20%20Mascot%20Sketchbook/assets/crow-new-idea-v2.png"
+      }
+    },
+    {
+      "id": "2026-10-17-mascot-sketchbook-greyhound-morning-legs",
+      "kind": "images",
+      "round": "2026-10-17-mascot-sketchbook",
+      "title": "06 · Greyhound · Morning legs",
+      "description": "Elegant, awkward, happy to be outside. Original still character study through Higgsfield.",
+      "href": "../20%20Mascot%20Sketchbook/#study-greyhound-morning-legs",
+      "image": "../20%20Mascot%20Sketchbook/assets/greyhound-morning-legs.png",
+      "presentation": "contain",
+      "tags": [
+        "mascot",
+        "Higgsfield",
+        "Greyhound",
+        "Seedream 5.0 Pro"
+      ],
+      "action": "Open drawing",
+      "secondary": {
+        "label": "PNG",
+        "href": "../20%20Mascot%20Sketchbook/assets/greyhound-morning-legs.png"
+      }
+    },
+    {
+      "id": "2026-10-17-mascot-sketchbook-raccoon-useful-trouble",
+      "kind": "images",
+      "round": "2026-10-17-mascot-sketchbook",
+      "title": "07 · Raccoon · Useful trouble",
+      "description": "Scrappy. Already testing an idea. Original still character study through Higgsfield.",
+      "href": "../20%20Mascot%20Sketchbook/#study-raccoon-useful-trouble",
+      "image": "../20%20Mascot%20Sketchbook/assets/raccoon-useful-trouble.png",
+      "presentation": "contain",
+      "tags": [
+        "mascot",
+        "Higgsfield",
+        "Raccoon",
+        "Nano Banana 2.1"
+      ],
+      "action": "Open drawing",
+      "secondary": {
+        "label": "PNG",
+        "href": "../20%20Mascot%20Sketchbook/assets/raccoon-useful-trouble.png"
+      }
+    },
+    {
+      "id": "2026-10-17-mascot-sketchbook-squirrel-too-many-ideas",
+      "kind": "images",
+      "round": "2026-10-17-mascot-sketchbook",
+      "title": "08 · Squirrel · Too many ideas",
+      "description": "All energy. Three thoughts ahead. Original still character study through Higgsfield.",
+      "href": "../20%20Mascot%20Sketchbook/#study-squirrel-too-many-ideas",
+      "image": "../20%20Mascot%20Sketchbook/assets/squirrel-too-many-ideas.png",
+      "presentation": "contain",
+      "tags": [
+        "mascot",
+        "Higgsfield",
+        "Squirrel",
+        "Seedream 5.0 Pro"
+      ],
+      "action": "Open drawing",
+      "secondary": {
+        "label": "PNG",
+        "href": "../20%20Mascot%20Sketchbook/assets/squirrel-too-many-ideas.png"
+      }
+    },
+    {
+      "id": "2026-10-17-mascot-sketchbook-frog-big-leap",
+      "kind": "images",
+      "round": "2026-10-17-mascot-sketchbook",
+      "title": "09 · Frog · Big leap",
+      "description": "Calm face. Ready to spring. Original still character study through Higgsfield.",
+      "href": "../20%20Mascot%20Sketchbook/#study-frog-big-leap",
+      "image": "../20%20Mascot%20Sketchbook/assets/frog-big-leap.png",
+      "presentation": "contain",
+      "tags": [
+        "mascot",
+        "Higgsfield",
+        "Frog",
+        "Nano Banana 2.1"
+      ],
+      "action": "Open drawing",
+      "secondary": {
+        "label": "PNG",
+        "href": "../20%20Mascot%20Sketchbook/assets/frog-big-leap.png"
+      }
+    },
+    {
+      "id": "2026-10-17-mascot-sketchbook-fox-first-one-out",
+      "kind": "images",
+      "round": "2026-10-17-mascot-sketchbook",
+      "title": "10 · Fox · First one out",
+      "description": "Independent, mischievous, already outside. Original still character study through Higgsfield.",
+      "href": "../20%20Mascot%20Sketchbook/#study-fox-first-one-out",
+      "image": "../20%20Mascot%20Sketchbook/assets/fox-first-one-out.png",
+      "presentation": "contain",
+      "tags": [
+        "mascot",
+        "Higgsfield",
+        "Fox",
+        "Seedream 5.0 Pro"
+      ],
+      "action": "Open drawing",
+      "secondary": {
+        "label": "PNG",
+        "href": "../20%20Mascot%20Sketchbook/assets/fox-first-one-out.png"
+      }
+    },
+    {
+      "id": "2026-10-17-mascot-sketchbook-sloth-off-duty",
+      "kind": "images",
+      "round": "2026-10-17-mascot-sketchbook",
+      "title": "11 · Sloth · Off duty",
+      "description": "Relaxed. Paying attention. Original still study through Higgsfield.",
+      "href": "../20%20Mascot%20Sketchbook/#study-sloth-off-duty",
+      "image": "../20%20Mascot%20Sketchbook/assets/sloth-off-duty.png",
+      "presentation": "contain",
+      "tags": [
+        "mascot",
+        "Higgsfield",
+        "Sloth",
+        "Nano Banana 2.1"
+      ],
+      "action": "Open drawing",
+      "secondary": {
+        "label": "PNG",
+        "href": "../20%20Mascot%20Sketchbook/assets/sloth-off-duty.png"
+      }
+    },
+    {
+      "id": "2026-10-17-mascot-sketchbook-sloth-side-eye",
+      "kind": "images",
+      "round": "2026-10-17-mascot-sketchbook",
+      "title": "12 · Sloth · Side eye",
+      "description": "Quietly amused. Coming along. Original still study through Higgsfield.",
+      "href": "../20%20Mascot%20Sketchbook/#study-sloth-side-eye",
+      "image": "../20%20Mascot%20Sketchbook/assets/sloth-side-eye.png",
+      "presentation": "contain",
+      "tags": [
+        "mascot",
+        "Higgsfield",
+        "Sloth",
+        "Seedream 5.0 Pro"
+      ],
+      "action": "Open drawing",
+      "secondary": {
+        "label": "PNG",
+        "href": "../20%20Mascot%20Sketchbook/assets/sloth-side-eye.png"
+      }
+    },
+    {
+      "id": "2026-10-17-mascot-sketchbook-sloth-little-momentum",
+      "kind": "images",
+      "round": "2026-10-17-mascot-sketchbook",
+      "title": "13 · Sloth · Little momentum",
+      "description": "Unexpectedly game for it. Original still study through Higgsfield.",
+      "href": "../20%20Mascot%20Sketchbook/#study-sloth-little-momentum",
+      "image": "../20%20Mascot%20Sketchbook/assets/sloth-little-momentum.png",
+      "presentation": "contain",
+      "tags": [
+        "mascot",
+        "Higgsfield",
+        "Sloth",
+        "Nano Banana 2.1"
+      ],
+      "action": "Open drawing",
+      "secondary": {
+        "label": "PNG",
+        "href": "../20%20Mascot%20Sketchbook/assets/sloth-little-momentum.png"
+      }
+    },
+    {
+      "id": "2026-10-17-mascot-sketchbook-hare-ear-to-ground",
+      "kind": "images",
+      "round": "2026-10-17-mascot-sketchbook",
+      "title": "14 · Hare · Ear to ground",
+      "description": "Observant. Ready when you are. Original still study through Higgsfield.",
+      "href": "../20%20Mascot%20Sketchbook/#study-hare-ear-to-ground",
+      "image": "../20%20Mascot%20Sketchbook/assets/hare-ear-to-ground.png",
+      "presentation": "contain",
+      "tags": [
+        "mascot",
+        "Higgsfield",
+        "Hare",
+        "Seedream 5.0 Pro"
+      ],
+      "action": "Open drawing",
+      "secondary": {
+        "label": "PNG",
+        "href": "../20%20Mascot%20Sketchbook/assets/hare-ear-to-ground.png"
+      }
+    },
+    {
+      "id": "2026-10-17-mascot-sketchbook-hare-no-rush",
+      "kind": "images",
+      "round": "2026-10-17-mascot-sketchbook",
+      "title": "15 · Hare · No rush",
+      "description": "Easy company. Knows the route. Original still study through Higgsfield.",
+      "href": "../20%20Mascot%20Sketchbook/#study-hare-no-rush",
+      "image": "../20%20Mascot%20Sketchbook/assets/hare-no-rush.png",
+      "presentation": "contain",
+      "tags": [
+        "mascot",
+        "Higgsfield",
+        "Hare",
+        "Nano Banana 2.1"
+      ],
+      "action": "Open drawing",
+      "secondary": {
+        "label": "PNG",
+        "href": "../20%20Mascot%20Sketchbook/assets/hare-no-rush.png"
+      }
+    },
+    {
+      "id": "2026-10-17-mascot-sketchbook-crow-working-it-out",
+      "kind": "images",
+      "round": "2026-10-17-mascot-sketchbook",
+      "title": "16 · Crow · Working it out",
+      "description": "Curious. Slightly sceptical. Original still study through Higgsfield.",
+      "href": "../20%20Mascot%20Sketchbook/#study-crow-working-it-out",
+      "image": "../20%20Mascot%20Sketchbook/assets/crow-working-it-out.png",
+      "presentation": "contain",
+      "tags": [
+        "mascot",
+        "Higgsfield",
+        "Crow",
+        "Seedream 5.0 Pro"
+      ],
+      "action": "Open drawing",
+      "secondary": {
+        "label": "PNG",
+        "href": "../20%20Mascot%20Sketchbook/assets/crow-working-it-out.png"
+      }
+    },
+    {
+      "id": "2026-10-17-mascot-sketchbook-frog-loose-stride",
+      "kind": "images",
+      "round": "2026-10-17-mascot-sketchbook",
+      "title": "17 · Frog · Loose stride",
+      "description": "Loose limbs. Good mood. Original still study through Higgsfield.",
+      "href": "../20%20Mascot%20Sketchbook/#study-frog-loose-stride",
+      "image": "../20%20Mascot%20Sketchbook/assets/frog-loose-stride.png",
+      "presentation": "contain",
+      "tags": [
+        "mascot",
+        "Higgsfield",
+        "Frog",
+        "Nano Banana 2.1"
+      ],
+      "action": "Open drawing",
+      "secondary": {
+        "label": "PNG",
+        "href": "../20%20Mascot%20Sketchbook/assets/frog-loose-stride.png"
+      }
+    },
+    {
+      "id": "2026-10-17-mascot-sketchbook-greyhound-rest-day",
+      "kind": "images",
+      "round": "2026-10-17-mascot-sketchbook",
+      "title": "18 · Greyhound · Rest day",
+      "description": "Comfortable doing its own thing. Original still study through Higgsfield.",
+      "href": "../20%20Mascot%20Sketchbook/#study-greyhound-rest-day",
+      "image": "../20%20Mascot%20Sketchbook/assets/greyhound-rest-day.png",
+      "presentation": "contain",
+      "tags": [
+        "mascot",
+        "Higgsfield",
+        "Greyhound",
+        "Seedream 5.0 Pro"
+      ],
+      "action": "Open drawing",
+      "secondary": {
+        "label": "PNG",
+        "href": "../20%20Mascot%20Sketchbook/assets/greyhound-rest-day.png"
+      }
+    },
+    {
+      "id": "2026-10-17-mascot-sketchbook-badger-good-ground",
+      "kind": "images",
+      "round": "2026-10-17-mascot-sketchbook",
+      "title": "19 · Badger · Good ground",
+      "description": "Grounded. Happily stubborn. Original still study through Higgsfield.",
+      "href": "../20%20Mascot%20Sketchbook/#study-badger-good-ground",
+      "image": "../20%20Mascot%20Sketchbook/assets/badger-good-ground.png",
+      "presentation": "contain",
+      "tags": [
+        "mascot",
+        "Higgsfield",
+        "Badger",
+        "Nano Banana 2.1"
+      ],
+      "action": "Open drawing",
+      "secondary": {
+        "label": "PNG",
+        "href": "../20%20Mascot%20Sketchbook/assets/badger-good-ground.png"
+      }
+    },
+    {
+      "id": "2026-10-17-mascot-sketchbook-goose-lets-go",
+      "kind": "images",
+      "round": "2026-10-17-mascot-sketchbook",
+      "title": "20 · Goose · Let's go",
+      "description": "Sociable. Already leading. Original still study through Higgsfield.",
+      "href": "../20%20Mascot%20Sketchbook/#study-goose-lets-go",
+      "image": "../20%20Mascot%20Sketchbook/assets/goose-lets-go.png",
+      "presentation": "contain",
+      "tags": [
+        "mascot",
+        "Higgsfield",
+        "Goose",
+        "Seedream 5.0 Pro"
+      ],
+      "action": "Open drawing",
+      "secondary": {
+        "label": "PNG",
+        "href": "../20%20Mascot%20Sketchbook/assets/goose-lets-go.png"
+      }
+    },
+    {
+      "id": "2026-10-17-mascot-sketchbook-gecko-loose-grip",
+      "kind": "images",
+      "round": "2026-10-17-mascot-sketchbook",
+      "title": "21 · Gecko · Loose grip",
+      "description": "Alert and adaptable. Original still study through Higgsfield.",
+      "href": "../20%20Mascot%20Sketchbook/#study-gecko-loose-grip",
+      "image": "../20%20Mascot%20Sketchbook/assets/gecko-loose-grip.png",
+      "presentation": "contain",
+      "tags": [
+        "mascot",
+        "Higgsfield",
+        "Gecko",
+        "Nano Banana 2.1"
+      ],
+      "action": "Open drawing",
+      "secondary": {
+        "label": "PNG",
+        "href": "../20%20Mascot%20Sketchbook/assets/gecko-loose-grip.png"
+      }
+    },
+    {
+      "id": "2026-10-17-mascot-sketchbook-tortoise-long-game",
+      "kind": "images",
+      "round": "2026-10-17-mascot-sketchbook",
+      "title": "22 · Tortoise · Long game",
+      "description": "Quiet persistence. Original still study through Higgsfield.",
+      "href": "../20%20Mascot%20Sketchbook/#study-tortoise-long-game",
+      "image": "../20%20Mascot%20Sketchbook/assets/tortoise-long-game.png",
+      "presentation": "contain",
+      "tags": [
+        "mascot",
+        "Higgsfield",
+        "Tortoise",
+        "Seedream 5.0 Pro"
+      ],
+      "action": "Open drawing",
+      "secondary": {
+        "label": "PNG",
+        "href": "../20%20Mascot%20Sketchbook/assets/tortoise-long-game.png"
+      }
+    },
+    {
+      "id": "2026-10-17-mascot-sketchbook-mole-underground-v2",
+      "kind": "images",
+      "round": "2026-10-17-mascot-sketchbook",
+      "title": "23 · Mole · Underground",
+      "description": "Always trying something. Original still study through Higgsfield.",
+      "href": "../20%20Mascot%20Sketchbook/#study-mole-underground-v2",
+      "image": "../20%20Mascot%20Sketchbook/assets/mole-underground-v2.png",
+      "presentation": "contain",
+      "tags": [
+        "mascot",
+        "Higgsfield",
+        "Mole",
+        "Seedream 5.0 Pro"
+      ],
+      "action": "Open drawing",
+      "secondary": {
+        "label": "PNG",
+        "href": "../20%20Mascot%20Sketchbook/assets/mole-underground-v2.png"
+      }
+    },
+    {
+      "id": "2026-10-17-mascot-sketchbook-goat-good-footing",
+      "kind": "images",
+      "round": "2026-10-17-mascot-sketchbook",
+      "title": "24 · Goat · Good footing",
+      "description": "Casually fearless. Original still study through Higgsfield.",
+      "href": "../20%20Mascot%20Sketchbook/#study-goat-good-footing",
+      "image": "../20%20Mascot%20Sketchbook/assets/goat-good-footing.png",
+      "presentation": "contain",
+      "tags": [
+        "mascot",
+        "Higgsfield",
+        "Goat",
+        "Seedream 5.0 Pro"
+      ],
+      "action": "Open drawing",
+      "secondary": {
+        "label": "PNG",
+        "href": "../20%20Mascot%20Sketchbook/assets/goat-good-footing.png"
+      }
+    },
+    {
+      "id": "2026-10-17-mascot-sketchbook-capybara-level-headed",
+      "kind": "images",
+      "round": "2026-10-17-mascot-sketchbook",
+      "title": "25 · Capybara · Level headed",
+      "description": "Calm in good company. Original still study through Higgsfield.",
+      "href": "../20%20Mascot%20Sketchbook/#study-capybara-level-headed",
+      "image": "../20%20Mascot%20Sketchbook/assets/capybara-level-headed.png",
+      "presentation": "contain",
+      "tags": [
+        "mascot",
+        "Higgsfield",
+        "Capybara",
+        "Nano Banana 2.1"
+      ],
+      "action": "Open drawing",
+      "secondary": {
+        "label": "PNG",
+        "href": "../20%20Mascot%20Sketchbook/assets/capybara-level-headed.png"
+      }
+    },
+    {
+      "id": "2026-10-17-mascot-sketchbook-jerboa-next-step",
+      "kind": "images",
+      "round": "2026-10-17-mascot-sketchbook",
+      "title": "26 · Jerboa · Next step",
+      "description": "Restless curiosity. Original still study through Higgsfield.",
+      "href": "../20%20Mascot%20Sketchbook/#study-jerboa-next-step",
+      "image": "../20%20Mascot%20Sketchbook/assets/jerboa-next-step.png",
+      "presentation": "contain",
+      "tags": [
+        "mascot",
+        "Higgsfield",
+        "Jerboa",
+        "Seedream 5.0 Pro"
+      ],
+      "action": "Open drawing",
+      "secondary": {
+        "label": "PNG",
+        "href": "../20%20Mascot%20Sketchbook/assets/jerboa-next-step.png"
+      }
+    },
+    {
+      "id": "2026-10-17-mascot-sketchbook-armadillo-work-in-progress",
+      "kind": "images",
+      "round": "2026-10-17-mascot-sketchbook",
+      "title": "27 · Armadillo · Work in progress",
+      "description": "Patient problem-solver. Original still study through Higgsfield.",
+      "href": "../20%20Mascot%20Sketchbook/#study-armadillo-work-in-progress",
+      "image": "../20%20Mascot%20Sketchbook/assets/armadillo-work-in-progress.png",
+      "presentation": "contain",
+      "tags": [
+        "mascot",
+        "Higgsfield",
+        "Armadillo",
+        "Nano Banana 2.1"
+      ],
+      "action": "Open drawing",
+      "secondary": {
+        "label": "PNG",
+        "href": "../20%20Mascot%20Sketchbook/assets/armadillo-work-in-progress.png"
+      }
+    },
+    {
+      "id": "2026-10-17-mascot-sketchbook-magpie-shortcut",
+      "kind": "images",
+      "round": "2026-10-17-mascot-sketchbook",
+      "title": "28 · Magpie · Shortcut",
+      "description": "Observant mischief. Original still study through Higgsfield.",
+      "href": "../20%20Mascot%20Sketchbook/#study-magpie-shortcut",
+      "image": "../20%20Mascot%20Sketchbook/assets/magpie-shortcut.png",
+      "presentation": "contain",
+      "tags": [
+        "mascot",
+        "Higgsfield",
+        "Magpie",
+        "Seedream 5.0 Pro"
+      ],
+      "action": "Open drawing",
+      "secondary": {
+        "label": "PNG",
+        "href": "../20%20Mascot%20Sketchbook/assets/magpie-shortcut.png"
+      }
+    },
+    {
+      "id": "2026-10-17-mascot-sketchbook-mantis-thinking-on-feet",
+      "kind": "images",
+      "round": "2026-10-17-mascot-sketchbook",
+      "title": "29 · Mantis · Thinking on its feet",
+      "description": "Thoughtful precision. Original still study through Higgsfield.",
+      "href": "../20%20Mascot%20Sketchbook/#study-mantis-thinking-on-feet",
+      "image": "../20%20Mascot%20Sketchbook/assets/mantis-thinking-on-feet.png",
+      "presentation": "contain",
+      "tags": [
+        "mascot",
+        "Higgsfield",
+        "Praying mantis",
+        "Nano Banana 2.1"
+      ],
+      "action": "Open drawing",
+      "secondary": {
+        "label": "PNG",
+        "href": "../20%20Mascot%20Sketchbook/assets/mantis-thinking-on-feet.png"
+      }
+    },
+    {
+      "id": "2026-10-17-mascot-sketchbook-seal-easy-company",
+      "kind": "images",
+      "round": "2026-10-17-mascot-sketchbook",
+      "title": "30 · Seal · Easy company",
+      "description": "Easygoing confidence. Original still study through Higgsfield.",
+      "href": "../20%20Mascot%20Sketchbook/#study-seal-easy-company",
+      "image": "../20%20Mascot%20Sketchbook/assets/seal-easy-company.png",
+      "presentation": "contain",
+      "tags": [
+        "mascot",
+        "Higgsfield",
+        "Seal",
+        "Seedream 5.0 Pro"
+      ],
+      "action": "Open drawing",
+      "secondary": {
+        "label": "PNG",
+        "href": "../20%20Mascot%20Sketchbook/assets/seal-easy-company.png"
+      }
+    },
+    {
+      "id": "2026-10-17-sf-website-mockup",
+      "kind": "concepts",
+      "round": "2026-10-17-sf-website-mockup",
+      "title": "San Francisco · Website mockup",
+      "description": "Full-width meadow photo with the headline over open sky and runners at right. PostHog hedgehog, official Devin with laptop, London film and prefilled sponsor emails.",
+      "href": "/runhack-sf/",
+      "image": "../18%20SF%20Website%20Mockup/evidence/headline-plus-8px-desktop.png",
+      "presentation": "contain",
+      "tags": [
+        "latest",
+        "website",
+        "San Francisco",
+        "mockup",
+        "meadow",
+        "Geist"
+      ],
+      "action": "Open the website",
+      "secondary": {
+        "label": "Saved local copy",
+        "href": "../18%20SF%20Website%20Mockup/"
+      }
+    },
+    {
+      "id": "2026-10-17-higgsfield-sloth",
+      "kind": "images",
+      "round": "2026-10-17-sf-website-mockup",
+      "title": "Sloth · Simple drawing",
+      "description": "Simple sloth with a few flat shapes, long arms, dot eyes and a jogging pose. Generated with Google Nano Banana 2.1 through Higgsfield.",
+      "href": "../19%20Sloth%20Mascot/",
+      "image": "../19%20Sloth%20Mascot/assets/sloth-simple-v2.png",
+      "presentation": "contain",
+      "tags": [
+        "latest",
+        "mascot",
+        "sloth",
+        "Higgsfield"
+      ],
+      "action": "Meet the sloth",
+      "secondary": {
+        "label": "Download PNG",
+        "href": "../19%20Sloth%20Mascot/assets/sloth-simple-v2.png"
+      }
+    },
+    {
+      "id": "2026-10-17-mini-cheetah-cub",
+      "kind": "images",
+      "title": "Mini cheetah · Cub direction",
+      "description": "A scruffy little cheetah cub inspired by the supplied photograph: large head, short limbs, blue-gray eyes and a waving paw. Generated still artwork, beside the official laptop Devin.",
+      "href": "../16%20Cheetah%20Mascot/mini.html",
+      "image": "../16%20Cheetah%20Mascot/assets/cheetah-cub-v2.png",
+      "presentation": "contain",
+      "tags": [
+        "mini",
+        "cheetah",
+        "cub",
+        "mascot",
+        "latest"
+      ],
+      "action": "Meet the cub",
+      "secondary": {
+        "label": "Download PNG",
+        "href": "../16%20Cheetah%20Mascot/assets/cheetah-cub-v2.png"
+      }
+    },
+    {
+      "id": "2026-10-17-full-width-meadow",
+      "kind": "images",
+      "round": "2026-10-17-sf-website-mockup",
+      "title": "Meadow · Full-width hero",
+      "description": "A generated panoramic extension with quiet sky/meadow for the left-hand headline and both runners on the right. The exact supplied photo stays preserved and is used on phones.",
+      "href": "../18%20SF%20Website%20Mockup/assets/meadow-wide-v1.png",
+      "image": "../18%20SF%20Website%20Mockup/assets/meadow-wide-v1.png",
+      "presentation": "contain",
+      "tags": [
+        "hero",
+        "panoramic",
+        "meadow",
+        "retro",
+        "latest"
+      ],
+      "action": "Open panoramic photo",
+      "secondary": {
+        "label": "Supplied original",
+        "href": "../18%20SF%20Website%20Mockup/assets/meadow-london-supplied-v1.png"
+      }
+    },
+    {
+      "id": "2026-10-17-sprinter-cheetah",
+      "kind": "images",
+      "title": "Cheetah · Sprinter",
+      "description": "A cheetah with its own silhouette: low sprint start, visible eyes, a raised tail, green singlet and cream shorts. Generated still artwork, beside the two sponsor characters.",
+      "href": "../16%20Cheetah%20Mascot/sprinter.html",
+      "image": "../16%20Cheetah%20Mascot/assets/cheetah-sprinter-v2.png",
+      "presentation": "contain",
+      "tags": [
+        "cheetah",
+        "mascot",
+        "sprinter"
+      ],
+      "action": "Compare the crew",
+      "secondary": {
+        "label": "Download PNG",
+        "href": "../16%20Cheetah%20Mascot/assets/cheetah-sprinter-v2.png"
+      }
+    },
+    {
+      "id": "2026-10-17-official-devin-computer",
+      "kind": "images",
+      "title": "Devin · Official laptop mascot",
+      "description": "The exact official seated Devin otter with its Cognition laptop. Verified against devin.ai and copied unchanged, with no generated clothing or face changes.",
+      "href": "../18%20SF%20Website%20Mockup/assets/devin-official-computer.png",
+      "image": "../18%20SF%20Website%20Mockup/assets/devin-official-computer.png",
+      "presentation": "contain",
+      "tags": [
+        "Devin",
+        "Cognition",
+        "official",
+        "mascot",
+        "computer"
+      ],
+      "action": "Open official artwork",
+      "secondary": {
+        "label": "Official source",
+        "href": "https://devin.ai/assets/images/desktop/hero/icons/avatar.png"
+      }
+    },
+    {
+      "id": "2026-10-17-compact-cheetah",
+      "kind": "images",
+      "title": "Cheetah · Round runner",
+      "description": "An original compact cheetah beside the PostHog hedgehog and Cognition otter. Same kit and comparable visible heights, with the earlier tall cheetah preserved. Generated still artwork.",
+      "href": "../16%20Cheetah%20Mascot/compact.html",
+      "image": "../16%20Cheetah%20Mascot/assets/cheetah-compact-v1.png",
+      "presentation": "contain",
+      "tags": [
+        "cheetah",
+        "mascot",
+        "original character",
+        "PostHog",
+        "Cognition"
+      ],
+      "action": "Compare the crew",
+      "secondary": {
+        "label": "Download PNG",
+        "href": "../16%20Cheetah%20Mascot/assets/cheetah-compact-v1.png"
+      }
+    },
+    {
+      "id": "2026-10-17-meadow-more-retro-compare",
+      "kind": "concepts",
+      "round": "2026-10-17-meadow-more-retro",
+      "title": "Meadow lane · Compare five retro directions",
+      "description": "Five complete website variations using the preferred meadow photograph: Field club, Athletic standard, Sunday supplement, Field journal and Trackside.",
+      "href": "../17%20Meadow%20Retro%20Explorations/?version=compare",
+      "image": "../17%20Meadow%20Retro%20Explorations/evidence/comparison-desktop.png",
+      "presentation": "contain",
+      "tags": [
+        "meadow",
+        "retro",
+        "compare",
+        "typography",
+        "latest"
+      ],
+      "action": "Compare all five"
+    },
+    {
+      "id": "2026-10-17-meadow-more-retro-field-club",
+      "kind": "concepts",
+      "round": "2026-10-17-meadow-more-retro",
+      "title": "Meadow lane · Field club",
+      "description": "Rounded club lettering in the sky, warm paper and forest ink. Includes the three brand logos and the SF sponsor email.",
+      "href": "../17%20Meadow%20Retro%20Explorations/?version=field-club",
+      "image": "../17%20Meadow%20Retro%20Explorations/evidence/field-club-desktop.png",
+      "presentation": "contain",
+      "tags": [
+        "meadow",
+        "retro",
+        "field-club",
+        "AI-generated photography"
+      ],
+      "action": "Explore Field club",
+      "secondary": {
+        "label": "Compare the five",
+        "href": "../17%20Meadow%20Retro%20Explorations/?version=compare"
+      }
+    },
+    {
+      "id": "2026-10-17-meadow-more-retro-athletic-standard",
+      "kind": "concepts",
+      "round": "2026-10-17-meadow-more-retro",
+      "title": "Meadow lane · Athletic standard",
+      "description": "Bold condensed athletics type above the meadow photograph. Includes the three brand logos and the SF sponsor email.",
+      "href": "../17%20Meadow%20Retro%20Explorations/?version=athletic-standard",
+      "image": "../17%20Meadow%20Retro%20Explorations/evidence/athletic-standard-desktop.png",
+      "presentation": "contain",
+      "tags": [
+        "meadow",
+        "retro",
+        "athletic-standard",
+        "AI-generated photography"
+      ],
+      "action": "Explore Athletic standard",
+      "secondary": {
+        "label": "Compare the five",
+        "href": "../17%20Meadow%20Retro%20Explorations/?version=compare"
+      }
+    },
+    {
+      "id": "2026-10-17-meadow-more-retro-sunday-supplement",
+      "kind": "concepts",
+      "round": "2026-10-17-meadow-more-retro",
+      "title": "Meadow lane · Sunday supplement",
+      "description": "A magazine spread with an italic serif headline beside the runners. Includes the three brand logos and the SF sponsor email.",
+      "href": "../17%20Meadow%20Retro%20Explorations/?version=sunday-supplement",
+      "image": "../17%20Meadow%20Retro%20Explorations/evidence/sunday-supplement-desktop.png",
+      "presentation": "contain",
+      "tags": [
+        "meadow",
+        "retro",
+        "sunday-supplement",
+        "AI-generated photography"
+      ],
+      "action": "Explore Sunday supplement",
+      "secondary": {
+        "label": "Compare the five",
+        "href": "../17%20Meadow%20Retro%20Explorations/?version=compare"
+      }
+    },
+    {
+      "id": "2026-10-17-meadow-more-retro-field-journal",
+      "kind": "concepts",
+      "round": "2026-10-17-meadow-more-retro",
+      "title": "Meadow lane · Field journal",
+      "description": "A framed photographic print with a wide serif statement underneath. Includes the three brand logos and the SF sponsor email.",
+      "href": "../17%20Meadow%20Retro%20Explorations/?version=field-journal",
+      "image": "../17%20Meadow%20Retro%20Explorations/evidence/field-journal-desktop.png",
+      "presentation": "contain",
+      "tags": [
+        "meadow",
+        "retro",
+        "field-journal",
+        "AI-generated photography"
+      ],
+      "action": "Explore Field journal",
+      "secondary": {
+        "label": "Compare the five",
+        "href": "../17%20Meadow%20Retro%20Explorations/?version=compare"
+      }
+    },
+    {
+      "id": "2026-10-17-meadow-more-retro-trackside",
+      "kind": "concepts",
+      "round": "2026-10-17-meadow-more-retro",
+      "title": "Meadow lane · Trackside",
+      "description": "Italic athletics lettering over the meadow with a fine brick-red rule. Includes the three brand logos and the SF sponsor email.",
+      "href": "../17%20Meadow%20Retro%20Explorations/?version=trackside",
+      "image": "../17%20Meadow%20Retro%20Explorations/evidence/trackside-desktop.png",
+      "presentation": "contain",
+      "tags": [
+        "meadow",
+        "retro",
+        "trackside",
+        "AI-generated photography"
+      ],
+      "action": "Explore Trackside",
+      "secondary": {
+        "label": "Compare the five",
+        "href": "../17%20Meadow%20Retro%20Explorations/?version=compare"
+      }
+    },
+    {
+      "id": "2026-10-17-cheetah-mascot",
+      "kind": "images",
+      "title": "Cheetah · mascot direction",
+      "description": "An original cheetah in a cream singlet, forest-green shorts and brick-orange shoes. Generated still artwork, with paper and meadow views.",
+      "href": "../16%20Cheetah%20Mascot/",
+      "image": "../16%20Cheetah%20Mascot/assets/cheetah-v1.png",
+      "presentation": "contain",
+      "tags": [
+        "cheetah",
+        "mascot",
+        "original",
+        "running",
+        "character",
+        "AI-generated",
+        "latest"
+      ],
+      "action": "Meet the cheetah",
+      "secondary": {
+        "label": "Download artwork",
+        "href": "../16%20Cheetah%20Mascot/assets/cheetah-v1.png"
+      }
+    },
+    {
+      "id": "2026-10-17-meadow-natural-compare",
+      "kind": "concepts",
+      "round": "2026-10-17-meadow-natural",
+      "title": "Meadow lane · Photo comparison",
+      "description": "Original versus the preferred natural-detail study, with the Juno reference, other passes and honest remaining limits.",
+      "href": "../15%20Meadow%20Photo%20Study/",
+      "image": "../15%20Meadow%20Photo%20Study/evidence/comparison-desktop.png",
+      "presentation": "contain",
+      "tags": [
+        "meadow",
+        "photography",
+        "Juno",
+        "realism",
+        "AI-generated"
+      ],
+      "action": "Compare the photographs"
+    },
+    {
+      "id": "2026-10-17-meadow-natural-website",
+      "kind": "concepts",
+      "round": "2026-10-17-meadow-natural",
+      "title": "Meadow lane · Revised photo in the website",
+      "description": "The preferred generated reconstruction in the complete Meadow Lane layout, retaining the three brand logos and the SF sponsor email.",
+      "href": "../15%20Meadow%20Photo%20Study/website.html?version=warm-negative&photo=natural",
+      "image": "../15%20Meadow%20Photo%20Study/assets/meadow-natural-v2.png",
+      "tags": [
+        "meadow",
+        "website",
+        "realism",
+        "AI-generated"
+      ],
+      "action": "See the revised website"
+    },
+    {
+      "id": "2026-10-17-meadow-natural-v2",
+      "kind": "images",
+      "round": "2026-10-17-meadow-natural",
+      "title": "Meadow lane · Natural reconstruction · preferred",
+      "description": "More varied grass, clearer tree depth and calmer fabric. Still generated: the nearest runner’s skin and hair retain polish.",
+      "href": "../15%20Meadow%20Photo%20Study/assets/meadow-natural-v2.png",
+      "image": "../15%20Meadow%20Photo%20Study/assets/meadow-natural-v2.png",
+      "tags": [
+        "meadow",
+        "realism",
+        "photography",
+        "AI-generated",
+        "iteration"
+      ],
+      "action": "Open full image",
+      "secondary": {
+        "label": "Compare the images",
+        "href": "../15%20Meadow%20Photo%20Study/"
+      }
+    },
+    {
+      "id": "2026-10-17-meadow-natural-v1",
+      "kind": "images",
+      "round": "2026-10-17-meadow-natural",
+      "title": "Meadow lane · First detail edit",
+      "description": "Earlier pass retained. It cleaned the sky but preserved too much of the original synthetic texture.",
+      "href": "../15%20Meadow%20Photo%20Study/assets/meadow-natural-v1.png",
+      "image": "../15%20Meadow%20Photo%20Study/assets/meadow-natural-v1.png",
+      "tags": [
+        "meadow",
+        "realism",
+        "photography",
+        "AI-generated",
+        "iteration"
+      ],
+      "action": "Open full image",
+      "secondary": {
+        "label": "Compare the images",
+        "href": "../15%20Meadow%20Photo%20Study/"
+      }
+    },
+    {
+      "id": "2026-10-17-meadow-natural-v3",
+      "kind": "images",
+      "round": "2026-10-17-meadow-natural",
+      "title": "Meadow lane · Focused runner edit",
+      "description": "Later pass retained. Some softer skin, but stronger etched track texture made it less convincing overall than the preferred reconstruction.",
+      "href": "../15%20Meadow%20Photo%20Study/assets/meadow-natural-v3.png",
+      "image": "../15%20Meadow%20Photo%20Study/assets/meadow-natural-v3.png",
+      "tags": [
+        "meadow",
+        "realism",
+        "photography",
+        "AI-generated",
+        "iteration"
+      ],
+      "action": "Open full image",
+      "secondary": {
+        "label": "Compare the images",
+        "href": "../15%20Meadow%20Photo%20Study/"
+      }
+    },
+    {
+      "id": "2026-10-17-meadow-logos-compare",
+      "kind": "concepts",
+      "round": "2026-10-17-meadow-logos",
+      "title": "Meadow lane · Compare logo placements",
+      "description": "The current Meadow lane and three restrained retro variations, each with the three requested brand logos.",
+      "href": "../14%20Meadow%20Lane%20Logos/?version=compare",
+      "image": "../14%20Meadow%20Lane%20Logos/assets/previews/compare-sponsor.png",
+      "tags": [
+        "meadow",
+        "retro",
+        "logos",
+        "Red Bull",
+        "PostHog",
+        "Cognition",
+        "website"
+      ],
+      "action": "Compare the logo studies",
+      "presentation": "contain"
+    },
+    {
+      "id": "2026-10-17-meadow-logos-warm-negative",
+      "kind": "concepts",
+      "round": "2026-10-17-meadow-logos",
+      "title": "Meadow lane · Warm negative + logos",
+      "description": "Soft film colour with Red Bull, PostHog and Cognition in a quiet row beneath the hero.",
+      "href": "../14%20Meadow%20Lane%20Logos/?version=warm-negative",
+      "image": "../14%20Meadow%20Lane%20Logos/assets/previews/warm-negative-sponsor.png",
+      "tags": [
+        "meadow",
+        "retro",
+        "logos",
+        "Red Bull",
+        "PostHog",
+        "Cognition",
+        "website"
+      ],
+      "action": "Open Warm negative"
+    },
+    {
+      "id": "2026-10-17-meadow-logos-club-print",
+      "kind": "concepts",
+      "round": "2026-10-17-meadow-logos",
+      "title": "Meadow lane · Club print + logos",
+      "description": "Weightier run-club typography with the three original brand logos beneath the hero.",
+      "href": "../14%20Meadow%20Lane%20Logos/?version=club-print",
+      "image": "../14%20Meadow%20Lane%20Logos/assets/previews/club-print-sponsor.png",
+      "tags": [
+        "meadow",
+        "retro",
+        "logos",
+        "Red Bull",
+        "PostHog",
+        "Cognition",
+        "website"
+      ],
+      "action": "Open Club print"
+    },
+    {
+      "id": "2026-10-17-meadow-logos-sun-faded",
+      "kind": "concepts",
+      "round": "2026-10-17-meadow-logos",
+      "title": "Meadow lane · Sun-faded stock + logos",
+      "description": "Mellow photographic colour, warmer paper and an unboxed row of brand logos.",
+      "href": "../14%20Meadow%20Lane%20Logos/?version=sun-faded",
+      "image": "../14%20Meadow%20Lane%20Logos/assets/previews/sun-faded-sponsor.png",
+      "tags": [
+        "meadow",
+        "retro",
+        "logos",
+        "Red Bull",
+        "PostHog",
+        "Cognition",
+        "website"
+      ],
+      "action": "Open Sun-faded stock"
+    },
+    {
+      "id": "2026-10-17-meadow-retro-compare",
+      "kind": "concepts",
+      "round": "2026-10-17-meadow-retro",
+      "title": "Meadow lane · Compare subtle retro",
+      "description": "Compare the original Meadow lane with three subtle studies: warmer film colour, a stronger sports-editorial headline and softer sun-faded paper.",
+      "href": "../13%20Meadow%20Lane%20Studies/?version=compare",
+      "image": "../13%20Meadow%20Lane%20Studies/assets/previews/compare.png",
+      "tags": [
+        "meadow",
+        "retro",
+        "film",
+        "website",
+        "midsummer",
+        "10-15%"
+      ],
+      "action": "Compare the studies",
+      "presentation": "contain"
+    },
+    {
+      "id": "2026-10-17-meadow-retro-warm-negative",
+      "kind": "concepts",
+      "round": "2026-10-17-meadow-retro",
+      "title": "Meadow lane · Warm negative",
+      "description": "Slightly warmer colour, softer contrast and gentler headline spacing keep the morning photograph close to the original.",
+      "href": "../13%20Meadow%20Lane%20Studies/?version=warm-negative",
+      "image": "../13%20Meadow%20Lane%20Studies/assets/previews/warm-negative.png",
+      "tags": [
+        "meadow",
+        "retro",
+        "film",
+        "website",
+        "midsummer",
+        "10-15%"
+      ],
+      "action": "Open Warm negative"
+    },
+    {
+      "id": "2026-10-17-meadow-retro-club-print",
+      "kind": "concepts",
+      "round": "2026-10-17-meadow-retro",
+      "title": "Meadow lane · Club print",
+      "description": "A weightier sans-serif headline and more open letter spacing bring a restrained sports-editorial feel to the same midsummer scene.",
+      "href": "../13%20Meadow%20Lane%20Studies/?version=club-print",
+      "image": "../13%20Meadow%20Lane%20Studies/assets/previews/club-print.png",
+      "tags": [
+        "meadow",
+        "retro",
+        "film",
+        "website",
+        "midsummer",
+        "10-15%"
+      ],
+      "action": "Open Club print"
+    },
+    {
+      "id": "2026-10-17-meadow-retro-sun-faded",
+      "kind": "concepts",
+      "round": "2026-10-17-meadow-retro",
+      "title": "Meadow lane · Sun-faded stock",
+      "description": "Softer colour, warm paper and a little more photographic breathing room give the scene a quiet printed feel.",
+      "href": "../13%20Meadow%20Lane%20Studies/?version=sun-faded",
+      "image": "../13%20Meadow%20Lane%20Studies/assets/previews/sun-faded.png",
+      "tags": [
+        "meadow",
+        "retro",
+        "film",
+        "website",
+        "midsummer",
+        "10-15%"
+      ],
+      "action": "Open Sun-faded stock"
+    },
+    {
+      "id": "2026-10-17-original-rive-hare",
+      "kind": "motion",
+      "title": "Our running mate · Original Rive hare",
+      "description": "Original ink-outline hare with green running kit and brick-orange shoes. Six native Rive actions, expressive ears and cursor-following eyes.",
+      "href": "../12%20Original%20Rive%20Hare/",
+      "image": "../12%20Original%20Rive%20Hare/assets/original-hare.svg",
+      "presentation": "contain",
+      "tags": [
+        "hare",
+        "mascot",
+        "Rive",
+        "animation",
+        "interactive",
+        "original",
+        "running",
+        "Red Bull",
+        "latest"
+      ],
+      "action": "Play with the hare",
+      "secondary": {
+        "href": "../12%20Original%20Rive%20Hare/assets/rive/original-hare.rev",
+        "label": "Editable Rive source"
+      }
+    },
+    {
+      "id": "2026-10-17-hare-red-bull-realistic",
+      "kind": "images",
+      "title": "Hare · Red Bull, after the run",
+      "description": "A realistic interpretation of the original hare, drinking from a Red Bull can at the track in warm morning light. Generated concept photography.",
+      "href": "../11%20Mascot%20Red%20Bull%20Study/",
+      "image": "../11%20Mascot%20Red%20Bull%20Study/assets/mascot-red-bull.png",
+      "presentation": "contain",
+      "tags": [
+        "hare",
+        "mascot",
+        "Red Bull",
+        "realistic",
+        "photography",
+        "morning",
+        "sponsor",
+        "latest"
+      ],
+      "action": "Open the image study",
+      "secondary": {
+        "href": "../11%20Mascot%20Red%20Bull%20Study/assets/mascot-red-bull.png",
+        "label": "Full PNG"
+      }
+    },
+    {
+      "id": "2026-10-17-hare-red-bull-first-framing",
+      "kind": "images",
+      "title": "Hare · Red Bull, first framing",
+      "description": "The earlier closer framing, retained for comparison. The upright ear touches the top edge. Generated concept photography.",
+      "href": "../11%20Mascot%20Red%20Bull%20Study/assets/mascot-red-bull-v1.png",
+      "image": "../11%20Mascot%20Red%20Bull%20Study/assets/mascot-red-bull-v1.png",
+      "presentation": "contain",
+      "tags": [
+        "hare",
+        "mascot",
+        "Red Bull",
+        "realistic",
+        "photography",
+        "iteration"
+      ],
+      "action": "View first framing"
+    },
+    {
+      "id": "2026-10-17-sponsor-animal-playground",
+      "kind": "motion",
+      "title": "Devin, Poke & the running crew",
+      "description": "Eight selectable runners on the morning track: Devin’s otter, a proposed Poke kit, PostHog and the five original animals. New otter outfits are AI-generated private concepts.",
+      "href": "../10%20Sponsor%20Animal%20Playground/",
+      "image": "../10%20Sponsor%20Animal%20Playground/assets/devin-runner.png",
+      "presentation": "contain",
+      "tags": [
+        "Devin",
+        "Cognition",
+        "Poke",
+        "PostHog",
+        "mascot",
+        "animals",
+        "playground",
+        "sponsor",
+        "latest"
+      ],
+      "action": "Choose a runner",
+      "secondary": {
+        "href": "../10%20Sponsor%20Animal%20Playground/?animal=poke",
+        "label": "Try the Poke kit"
+      }
+    },
+    {
+      "id": "2026-10-17-hedgehog-playground",
+      "kind": "motion",
+      "title": "The morning hedgehog",
+      "description": "PostHog’s marathon character dressed in Running Hackathon kit: sunglasses, cream top, green shorts and brick-orange shoes. Play a lap and compare the source. Private, unapproved concept.",
+      "href": "../09%20Hedgehog%20Playground/",
+      "image": "../09%20Hedgehog%20Playground/assets/running-hedgehog.svg",
+      "presentation": "contain",
+      "tags": [
+        "hedgehog",
+        "PostHog",
+        "mascot",
+        "playground",
+        "running",
+        "sponsor",
+        "vector",
+        "latest"
+      ],
+      "action": "Play a lap",
+      "secondary": {
+        "href": "../09%20Hedgehog%20Playground/assets/running-hedgehog.svg",
+        "label": "View the character"
+      }
+    },
+    {
+      "id": "2026-10-17-higgsfield-audit",
+      "kind": "research",
+      "title": "Where Higgsfield helps",
+      "description": "A complete capability map for the website, five animals and sponsor play area. Includes all 128 live catalogue entries, 136 tools, credit quotes and clear limits.",
+      "href": "../08%20Higgsfield%20Research/",
+      "image": "../06%20Animal%20Mascot%20Choices/evidence/five-animals.jpg",
+      "presentation": "contain",
+      "tags": [
+        "Higgsfield",
+        "research",
+        "Rive",
+        "AutoSprite",
+        "cinema",
+        "hero",
+        "mascot",
+        "3D",
+        "latest"
+      ],
+      "action": "Explore the audit",
+      "secondary": {
+        "href": "../08%20Higgsfield%20Research/index.html#model-catalog",
+        "label": "Full model catalogue"
+      }
+    },
+    {
+      "id": "2026-10-17-reactive-hare",
+      "kind": "motion",
+      "title": "Interactive hare studio",
+      "description": "An original native Rive character with eight states, eyes and head that follow the pointer, a tap greeting, singlet colours and reactions to your ideas.",
+      "href": "../07%20Interactive%20Mascot/",
+      "image": "thumbnails/reactive-hare.webp",
+      "presentation": "contain",
+      "tags": [
+        "Rive",
+        "interactive",
+        "mascot",
+        "hare",
+        "state machine",
+        "thinking",
+        "happy",
+        "sad",
+        "sponsor",
+        "latest"
+      ],
+      "action": "Meet the hare",
+      "secondary": {
+        "href": "../07%20Interactive%20Mascot/evidence/motion-review.html",
+        "label": "Motion review"
+      }
+    },
+    {
+      "id": "2026-10-17-five-animal-choices",
+      "kind": "images",
+      "title": "Five animal mascot directions",
+      "description": "Hare, fox, raccoon, otter and deer. Compare the five characters on the morning track and save your pick.",
+      "href": "../06%20Animal%20Mascot%20Choices/",
+      "image": "thumbnails/five-animal-choices.webp",
+      "presentation": "contain",
+      "tags": [
+        "animal choices",
+        "mascot",
+        "hare",
+        "fox",
+        "raccoon",
+        "otter",
+        "deer",
+        "latest"
+      ],
+      "action": "Compare the five"
+    },
+    {
+      "id": "2026-10-17-animal-choice-hare",
+      "kind": "images",
+      "title": "Hare · mascot direction",
+      "description": "Quick, bright, all ears. A fresh illustrated hare study with a relaxed wave. Generated concept artwork.",
+      "href": "../06%20Animal%20Mascot%20Choices/?animal=hare",
+      "image": "thumbnails/animal-choice-hare.webp",
+      "presentation": "contain",
+      "tags": [
+        "animal choices",
+        "mascot",
+        "hare",
+        "character",
+        "illustration"
+      ],
+      "action": "Try on the track",
+      "secondary": {
+        "label": "Original PNG",
+        "href": "../06%20Animal%20Mascot%20Choices/assets/hare.png"
+      }
+    },
+    {
+      "id": "2026-10-17-animal-choice-fox",
+      "kind": "images",
+      "title": "Fox · mascot direction",
+      "description": "Sharp and nimble, with a rust coat and a sweeping white-tipped tail. Generated concept artwork.",
+      "href": "../06%20Animal%20Mascot%20Choices/?animal=fox",
+      "image": "thumbnails/animal-choice-fox.webp",
+      "presentation": "contain",
+      "tags": [
+        "animal choices",
+        "mascot",
+        "fox",
+        "character",
+        "illustration"
+      ],
+      "action": "Try on the track",
+      "secondary": {
+        "label": "Original PNG",
+        "href": "../06%20Animal%20Mascot%20Choices/assets/fox.png"
+      }
+    },
+    {
+      "id": "2026-10-17-animal-choice-raccoon",
+      "kind": "images",
+      "title": "Raccoon · mascot direction",
+      "description": "A scrappy maker personality, expressive paws and a bold striped tail. Generated concept artwork.",
+      "href": "../06%20Animal%20Mascot%20Choices/?animal=raccoon",
+      "image": "thumbnails/animal-choice-raccoon.webp",
+      "presentation": "contain",
+      "tags": [
+        "animal choices",
+        "mascot",
+        "raccoon",
+        "character",
+        "illustration"
+      ],
+      "action": "Try on the track",
+      "secondary": {
+        "label": "Original PNG",
+        "href": "../06%20Animal%20Mascot%20Choices/assets/raccoon.png"
+      }
+    },
+    {
+      "id": "2026-10-17-animal-choice-otter",
+      "kind": "images",
+      "title": "Otter · mascot direction",
+      "description": "A warm, playful teammate with small ears and a sturdy tapering tail. Generated concept artwork.",
+      "href": "../06%20Animal%20Mascot%20Choices/?animal=otter",
+      "image": "thumbnails/animal-choice-otter.webp",
+      "presentation": "contain",
+      "tags": [
+        "animal choices",
+        "mascot",
+        "otter",
+        "character",
+        "illustration"
+      ],
+      "action": "Try on the track",
+      "secondary": {
+        "label": "Original PNG",
+        "href": "../06%20Animal%20Mascot%20Choices/assets/otter.png"
+      }
+    },
+    {
+      "id": "2026-10-17-animal-choice-deer",
+      "kind": "images",
+      "title": "Deer · mascot direction",
+      "description": "A poised midsummer direction with big ears, small antlers and light feet. Generated concept artwork.",
+      "href": "../06%20Animal%20Mascot%20Choices/?animal=deer",
+      "image": "thumbnails/animal-choice-deer.webp",
+      "presentation": "contain",
+      "tags": [
+        "animal choices",
+        "mascot",
+        "deer",
+        "character",
+        "illustration"
+      ],
+      "action": "Try on the track",
+      "secondary": {
+        "label": "Original PNG",
+        "href": "../06%20Animal%20Mascot%20Choices/assets/deer.png"
+      }
+    },
+    {
+      "id": "2026-10-17-hare-playground",
+      "kind": "motion",
+      "title": "The morning relay",
+      "description": "An original Rive hare. A playable sponsor relay with jumps, idea sparks and a singlet you can customise.",
+      "href": "../05%20Mascot%20Playground/",
+      "image": "thumbnails/hare-playground.webp",
+      "tags": [
+        "mascot",
+        "hare",
+        "Rive",
+        "game",
+        "sponsor",
+        "interactive",
+        "latest"
+      ],
+      "action": "Play the relay"
+    },
+    {
+      "id": "2026-10-17-hare-vector",
+      "kind": "images",
+      "title": "The editable hare",
+      "description": "Cream fur, expressive ears and brick-orange shoes. Original vector artwork, with native Rive source linked in the playground.",
+      "href": "../05%20Mascot%20Playground/#character-studio",
+      "image": "thumbnails/hare-vector.webp",
+      "tags": [
+        "mascot",
+        "hare",
+        "vector",
+        "illustration",
+        "character",
+        "Rive"
+      ],
+      "secondary": {
+        "label": "Open SVG",
+        "href": "../05%20Mascot%20Playground/assets/hare-rig.svg"
+      }
+    },
+    {
+      "id": "2026-10-17-hare-illustrated",
+      "kind": "images",
+      "title": "Hare · illustrated direction",
+      "description": "A separate generated artwork study with natural proportions, textured fur and an athletic stance.",
+      "href": "../05%20Mascot%20Playground/assets/mascot-concept.png",
+      "image": "thumbnails/hare-illustrated.webp",
+      "tags": [
+        "mascot",
+        "hare",
+        "generated artwork",
+        "illustration",
+        "character"
+      ],
+      "secondary": {
+        "label": "Explore both directions",
+        "href": "../05%20Mascot%20Playground/#character-studio"
+      }
+    },
+    {
+      "id": "2026-10-16-fresh-air-hybrid-1",
+      "kind": "concepts",
+      "round": "2026-10-16-fresh-air",
+      "title": "Open track",
+      "description": "Oversized type on paper above a wide track-and-meadow photograph.",
+      "href": "iterations/2026-10-16-fresh-air/?concept=hybrid-1",
+      "image": "thumbnails/fresh-air-1.webp",
+      "tags": [
+        "website",
+        "hero",
+        "film",
+        "track",
+        "midsummer",
+        "Good ideas need fresh air",
+        "latest"
+      ],
+      "secondary": {
+        "label": "Live workspace",
+        "href": "../03%20Website%20Concepts/?concept=hybrid-1"
+      }
+    },
+    {
+      "id": "2026-10-16-fresh-air-hybrid-2",
+      "kind": "concepts",
+      "round": "2026-10-16-fresh-air",
+      "title": "Meadow lane",
+      "description": "The headline in the open sky above a track winding through midsummer grass.",
+      "href": "iterations/2026-10-16-fresh-air/?concept=hybrid-2",
+      "image": "thumbnails/fresh-air-2.webp",
+      "tags": [
+        "website",
+        "hero",
+        "film",
+        "track",
+        "midsummer",
+        "Good ideas need fresh air",
+        "latest"
+      ],
+      "secondary": {
+        "label": "Live workspace",
+        "href": "../03%20Website%20Concepts/?concept=hybrid-2"
+      }
+    },
+    {
+      "id": "2026-10-16-fresh-air-hybrid-3",
+      "kind": "concepts",
+      "round": "2026-10-16-fresh-air",
+      "title": "Morning club",
+      "description": "Large stacked type beside a close running crew.",
+      "href": "iterations/2026-10-16-fresh-air/?concept=hybrid-3",
+      "image": "thumbnails/fresh-air-3.webp",
+      "tags": [
+        "website",
+        "hero",
+        "film",
+        "track",
+        "midsummer",
+        "Good ideas need fresh air",
+        "latest"
+      ],
+      "secondary": {
+        "label": "Live workspace",
+        "href": "../03%20Website%20Concepts/?concept=hybrid-3"
+      }
+    },
+    {
+      "id": "2026-10-16-fresh-air-hybrid-4",
+      "kind": "concepts",
+      "round": "2026-10-16-fresh-air",
+      "title": "Grass and lanes",
+      "description": "Photograph first, followed by a big statement on paper.",
+      "href": "iterations/2026-10-16-fresh-air/?concept=hybrid-4",
+      "image": "thumbnails/fresh-air-4.webp",
+      "tags": [
+        "website",
+        "hero",
+        "film",
+        "track",
+        "midsummer",
+        "Good ideas need fresh air",
+        "latest"
+      ],
+      "secondary": {
+        "label": "Live workspace",
+        "href": "../03%20Website%20Concepts/?concept=hybrid-4"
+      }
+    },
+    {
+      "id": "2026-10-16-fresh-air-hybrid-5",
+      "kind": "concepts",
+      "round": "2026-10-16-fresh-air",
+      "title": "Out and back",
+      "description": "An immersive rear perspective, with type in the open sky.",
+      "href": "iterations/2026-10-16-fresh-air/?concept=hybrid-5",
+      "image": "thumbnails/fresh-air-5.webp",
+      "tags": [
+        "website",
+        "hero",
+        "film",
+        "track",
+        "midsummer",
+        "Good ideas need fresh air",
+        "latest"
+      ],
+      "secondary": {
+        "label": "Live workspace",
+        "href": "../03%20Website%20Concepts/?concept=hybrid-5"
+      }
+    },
+    {
+      "id": "2026-10-16-original-directions-track",
+      "kind": "concepts",
+      "round": "2026-10-16-original-directions",
+      "title": "Track morning",
+      "description": "Warm sunlight, a wide running track and the original You run. You build. hero.",
+      "href": "iterations/2026-10-16-original-directions/?concept=track",
+      "image": "thumbnails/original-track-website.webp",
+      "tags": [
+        "website",
+        "hero",
+        "film",
+        "track",
+        "midsummer"
+      ],
+      "secondary": {
+        "label": "Live workspace",
+        "href": "../03%20Website%20Concepts/?concept=track"
+      }
+    },
+    {
+      "id": "2026-10-16-original-directions-field",
+      "kind": "concepts",
+      "round": "2026-10-16-original-directions",
+      "title": "Midsummer fields",
+      "description": "Friends in long grass and the original A little fresh air. A very good idea. hero.",
+      "href": "iterations/2026-10-16-original-directions/?concept=field",
+      "image": "thumbnails/original-field-website.webp",
+      "tags": [
+        "website",
+        "hero",
+        "film",
+        "track",
+        "midsummer"
+      ],
+      "secondary": {
+        "label": "Live workspace",
+        "href": "../03%20Website%20Concepts/?concept=field"
+      }
+    },
+    {
+      "id": "2026-10-16-first-merge-hybrid-1",
+      "kind": "concepts",
+      "round": "2026-10-16-first-merge",
+      "title": "Open track",
+      "description": "You run. You build.",
+      "href": "iterations/2026-10-16-first-merge/?concept=hybrid-1",
+      "image": "thumbnails/first-merge-1.webp",
+      "tags": [
+        "website",
+        "track",
+        "meadow",
+        "You run. You build."
+      ],
+      "note": "Earlier wording restored from saved previews; this version is now preserved."
+    },
+    {
+      "id": "2026-10-16-first-merge-hybrid-2",
+      "kind": "concepts",
+      "round": "2026-10-16-first-merge",
+      "title": "Meadow lane",
+      "description": "Take the idea outside.",
+      "href": "iterations/2026-10-16-first-merge/?concept=hybrid-2",
+      "image": "thumbnails/first-merge-2.webp",
+      "tags": [
+        "website",
+        "track",
+        "meadow",
+        "Take the idea outside."
+      ],
+      "note": "Earlier wording restored from saved previews; this version is now preserved."
+    },
+    {
+      "id": "2026-10-16-first-merge-hybrid-3",
+      "kind": "concepts",
+      "round": "2026-10-16-first-merge",
+      "title": "Morning club",
+      "description": "Go for a run. Make something.",
+      "href": "iterations/2026-10-16-first-merge/?concept=hybrid-3",
+      "image": "thumbnails/first-merge-3.webp",
+      "tags": [
+        "website",
+        "track",
+        "meadow",
+        "Go for a run. Make something."
+      ],
+      "note": "Earlier wording restored from saved previews; this version is now preserved."
+    },
+    {
+      "id": "2026-10-16-first-merge-hybrid-4",
+      "kind": "concepts",
+      "round": "2026-10-16-first-merge",
+      "title": "Grass and lanes",
+      "description": "Run. Build. Go again.",
+      "href": "iterations/2026-10-16-first-merge/?concept=hybrid-4",
+      "image": "thumbnails/first-merge-4.webp",
+      "tags": [
+        "website",
+        "track",
+        "meadow",
+        "Run. Build. Go again."
+      ],
+      "note": "Earlier wording restored from saved previews; this version is now preserved."
+    },
+    {
+      "id": "2026-10-16-first-merge-hybrid-5",
+      "kind": "concepts",
+      "round": "2026-10-16-first-merge",
+      "title": "Out and back",
+      "description": "A good day to build.",
+      "href": "iterations/2026-10-16-first-merge/?concept=hybrid-5",
+      "image": "thumbnails/first-merge-5.webp",
+      "tags": [
+        "website",
+        "track",
+        "meadow",
+        "A good day to build."
+      ],
+      "note": "Earlier wording restored from saved previews; this version is now preserved."
+    },
+    {
+      "id": "image-1",
+      "kind": "images",
+      "title": "Track morning photograph",
+      "description": "Warm track, cream singlets and brick-orange shoes. Generative edit of the original runner image.",
+      "href": "asset-sets/16b1b20313f8b04d033d305bb85ac6d78423512d7fd60e9076353b4799a96bfb/assets/track-brick-shoes.png",
+      "image": "thumbnails/photo-1.webp",
+      "action": "Open full image",
+      "tags": [
+        "photograph",
+        "film",
+        "track",
+        "shoes",
+        "orange"
+      ]
+    },
+    {
+      "id": "image-2",
+      "kind": "images",
+      "title": "Midsummer fields · candid crew",
+      "description": "The selected rear-view meadow image. Generated concept photography.",
+      "href": "asset-sets/16b1b20313f8b04d033d305bb85ac6d78423512d7fd60e9076353b4799a96bfb/assets/midsummer-field-v2.png",
+      "image": "thumbnails/photo-2.webp",
+      "action": "Open full image",
+      "tags": [
+        "photograph",
+        "film",
+        "meadow",
+        "shoes",
+        "orange"
+      ]
+    },
+    {
+      "id": "image-3",
+      "kind": "images",
+      "title": "Midsummer fields · first image",
+      "description": "The earlier front-facing meadow direction, kept for more exploration. Generated concept photography.",
+      "href": "asset-sets/16b1b20313f8b04d033d305bb85ac6d78423512d7fd60e9076353b4799a96bfb/assets/midsummer-field.png",
+      "image": "thumbnails/photo-3.webp",
+      "action": "Open full image",
+      "tags": [
+        "photograph",
+        "film",
+        "meadow",
+        "shoes",
+        "orange"
+      ]
+    },
+    {
+      "id": "image-4",
+      "kind": "images",
+      "title": "Open track · photograph",
+      "description": "Side-on runners, a terracotta track and a wildflower meadow. Generated concept photography.",
+      "href": "asset-sets/16b1b20313f8b04d033d305bb85ac6d78423512d7fd60e9076353b4799a96bfb/assets/hybrids/01-open-track.png",
+      "image": "thumbnails/photo-4.webp",
+      "action": "Open full image",
+      "tags": [
+        "photograph",
+        "film",
+        "track",
+        "shoes",
+        "orange"
+      ]
+    },
+    {
+      "id": "image-5",
+      "kind": "images",
+      "title": "Meadow lane · photograph",
+      "description": "A running track winding through the field. Generated concept photography.",
+      "href": "asset-sets/16b1b20313f8b04d033d305bb85ac6d78423512d7fd60e9076353b4799a96bfb/assets/hybrids/02-meadow-lane.png",
+      "image": "thumbnails/photo-5.webp",
+      "action": "Open full image",
+      "tags": [
+        "photograph",
+        "film",
+        "meadow",
+        "shoes",
+        "orange"
+      ]
+    },
+    {
+      "id": "image-6",
+      "kind": "images",
+      "title": "Morning club · photograph",
+      "description": "A close running crew with foreground wildflowers. Generated concept photography.",
+      "href": "asset-sets/16b1b20313f8b04d033d305bb85ac6d78423512d7fd60e9076353b4799a96bfb/assets/hybrids/03-morning-club.png",
+      "image": "thumbnails/photo-6.webp",
+      "action": "Open full image",
+      "tags": [
+        "photograph",
+        "film",
+        "meadow",
+        "shoes",
+        "orange"
+      ]
+    },
+    {
+      "id": "image-7",
+      "kind": "images",
+      "title": "Grass and lanes · photograph",
+      "description": "Three full-stride runners, open grass and track lanes. Generated concept photography.",
+      "href": "asset-sets/16b1b20313f8b04d033d305bb85ac6d78423512d7fd60e9076353b4799a96bfb/assets/hybrids/04-grass-and-lanes.png",
+      "image": "thumbnails/photo-7.webp",
+      "action": "Open full image",
+      "tags": [
+        "photograph",
+        "film",
+        "meadow",
+        "shoes",
+        "orange"
+      ]
+    },
+    {
+      "id": "image-8",
+      "kind": "images",
+      "title": "Out and back · photograph",
+      "description": "An immersive rear perspective, morning grass and brick-orange shoes. Generated concept photography.",
+      "href": "asset-sets/16b1b20313f8b04d033d305bb85ac6d78423512d7fd60e9076353b4799a96bfb/assets/hybrids/05-out-and-back.png",
+      "image": "thumbnails/photo-8.webp",
+      "action": "Open full image",
+      "tags": [
+        "photograph",
+        "film",
+        "meadow",
+        "shoes",
+        "orange"
+      ]
+    },
+    {
+      "id": "image-9",
+      "kind": "images",
+      "title": "Original clean track source",
+      "description": "The existing user-project track image before the generative footwear edit.",
+      "href": "asset-sets/16b1b20313f8b04d033d305bb85ac6d78423512d7fd60e9076353b4799a96bfb/assets/track-original.webp",
+      "image": "thumbnails/photo-9.webp",
+      "action": "Open full image",
+      "tags": [
+        "photograph",
+        "film",
+        "track",
+        "shoes"
+      ]
+    },
+    {
+      "id": "asset-running-hackathon-wordmark",
+      "kind": "images",
+      "title": "Running Hackathon · ink logo",
+      "description": "Approved stacked lettering, without the edition label.",
+      "href": "asset-sets/16b1b20313f8b04d033d305bb85ac6d78423512d7fd60e9076353b4799a96bfb/assets/running-hackathon-wordmark.svg",
+      "image": "asset-sets/16b1b20313f8b04d033d305bb85ac6d78423512d7fd60e9076353b4799a96bfb/assets/running-hackathon-wordmark.svg",
+      "presentation": "contain",
+      "action": "Open asset",
+      "tags": [
+        "logo",
+        "vector",
+        "illustration",
+        "brand"
+      ]
+    },
+    {
+      "id": "asset-running-hackathon-wordmark-white",
+      "kind": "images",
+      "title": "Running Hackathon · white logo",
+      "description": "The same approved stacked lettering for dark photographic surfaces.",
+      "href": "asset-sets/16b1b20313f8b04d033d305bb85ac6d78423512d7fd60e9076353b4799a96bfb/assets/running-hackathon-wordmark-white.svg",
+      "image": "asset-sets/16b1b20313f8b04d033d305bb85ac6d78423512d7fd60e9076353b4799a96bfb/assets/running-hackathon-wordmark-white.svg",
+      "presentation": "contain dark",
+      "action": "Open asset",
+      "tags": [
+        "logo",
+        "vector",
+        "illustration",
+        "brand"
+      ]
+    },
+    {
+      "id": "asset-runner-sketches",
+      "kind": "images",
+      "title": "Running crew · ink sketches",
+      "description": "Loose observational runner drawings. Generated artwork with a transparent background.",
+      "href": "asset-sets/16b1b20313f8b04d033d305bb85ac6d78423512d7fd60e9076353b4799a96bfb/assets/runner-sketches.png",
+      "image": "thumbnails/runner-sketches.webp",
+      "presentation": "contain transparent",
+      "action": "Open asset",
+      "tags": [
+        "drawing",
+        "vector",
+        "illustration",
+        "brand"
+      ]
+    },
+    {
+      "id": "asset-runner-rig",
+      "kind": "images",
+      "title": "Runner · editable vector",
+      "description": "Original native vector drawing used to build the Rive runner.",
+      "href": "asset-sets/16b1b20313f8b04d033d305bb85ac6d78423512d7fd60e9076353b4799a96bfb/assets/runner-rig.svg",
+      "image": "asset-sets/16b1b20313f8b04d033d305bb85ac6d78423512d7fd60e9076353b4799a96bfb/assets/runner-rig.svg",
+      "presentation": "contain",
+      "action": "Open asset",
+      "tags": [
+        "drawing",
+        "vector",
+        "illustration",
+        "brand"
+      ]
+    },
+    {
+      "id": "motion-live",
+      "kind": "motion",
+      "title": "Morning stride · live Rive",
+      "description": "The authored running loop, playing in the real web runtime.",
+      "href": "../03%20Website%20Concepts/motion.html",
+      "image": "thumbnails/native-runner.webp",
+      "presentation": "contain",
+      "action": "Play the motion study",
+      "tags": [
+        "Rive",
+        "animation",
+        "runner",
+        "native",
+        "drawing"
+      ]
+    },
+    {
+      "id": "motion-riv",
+      "kind": "motion",
+      "title": "Morning runner · runtime scene",
+      "description": "The exported .riv file, ready to use with a Rive runtime.",
+      "href": "asset-sets/16b1b20313f8b04d033d305bb85ac6d78423512d7fd60e9076353b4799a96bfb/assets/rive/morning-runner.riv",
+      "image": "thumbnails/native-runner.webp",
+      "presentation": "contain",
+      "action": "Download .riv",
+      "tags": [
+        "Rive",
+        "animation",
+        "runner",
+        "native",
+        "drawing"
+      ]
+    },
+    {
+      "id": "motion-rev",
+      "kind": "motion",
+      "title": "Morning runner · editable backup",
+      "description": "The saved .rev source for continuing the animation in Rive.",
+      "href": "asset-sets/16b1b20313f8b04d033d305bb85ac6d78423512d7fd60e9076353b4799a96bfb/assets/rive/morning-runner.rev",
+      "image": "thumbnails/native-runner.webp",
+      "presentation": "contain",
+      "action": "Download .rev",
+      "tags": [
+        "Rive",
+        "animation",
+        "runner",
+        "native",
+        "drawing"
+      ]
+    },
+    {
+      "id": "pinterest-board",
+      "kind": "references",
+      "title": "Pinterest · all 30 references",
+      "description": "The full captured board, with every image, source link and available caption.",
+      "href": "../01%20References/Pinterest%20run%20hack/index.html",
+      "image": "thumbnails/pinterest-cover.webp",
+      "action": "Open the full board",
+      "tags": [
+        "Pinterest",
+        "film",
+        "retro",
+        "inspiration",
+        "moodboard"
+      ]
+    },
+    {
+      "id": "pinterest-contact-1",
+      "kind": "references",
+      "title": "Pinterest · contact sheet 1",
+      "description": "A visual overview of the captured board. Source links remain in the full gallery.",
+      "href": "../01%20References/Pinterest%20run%20hack/contact-sheet-01.jpg",
+      "image": "thumbnails/pinterest-sheet-1.webp",
+      "action": "Open contact sheet",
+      "tags": [
+        "Pinterest",
+        "inspiration",
+        "contact sheet"
+      ]
+    },
+    {
+      "id": "pinterest-contact-2",
+      "kind": "references",
+      "title": "Pinterest · contact sheet 2",
+      "description": "A visual overview of the captured board. Source links remain in the full gallery.",
+      "href": "../01%20References/Pinterest%20run%20hack/contact-sheet-02.jpg",
+      "image": "thumbnails/pinterest-sheet-2.webp",
+      "action": "Open contact sheet",
+      "tags": [
+        "Pinterest",
+        "inspiration",
+        "contact sheet"
+      ]
+    },
+    {
+      "id": "reference-reference-juno-hero",
+      "kind": "references",
+      "title": "Juno · image-led colour",
+      "description": "The captured visual reference for simple type and colour supplied by photography. Reference material only.",
+      "href": "https://junocompanion.com/",
+      "image": "thumbnails/reference-juno-hero.webp",
+      "action": "Open source website",
+      "secondary": {
+        "label": "Saved image",
+        "href": "asset-sets/16b1b20313f8b04d033d305bb85ac6d78423512d7fd60e9076353b4799a96bfb/assets/reference-juno-hero.webp"
+      },
+      "tags": [
+        "website",
+        "photography",
+        "Juno",
+        "inspiration"
+      ]
+    },
+    {
+      "id": "reference-reference-current-track",
+      "kind": "references",
+      "title": "Running Hackathon · track reference",
+      "description": "The captured source direction from the existing Running Hackathon website.",
+      "href": "https://www.therunninghackathon.com/",
+      "image": "thumbnails/reference-current-track.webp",
+      "action": "Open source website",
+      "secondary": {
+        "label": "Saved image",
+        "href": "asset-sets/16b1b20313f8b04d033d305bb85ac6d78423512d7fd60e9076353b4799a96bfb/assets/reference-current-track.webp"
+      },
+      "tags": [
+        "website",
+        "photography",
+        "inspiration"
+      ]
+    },
+    {
+      "id": "sf-creative-brief",
+      "kind": "research",
+      "title": "SF · creative starting points",
+      "description": "The original planning brief: references, direction and open event questions.",
+      "href": "notes/sf-creative-brief.html",
+      "image": "thumbnails/fresh-air-2.webp",
+      "action": "Read notes",
+      "tags": [
+        "brief",
+        "research",
+        "planning",
+        "provenance",
+        "prompts"
+      ]
+    },
+    {
+      "id": "design-direction",
+      "kind": "research",
+      "title": "Website · design direction",
+      "description": "Palette, type, layouts and the reasoning behind the concept studio.",
+      "href": "notes/design-direction.html",
+      "image": "thumbnails/fresh-air-2.webp",
+      "action": "Read notes",
+      "tags": [
+        "brief",
+        "research",
+        "planning",
+        "provenance",
+        "prompts"
+      ]
+    },
+    {
+      "id": "image-prompts-originals",
+      "kind": "research",
+      "title": "Original images · prompts",
+      "description": "Exact prompts and provenance for the first track, meadow and sketch studies.",
+      "href": "notes/image-prompts-originals.html",
+      "image": "thumbnails/fresh-air-2.webp",
+      "action": "Read notes",
+      "tags": [
+        "brief",
+        "research",
+        "planning",
+        "provenance",
+        "prompts"
+      ]
+    },
+    {
+      "id": "image-prompts-hybrids-a",
+      "kind": "research",
+      "title": "Merged images · prompts 1–3",
+      "description": "Generation prompts and provenance for Open track, Meadow lane and Morning club.",
+      "href": "notes/image-prompts-hybrids-a.html",
+      "image": "thumbnails/fresh-air-2.webp",
+      "action": "Read notes",
+      "tags": [
+        "brief",
+        "research",
+        "planning",
+        "provenance",
+        "prompts"
+      ]
+    },
+    {
+      "id": "image-prompts-hybrids-b",
+      "kind": "research",
+      "title": "Merged images · prompts 4–5",
+      "description": "Generation prompts and provenance for Grass and lanes and Out and back.",
+      "href": "notes/image-prompts-hybrids-b.html",
+      "image": "thumbnails/fresh-air-2.webp",
+      "action": "Read notes",
+      "tags": [
+        "brief",
+        "research",
+        "planning",
+        "provenance",
+        "prompts"
+      ]
+    },
+    {
+      "id": "rive-guide",
+      "kind": "research",
+      "title": "Rive · capabilities and tools",
+      "description": "The capability guide, searchable 40-tool catalogue and links to the executed motion checks.",
+      "href": "../03%20Website%20Concepts/rive.html",
+      "image": "thumbnails/native-runner.webp",
+      "presentation": "contain",
+      "action": "Open the Rive guide",
+      "tags": [
+        "Rive",
+        "MCP",
+        "research",
+        "animation"
+      ]
+    },
+    {
+      "id": "process-evidence",
+      "kind": "research",
+      "title": "Process · screenshots and evidence",
+      "description": "Every retained capture, prompt, check and source note. Earlier screenshots can include superseded copy and branding.",
+      "href": "../03%20Website%20Concepts/evidence/",
+      "image": "thumbnails/fresh-air-2.webp",
+      "action": "Browse all process files",
+      "tags": [
+        "history",
+        "screenshots",
+        "evidence",
+        "earlier",
+        "versions"
+      ]
+    },
+    {
+      "id": "early-meadow-capture",
+      "kind": "research",
+      "title": "First meadow · layout capture",
+      "description": "The earliest front-facing meadow page, kept as a historical screenshot. Includes the superseded small copy and branding.",
+      "href": "../03%20Website%20Concepts/evidence/concept-field-desktop-v1.png",
+      "image": "thumbnails/photo-3.webp",
+      "action": "Open historical capture",
+      "tags": [
+        "history",
+        "first",
+        "meadow",
+        "field",
+        "layout",
+        "earlier"
+      ]
+    },
+    {
+      "id": "2026-10-17-meadow-film-v3",
+      "kind": "images",
+      "round": "2026-10-17-sf-website-mockup",
+      "title": "Meadow photo · a little more London",
+      "description": "A restrained retro film edit of the same meadow scene. Dusty blue, olive greens and warmer clay. AI-generated; the previous image stays one click away.",
+      "href": "../18%20SF%20Website%20Mockup/assets/meadow-film-v3.png",
+      "image": "../18%20SF%20Website%20Mockup/assets/meadow-film-v3.png",
+      "presentation": "contain",
+      "tags": [
+        "meadow",
+        "retro",
+        "London",
+        "photo",
+        "AI-generated",
+        "latest"
+      ],
+      "action": "Open current image",
+      "secondary": {
+        "label": "Previous meadow image",
+        "href": "../18%20SF%20Website%20Mockup/assets/meadow-film-v1.png"
+      }
+    },
+    {
+      "id": "2026-10-17-meadow-stride-v2",
+      "kind": "images",
+      "round": "2026-10-17-sf-website-mockup",
+      "title": "Meadow photo · Stronger stride",
+      "description": "A little more pace and purpose: stronger arm drive, longer strides and higher heel recovery. Same meadow and retro colour direction. AI-generated; the previous pose is preserved.",
+      "href": "../18%20SF%20Website%20Mockup/assets/meadow-stride-v2.png",
+      "image": "../18%20SF%20Website%20Mockup/assets/meadow-stride-v2.png",
+      "presentation": "contain",
+      "tags": [
+        "meadow",
+        "running",
+        "stride",
+        "London",
+        "photo",
+        "AI-generated",
+        "latest"
+      ],
+      "action": "Open current image",
+      "secondary": {
+        "label": "Previous meadow image",
+        "href": "../18%20SF%20Website%20Mockup/assets/meadow-film-v3.png"
+      }
+    },
+    {
+      "id": "2026-10-17-wide-meadow-layout",
+      "kind": "concepts",
+      "round": "2026-10-17-sf-website-mockup",
+      "title": "San Francisco · Wide meadow hero",
+      "description": "The previous full-width three-runner layout, preserved for comparison. All original source files retained.",
+      "href": "../18%20SF%20Website%20Mockup/versions/2026-10-17-wide-meadow/",
+      "image": "../18%20SF%20Website%20Mockup/evidence/meadow-stride-v2-desktop.png",
+      "presentation": "contain",
+      "tags": [
+        "website",
+        "San Francisco",
+        "meadow",
+        "previous layout"
+      ],
+      "action": "Open previous layout"
+    },
+    {
+      "id": "2026-10-17-supplied-meadow-photo",
+      "kind": "images",
+      "round": "2026-10-17-sf-website-mockup",
+      "title": "Meadow photo · Supplied retro runners",
+      "description": "The exact supplied two-runner image, used unchanged in the compact hero. Earlier meadow images remain available.",
+      "href": "../18%20SF%20Website%20Mockup/assets/meadow-london-supplied-v1.png",
+      "image": "../18%20SF%20Website%20Mockup/assets/meadow-london-supplied-v1.png",
+      "presentation": "contain",
+      "tags": [
+        "meadow",
+        "retro",
+        "running",
+        "supplied image",
+        "latest"
+      ],
+      "action": "Open supplied image",
+      "secondary": {
+        "label": "Previous meadow image",
+        "href": "../18%20SF%20Website%20Mockup/assets/meadow-stride-v2.png"
+      }
+    },
+    {
+      "id": "2026-10-17-centered-meadow-layout",
+      "kind": "concepts",
+      "round": "2026-10-17-sf-website-mockup",
+      "title": "San Francisco · Centred meadow hero",
+      "description": "The previous compact, centred photo with headline above it. Preserved for comparison.",
+      "href": "../18%20SF%20Website%20Mockup/versions/2026-10-17-centered-meadow/",
+      "image": "../18%20SF%20Website%20Mockup/evidence/compact-meadow-desktop.png",
+      "presentation": "contain",
+      "tags": [
+        "website",
+        "San Francisco",
+        "meadow",
+        "previous layout"
+      ],
+      "action": "Open previous layout"
+    },
+    {
+      "id": "2026-10-17-single-mascot-layout",
+      "kind": "concepts",
+      "round": "2026-10-17-sf-website-mockup",
+      "title": "San Francisco · Hedgehog only",
+      "description": "The right-side rounded hero with Big ideas need fresh air, before adding the Cognition otter. Preserved for comparison.",
+      "href": "../18%20SF%20Website%20Mockup/versions/2026-10-17-single-mascot/",
+      "image": "../18%20SF%20Website%20Mockup/evidence/big-ideas-desktop.png",
+      "presentation": "contain",
+      "tags": [
+        "website",
+        "San Francisco",
+        "previous layout"
+      ],
+      "action": "Open previous version"
+    },
+    {
+      "id": "2026-10-17-inset-right-layout",
+      "kind": "concepts",
+      "round": "2026-10-17-sf-website-mockup",
+      "title": "San Francisco · Inset right-side photo",
+      "description": "The earlier rounded right-side photo with an outer margin, before extending it to the edge. Includes both running mascots.",
+      "href": "../18%20SF%20Website%20Mockup/versions/2026-10-17-inset-right-hero/",
+      "image": "../18%20SF%20Website%20Mockup/evidence/hero-without-lede.png",
+      "presentation": "contain",
+      "tags": [
+        "website",
+        "San Francisco",
+        "previous layout"
+      ],
+      "action": "Open previous layout"
+    },
+    {
+      "id": "2026-10-17-short-edge-layout",
+      "kind": "concepts",
+      "round": "2026-10-17-sf-website-mockup",
+      "title": "San Francisco · Shorter right-edge photo",
+      "description": "The previous 420px-tall right-edge photograph, before enlarging it. Both running mascots and all copy retained.",
+      "href": "../18%20SF%20Website%20Mockup/versions/2026-10-17-short-edge-hero/",
+      "image": "../18%20SF%20Website%20Mockup/evidence/edge-meadow-desktop.png",
+      "presentation": "contain",
+      "tags": [
+        "website",
+        "San Francisco",
+        "previous layout"
+      ],
+      "action": "Open previous layout"
+    },
+    {
+      "id": "2026-10-17-two-mascot-layout",
+      "kind": "concepts",
+      "round": "2026-10-17-sf-website-mockup",
+      "title": "San Francisco · Hedgehog and otter",
+      "description": "The larger right-edge meadow photo and two-character lineup, before adding the compact cheetah. Preserved for comparison.",
+      "href": "../18%20SF%20Website%20Mockup/versions/2026-10-17-hedgehog-otter-pair/",
+      "image": "../18%20SF%20Website%20Mockup/evidence/otter-pair-desktop.png",
+      "presentation": "contain",
+      "tags": [
+        "website",
+        "San Francisco",
+        "previous layout",
+        "mascot"
+      ],
+      "action": "Open previous layout"
+    },
+    {
+      "id": "2026-10-17-round-cheetah-layout",
+      "kind": "concepts",
+      "round": "2026-10-17-sf-website-mockup",
+      "title": "San Francisco · Round cheetah",
+      "description": "The previous three-character lineup with the round, sunglass-wearing cheetah, preserved before the independent sprinter redesign.",
+      "href": "../18%20SF%20Website%20Mockup/versions/2026-10-17-round-cheetah/",
+      "image": "../18%20SF%20Website%20Mockup/evidence/cheetah-lineup-desktop.png",
+      "presentation": "contain",
+      "tags": [
+        "website",
+        "previous layout",
+        "mascot",
+        "cheetah"
+      ],
+      "action": "Open previous version"
+    },
+    {
+      "id": "2026-10-17-running-devin-layout",
+      "kind": "concepts",
+      "round": "2026-10-17-sf-website-mockup",
+      "title": "San Francisco · Running Devin",
+      "description": "The cheetah sprinter alongside the previous running-kit otter, preserved before switching to the exact official Devin with computer.",
+      "href": "../18%20SF%20Website%20Mockup/versions/2026-10-17-running-devin/",
+      "image": "../18%20SF%20Website%20Mockup/evidence/sprinter-lineup-desktop.png",
+      "presentation": "contain",
+      "tags": [
+        "website",
+        "previous layout",
+        "Devin",
+        "mascot"
+      ],
+      "action": "Open previous version",
+      "secondary": {
+        "label": "Previous comparison",
+        "href": "../16%20Cheetah%20Mascot/sprinter-running-otter.html"
+      }
+    },
+    {
+      "id": "2026-10-17-split-hero-adult-cheetah",
+      "kind": "concepts",
+      "round": "2026-10-17-sf-website-mockup",
+      "title": "San Francisco · Split hero and sprinter",
+      "description": "The previous headline-left/photo-right layout with the official laptop Devin and adult cheetah, before the full-width hero and mini cub.",
+      "href": "../18%20SF%20Website%20Mockup/versions/2026-10-17-split-hero-adult-cheetah/",
+      "image": "../18%20SF%20Website%20Mockup/evidence/official-devin-desktop.png",
+      "presentation": "contain",
+      "tags": [
+        "website",
+        "previous layout",
+        "cheetah"
+      ],
+      "action": "Open previous website",
+      "secondary": {
+        "label": "Previous comparison",
+        "href": "../16%20Cheetah%20Mascot/sprinter-official-devin.html"
+      }
+    },
+    {
+      "id": "2026-10-17-mini-cub-full-width",
+      "kind": "concepts",
+      "round": "2026-10-17-sf-website-mockup",
+      "title": "San Francisco · Mini cub lineup",
+      "description": "Full-width meadow hero and larger headline, preserved before removing the cheetah from the main website.",
+      "href": "../18%20SF%20Website%20Mockup/versions/2026-10-17-mini-cub-full-width/",
+      "image": "../18%20SF%20Website%20Mockup/evidence/cub-lineup-desktop.png",
+      "presentation": "contain",
+      "tags": [
+        "website",
+        "previous",
+        "cheetah"
+      ],
+      "action": "Open saved website"
+    },
+    {
+      "id": "2026-10-17-higgsfield-sloth-first",
+      "kind": "images",
+      "round": "2026-10-17-sf-website-mockup",
+      "title": "Sloth · Earlier dressed version",
+      "description": "Earlier detailed sloth in running kit, generated with GPT Image through Higgsfield. Preserved before simplifying and changing models at the user's request.",
+      "href": "../19%20Sloth%20Mascot/first.html",
+      "image": "../19%20Sloth%20Mascot/assets/sloth-v1.png",
+      "presentation": "contain",
+      "tags": [
+        "previous",
+        "sloth",
+        "Higgsfield"
+      ],
+      "action": "Open previous study"
+    },
+    {
+      "id": "2026-10-18-sloth-logo-quiet",
+      "kind": "images",
+      "round": "2026-10-18-sloth-logo-quiet",
+      "title": "Quieter sloth directions · Ten more",
+      "description": "Ten more understated, cute sloth variations. The first ten remain above them.",
+      "href": "../22%20Sloth%20Logo%20Studies/#new-directions",
+      "image": "../22%20Sloth%20Logo%20Studies/rounds/2026-10-18-quiet/compositions/quiet-cap-brim.svg",
+      "presentation": "contain",
+      "tags": [
+        "quieter directions",
+        "sloth",
+        "logo",
+        "glasses",
+        "Higgsfield"
+      ],
+      "action": "Explore ten more"
+    },
+    {
+      "id": "2026-10-18-sloth-logo-quiet-easy-seat",
+      "kind": "images",
+      "round": "2026-10-18-sloth-logo-quiet",
+      "title": "Quieter sloth directions · Easy seat",
+      "description": "Small frames, one knee up and a barely-there smile.",
+      "href": "../22%20Sloth%20Logo%20Studies/#study-quiet-easy-seat",
+      "image": "../22%20Sloth%20Logo%20Studies/rounds/2026-10-18-quiet/compositions/quiet-easy-seat.svg",
+      "presentation": "contain",
+      "tags": [
+        "quieter directions",
+        "sloth",
+        "logo",
+        "glasses",
+        "seated",
+        "Higgsfield"
+      ],
+      "action": "Open study"
+    },
+    {
+      "id": "2026-10-18-sloth-logo-quiet-low-perch",
+      "kind": "images",
+      "round": "2026-10-18-sloth-logo-quiet",
+      "title": "Quieter sloth directions · Low perch",
+      "description": "A low slouch and small smoked lenses.",
+      "href": "../22%20Sloth%20Logo%20Studies/#study-quiet-low-perch",
+      "image": "../22%20Sloth%20Logo%20Studies/rounds/2026-10-18-quiet/compositions/quiet-low-perch.svg",
+      "presentation": "contain",
+      "tags": [
+        "quieter directions",
+        "sloth",
+        "logo",
+        "glasses",
+        "seated",
+        "Higgsfield"
+      ],
+      "action": "Open study"
+    },
+    {
+      "id": "2026-10-18-sloth-logo-quiet-ankles-crossed",
+      "kind": "images",
+      "round": "2026-10-18-sloth-logo-quiet",
+      "title": "Quieter sloth directions · Ankles crossed",
+      "description": "Long legs, crossed ankles and slim oval glasses.",
+      "href": "../22%20Sloth%20Logo%20Studies/#study-quiet-ankles-crossed",
+      "image": "../22%20Sloth%20Logo%20Studies/rounds/2026-10-18-quiet/compositions/quiet-ankles-crossed.svg",
+      "presentation": "contain",
+      "tags": [
+        "quieter directions",
+        "sloth",
+        "logo",
+        "glasses",
+        "seated",
+        "Higgsfield"
+      ],
+      "action": "Open study"
+    },
+    {
+      "id": "2026-10-18-sloth-logo-quiet-side-profile",
+      "kind": "images",
+      "round": "2026-10-18-sloth-logo-quiet",
+      "title": "Quieter sloth directions · Side profile",
+      "description": "A quiet profile, looking past the logo.",
+      "href": "../22%20Sloth%20Logo%20Studies/#study-quiet-side-profile",
+      "image": "../22%20Sloth%20Logo%20Studies/rounds/2026-10-18-quiet/compositions/quiet-side-profile.svg",
+      "presentation": "contain",
+      "tags": [
+        "quieter directions",
+        "sloth",
+        "logo",
+        "glasses",
+        "seated",
+        "Higgsfield"
+      ],
+      "action": "Open study"
+    },
+    {
+      "id": "2026-10-18-sloth-logo-quiet-cap-brim",
+      "kind": "images",
+      "round": "2026-10-18-sloth-logo-quiet",
+      "title": "Quieter sloth directions · Cap brim",
+      "description": "A small running cap with no extra kit.",
+      "href": "../22%20Sloth%20Logo%20Studies/#study-quiet-cap-brim",
+      "image": "../22%20Sloth%20Logo%20Studies/rounds/2026-10-18-quiet/compositions/quiet-cap-brim.svg",
+      "presentation": "contain",
+      "tags": [
+        "quieter directions",
+        "sloth",
+        "logo",
+        "glasses",
+        "seated",
+        "Higgsfield"
+      ],
+      "action": "Open study"
+    },
+    {
+      "id": "2026-10-18-sloth-logo-quiet-hands-tucked",
+      "kind": "images",
+      "round": "2026-10-18-sloth-logo-quiet",
+      "title": "Quieter sloth directions · Arms loose",
+      "description": "Loose arms, a small curious glance and no extra kit.",
+      "href": "../22%20Sloth%20Logo%20Studies/#study-quiet-hands-tucked",
+      "image": "../22%20Sloth%20Logo%20Studies/rounds/2026-10-18-quiet/compositions/quiet-hands-tucked.svg",
+      "presentation": "contain",
+      "tags": [
+        "quieter directions",
+        "sloth",
+        "logo",
+        "glasses",
+        "seated",
+        "Higgsfield"
+      ],
+      "action": "Open study"
+    },
+    {
+      "id": "2026-10-18-sloth-logo-quiet-slow-lean",
+      "kind": "images",
+      "round": "2026-10-18-sloth-logo-quiet",
+      "title": "Quieter sloth directions · Slow lean",
+      "description": "One arm behind him and no big gesture.",
+      "href": "../22%20Sloth%20Logo%20Studies/#study-quiet-slow-lean",
+      "image": "../22%20Sloth%20Logo%20Studies/rounds/2026-10-18-quiet/compositions/quiet-slow-lean.svg",
+      "presentation": "contain",
+      "tags": [
+        "quieter directions",
+        "sloth",
+        "logo",
+        "glasses",
+        "seated",
+        "Higgsfield"
+      ],
+      "action": "Open study"
+    },
+    {
+      "id": "2026-10-18-sloth-logo-quiet-little-crouch",
+      "kind": "images",
+      "round": "2026-10-18-sloth-logo-quiet",
+      "title": "Quieter sloth directions · Little crouch",
+      "description": "A compact tucked-in seat and a dry expression.",
+      "href": "../22%20Sloth%20Logo%20Studies/#study-quiet-little-crouch",
+      "image": "../22%20Sloth%20Logo%20Studies/rounds/2026-10-18-quiet/compositions/quiet-little-crouch.svg",
+      "presentation": "contain",
+      "tags": [
+        "quieter directions",
+        "sloth",
+        "logo",
+        "glasses",
+        "seated",
+        "Higgsfield"
+      ],
+      "action": "Open study"
+    },
+    {
+      "id": "2026-10-18-sloth-logo-quiet-looking-away",
+      "kind": "images",
+      "round": "2026-10-18-sloth-logo-quiet",
+      "title": "Quieter sloth directions · Looking away",
+      "description": "A small sloth sitting sideways, minding his business.",
+      "href": "../22%20Sloth%20Logo%20Studies/#study-quiet-looking-away",
+      "image": "../22%20Sloth%20Logo%20Studies/rounds/2026-10-18-quiet/compositions/quiet-looking-away.svg",
+      "presentation": "contain",
+      "tags": [
+        "quieter directions",
+        "sloth",
+        "logo",
+        "glasses",
+        "seated",
+        "Higgsfield"
+      ],
+      "action": "Open study"
+    },
+    {
+      "id": "2026-10-18-sloth-logo-quiet-one-foot-swinging",
+      "kind": "images",
+      "round": "2026-10-18-sloth-logo-quiet",
+      "title": "Quieter sloth directions · One foot swinging",
+      "description": "A loose asymmetric perch and a tiny smirk.",
+      "href": "../22%20Sloth%20Logo%20Studies/#study-quiet-one-foot-swinging",
+      "image": "../22%20Sloth%20Logo%20Studies/rounds/2026-10-18-quiet/compositions/quiet-one-foot-swinging.svg",
+      "presentation": "contain",
+      "tags": [
+        "quieter directions",
+        "sloth",
+        "logo",
+        "glasses",
+        "seated",
+        "Higgsfield"
+      ],
+      "action": "Open study"
+    },
+    {
+      "id": "2026-10-18-giga-sloth",
+      "kind": "images",
+      "round": "2026-10-18-giga-sloth",
+      "title": "Giga sloth · Wildcard",
+      "description": "A cropped vest, green glasses, a rainbow wristband and very unreasonable biceps.",
+      "href": "../23%20Sloth%20Wildcard/",
+      "image": "../23%20Sloth%20Wildcard/assets/giga-sloth.png",
+      "presentation": "contain",
+      "tags": [
+        "sloth",
+        "wildcard",
+        "giga",
+        "mascot",
+        "Higgsfield"
+      ],
+      "action": "Meet Giga sloth"
+    }
+  ]
+}

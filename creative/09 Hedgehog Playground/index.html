@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f6f0e4" />
+    <title>Hedgehog playground · Running Hackathon</title>
+    <meta name="description" content="A private Running Hackathon mascot playground: PostHog’s hedgehog dressed for a morning run." />
+    <link rel="stylesheet" href="playground.css" />
+    <script src="playground.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="../04%20Creative%20Warehouse/" aria-label="Running Hackathon creative warehouse">
+        <img src="../03%20Website%20Concepts/assets/running-hackathon-wordmark.svg" alt="Running Hackathon" width="210" height="76" />
+      </a>
+      <nav aria-label="Playground navigation">
+        <a class="warehouse-link" href="../04%20Creative%20Warehouse/">All explorations <span aria-hidden="true">↗</span></a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="playground-layout">
+        <section class="intro" aria-labelledby="page-title">
+          <p class="section-label">Mascot playground</p>
+          <h1 id="page-title">Good ideas <br />need fresh air<span class="full-stop">.</span></h1>
+          <p class="intro-copy">Meet the runner. Start a lap, then jump the hurdles.</p>
+
+          <ul class="outfit-list" aria-label="Running outfit">
+            <li>Sunglasses</li>
+            <li>Running top &amp; shorts</li>
+            <li>Brick-orange shoes</li>
+          </ul>
+
+          <button type="button" class="source-button" id="outfit-button" aria-haspopup="dialog">Compare source <span aria-hidden="true">↗</span></button>
+        </section>
+
+        <section class="play-area" aria-label="Hedgehog running game">
+          <div id="playfield" class="playfield" tabindex="0" aria-label="Running track. Start a lap, then click the track or press Space to jump." aria-describedby="game-instructions">
+            <div class="morning-photo" aria-hidden="true"></div>
+            <div class="stage-topline">
+              <div class="distance-readout"><span id="distance">0</span><span class="distance-unit">m</span><span class="lap-length"> / 100 m</span></div>
+              <p id="status" class="stage-status" role="status" aria-live="polite">Ready when you are</p>
+            </div>
+            <div class="course-marker course-marker-start" aria-hidden="true"><span>START</span><i></i></div>
+            <div class="course-marker course-marker-finish" aria-hidden="true"><span>FINISH</span><i></i></div>
+            <div id="track" class="running-lane" aria-hidden="true"><span class="lane-line"></span><span class="lane-line lane-line-near"></span></div>
+            <div id="obstacles" class="obstacles" aria-hidden="true"></div>
+            <div id="pickups" class="pickups" aria-hidden="true"></div>
+            <div id="runner" class="runner">
+              <img src="assets/running-hedgehog.svg" alt="PostHog’s hedgehog in sunglasses, a Running Hackathon top, running shorts and brick-orange running shoes" width="1000" height="1000" draggable="false" />
+            </div>
+            <div class="runner-shadow" aria-hidden="true"></div>
+            <div id="confetti" class="confetti" aria-hidden="true"></div>
+          </div>
+
+          <div class="game-desk">
+            <div class="game-actions" aria-label="Run controls">
+              <button type="button" id="run-button" class="primary-button">Run a lap <span aria-hidden="true">→</span></button>
+              <button type="button" id="jump-button" class="secondary-button" disabled>Jump <span aria-hidden="true">↑</span></button>
+              <button type="button" id="reset-button" class="reset-button">Reset</button>
+            </div>
+            <div class="lap-progress">
+              <label class="visually-hidden" for="progress">Lap progress</label>
+              <progress id="progress" max="100" value="0">0%</progress>
+              <p id="lap-result" class="lap-result" aria-live="polite">Your first lap is waiting.</p>
+            </div>
+            <p id="game-instructions" class="game-instructions">Click the track or press <kbd>Space</kbd> to jump.</p>
+          </div>
+        </section>
+      </div>
+
+      <footer class="concept-note">
+        <p>Private concept · PostHog approval needed before public use</p>
+        <a href="https://posthog.com/handbook/brand/assets" target="_blank" rel="noopener noreferrer">PostHog brand guidelines <span aria-hidden="true">↗</span></a>
+      </footer>
+    </main>
+
+    <dialog id="source-dialog" class="source-dialog" aria-labelledby="source-title">
+      <div class="dialog-topline">
+        <h2 id="source-title">The hedgehog, dressed to run.</h2>
+        <button type="button" id="close-source" class="dialog-close" aria-label="Close source comparison">×</button>
+      </div>
+      <div class="source-comparison">
+        <figure>
+          <img src="assets/official-marathon.svg" alt="Original PostHog marathon hedgehog illustration" width="1000" height="1000" />
+          <figcaption>Official PostHog source</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/running-hedgehog.svg" alt="Running Hackathon outfit concept with sunglasses, running top, shorts and shoes" width="1000" height="1000" />
+          <figcaption>Running Hackathon outfit concept</figcaption>
+        </figure>
+      </div>
+      <p class="dialog-note">A private adaptation of PostHog’s mascot. This is an outfit and interaction study; it has not been approved by PostHog.</p>
+      <a class="dialog-source-link" href="https://brand.posthog.com/" target="_blank" rel="noopener noreferrer">Browse the official PostHog artwork <span aria-hidden="true">↗</span></a>
+    </dialog>
+  </body>
+</html>

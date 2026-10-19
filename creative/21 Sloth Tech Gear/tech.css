@@ -1,0 +1,154 @@
+@font-face {
+  font-family: Geist;
+  src: url('../18%20SF%20Website%20Mockup/assets/geist.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+:root {
+  --paper: #f3f0e6;
+  --ink: #252923;
+  --secondary: #555a4f;
+  --rule: #c9c8bb;
+  --focus: #94452f;
+  color-scheme: light;
+  font-family: Geist, Arial, sans-serif;
+  color: var(--ink);
+  background: var(--paper);
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; font-size: 20px; line-height: 1.45; }
+body.dialog-open { overflow: hidden; }
+button, a { -webkit-tap-highlight-color: transparent; }
+button { color: inherit; font: inherit; cursor: pointer; }
+a { color: inherit; text-underline-offset: .22em; text-decoration-thickness: 1px; }
+a:hover { text-decoration-thickness: 2px; }
+:focus-visible { outline: 3px solid var(--focus); outline-offset: 6px; }
+[hidden] { display: none !important; }
+.page-width { width: min(1680px, calc(100% - 96px)); margin-inline: auto; }
+.skip-link { position: fixed; top: 16px; left: 24px; z-index: 5; padding: 12px 16px; background: var(--paper); transform: translateY(-180%); }
+.skip-link:focus { transform: translateY(0); }
+
+.page-header { display: flex; justify-content: space-between; align-items: center; gap: 32px; padding-block: 30px; }
+.wordmark { flex: none; }
+.wordmark img { display: block; width: 142px; height: auto; }
+.page-header nav { display: flex; flex-wrap: wrap; gap: 14px 32px; }
+.page-header nav a { padding-block: 8px; }
+.introduction { display: flex; justify-content: space-between; align-items: flex-end; gap: 48px; padding-block: 48px 60px; }
+h1 { margin: 0; font-size: clamp(66px, 7.6vw, 120px); line-height: .98; letter-spacing: -.065em; font-weight: 500; }
+.introduction-copy p { margin: 30px 0 0; font-size: 25px; line-height: 1.35; }
+.original-reference { width: 182px; flex: none; margin: 0; }
+.original-reference a { display: block; }
+.original-reference img { display: block; width: 100%; height: auto; }
+.original-reference figcaption { margin-top: 12px; font-size: 20px; }
+.drawings-section { scroll-margin-top: 24px; }
+.study-grid { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 52px 30px; }
+.study { min-width: 0; margin: 0; scroll-margin-top: 28px; }
+.study-button { display: block; width: 100%; padding: 0; border: 0; background: transparent; text-align: left; }
+.study-artwork { position: relative; display: grid; place-items: center; width: 100%; aspect-ratio: 1; }
+.study-image { display: block; width: 100%; height: 100%; object-fit: contain; transition: transform 180ms ease; }
+.study-button:hover .study-image { transform: translateY(-4px); }
+.study-button:focus-visible { outline-offset: 4px; }
+.study figcaption { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 12px; padding-top: 20px; border-top: 1px solid var(--rule); }
+.study-number { font-size: 20px; line-height: 1.3; font-weight: 450; font-variant-numeric: tabular-nums; }
+.study h2 { margin: 0; font-size: 22px; line-height: 1.25; letter-spacing: -.035em; font-weight: 550; overflow-wrap: break-word; }
+.study-trait { margin: 12px 0 0; font-size: 18px; line-height: 1.4; color: var(--secondary); overflow-wrap: break-word; }
+.image-error { padding: 16px; margin: 0; font-size: 18px; text-align: center; }
+.study-artwork .image-error { position: absolute; inset: 0; display: grid; place-items: center; }
+.gallery-status { font-size: 23px; max-width: 540px; margin: 20px 0 28px; }
+.text-button { padding: 10px 0; border: 0; background: transparent; line-height: 1.3; text-decoration: underline; text-underline-offset: .24em; text-decoration-thickness: 1px; }
+.text-button:hover { text-decoration-thickness: 2px; }
+.retry-button { margin-bottom: 28px; }
+
+.page-footer { margin-top: 68px; padding-block: 30px 42px; border-top: 1px solid var(--rule); display: flex; justify-content: space-between; flex-wrap: wrap; gap: 24px 48px; font-size: 20px; }
+.page-footer p { margin: 0; }
+.drawing-dialog { width: min(1160px, calc(100% - 56px)); max-height: calc(100dvh - 56px); padding: 0; border: 0; background: var(--paper); color: var(--ink); overflow: auto; }
+.drawing-dialog::backdrop { background: rgb(25 30 23 / .76); }
+.dialog-shell { padding: 22px 32px 18px; }
+.dialog-topbar, .dialog-navigation { display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+.dialog-topbar { min-height: 48px; }
+.dialog-count { margin: 0; font-size: 22px; font-variant-numeric: tabular-nums; }
+.dialog-content { display: grid; grid-template-columns: minmax(0, 1.6fr) minmax(240px, 1fr); align-items: center; gap: 30px; padding-block: 12px 24px; }
+.dialog-artwork { position: relative; display: grid; place-items: center; min-width: 0; aspect-ratio: 1; }
+.dialog-artwork img { display: block; width: 100%; max-height: 65dvh; height: auto; object-fit: contain; }
+.dialog-artwork .image-error { position: absolute; inset: 0; display: grid; place-content: center; }
+.dialog-artwork .image-error p { margin: 0 0 12px; }
+.dialog-copy { min-width: 0; }
+.dialog-copy h2 { margin: 0 0 24px; font-size: clamp(32px, 4vw, 48px); line-height: 1.08; letter-spacing: -.05em; font-weight: 500; overflow-wrap: break-word; }
+.dialog-copy p { margin: 0 0 34px; font-size: 23px; }
+.download-link { display: inline-block; padding-block: 10px; font-size: 20px; }
+.dialog-navigation { padding-top: 12px; border-top: 1px solid var(--rule); }
+.dialog-navigation button { min-height: 48px; }
+
+@media (max-width: 1150px) {
+  .page-width { width: calc(100% - 64px); }
+  .study-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 48px 26px; }
+  .introduction { padding-block: 40px 52px; }
+}
+
+@media (max-width: 740px) {
+  .page-width { width: calc(100% - 40px); }
+  .page-header { gap: 20px; padding-block: 24px; align-items: flex-start; }
+  .wordmark img { width: 120px; }
+  .page-header nav { flex-direction: column; gap: 3px; font-size: 18px; }
+  .page-header nav a { padding-block: 5px; }
+  .introduction { align-items: center; gap: 20px; padding-block: 30px 44px; }
+  h1 { font-size: clamp(55px, 10vw, 74px); }
+  .introduction-copy p { max-width: 270px; margin-top: 24px; font-size: 22px; }
+  .original-reference { width: min(28vw, 150px); }
+  .original-reference figcaption { font-size: 18px; margin-top: 10px; }
+  .study-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 38px 20px; }
+  .study figcaption { display: block; padding-top: 14px; }
+  .study-number { display: block; margin-bottom: 10px; font-size: 18px; }
+  .study h2 { font-size: 20px; }
+  .study-trait { font-size: 17px; margin-top: 10px; }
+  .page-footer { margin-top: 50px; font-size: 18px; }
+  .drawing-dialog { width: calc(100% - 24px); max-height: calc(100dvh - 24px); }
+  .dialog-shell { padding: 12px 20px 14px; }
+  .dialog-content { grid-template-columns: 1fr; gap: 18px; padding-top: 4px; }
+  .dialog-artwork { width: min(100%, 440px); margin-inline: auto; }
+  .dialog-artwork img { max-height: 48dvh; }
+  .dialog-copy h2 { font-size: 34px; margin-bottom: 16px; }
+  .dialog-copy p { margin-bottom: 14px; font-size: 22px; }
+  .dialog-navigation { gap: 20px; }
+}
+
+@media (max-width: 430px) {
+  .introduction { position: relative; display: block; }
+  .introduction-copy { padding-right: 0; }
+  .introduction-copy p { max-width: calc(100% - 100px); min-height: 84px; margin-right: 0; }
+  .original-reference { position: absolute; bottom: 44px; right: 0; width: 76px; }
+  .original-reference figcaption { font-size: 16px; white-space: nowrap; }
+}
+
+@media (max-width: 360px) {
+  .page-width { width: calc(100% - 32px); }
+  .page-header { gap: 12px; }
+  .wordmark img { width: 106px; }
+  .page-header nav { font-size: 17px; }
+  h1 { font-size: 53px; }
+  .study-grid { gap: 36px 16px; }
+  .study h2 { font-size: 19px; }
+  .study-trait { font-size: 16px; }
+  .image-error { padding: 8px; font-size: 16px; }
+  .dialog-shell { padding-inline: 16px; }
+  .dialog-copy h2 { font-size: 31px; }
+}
+
+@media (max-width: 290px) {
+  .page-header { flex-direction: column; gap: 18px; }
+  .page-header nav { flex-direction: row; gap: 12px; }
+  .introduction-copy { padding-right: 0; }
+  .introduction-copy p { max-width: none; min-height: 0; margin-right: 0; }
+  .original-reference { position: static; width: 100px; margin-top: 26px; }
+  h1 { font-size: 48px; }
+  .study-grid { grid-template-columns: 1fr; }
+  .dialog-navigation { flex-wrap: wrap; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; }
+  .study-button:hover .study-image { transform: none; }
+}

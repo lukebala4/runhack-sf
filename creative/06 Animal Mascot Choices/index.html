@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f3f1e8"><title>Pick our running mate · Running Hackathon</title>
+  <link rel="preload" href="../03%20Website%20Concepts/assets/geist.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="choices.css?v=2">
+</head>
+<body>
+  <a class="skip" href="#lineup">Skip to the five animals</a>
+  <header class="wrap header">
+    <a class="brand" href="../04%20Creative%20Warehouse/" aria-label="Running Hackathon creative warehouse"><img src="../03%20Website%20Concepts/assets/running-hackathon-wordmark.svg" alt="Running Hackathon" width="142" height="70"></a>
+    <nav aria-label="Mascot navigation"><a href="../05%20Mascot%20Playground/">Animated hare ↗</a><a href="../04%20Creative%20Warehouse/">Creative warehouse ↗</a></nav>
+  </header>
+  <main>
+    <section class="intro wrap"><h1>Pick our<br>running mate.</h1><p>Five animals. One running crew.<br>Try them on the track, then choose your favourite.</p></section>
+    <section class="wrap" aria-label="Five animal mascot concepts">
+      <div class="lineup" id="lineup"></div>
+      <div class="selection" id="selection" hidden><p><strong id="picked-name"></strong> is your pick.</p><div><span>Saved on this device.</span><button id="clear-pick" type="button">Clear choice</button></div></div>
+    </section>
+    <section class="closing wrap"><h2>Same kit.<br>Different character.</h2><p>Each direction has its own silhouette and personality. These are visual studies for choosing the animal. The <a href="../05%20Mascot%20Playground/">live hare playground</a> is here to try the motion.</p></section>
+  </main>
+  <footer class="wrap footer"><a href="../04%20Creative%20Warehouse/">All the experiments ↗</a><a href="evidence/prompts-and-provenance.md">Artwork & prompts ↗</a></footer>
+  <dialog id="preview" aria-labelledby="preview-title" aria-describedby="preview-description">
+    <button class="close" id="close-preview" aria-label="Close animal preview" type="button">Close <span aria-hidden="true">×</span></button>
+    <div class="preview-world"><img id="preview-image" src="assets/hare-preview.webp" alt=""><div class="photo-caption" aria-hidden="true">Good ideas<br>need fresh air</div></div>
+    <div class="preview-info"><div class="animal-copy"><h2 id="preview-title"></h2><p id="preview-description"></p><p class="motion-note" id="motion-note"></p></div><div class="preview-actions"><div class="arrows"><button id="previous" type="button" aria-label="Previous animal">←</button><span id="position" role="status" aria-live="polite" aria-atomic="true"></span><button id="next" type="button" aria-label="Next animal">→</button></div><button id="pick" class="pick" type="button"></button><a id="download" download>Download artwork ↓</a></div></div>
+  </dialog>
+  <p id="announcement" class="sr-only" role="status" aria-live="polite"></p>
+  <script type="module" src="choices.js?v=1"></script>
+</body>
+</html>

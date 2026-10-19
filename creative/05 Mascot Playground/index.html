@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f3f1e8">
+  <title>The morning relay · Running Hackathon</title>
+  <link rel="preload" href="../03%20Website%20Concepts/assets/geist.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#relay">Skip to the relay</a>
+  <header class="site-header wrap">
+    <a class="brand" href="../04%20Creative%20Warehouse/" aria-label="Running Hackathon creative warehouse"><img src="../03%20Website%20Concepts/assets/running-hackathon-wordmark.svg" alt="Running Hackathon" width="144" height="72"></a>
+    <nav aria-label="Studio navigation"><a href="#character-studio">Meet the hare <span aria-hidden="true">↘</span></a><a href="../04%20Creative%20Warehouse/">Creative warehouse <span aria-hidden="true">↗</span></a></nav>
+  </header>
+
+  <main>
+    <section class="intro wrap" aria-labelledby="page-title">
+      <h1 id="page-title">Good ideas<br>need fresh air</h1>
+      <div class="intro-copy"><p>A new running mate.<br>A little friendly competition.</p><a href="#relay" class="text-link">Try the sponsor relay <span aria-hidden="true">↓</span></a></div>
+    </section>
+
+    <section class="relay-section wrap" aria-labelledby="relay-title">
+      <div id="relay" class="arena" tabindex="0" role="region" aria-label="Morning relay game. Start the relay, then press Space or tap Jump to collect sparks and clear hurdles." aria-describedby="game-instructions">
+        <div class="world" aria-hidden="true"></div>
+        <div class="arena-top">
+          <div class="scoreboard" aria-label="Game score"><div><span class="metric-label">Ideas</span><strong id="score">00</strong></div><div><span class="metric-label">Time</span><strong id="time">24<span>s</span></strong></div></div>
+          <div class="station-sign"><span id="station-label">The morning relay</span><strong id="station-partner">Your brand</strong></div>
+        </div>
+        <div class="hare-wrap" id="hare-wrap"><img id="hare-fallback" class="hare-fallback" src="assets/hare-rig.svg" alt="Our hare mascot in a running singlet and brick-orange shoes"><canvas id="hare-canvas" aria-label="Interactive Running Hackathon hare mascot" role="img"></canvas><span class="ground-shadow" aria-hidden="true"></span></div>
+        <div class="mood-panel"><p>Try a mood</p><div class="state-buttons" role="group" aria-label="Preview the hare's expressions"><button type="button" data-mascot-mode="0" aria-pressed="true">Say hello <span aria-hidden="true">↗</span></button><button type="button" data-mascot-mode="1" aria-pressed="false">Run <span aria-hidden="true">↗</span></button><button type="button" data-mascot-mode="2" aria-pressed="false">Jump <span aria-hidden="true">↗</span></button><button type="button" data-mascot-mode="3" aria-pressed="false">Celebrate <span aria-hidden="true">↗</span></button><button type="button" data-mascot-mode="4" aria-pressed="false">Catch a breath <span aria-hidden="true">↗</span></button></div><p id="lab-status" class="sr-only" role="status">The hare is ready.</p></div><div class="track" aria-hidden="true"><span></span><span></span><span></span></div>
+        <div id="entities" class="entities" aria-hidden="true"></div>
+        <div id="arena-message" class="arena-message"><p id="message-title">Meet you at the start.</p><span id="message-detail">24 seconds. Three stops. As many ideas as you can carry.</span></div>
+        <div class="jump-cue" id="jump-cue" aria-hidden="true">Jump!</div>
+        <div class="score-pop" id="score-pop" aria-hidden="true"></div>
+        <div class="finish-panel" id="finish-panel" hidden><p>Fresh air looks good on you.</p><strong id="finish-score">0 ideas</strong><span id="finish-detail"></span><button id="replay" class="button button-dark" type="button">Run it back <span aria-hidden="true">↻</span></button></div>
+      </div>
+
+      <div class="play-bar">
+        <div class="play-actions"><button id="start" class="button button-dark" type="button">Start the relay <span aria-hidden="true">↗</span></button><button id="jump" class="button button-jump" type="button" disabled>Jump <kbd>Space</kbd></button><button id="pause" class="button button-quiet" type="button" disabled>Pause</button></div>
+        <div class="best"><span>Personal best</span><strong id="best">0</strong><span>ideas</span><button type="button" id="reset-best" class="reset-best">Reset</button></div>
+      </div>
+      <div class="relay-details"><div><h2 id="relay-title">The morning relay</h2><p id="game-instructions">Jump for the sparks. Clear the hurdles. Tap Jump or press Space while the game is focused.</p></div><label class="mode-toggle"><input id="step-mode" type="checkbox"><span>Play one step at a time</span></label></div>
+      <div class="step-controls" id="step-controls" hidden><p id="step-prompt">Start the relay to see your first encounter.</p><div><button id="step-jump" class="button button-dark" type="button" disabled>Jump this one</button><button id="step-run" class="button button-outline" type="button" disabled>Keep running</button></div></div>
+      <ol class="relay-stations" aria-label="Relay progress"><li class="current" data-leg="0"><span class="station-dot" aria-hidden="true">1</span><div><strong>Warm up</strong><span class="partner-name">Your brand</span></div><span class="leg-status">Ready</span></li><li data-leg="1"><span class="station-dot" aria-hidden="true">2</span><div><strong>Find an idea</strong><span class="partner-name">Your brand</span></div><span class="leg-status">Ahead</span></li><li data-leg="2"><span class="station-dot" aria-hidden="true">3</span><div><strong>Bring it home</strong><span class="partner-name">Your brand</span></div><span class="leg-status">Ahead</span></li></ol>
+      <p id="game-announcement" class="sr-only" role="status" aria-live="polite" aria-atomic="true"></p>
+    </section>
+
+    <section class="partner-studio wrap" aria-labelledby="partner-title">
+      <div class="section-copy"><h2 id="partner-title">Put your team<br>on the start line.</h2><p>A partner gets a place in the game: a team colour, a relay stop, and a reason to join in.</p><p class="plain-note">This is a sponsor preview. Names and colours are saved only on this device.</p></div>
+      <form class="partner-controls" id="partner-form"><label for="partner-name">Team or sponsor name</label><input id="partner-name" name="partner" type="text" value="Your brand" maxlength="32" autocomplete="organization"><fieldset><legend>Choose the hare’s singlet</legend><div class="swatches"><button class="swatch active" type="button" data-color="#283831" style="--swatch:#283831" aria-label="Forest singlet" aria-pressed="true"><span aria-hidden="true">✓</span></button><button class="swatch" type="button" data-color="#A0442F" style="--swatch:#A0442F" aria-label="Brick singlet" aria-pressed="false"><span aria-hidden="true">✓</span></button><button class="swatch" type="button" data-color="#354A62" style="--swatch:#354A62" aria-label="Slate blue singlet" aria-pressed="false"><span aria-hidden="true">✓</span></button><button class="swatch" type="button" data-color="#8C7445" style="--swatch:#8C7445" aria-label="Ochre singlet" aria-pressed="false"><span aria-hidden="true">✓</span></button></div></fieldset><p id="colour-status" class="control-note" role="status">Choose a colour to try on the singlet.</p><button id="preview-team" class="button button-outline" type="submit">Preview your team <span aria-hidden="true">↗</span></button></form>
+    </section>
+
+    <section id="character-studio" class="character-studio wrap" aria-labelledby="character-title"><div class="studio-heading"><h2 id="character-title">One hare.<br>Two directions.</h2><div><p>A bold, expressive mascot for the game. A more detailed illustration to explore alongside it.</p><p>Both stay here as we keep developing the character.</p></div></div><div class="art-directions"><article><div class="art-view editable"><img src="assets/hare-rig.svg" alt="Editable hare mascot with cream fur, long ears, a green running kit and brick-orange shoes" width="600" height="720" loading="lazy"></div><h3>Editable mascot</h3><p>The character you can play with above. Made from individual vector shapes, with expressive ears, eyes and a changeable singlet.</p><div class="art-links"><a href="assets/hare-rig.svg" target="_blank" rel="noopener">SVG artwork ↗</a><a href="assets/rive/running-hackathon-hare.riv" download>Rive animation ↓</a><a href="assets/rive/running-hackathon-hare.rev" download>Editable source ↓</a></div></article><article><div class="art-view illustrated"><img src="assets/mascot-concept.png" alt="Illustrated athletic hare concept in navy running kit and brick-orange shoes, standing with hands on hips" width="1024" height="1536" loading="lazy"></div><h3>Illustrated direction</h3><p>A separate artwork study with more natural proportions and texture. An alternative character direction to explore.</p><div class="art-links"><a href="assets/mascot-concept.png" target="_blank" rel="noopener">Open illustration ↗</a></div></article></div></section>
+  </main>
+
+  <footer class="site-footer wrap"><a href="../04%20Creative%20Warehouse/">Back to the creative warehouse <span aria-hidden="true">↗</span></a><a href="assets/hare-rig.svg" target="_blank" rel="noopener">Open the character artwork <span aria-hidden="true">↗</span></a></footer>
+  <script type="module" src="game.js?v=3"></script>
+  <script type="module" src="hare-rive.js?v=2"></script>
+</body>
+</html>

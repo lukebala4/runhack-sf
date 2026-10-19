@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f3f0e6">
+  <title>A place to perch · Running Hackathon</title>
+  <meta name="description" content="Twenty ways for the Running Hackathon sloth in green smart glasses to sit on the stacked wordmark, including ten quieter directions.">
+  <link rel="stylesheet" href="logo-studies.css?v=quiet-2">
+  <script src="logo-studies.js?v=quiet-2" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#studies">Skip to the studies</a>
+  <header class="page-header page-width">
+    <a class="wordmark" href="../04%20Creative%20Warehouse/" aria-label="Running Hackathon creative warehouse">
+      <img src="../18%20SF%20Website%20Mockup/assets/running-hackathon-wordmark.svg" alt="Running Hackathon" width="160" height="58">
+    </a>
+    <nav aria-label="Creative navigation">
+      <a href="/runhack-sf/">Website ↗</a>
+      <a href="../21%20Sloth%20Tech%20Gear/">Tech gear ↗</a>
+      <a href="../04%20Creative%20Warehouse/">Warehouse ↗</a>
+    </nav>
+  </header>
+
+  <main class="page-width">
+    <section class="introduction" aria-labelledby="page-title">
+      <div class="introduction-copy">
+        <h1 id="page-title">A place<br>to perch</h1>
+        <p>Twenty ways for our sloth to sit on the logo.</p>
+        <nav class="round-links" aria-label="Study rounds">
+          <a href="#studies">First ten ↓</a>
+          <a href="#new-directions">Ten more ↓</a>
+          <a href="../23%20Sloth%20Wildcard/">Giga sloth ↗</a>
+        </nav>
+      </div>
+      <figure class="reference">
+        <a href="../21%20Sloth%20Tech%20Gear/assets/smart-specs.png" target="_blank" rel="noopener" aria-label="Open the earlier sloth drawing with green smart glasses">
+          <img src="../21%20Sloth%20Tech%20Gear/assets/smart-specs.png" alt="The ochre and brown sloth in green smart glasses, with long outstretched arms." width="1024" height="1024">
+        </a>
+        <figcaption>The glasses ↗</figcaption>
+      </figure>
+    </section>
+
+    <section id="studies" class="studies-section" aria-label="Ten sloth and logo studies" tabindex="-1">
+      <div class="view-controls" role="group" aria-label="Composition preview size">
+        <span>View</span>
+        <button type="button" class="view-button" data-preview-size="full" aria-pressed="true">Full size</button>
+        <button type="button" class="view-button" data-preview-size="compact" aria-pressed="false">Compact size</button>
+      </div>
+      <p id="gallery-status" class="gallery-status" role="status">Loading the studies…</p>
+      <div id="study-grid" class="study-grid"></div>
+      <button id="retry-load" class="text-button retry-button" type="button" hidden>Try again ↻</button>
+    </section>
+    <section id="new-directions" class="studies-section quiet-section" aria-labelledby="quiet-title" tabindex="-1" hidden>
+      <h2 id="quiet-title" class="round-title">Quieter directions</h2>
+      <div id="quiet-study-grid" class="study-grid"></div>
+    </section>
+    <noscript><p class="gallery-status">Enable JavaScript to compare the studies and open their large previews.</p></noscript>
+  </main>
+
+  <footer class="page-footer page-width">
+    <a href="../21%20Sloth%20Tech%20Gear/assets/smart-specs.png" target="_blank" rel="noopener">Original glasses drawing ↗</a>
+    <a href="../04%20Creative%20Warehouse/">Back to the warehouse ↗</a>
+  </footer>
+
+  <dialog id="study-dialog" class="study-dialog" aria-labelledby="dialog-title" aria-describedby="dialog-trait">
+    <div class="dialog-shell">
+      <div class="dialog-topbar">
+        <p id="dialog-count" class="dialog-count"></p>
+        <button id="close-dialog" class="text-button" type="button" autofocus>Close ×</button>
+      </div>
+      <div class="dialog-content">
+        <div class="dialog-artwork">
+          <img id="dialog-image" alt="" width="1200" height="900">
+          <div id="dialog-image-error" class="image-error" role="status" hidden>
+            <p>This study couldn’t load.</p>
+            <button id="retry-image" class="text-button" type="button">Try image again ↻</button>
+          </div>
+        </div>
+        <div class="dialog-copy">
+          <h2 id="dialog-title"></h2>
+          <p id="dialog-trait"></p>
+          <div class="view-controls dialog-view-controls" role="group" aria-label="Open composition preview size">
+            <button type="button" class="view-button" data-preview-size="full" aria-pressed="true">Full size</button>
+            <button type="button" class="view-button" data-preview-size="compact" aria-pressed="false">Compact size</button>
+          </div>
+          <a id="download-study" class="download-link" href="#" download>Download composition ↓</a>
+        </div>
+      </div>
+      <nav class="dialog-navigation" aria-label="Browse sloth and logo studies">
+        <button id="previous-study" class="text-button" type="button">← Previous</button>
+        <button id="next-study" class="text-button" type="button">Next →</button>
+      </nav>
+    </div>
+  </dialog>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f3f0e6">
+  <title>Sloth, with tech. · Running Hackathon</title>
+  <meta name="description" content="Ten ways to add tech gear to the Little momentum sloth mascot. Compare each drawing with the original.">
+  <link rel="stylesheet" href="tech.css?v=1">
+  <script src="tech.js?v=1" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#drawings">Skip to the drawings</a>
+  <header class="page-header page-width">
+    <a class="wordmark" href="../04%20Creative%20Warehouse/index.html" aria-label="Running Hackathon creative warehouse">
+      <img src="../19%20Sloth%20Mascot/assets/running-hackathon-wordmark.svg" alt="Running Hackathon" width="142" height="70">
+    </a>
+    <nav aria-label="Creative navigation">
+      <a href="/runhack-sf/?v=sloth-20261018#idea">Website ↗</a>
+      <a href="../20%20Mascot%20Sketchbook/">Sketchbook ↗</a>
+      <a href="../04%20Creative%20Warehouse/index.html">Warehouse ↗</a>
+    </nav>
+  </header>
+
+  <main class="page-width">
+    <section class="introduction" aria-labelledby="page-title">
+      <div class="introduction-copy">
+        <h1 id="page-title">Sloth,<br>with tech.</h1>
+        <p>Ten ways to add tech gear.</p>
+      </div>
+      <figure class="original-reference">
+        <a href="../20%20Mascot%20Sketchbook/assets/sloth-little-momentum.png" target="_blank" rel="noreferrer" aria-label="Open the original Little momentum sloth drawing">
+          <img src="../20%20Mascot%20Sketchbook/assets/sloth-little-momentum.png" alt="Original Little momentum sloth, jumping with long outstretched arms in ochre and brown." width="1024" height="1024">
+        </a>
+        <figcaption>Original ↗</figcaption>
+      </figure>
+    </section>
+
+    <section id="drawings" class="drawings-section" aria-label="Ten sloth tech gear variations" tabindex="-1">
+      <p id="gallery-status" class="gallery-status" role="status">Loading the drawings…</p>
+      <div id="study-grid" class="study-grid"></div>
+      <button id="retry-load" class="text-button retry-button" type="button" hidden>Try again ↻</button>
+    </section>
+    <noscript><p class="gallery-status">Enable JavaScript to browse the drawings and their large previews.</p></noscript>
+  </main>
+
+  <footer class="page-footer page-width">
+    <p>Ten gear studies of the same sloth.</p>
+    <a href="../20%20Mascot%20Sketchbook/#study-sloth-little-momentum">Back to the original drawing ↗</a>
+  </footer>
+
+  <dialog id="drawing-dialog" class="drawing-dialog" aria-labelledby="dialog-title" aria-describedby="dialog-trait">
+    <div class="dialog-shell">
+      <div class="dialog-topbar">
+        <p id="dialog-count" class="dialog-count"></p>
+        <button id="close-dialog" class="text-button" type="button" autofocus>Close ×</button>
+      </div>
+      <div class="dialog-content">
+        <div class="dialog-artwork">
+          <img id="dialog-image" alt="" width="1024" height="1024">
+          <div id="dialog-image-error" class="image-error" role="status" hidden>
+            <p>This drawing couldn’t load.</p>
+            <button id="retry-image" class="text-button" type="button">Try image again ↻</button>
+          </div>
+        </div>
+        <div class="dialog-copy">
+          <h2 id="dialog-title"></h2>
+          <p id="dialog-trait"></p>
+          <a id="download-drawing" class="download-link" href="#" download>Download drawing ↓</a>
+        </div>
+      </div>
+      <nav class="dialog-navigation" aria-label="Browse sloth gear drawings">
+        <button id="previous-drawing" class="text-button" type="button">← Previous</button>
+        <button id="next-drawing" class="text-button" type="button">Next →</button>
+      </nav>
+    </div>
+  </dialog>
+</body>
+</html>

@@ -1,0 +1,302 @@
+[
+  {
+    "index": 0,
+    "slug": "sloth-easy-pace",
+    "name": "Sloth · Easy pace",
+    "animal": "Sloth",
+    "trait": "Unhurried, quietly confident.",
+    "src": "assets/sloth-easy-pace.png",
+    "model": "Nano Banana 2.1",
+    "job_id": "af555f4b-2539-423a-b04a-545caf1f3d8c"
+  },
+  {
+    "index": 1,
+    "slug": "sloth-long-way",
+    "name": "Sloth · Long way round",
+    "animal": "Sloth",
+    "trait": "Gangly, calm, always up for it.",
+    "src": "assets/sloth-long-way.png",
+    "model": "Seedream 5.0 Pro",
+    "job_id": "54bfc606-5adf-4bfe-b72b-ce83e9bae1ba"
+  },
+  {
+    "index": 2,
+    "slug": "hare-false-start",
+    "name": "Hare · False start",
+    "animal": "Hare",
+    "trait": "Restless, curious, looking back for you.",
+    "src": "assets/hare-false-start.png",
+    "model": "Nano Banana 2.1",
+    "job_id": "7d9da2fa-9a76-4694-bef3-5d123da6f5f2"
+  },
+  {
+    "index": 3,
+    "slug": "snail-still-going",
+    "name": "Snail · Still going",
+    "animal": "Snail",
+    "trait": "Determined. Enjoying the long route.",
+    "src": "assets/snail-still-going.png",
+    "model": "Seedream 5.0 Pro",
+    "job_id": "9ed54a12-c4e6-4a91-a5b6-970de45bf815"
+  },
+  {
+    "index": 4,
+    "slug": "crow-new-idea-v2",
+    "name": "Crow · New idea",
+    "animal": "Crow",
+    "trait": "Clever, inquisitive, a little untidy.",
+    "src": "assets/crow-new-idea-v2.png",
+    "model": "Seedream 5.0 Pro",
+    "job_id": "a455bb18-a11c-475a-a6f3-a914dacf7887"
+  },
+  {
+    "index": 5,
+    "slug": "greyhound-morning-legs",
+    "name": "Greyhound · Morning legs",
+    "animal": "Greyhound",
+    "trait": "Elegant, awkward, happy to be outside.",
+    "src": "assets/greyhound-morning-legs.png",
+    "model": "Seedream 5.0 Pro",
+    "job_id": "8bc365b0-071a-412e-891f-34cff30e18b2"
+  },
+  {
+    "index": 6,
+    "slug": "raccoon-useful-trouble",
+    "name": "Raccoon · Useful trouble",
+    "animal": "Raccoon",
+    "trait": "Scrappy. Already testing an idea.",
+    "src": "assets/raccoon-useful-trouble.png",
+    "model": "Nano Banana 2.1",
+    "job_id": "08110391-7de0-4c16-9f1b-f3139bdaf639"
+  },
+  {
+    "index": 7,
+    "slug": "squirrel-too-many-ideas",
+    "name": "Squirrel · Too many ideas",
+    "animal": "Squirrel",
+    "trait": "All energy. Three thoughts ahead.",
+    "src": "assets/squirrel-too-many-ideas.png",
+    "model": "Seedream 5.0 Pro",
+    "job_id": "e98e5bb2-cf2a-4319-97e5-fe090ecf03db"
+  },
+  {
+    "index": 8,
+    "slug": "frog-big-leap",
+    "name": "Frog · Big leap",
+    "animal": "Frog",
+    "trait": "Calm face. Ready to spring.",
+    "src": "assets/frog-big-leap.png",
+    "model": "Nano Banana 2.1",
+    "job_id": "4219420e-424a-4ee9-b2b9-f43aede5fa58"
+  },
+  {
+    "index": 9,
+    "slug": "fox-first-one-out",
+    "name": "Fox · First one out",
+    "animal": "Fox",
+    "trait": "Independent, mischievous, already outside.",
+    "src": "assets/fox-first-one-out.png",
+    "model": "Seedream 5.0 Pro",
+    "job_id": "93784acc-e3b6-446f-84f9-19f96d85bf0e"
+  },
+  {
+    "index": 10,
+    "slug": "sloth-off-duty",
+    "name": "Sloth · Off duty",
+    "animal": "Sloth",
+    "trait": "Relaxed. Paying attention.",
+    "src": "assets/sloth-off-duty.png",
+    "model": "Nano Banana 2.1",
+    "job_id": "27bd3bb1-5c5d-4f9c-aeb7-6b7f0482401b"
+  },
+  {
+    "index": 11,
+    "slug": "sloth-side-eye",
+    "name": "Sloth · Side eye",
+    "animal": "Sloth",
+    "trait": "Quietly amused. Coming along.",
+    "src": "assets/sloth-side-eye.png",
+    "model": "Seedream 5.0 Pro",
+    "job_id": "b77d218f-edfc-4c6c-80a3-655297121479"
+  },
+  {
+    "index": 12,
+    "slug": "sloth-little-momentum",
+    "name": "Sloth · Little momentum",
+    "animal": "Sloth",
+    "trait": "Unexpectedly game for it.",
+    "src": "assets/sloth-little-momentum.png",
+    "model": "Nano Banana 2.1",
+    "job_id": "be29c91b-288e-4269-be8e-bcd06ae7a100"
+  },
+  {
+    "index": 13,
+    "slug": "hare-ear-to-ground",
+    "name": "Hare · Ear to ground",
+    "animal": "Hare",
+    "trait": "Observant. Ready when you are.",
+    "src": "assets/hare-ear-to-ground.png",
+    "model": "Seedream 5.0 Pro",
+    "job_id": "bc463786-4c4e-45d4-a41a-bcc37c7d8883"
+  },
+  {
+    "index": 14,
+    "slug": "hare-no-rush",
+    "name": "Hare · No rush",
+    "animal": "Hare",
+    "trait": "Easy company. Knows the route.",
+    "src": "assets/hare-no-rush.png",
+    "model": "Nano Banana 2.1",
+    "job_id": "04eb77c4-1061-4117-b6d5-52a05443aaf8"
+  },
+  {
+    "index": 15,
+    "slug": "crow-working-it-out",
+    "name": "Crow · Working it out",
+    "animal": "Crow",
+    "trait": "Curious. Slightly sceptical.",
+    "src": "assets/crow-working-it-out.png",
+    "model": "Seedream 5.0 Pro",
+    "job_id": "19dc4a11-daae-4b6e-abd4-9730ebeb2acc"
+  },
+  {
+    "index": 16,
+    "slug": "frog-loose-stride",
+    "name": "Frog · Loose stride",
+    "animal": "Frog",
+    "trait": "Loose limbs. Good mood.",
+    "src": "assets/frog-loose-stride.png",
+    "model": "Nano Banana 2.1",
+    "job_id": "c9e95cc0-c7f3-456c-9a02-96f201233629"
+  },
+  {
+    "index": 17,
+    "slug": "greyhound-rest-day",
+    "name": "Greyhound · Rest day",
+    "animal": "Greyhound",
+    "trait": "Comfortable doing its own thing.",
+    "src": "assets/greyhound-rest-day.png",
+    "model": "Seedream 5.0 Pro",
+    "job_id": "4b7d73ed-3263-4eba-86c0-0113459ba527"
+  },
+  {
+    "index": 18,
+    "slug": "badger-good-ground",
+    "name": "Badger · Good ground",
+    "animal": "Badger",
+    "trait": "Grounded. Happily stubborn.",
+    "src": "assets/badger-good-ground.png",
+    "model": "Nano Banana 2.1",
+    "job_id": "7ab337e7-9ac2-473f-8616-f608f6979267"
+  },
+  {
+    "index": 19,
+    "slug": "goose-lets-go",
+    "name": "Goose · Let's go",
+    "animal": "Goose",
+    "trait": "Sociable. Already leading.",
+    "src": "assets/goose-lets-go.png",
+    "model": "Seedream 5.0 Pro",
+    "job_id": "3f947f39-d8f9-473c-ae97-84ee9650ca83"
+  },
+  {
+    "index": 20,
+    "slug": "gecko-loose-grip",
+    "name": "Gecko · Loose grip",
+    "animal": "Gecko",
+    "trait": "Alert and adaptable.",
+    "src": "assets/gecko-loose-grip.png",
+    "model": "Nano Banana 2.1",
+    "job_id": "160493e3-ff4b-412f-a2ae-987e9341ba0e"
+  },
+  {
+    "index": 21,
+    "slug": "tortoise-long-game",
+    "name": "Tortoise · Long game",
+    "animal": "Tortoise",
+    "trait": "Quiet persistence.",
+    "src": "assets/tortoise-long-game.png",
+    "model": "Seedream 5.0 Pro",
+    "job_id": "0c70660d-ed3a-4a7d-9c4b-31b82371efb0"
+  },
+  {
+    "index": 22,
+    "slug": "mole-underground-v2",
+    "name": "Mole · Underground",
+    "animal": "Mole",
+    "trait": "Always trying something.",
+    "src": "assets/mole-underground-v2.png",
+    "model": "Seedream 5.0 Pro",
+    "job_id": "469a10c4-55e1-479c-ada7-994fed5d3527"
+  },
+  {
+    "index": 23,
+    "slug": "goat-good-footing",
+    "name": "Goat · Good footing",
+    "animal": "Goat",
+    "trait": "Casually fearless.",
+    "src": "assets/goat-good-footing.png",
+    "model": "Seedream 5.0 Pro",
+    "job_id": "7fcc3b13-ce6c-4002-b4d1-af5b002f30ee"
+  },
+  {
+    "index": 24,
+    "slug": "capybara-level-headed",
+    "name": "Capybara · Level headed",
+    "animal": "Capybara",
+    "trait": "Calm in good company.",
+    "src": "assets/capybara-level-headed.png",
+    "model": "Nano Banana 2.1",
+    "job_id": "10a56530-32bc-48f6-8160-d69a4b396e63"
+  },
+  {
+    "index": 25,
+    "slug": "jerboa-next-step",
+    "name": "Jerboa · Next step",
+    "animal": "Jerboa",
+    "trait": "Restless curiosity.",
+    "src": "assets/jerboa-next-step.png",
+    "model": "Seedream 5.0 Pro",
+    "job_id": "3cd5f5e1-a637-45f8-9dcf-d805de0d3fa2"
+  },
+  {
+    "index": 26,
+    "slug": "armadillo-work-in-progress",
+    "name": "Armadillo · Work in progress",
+    "animal": "Armadillo",
+    "trait": "Patient problem-solver.",
+    "src": "assets/armadillo-work-in-progress.png",
+    "model": "Nano Banana 2.1",
+    "job_id": "6b27332d-8160-4a07-b7f3-3e615f3e4e15"
+  },
+  {
+    "index": 27,
+    "slug": "magpie-shortcut",
+    "name": "Magpie · Shortcut",
+    "animal": "Magpie",
+    "trait": "Observant mischief.",
+    "src": "assets/magpie-shortcut.png",
+    "model": "Seedream 5.0 Pro",
+    "job_id": "92f06210-1933-4bee-98fa-f4ab489a2b01"
+  },
+  {
+    "index": 28,
+    "slug": "mantis-thinking-on-feet",
+    "name": "Mantis · Thinking on its feet",
+    "animal": "Praying mantis",
+    "trait": "Thoughtful precision.",
+    "src": "assets/mantis-thinking-on-feet.png",
+    "model": "Nano Banana 2.1",
+    "job_id": "591d1e68-6463-4c48-ad8e-36890f2ac8ef"
+  },
+  {
+    "index": 29,
+    "slug": "seal-easy-company",
+    "name": "Seal · Easy company",
+    "animal": "Seal",
+    "trait": "Easygoing confidence.",
+    "src": "assets/seal-easy-company.png",
+    "model": "Seedream 5.0 Pro",
+    "job_id": "9a42854c-2460-4a65-b9fe-19f22ccb2395"
+  }
+]

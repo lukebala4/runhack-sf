@@ -1,0 +1,127 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#f6f5ef"><title>Worlds Web Audit · Running Hackathon</title><link rel="stylesheet" href="study.css"></head><body><a class="skip-link" href="#report">Skip to research</a><div class="page"><header class="site-header"><a class="brand" href="../04%20Creative%20Warehouse/" aria-label="Running Hackathon creative warehouse"><img src="../03%20Website%20Concepts/assets/running-hackathon-wordmark.svg" alt="Running Hackathon" width="145" height="72"></a><nav aria-label="Study navigation"><a href="../04%20Creative%20Warehouse/">Creative warehouse ↗</a><a href="../06%20Animal%20Mascot%20Choices/">Five animals ↗</a><a href="index.html#model-catalog">Full catalogue ↓</a></nav></header><main id="report"><a class="back" href="index.html">← Capability overview</a><h1 id="higgsfield-website-game-canvas-and-3d-capability-audit">Higgsfield: website, game, canvas and 3D capability audit</h1>
+<p>Checked 17 October 2026. Read-only investigation for the existing local Running Hackathon creative warehouse. No cloud project, board, website, generation or paid action was created; no Blender code was executed.</p>
+<h2 id="decision">Decision</h2>
+<p>Higgsfield can materially help create the visual assets and motion for the field-plus-track direction. It also exposes genuine hosted 3D scene construction and a separate hosted website/app/game builder. Neither needs to replace the current local warehouse or the Rive character.</p>
+<p>The strongest immediate use is a tightly directed set of image/film studies for the existing site: warm morning track meeting Swedish midsummer landscape, restrained real-world colour, brick-orange shoes, and simple prominent type added in HTML. An optional second use is more polished animal concept art and motion references. Keep the selected interactive mascot in Rive, because generated film or sprites do not supply its editable vector rig, state machine, gaze, native listeners or <code>.riv</code> export.</p>
+<p>Three materially different approaches:</p>
+<div class="table-scroll" tabindex="0" role="region" aria-label="Research comparison"><table>
+<thead>
+<tr>
+<th>Approach</th>
+<th>Benefit</th>
+<th>Cost/complexity and risk</th>
+<th>Recommendation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Generate stills and short film assets; integrate locally</td>
+<td>Improves the visual material while retaining every current direction and the current runtime</td>
+<td>Generation credits; anatomy, footwear and continuity need inspection; video needs poster, compression and reduced-motion treatment</td>
+<td>Start here. It directly addresses the user's aesthetic complaint.</td>
+</tr>
+<tr>
+<td>Build an editable 3D Jutsu track/meadow blockout, then render or use it as AI conditioning</td>
+<td>Repeatable camera placement, layout and lighting; a real editable source and portable scene export</td>
+<td>Scene modelling and visual QA are more involved; curated-model import restriction; exports can differ; AI appearance can still drift</td>
+<td>Use when exact camera/layout consistency across several views becomes important.</td>
+</tr>
+<tr>
+<td>Create a new Higgsfield-hosted website, generation app or game</td>
+<td>Hosted infrastructure, app auth/generation SDK or game rooms/persistence</td>
+<td>Separate product and cloud codebase; direct live deploy; genre-catalog mismatch below; it does not automatically migrate the local warehouse</td>
+<td>Useful for a separately requested hosted product, not the default response to improving this local site.</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="what-the-connected-tool-surface-actually-exposes">What the connected tool surface actually exposes</h2>
+<h3 id="website-app-and-browser-game-builder">Website, app and browser game builder</h3>
+<p>The installed website-builder skill describes React 19 + TanStack Start server-rendered projects, deployed as one Cloudflare Worker per product. Code editing is performed through the provided cloud sandbox; checkout/push access has a 15-minute editing lease. It is a scaffold-and-code workflow, not a one-call design generator. Deployment builds the pushed source and immediately changes the public live site. Community-feed publication is a separate operation; it does not deploy.</p>
+<p>The three product types have different contracts:</p>
+<div class="table-scroll" tabindex="0" role="region" aria-label="Research comparison"><table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Supported intent</th>
+<th>Relevant Running Hackathon idea</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>website</code></td>
+<td>Standalone branded website without user-facing AI generation or Higgsfield sign-in</td>
+<td>A separately commissioned marketing site with a generated morning film hero</td>
+</tr>
+<tr>
+<td><code>app</code></td>
+<td>Users sign in with Higgsfield and generate via its SDK using their own credits; uses its Quanta UI shell</td>
+<td>A sponsor activation where attendees generate artwork, if that specific experience is wanted</td>
+</tr>
+<tr>
+<td><code>game</code></td>
+<td>Browser game with rooms, sockets and persistence; single-player is allowed</td>
+<td>A timed sponsor relay, shared-room challenge or score game</td>
+</tr>
+</tbody>
+</table></div>
+<p>The app starters are <code>studio</code>, <code>preset</code>, and <code>app-detail</code>; <code>custom</code> is reserved for an explicit request. The website starter can include a prebuilt <code>scroll-scrub</code> engine for a generated film controlled by scrolling. The skill also describes layered parallax, image particles, masks and other code-driven presentation effects. A scroll-scrub film is still rendered media being scrubbed: it does not become the reactive Rive character.</p>
+<p>Game logic is specified as six pure functions (<code>meta</code>, <code>setup</code>, <code>validateAction</code>, <code>applyAction</code>, <code>isGameOver</code>, <code>viewFor</code>) with the platform owning room transport and persistence. The documented path is 2D, with image/video-derived sprite sheets and generated music, effects or voice. This can support the sponsor play area as a separate hosted game, but it is not required to improve the current local 2D relay.</p>
+<p><strong>Unresolved live mismatch:</strong> the game reference requires a game genre such as <code>arcade</code>, <code>sports</code> or <code>endless-runner</code>, and says <code>list_website_categories</code> supplies the valid genres. The live read returned only eight media-style categories: <code>viral-trends</code>, <code>ads-marketing</code>, <code>ugc-social</code>, <code>cinematic</code>, <code>characters-avatars</code>, <code>product-ecommerce</code>, <code>portrait-lifestyle</code>, <code>other</code>. The <code>create_website</code> metadata likewise refers to that shared category source. I did not create a throwaway game to test which taxonomy is accepted. A functioning game-creation path is therefore documented but not proven in this account.</p>
+<p>Read-only management includes website listing/status, D1/SQLite tables/schema/rows/SELECT inspection, and configured secret names without secret values. The package describes D1/R2 and Durable Objects; the cloud sandbox and production share live resources rather than isolated staging data. The connector's secret tool does not set values; those are configured through website settings and applied on deployment. It is not a general unrestricted hosting or container provisioner.</p>
+<h3 id="canvas-as-a-creative-board-and-generation-graph">Canvas as a creative board and generation graph</h3>
+<p>Canvas tools can create/open/read boards and add/update/remove sticky notes, text, shapes, images, generation nodes and arrows. A generation node stores model, prompt and settings without starting a generation. Connections feed text, reference images, start/end frames or upstream results into downstream generation nodes. <code>canvas_run</code> executes a selected graph including dependencies.</p>
+<p>For this project that could become an optional visual workspace with columns for the five animals, field/track art direction, source references, selected shots and motion experiments. It is a useful collaborative cloud surface, while the existing <code>04 Creative Warehouse</code> should remain the durable local review dashboard and provenance record.</p>
+<p>Limits and operational details:</p>
+<ul>
+<li>The exposed add call does not create board pages; <code>page_id</code> targets an existing page.</li>
+<li>Board image imports accept Higgsfield generation/upload image URLs, not arbitrary Pinterest or local filesystem URLs. A media import can remain even if adding the board item fails.</li>
+<li>New generation nodes do not run themselves. <code>canvas_run(confirm=false)</code> prices the graph without running it; <code>confirm=true</code> starts the priced generation after agreement.</li>
+<li>Direct <code>generate_image</code>/<code>generate_video</code> outputs do not automatically land on a board. Use board generation nodes for an attached graph, or place the completed accessible media on the board afterwards.</li>
+<li>Canvas changes are saved live. Adds can partially succeed and repeating them can duplicate nodes; read back applied/rejected results before retrying.</li>
+<li>No general canvas export-to-local-dashboard or full automatic local/cloud synchronisation tool was exposed. Such synchronisation would need a separate implementation and policy for IDs, prompts, versions and media provenance.</li>
+</ul>
+<h3 id="media-projectlibrary-organisation">Media project/library organisation</h3>
+<p>Media projects, hosted websites and 3D Jutsu scenes are distinct resource types with separate listing tools. A media project is not the user's local <code>Running</code> folder and is not automatically a website or scene.</p>
+<p>The media project API supports accessible project/workspace discovery, metadata and folder inspection, paginated asset listing, prompt-only reads, source/download-detail reads, attachment, copy/move/remove, project updates, reversible archive/unarchive and deletion. Assets have typed source identities (<code>job</code>, <code>media_input</code>, <code>video_input</code>, <code>audio_input</code>, <code>file_input</code>) and placement IDs. Multiple placements can refer to one source. Copying a placement is not a new uploaded source; removing a placement is different from deleting the underlying file. Shared projects may belong to a workspace other than the request context.</p>
+<p>That is useful for keeping generations associated with a named creative effort and retrieving their original prompts/source details. It is not proof of ingesting every pin from a Pinterest board, clearing reuse rights, deduplicating arbitrary external archives, or preserving local files automatically. The current local reference archive and catalog should remain intact.</p>
+<h3 id="3d-jutsu-real-scenes-not-just-a-3d-looking-picture">3D Jutsu: real scenes, not just a 3D-looking picture</h3>
+<p>Current connected tools and the live <code>/3d-jutsu</code> recipe establish a hosted, revision-controlled Blender 5.2 scene system. It can inspect/edit geometry, semantic objects, transforms, parents, materials, cameras, lights, keyframes and constraints through <code>bpy</code>. The source scene is editable and successful mutations produce committed revision/scene-sequence receipts.</p>
+<p>The scene system can:</p>
+<ul>
+<li>Construct and edit a scene procedurally using the hosted Blender API.</li>
+<li>Search a curated GLB catalog and import returned asset IDs into a selected project.</li>
+<li>Render temporary previews without committing scene changes, or publish PNG/JPEG/MP4 artifacts from operations.</li>
+<li>Deliver the committed portable <code>.glb</code> scene and editable <code>.blend</code> source through short-lived downloads.</li>
+<li>Show an interactive preview of a committed GLB revision.</li>
+<li>Generate an AI appearance image from an inspected scene render (<code>3d_jutsu_angles</code>, Seedream V5 Pro pricing) or a paid Seedance 2.5 video using supported reference roles. These generative steps leave the scene itself unchanged.</li>
+</ul>
+<p>This could produce a coherent track curving through meadow, matching sunrise direction across several viewpoints, sponsor objects placed in a consistent scene, or a stylised mascot/prop turntable. It is a more controlled camera/layout route than asking an image model to rediscover the whole world independently each time.</p>
+<p>Hard limits:</p>
+<ul>
+<li>This version imports <strong>curated catalog assets only</strong>. It cannot import the user's own GLB/file into Jutsu. Runtime Python has no network access and must not embed uploaded model bytes as a workaround.</li>
+<li>Search requires an authorised existing <code>projectId</code>. The account returned no existing Jutsu projects. Consequently animal/track catalog availability was not searched, and no exact asset should be promised.</li>
+<li>The runtime pins Blender 5.2 and has an approximately five-minute operation deadline, 256 KiB code cap, and eight published PNG/JPEG/MP4 artifacts per operation. Long rendered animation is more constrained than authoring its keys. Timeouts commit nothing.</li>
+<li>The recipe says <code>.blend</code> preserves authored animation. A full MP4 render is a stretch goal after still-frame proof. A Seedance clip from one render is separate generated motion, not evidence that Blender's keyed movement was faithfully rendered.</li>
+<li>Procedural materials, world lighting and some Blender features do not reliably carry into GLB. Area lights are dropped by scene preview/GLB; camera renders and portable scene previews both require visual inspection.</li>
+<li>Successful Python execution or a valid downloadable GLB establishes neither artistic quality nor correct geometry, lighting or contact.</li>
+<li>No direct <code>.riv</code> export, Rive vector layer conversion, state-machine synthesis, bone/weight transfer to the current hare, or Rive runtime replacement is exposed here.</li>
+</ul>
+<h2 id="reconciling-contradictory-documentation">Reconciling contradictory documentation</h2>
+<p>The installed website-builder <code>SKILL.md</code>, its <code>asset-system.md</code>, <code>wow-catalog.md</code> and <code>game-flow.md</code> say the client cannot make image-to-3D assets and its game pipeline is 2D. The newer/current connected <code>scene_builder_3d_*</code> tools plus the live <code>/3d-jutsu</code> recipe explicitly support real hosted scenes and GLB/Blender exports.</p>
+<p>These should be reported as different surfaces with a documentation inconsistency, not collapsed into either “Higgsfield cannot do 3D” or “the website builder automatically supplies full 3D games.” The live recipe also distinguishes standalone image-to-mesh generation from scene building. I did not verify any image-to-3D model or price in this sub-audit; the scene tools alone do not prove that pipeline. Preserve the game skill's 2D contract unless the platform provides an updated supported game path.</p>
+<p>Likewise the website asset guide says there is no background remover/upscaler/uncrop on its builder surface. That is not evidence that those features are absent from every model or other Higgsfield tool. The overall report should compare the current model inventory separately.</p>
+<h2 id="automation-that-is-actually-present">Automation that is actually present</h2>
+<p>There are batch image/video/audio submissions, async job waiting/status, preset workflows, canvas dependency graphs, media-library organisation, scene mutation receipts/idempotency, and scripted cloud site editing/deployment. These are useful automation primitives. This tool inventory did not expose a recurring scheduler/watch service; it does not establish continuous unattended monitoring, a durable cross-run workflow orchestrator or automatic local-file sync.</p>
+<p>For a larger concept library, retain stable study IDs, the exact model/settings/prompt and references, original job/source IDs, outputs, costs and selected/rejected status. Keep direct generations and cloud project placements distinct. On uncertain submissions reconcile the original job/request instead of generating again. None of that provenance is automatically supplied to the local warehouse simply by using Higgsfield.</p>
+<h2 id="verified-versus-untested">Verified versus untested</h2>
+<p>Verified by live read calls: website categories; no owned websites listed; no 3D Jutsu projects listed; the current <code>/3d-jutsu</code>, <code>/3d-jutsu/references/animation-audit</code> and <code>/3d-jutsu/references/location-new-angles</code> instructions.</p>
+<p>Verified by exposed tool contracts/local source: the website/app/game types and code/deploy lifecycle, Canvas operations and pricing dry-run, typed media-project placements, genuine GLB/Blender retrieval, scene/runtime constraints and paid render-conditioned image/video paths. The installed website skill was read for research; its build workflow was not activated.</p>
+<p>Not exercised: cloud build/deploy, game scaffolding, board creation/graph execution, scene creation/import/edit/render/export, generation quality, model asset coverage, download fidelity, account-specific eligibility or cost for those actions. All recommendations above are implementation choices inferred from verified capabilities, not delivered new creative work.</p>
+<h2 id="evidence-sources">Evidence sources</h2>
+<ul>
+<li>Installed Higgsfield plugin 2.2.0: <code>skills/website-builder/SKILL.md</code>; references <code>game-flow.md</code>, <code>asset-system.md</code>, <code>wow-catalog.md</code>, <code>game-2d-animation.md</code>, <code>runtime-and-infra.md</code>, <code>containers.md</code>.</li>
+<li>Live <code>get_preset_instructions</code>: <code>/3d-jutsu</code>, <code>/3d-jutsu/references/animation-audit</code>, <code>/3d-jutsu/references/location-new-angles</code>.</li>
+<li>Live read results: <code>list_website_categories</code>, <code>list_websites</code>, <code>scene_builder_3d_list_projects</code>.</li>
+<li>Current connector metadata: <code>create_website</code>, website management/DB/secrets/repo tools; Canvas create/read/add/update/remove/run/open; media project/list/asset/placement tools; all available <code>scene_builder_3d_*</code> operations.</li>
+<li>Existing local project evidence: <code>AGENTS.md</code>; <code>07 Interactive Mascot/README.md</code>, which explicitly documents an eight-state articulated vector Rive rig, no bones/mesh/audio/AI connection, and the preserved earlier five-animal concept choice study.</li>
+</ul></main><footer><a href="../07%20Interactive%20Mascot/">Try the Rive hare ↗</a><a href="../03%20Website%20Concepts/?concept=compare">Website concepts ↗</a><a href="../04%20Creative%20Warehouse/">All the experiments ↗</a></footer></div></body></html>

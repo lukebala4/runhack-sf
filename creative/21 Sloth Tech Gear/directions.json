@@ -1,0 +1,102 @@
+[
+  {
+    "index": 0,
+    "slug": "open-ear-audio",
+    "name": "Headphones",
+    "animal": "Sloth",
+    "trait": "Over-ear headphones.",
+    "src": "assets/open-ear-audio.png",
+    "model": "Nano Banana 2.1",
+    "job_id": "35fbb1fd-fd0e-402d-852c-99806f20c9d7"
+  },
+  {
+    "index": 1,
+    "slug": "running-watch",
+    "name": "Running watch",
+    "animal": "Sloth",
+    "trait": "A big, simple watch on the wrist.",
+    "src": "assets/running-watch.png",
+    "model": "Nano Banana 2.1",
+    "job_id": "d25118ef-4b96-4a7d-9d25-a8d54ea6d7db"
+  },
+  {
+    "index": 2,
+    "slug": "phone-armband",
+    "name": "Phone armband",
+    "animal": "Sloth",
+    "trait": "A phone strapped to the upper arm.",
+    "src": "assets/phone-armband.png",
+    "model": "Nano Banana 2.1",
+    "job_id": "ef47c01a-dec4-481b-8682-4e3977f2f716"
+  },
+  {
+    "index": 3,
+    "slug": "voice-pendant",
+    "name": "Voice pendant",
+    "animal": "Sloth",
+    "trait": "A small microphone, worn on the chest.",
+    "src": "assets/voice-pendant.png",
+    "model": "Nano Banana 2.1",
+    "job_id": "8a0a5de0-b758-479b-b0d1-31cbf49a23eb"
+  },
+  {
+    "index": 4,
+    "slug": "trail-camera",
+    "name": "Trail camera",
+    "animal": "Sloth",
+    "trait": "An action camera above the eyes.",
+    "src": "assets/trail-camera.png",
+    "model": "Nano Banana 2.1",
+    "job_id": "ee4500cb-de2c-4734-b5a5-17d19e2831b1"
+  },
+  {
+    "index": 5,
+    "slug": "smart-specs",
+    "name": "Smart specs",
+    "animal": "Sloth",
+    "trait": "Light frames with a discreet camera.",
+    "src": "assets/smart-specs.png",
+    "model": "Nano Banana 2.1",
+    "job_id": "e2173d35-baeb-4f3d-bb5b-2f42f4ed27ea"
+  },
+  {
+    "index": 6,
+    "slug": "pocket-radio",
+    "name": "Pocket radio",
+    "animal": "Sloth",
+    "trait": "A walkie-talkie in one raised claw.",
+    "src": "assets/pocket-radio.png",
+    "model": "Nano Banana 2.1",
+    "job_id": "30bff19d-ffbe-49ad-ae4f-8378eb0106c7"
+  },
+  {
+    "index": 7,
+    "slug": "power-pack",
+    "name": "Power pack",
+    "animal": "Sloth",
+    "trait": "A compact battery clipped at the hip.",
+    "src": "assets/power-pack.png",
+    "model": "Nano Banana 2.1",
+    "job_id": "ab4c1068-3fb7-428c-a9ff-f5020c12f282"
+  },
+  {
+    "index": 8,
+    "slug": "agent-backpack",
+    "name": "Agent backpack",
+    "animal": "Sloth",
+    "trait": "A small pack for a portable setup.",
+    "src": "assets/agent-backpack.png",
+    "model": "Nano Banana 2.1",
+    "job_id": "c4d17009-b0cf-4de7-81c4-8f9bba43251c"
+  },
+  {
+    "index": 9,
+    "slug": "trail-map",
+    "name": "Trail map",
+    "animal": "Sloth",
+    "trait": "A navigation screen in one raised claw.",
+    "src": "assets/trail-map.png",
+    "model": "Nano Banana 2.1",
+    "job_id": "daf15c50-8392-45ae-b4c1-0c70a0f11186"
+  }
+]

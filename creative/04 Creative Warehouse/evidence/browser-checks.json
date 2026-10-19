@@ -1,0 +1,193 @@
+{
+  "filters": [
+    {
+      "test": "original round",
+      "result": "2 studies of 41"
+    },
+    {
+      "test": "search field within originals",
+      "result": "1 study of 41"
+    },
+    {
+      "test": "empty state",
+      "visible": true
+    },
+    {
+      "test": "images",
+      "result": "13 studies of 41"
+    },
+    {
+      "test": "motion",
+      "result": "3 studies of 41"
+    },
+    {
+      "test": "references",
+      "result": "5 studies of 41"
+    },
+    {
+      "test": "research",
+      "result": "8 studies of 41"
+    },
+    {
+      "test": "concepts",
+      "result": "12 studies of 41"
+    },
+    {
+      "test": "starred after click",
+      "result": "1 study of 41"
+    },
+    {
+      "test": "starred after reload",
+      "result": "1 study of 41"
+    },
+    {
+      "test": "unstar restores empty shortlist",
+      "result": "0 studies of 41"
+    }
+  ],
+  "snapshots": [
+    {
+      "concept": "hybrid-1",
+      "heroLoaded": true,
+      "round": "First merged explorations\nAll explorations ↗",
+      "scroll": 1445,
+      "title": "You run.\nYou build.",
+      "width": 1445
+    },
+    {
+      "concept": "hybrid-2",
+      "heroLoaded": true,
+      "round": "First merged explorations\nAll explorations ↗",
+      "scroll": 1445,
+      "title": "Take the idea\noutside.",
+      "width": 1445
+    },
+    {
+      "concept": "hybrid-3",
+      "heroLoaded": true,
+      "round": "First merged explorations\nAll explorations ↗",
+      "scroll": 1445,
+      "title": "Go for\na run.\nMake\nsomething.",
+      "width": 1445
+    },
+    {
+      "concept": "hybrid-4",
+      "heroLoaded": true,
+      "round": "First merged explorations\nAll explorations ↗",
+      "scroll": 1445,
+      "title": "Run. Build.\nGo again.",
+      "width": 1445
+    },
+    {
+      "concept": "hybrid-5",
+      "heroLoaded": true,
+      "round": "First merged explorations\nAll explorations ↗",
+      "scroll": 1445,
+      "title": "A good day\nto build.",
+      "width": 1445
+    },
+    {
+      "concept": "field",
+      "heroLoaded": true,
+      "round": "Original directions\nAll explorations ↗",
+      "scroll": 1445,
+      "title": "A little fresh air.\nA very good idea.",
+      "width": 1445
+    },
+    {
+      "concept": "track",
+      "heroLoaded": true,
+      "round": "Original directions\nAll explorations ↗",
+      "scroll": 1445,
+      "title": "You run.\nYou build.",
+      "width": 1445
+    },
+    {
+      "concept": "hybrid-1",
+      "heroLoaded": true,
+      "round": "Good ideas need fresh air\nAll explorations ↗",
+      "scroll": 1445,
+      "title": "Good ideas\nneed fresh air",
+      "width": 1445
+    },
+    {
+      "concept": "hybrid-2",
+      "heroLoaded": true,
+      "round": "Good ideas need fresh air\nAll explorations ↗",
+      "scroll": 1445,
+      "title": "Good ideas\nneed fresh air",
+      "width": 1445
+    },
+    {
+      "concept": "hybrid-3",
+      "heroLoaded": true,
+      "round": "Good ideas need fresh air\nAll explorations ↗",
+      "scroll": 1445,
+      "title": "Good ideas\nneed\nfresh air",
+      "width": 1445
+    },
+    {
+      "concept": "hybrid-4",
+      "heroLoaded": true,
+      "round": "Good ideas need fresh air\nAll explorations ↗",
+      "scroll": 1445,
+      "title": "Good ideas\nneed fresh air",
+      "width": 1445
+    },
+    {
+      "concept": "hybrid-5",
+      "heroLoaded": true,
+      "round": "Good ideas need fresh air\nAll explorations ↗",
+      "scroll": 1445,
+      "title": "Good ideas\nneed fresh air",
+      "width": 1445
+    }
+  ],
+  "responsive": [
+    {
+      "cards": 13,
+      "headline": {
+        "bottom": 240.70834350585935,
+        "height": 109.75,
+        "left": 22,
+        "right": 361.3333435058594,
+        "top": 130.95834350585938,
+        "width": 339.3333435058594,
+        "x": 22,
+        "y": 130.95834350585938
+      },
+      "scroll": 383,
+      "width": 383
+    },
+    {
+      "cards": 13,
+      "headline": {
+        "bottom": 322.54168701171875,
+        "height": 176.39584350585938,
+        "left": 22,
+        "right": 711.3333740234375,
+        "top": 146.14584350585938,
+        "width": 689.3333740234375,
+        "x": 22,
+        "y": 146.14584350585938
+      },
+      "scroll": 733,
+      "width": 733
+    },
+    {
+      "cards": 13,
+      "headline": {
+        "bottom": 240.70834350585935,
+        "height": 109.75,
+        "left": 22,
+        "right": 301.3333435058594,
+        "top": 130.95834350585938,
+        "width": 279.3333435058594,
+        "x": 22,
+        "y": 130.95834350585938
+      },
+      "scroll": 323,
+      "width": 323
+    }
+  ]
+}

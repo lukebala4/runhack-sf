@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f6f1e5">
+  <title>Meet our running mate · Running Hackathon</title>
+  <link rel="preload" href="../03%20Website%20Concepts/assets/geist.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#playground">Skip to the mascot</a>
+  <header class="site-header page-width">
+    <a class="brand" href="../04%20Creative%20Warehouse/" aria-label="Running Hackathon creative warehouse"><img src="../03%20Website%20Concepts/assets/running-hackathon-wordmark.svg" alt="Running Hackathon" width="142" height="72"></a>
+    <a class="warehouse-link" href="../04%20Creative%20Warehouse/">Creative warehouse <span aria-hidden="true">↗</span></a>
+  </header>
+  <main class="page-width">
+    <section class="intro" aria-labelledby="page-title">
+      <h1 id="page-title">Meet our<br>running mate.</h1>
+      <p>An original hare,<br> made to move.</p>
+    </section>
+
+    <section class="playground" id="playground" aria-label="Original Rive hare playground">
+      <div class="character-stage" id="character-stage" data-rive-state="loading">
+        <svg class="track-lines" viewBox="0 0 1400 700" preserveAspectRatio="none" aria-hidden="true"><path d="M-160 720 C-140 382 468 574 785 547 S1274 444 1546 688"/><path d="M-160 781 C-123 437 468 625 785 599 S1270 496 1546 739"/><path d="M-160 842 C-106 490 468 676 785 652 S1266 549 1546 791"/></svg>
+        <div class="mascot-wrap" id="mascot-wrap">
+          <img id="mascot-fallback" src="assets/original-hare.svg" alt="Our original ink-outline hare in a green running top, running shorts and brick-orange shoes" width="800" height="900">
+          <canvas id="mascot-canvas" role="img" aria-label="Animated original Running Hackathon hare. Use the buttons below to run, hop, wave, drink or celebrate."></canvas>
+        </div>
+        <div class="stage-status"><span aria-hidden="true" class="status-dot"></span><p id="mascot-status" role="status" aria-live="polite">Getting ready…</p></div>
+        <div class="runtime-error" id="runtime-error" hidden>
+          <p>Preview could not load. Open the Rive file or retry.</p>
+          <div><button type="button" id="retry-preview">Retry preview <span aria-hidden="true">↻</span></button><a href="assets/rive/original-hare.riv" download>Open the Rive file <span aria-hidden="true">↗</span></a></div>
+        </div>
+      </div>
+
+      <div class="controls" role="group" aria-label="Choose the hare's action">
+        <button type="button" data-mode="0" aria-pressed="true" disabled><span>Idle</span><span aria-hidden="true">·</span></button>
+        <button type="button" data-mode="1" aria-pressed="false" disabled><span id="run-label">Run</span><span aria-hidden="true">→</span></button>
+        <button type="button" data-mode="2" aria-pressed="false" disabled><span>Hop</span><span aria-hidden="true">↑</span></button>
+        <button type="button" data-mode="3" aria-pressed="false" disabled><span>Wave</span><span aria-hidden="true">✳</span></button>
+        <button type="button" data-mode="4" aria-pressed="false" disabled><span>Drink</span><span aria-hidden="true">↗</span></button>
+        <button type="button" data-mode="5" aria-pressed="false" disabled><span>Celebrate</span><span aria-hidden="true">✦</span></button>
+      </div>
+      <div class="playground-note"><p>Move your cursor to catch its eye.</p><p id="motion-note">Choose a move, or use keys 1–6.</p></div>
+    </section>
+
+    <section class="fresh-air" aria-labelledby="fresh-air-title"><h2 id="fresh-air-title">Good ideas<br>need fresh air.</h2><a href="../10%20Sponsor%20Animal%20Playground/">Meet the whole crew <span aria-hidden="true">↗</span></a></section>
+  </main>
+  <footer class="site-footer page-width">
+    <p>Original vector artwork · native Rive animation</p>
+    <div><a href="assets/rive/original-hare.riv" download>Rive animation <span aria-hidden="true">↓</span></a><a href="assets/rive/original-hare.rev" download>Editable source <span aria-hidden="true">↓</span></a><a href="../04%20Creative%20Warehouse/">All the experiments <span aria-hidden="true">↗</span></a></div>
+  </footer>
+  <script type="module" src="runtime.js"></script>
+</body>
+</html>

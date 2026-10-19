@@ -1,0 +1,56 @@
+{
+  "checked_at": "2026-10-16T22:46:31.070063+01:00",
+  "local_links_missing": [],
+  "image_assets": [
+    {
+      "file": "track-brick-shoes.png",
+      "size": [
+        1667,
+        943
+      ],
+      "sha256": "140586bce1bd7c73131dcb87cd6b762fe57c0604135dde6338232a0b1a137b58"
+    },
+    {
+      "file": "midsummer-field-v2.png",
+      "size": [
+        1672,
+        941
+      ],
+      "sha256": "f8636085135794b459ff3d6fd956c3c0d35b44fdeb2503fba4df23eca42978dd"
+    },
+    {
+      "file": "runner-sketches.png",
+      "size": [
+        1905,
+        825
+      ],
+      "sha256": "c61de737504f40b4e903b9431962d536547aabc6cca7b41dc1614ce4f9976365"
+    }
+  ],
+  "javascript_syntax": "node --check passed",
+  "viewports_reviewed": [
+    [
+      1440,
+      1000
+    ],
+    [
+      390,
+      844
+    ]
+  ],
+  "mobile_overflow": false,
+  "concept_switcher": "passed",
+  "compare_iframes": "passed",
+  "notes_dialog_escape": "passed",
+  "format_anchor": "passed",
+  "rive_catalogue_count": 40,
+  "rive_mesh_search_visible_results": 1,
+  "rive_editor_status": "Earlier session read succeeded with no file. Latest MCP transport unavailable; no listener on 9791.",
+  "accessibility": "Field automated WCAG A/AA check:0 violations;1 incomplete contrast check over image. Manual visual review completed; mobile scrim added for readability.",
+  "limitations": [
+    "No Rive animation/export was executed.",
+    "Rive .riv export plan entitlement conflicts between official editor docs and MCP declaration.",
+    "Generated artwork is concept material; track editing rerendered pixels and meadow remains more controlled than raw event film.",
+    "Local concept pages are not a published or production-tested release."
+  ]
+}

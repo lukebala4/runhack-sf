@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>Running Hackathon — Creative warehouse</title>
+  <link rel="icon" href="../03%20Website%20Concepts/assets/running-hackathon-wordmark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="warehouse.css?v=back-to-website-20261019">
+  <script type="module" src="warehouse.js?v=live-catalog-1"></script>
+</head>
+<body>
+  <a class="skip" href="#collection">Skip to collection</a>
+  <header class="warehouse-header">
+    <a href="./" aria-label="Running Hackathon creative warehouse"><img src="../03%20Website%20Concepts/assets/running-hackathon-wordmark.svg" alt="Running Hackathon" width="160" height="58"></a>
+    <nav aria-label="Workspace"><a class="back-to-website" href="https://lukebala4.github.io/runhack-sf/"><span aria-hidden="true">←</span> Back to home</a><a href="../03%20Website%20Concepts/?concept=compare">Live concepts ↗</a><a href="#collection">Browse everything ↓</a></nav>
+  </header>
+  <main>
+    <section class="warehouse-intro">
+      <h1>Creative<br>warehouse.</h1>
+      <div><p>Every direction stays in play.<br>Explore the websites, images, motion and references. Come back to any version.</p><a class="intro-link" href="../03%20Website%20Concepts/?concept=compare">Continue with the live concepts ↗</a></div>
+    </section>
+    <section class="collection" id="collection" aria-labelledby="collection-title">
+      <h2 id="collection-title" class="sr-only">Creative collection</h2>
+      <div class="collection-controls">
+        <nav class="view-filters" aria-label="Collection categories">
+          <button data-view="all" aria-pressed="true">Everything</button><button data-view="concepts" aria-pressed="false">Websites</button><button data-view="images" aria-pressed="false">Images</button><button data-view="motion" aria-pressed="false">Motion</button><button data-view="references" aria-pressed="false">References</button><button data-view="research" aria-pressed="false">Planning & research</button><button data-view="starred" aria-pressed="false">Starred</button>
+        </nav>
+        <div class="search-row"><label class="search"><span>Search the collection</span><input type="search" id="search" placeholder="Try meadow, logo, Rive…" autocomplete="off"></label><label class="round-picker"><span>Website round</span><select id="round"><option value="all">Every round</option></select></label></div>
+      </div>
+      <div class="collection-status"><p id="result-count" role="status" aria-live="polite">Loading the collection…</p><button id="clear-filters" hidden>Clear filters</button></div>
+      <div id="collection-grid" class="collection-grid"></div>
+      <div id="empty-state" class="empty-state" hidden><h2>No matches yet.</h2><p>Try another search or open everything again.</p><button id="empty-reset">Show everything ↗</button></div>
+      <div id="load-error" class="empty-state" hidden><h2>The collection didn’t load.</h2><p>Reload this page to try again. Your saved files are still in the Creative Warehouse folder.</p><a href="./">Reload the collection ↗</a></div>
+      <noscript><p class="no-script">Open the <a href="../03%20Website%20Concepts/?concept=compare">website concepts</a>, <a href="../03%20Website%20Concepts/archive.html">saved images</a>, <a href="../03%20Website%20Concepts/motion.html">motion study</a> or <a href="../01%20References/Pinterest%20run%20hack/index.html">Pinterest references</a>.</p></noscript>
+    </section>
+  </main>
+  <footer class="warehouse-footer"><p>Saved rounds stay unchanged.</p><a href="guide.html">How this collection grows ↗</a></footer>
+</body>
+</html>

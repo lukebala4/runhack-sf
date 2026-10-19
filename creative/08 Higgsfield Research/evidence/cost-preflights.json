@@ -1,0 +1,165 @@
+{
+  "checkedAt": "2026-10-17",
+  "submittedJobs": 0,
+  "creditsSpent": 0,
+  "qualification": "No media imported. Quotes do not validate reference readiness or quality. Requote exact media/settings before generation.",
+  "quotes": [
+    {
+      "name": "AutoSprite run comparison",
+      "tool": "estimate_image_cost",
+      "params": {
+        "model": "autosprite",
+        "kind": "run",
+        "video_tier": "turbo",
+        "frame_count": 25,
+        "frame_size": 256,
+        "remove_bg": "default",
+        "with_sound": false,
+        "is_humanoid": true,
+        "count": 1
+      },
+      "response": {
+        "cost": {
+          "credits": 2,
+          "credits_exact": 2
+        }
+      }
+    },
+    {
+      "name": "AutoSprite idle",
+      "tool": "estimate_image_cost",
+      "params": {
+        "model": "autosprite",
+        "kind": "idle",
+        "video_tier": "turbo",
+        "frame_count": 25,
+        "frame_size": 256,
+        "remove_bg": "default",
+        "with_sound": false,
+        "is_humanoid": true,
+        "count": 1
+      },
+      "response": {
+        "cost": {
+          "credits": 2,
+          "credits_exact": 2
+        }
+      }
+    },
+    {
+      "name": "AutoSprite jump",
+      "tool": "estimate_image_cost",
+      "params": {
+        "model": "autosprite",
+        "kind": "jump",
+        "video_tier": "turbo",
+        "frame_count": 25,
+        "frame_size": 256,
+        "remove_bg": "default",
+        "with_sound": false,
+        "is_humanoid": true,
+        "count": 1
+      },
+      "response": {
+        "cost": {
+          "credits": 2,
+          "credits_exact": 2
+        }
+      }
+    },
+    {
+      "name": "AutoSprite 512px comparison",
+      "tool": "estimate_image_cost",
+      "params": {
+        "model": "autosprite",
+        "kind": "run",
+        "video_tier": "turbo",
+        "frame_count": 25,
+        "frame_size": 512,
+        "remove_bg": "default",
+        "with_sound": false,
+        "is_humanoid": true,
+        "count": 1
+      },
+      "response": {
+        "cost": {
+          "credits": 2,
+          "credits_exact": 2
+        }
+      }
+    },
+    {
+      "name": "6-second 480p silent film",
+      "tool": "estimate_video_cost",
+      "params": {
+        "model": "seedance_2_5",
+        "mode": "t2v",
+        "duration": 6,
+        "aspect_ratio": "16:9",
+        "resolution": "480p",
+        "generate_audio": false,
+        "count": 1
+      },
+      "response": {
+        "cost": {
+          "credits": 18,
+          "credits_exact": 18
+        }
+      }
+    },
+    {
+      "name": "6-second 1080p silent film",
+      "tool": "estimate_video_cost",
+      "params": {
+        "model": "seedance_2_5",
+        "mode": "t2v",
+        "duration": 6,
+        "aspect_ratio": "16:9",
+        "resolution": "1080p",
+        "generate_audio": false,
+        "count": 1
+      },
+      "response": {
+        "cost": {
+          "credits": 96,
+          "credits_exact": 96
+        }
+      }
+    },
+    {
+      "name": "2K hero still with high quality",
+      "tool": "estimate_image_cost",
+      "params": {
+        "model": "gpt_image_2_5",
+        "variant": "flare",
+        "quality": "high",
+        "resolution": "2k",
+        "aspect_ratio": "16:9",
+        "background": "opaque",
+        "count": 1
+      },
+      "response": {
+        "cost": {
+          "credits": 2.75,
+          "credits_exact": 2.75
+        }
+      }
+    },
+    {
+      "name": "Soul2 2K hero still",
+      "tool": "estimate_image_cost",
+      "params": {
+        "model": "soul_2",
+        "quality": "2k",
+        "aspect_ratio": "16:9",
+        "count": 1
+      },
+      "response": {
+        "cost": {
+          "credits": 1,
+          "credits_exact": 0.12
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,214 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#f6f5ef"><title>Motion Audit · Running Hackathon</title><link rel="stylesheet" href="study.css"></head><body><a class="skip-link" href="#report">Skip to research</a><div class="page"><header class="site-header"><a class="brand" href="../04%20Creative%20Warehouse/" aria-label="Running Hackathon creative warehouse"><img src="../03%20Website%20Concepts/assets/running-hackathon-wordmark.svg" alt="Running Hackathon" width="145" height="72"></a><nav aria-label="Study navigation"><a href="../04%20Creative%20Warehouse/">Creative warehouse ↗</a><a href="../06%20Animal%20Mascot%20Choices/">Five animals ↗</a><a href="index.html#model-catalog">Full catalogue ↓</a></nav></header><main id="report"><a class="back" href="index.html">← Capability overview</a><h1 id="higgsfield-motion-and-audio-audit">Higgsfield motion and audio audit</h1>
+<p>Checked 17 October 2026 through the connected Higgsfield catalog and official pages. This is read-only capability research. No generation, uploads, editor opening, installation, run session or credit spending occurred. Model names and limits below describe this chat's callable catalog, not a promise that a particular animal performance will succeed.</p>
+<p><a href="../04%20Creative%20Warehouse/index.html">Return to Creative Warehouse</a></p>
+<h2 id="best-use-for-this-project">Best use for this project</h2>
+<p>Higgsfield can make the visual world around Running Hackathon much stronger: a warm photographic hero in motion, expressive filmed mascot performances and sponsor films. Rive remains the right place for a small interactive character with precise cursor tracking, triggers, colour inputs and a game loop. Higgsfield's rendered clips are not exported Rive rigs, state machines or editable bone animation.</p>
+<p>Three materially different routes:</p>
+<div class="table-scroll" tabindex="0" role="region" aria-label="Research comparison"><table>
+<thead>
+<tr>
+<th>Route</th>
+<th>Output and strongest fit</th>
+<th>Main limitation</th>
+<th>Recommendation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Reference image → Cinema Studio / Seedance video</td>
+<td>A short morning film: runner, brick-orange shoes, track becoming meadow, sunlit wind and understated sporting energy</td>
+<td>Generative motion and identity can drift; a seamless loop needs deliberate matching and editing</td>
+<td>First choice for the website hero and a launch film</td>
+</tr>
+<tr>
+<td>Character sheet + driving performance → Genjutsu</td>
+<td>The chosen animal performing a human-recorded wave, jog, stretch or celebration; sponsor intro shorts</td>
+<td>Anatomy correspondence, hands, ears, tails and foot contact must be checked; output is flat video</td>
+<td>First choice for character acting experiments</td>
+</tr>
+<tr>
+<td>Native Rive character driven by website code</td>
+<td>Fast reactions, live gaze, form feedback, sponsor colours and play-area mechanics</td>
+<td>Requires vector design/rig/animation work; Higgsfield cannot replace that authoring</td>
+<td>Keep this route for the actual interactive mascot</td>
+</tr>
+</tbody>
+</table></div>
+<p>From scratch I would approve one character sheet, test one short native-looking performance and one photographic hero, then commit to the visual system. I would not generate all eight mascot states independently first: separate generations risk changing the character between states and cannot supply deterministic transitions.</p>
+<h2 id="what-is-callable-now">What is callable now</h2>
+<p>The live <code>models_list</code> returned <strong>57 video entries</strong> and <strong>8 audio entries</strong>, both with <code>has_more:false</code>. These entries include generators and post-processing models. I inspected detailed schemas for the most relevant models, rather than treating every advertised website feature as a connected tool.</p>
+<div class="table-scroll" tabindex="0" role="region" aria-label="Research comparison"><table>
+<thead>
+<tr>
+<th>Capability</th>
+<th>Actual callable model or tool</th>
+<th>Current constraints inspected</th>
+<th>Concrete use</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Directed cinematic generation</td>
+<td><code>cinematic_studio_video_4_0</code> via <code>generate_video</code></td>
+<td>4–30 whole seconds; 480p/720p/1080p; text, omni-reference, video-edit and video-extension modes; image/video/audio refs; first/last frames; 21:9 through 9:16</td>
+<td>Track/meadow morning hero, film-grain sporting launch, close-up shoe → wide field sequence</td>
+</tr>
+<tr>
+<td>Camera, era, light, palette and pacing direction</td>
+<td>Cinema Studio 4.0 schema</td>
+<td>IDs for era, camera body, lens, aperture, pace and genre; preset/custom/user light plus colour-palette selection. Custom lighting has direction, colour, brightness and diffusion</td>
+<td>Warm backlight, vintage lens character, quiet single-shot pacing. Available control IDs must be resolved rather than invented</td>
+</tr>
+<tr>
+<td>General reference-driven video</td>
+<td><code>seedance_2_5</code></td>
+<td>4–30s, 480–1080p; native audio; omni-reference/edit/extension; 480p draft finalizable within seven days</td>
+<td>Preserve chosen mascot, shoes and meadow references across a planned sequence; budget composition drafts</td>
+</tr>
+<tr>
+<td>Copy a performance or camera move</td>
+<td><code>hf_mult_motion_control</code> (Genjutsu)</td>
+<td>Exactly one driving video plus image refs in direct workflow; resolution 480p/720p/1080p</td>
+<td>Film a real jog or greeting, apply its performance to the chosen animal and morning setting</td>
+</tr>
+<tr>
+<td>Replace a selected character, garment or prop</td>
+<td><code>hf_mult_replace_object</code> (Genjutsu)</td>
+<td>Video and image references; separate intent from motion transfer</td>
+<td>Put a particular mascot or authorized sponsor object into an existing shot while aiming to retain shot structure</td>
+</tr>
+<tr>
+<td>Alternative motion control</td>
+<td><code>kling3_0_motion_control</code></td>
+<td><code>std</code> / <code>pro</code>; choose background from input image or input video</td>
+<td>A second route if a single driving performance maps poorly in Genjutsu</td>
+</tr>
+<tr>
+<td>Restyle existing footage</td>
+<td><code>execute_preset</code>, source <code>genjutsu</code>, returned <code>genjutsu-style:</code> IDs</td>
+<td>The resolved workflow says 4–30s source video, up to five optional refs; exact price/readiness comes from selected preset form</td>
+<td>A short drawn-runner section using hand-painted cel or textured gouache; retain filmed pacing</td>
+</tr>
+<tr>
+<td>Text-guided video edits</td>
+<td><code>kling_video_edit</code>, <code>flux_3_video_edit</code>, Cinema Studio or Seedance <code>video_edit</code></td>
+<td>FLUX edit explicitly processes first 15 seconds at most; Cinema/Seedance edit bill from source duration and ignore requested output duration/aspect</td>
+<td>Refine wardrobe, remove visual distractions, rework one shot rather than regenerate a whole film</td>
+</tr>
+<tr>
+<td>Reframe</td>
+<td><code>reframe</code> model</td>
+<td>480p/720p/1080p; ratios 21:9/16:9/4:3/1:1/3:4/9:16</td>
+<td>Desktop hero and phone/social crop from one approved take; inspect added content</td>
+</tr>
+<tr>
+<td>Background extraction</td>
+<td><code>sam_3_video</code> / <code>video_background_remover</code> catalog entries</td>
+<td>SAM exposes apply-mask and frame-count settings; alpha codec/export format not specified by inspected schema</td>
+<td>Potential filmed mascot overlay; must verify actual transparency and fur/ear edges before promising a usable overlay</td>
+</tr>
+<tr>
+<td>Upscale and cleanup</td>
+<td><code>topaz_video</code>, <code>bytedance_video_upscale</code>, <code>video_upscale</code>, <code>video_deflicker</code>, <code>fps_boost</code></td>
+<td>Present in catalog; not individually tested or quoted</td>
+<td>Final delivery cleanup after motion and identity are approved; does not repair broken anatomy</td>
+</tr>
+<tr>
+<td>Sketch to video</td>
+<td><code>draw_to_video</code></td>
+<td>Video/image reference roles, 480–1080p, optional native audio and prompt enhancer</td>
+<td>A storyboard sketch or drawn path becoming a cinematic study; detailed drawing-input semantics need more investigation before production</td>
+</tr>
+<tr>
+<td>Recorded edit / reference remake</td>
+<td><code>/katana</code> recipe with supported generation and render tools</td>
+<td>Source reference breakdown, shot plan, beat timing, matching frames, grading, titles and verification described in recipe</td>
+<td>15–30s event launch or sponsor edit rather than a single generator clip</td>
+</tr>
+</tbody>
+</table></div>
+<p>Higgsfield's official <a href="https://higgsfield.ai/creator-hub/help-center/tools/how-do-i-use-cinema-studio">Cinema Studio help</a> describes a director panel with genre, era, camera/lens, tempo, grading and lighting. Public pages differ on the newest advertised duration/resolution maxima. For this chat, the live model schema above is the executable ceiling; I would quote and validate it again before production.</p>
+<h2 id="genjutsu-the-useful-distinction">Genjutsu: the useful distinction</h2>
+<p>The official <a href="https://higgsfield.ai/genjutsu">Genjutsu page</a> distinguishes motion transfer, which rebuilds a scene around the source motion, from object swap, which changes a selected element. Its published source-video window is 4–30 seconds and it advertises up to 30 reference images. These are product capabilities, not a guarantee of unchanged pixels or perfect character consistency.</p>
+<p>The current preset browse returned these ranked examples among its first page: <strong>Stadium Orbit Rush</strong>, <strong>Athletic Dribble Swap</strong> and <strong>Jersey Detail Zoom</strong>. These are useful references for sporting camera language, but the high-energy ranking is not necessarily our aesthetic. I would choose a restrained owned jog/stretch take over a loud viral template.</p>
+<p>The current complete Styles page returned 20 looks. Best matches to the user's request for real drawings and warmth:</p>
+<ul>
+<li>Hand-Painted Cel Animation</li>
+<li>Expressive 2D Animation</li>
+<li>Graphic Cel</li>
+<li>Textured Gouache Character Illustration</li>
+<li>Warm Painterly 3D Animation</li>
+<li>Felt Puppet Stop Motion, if we explore a deliberately tactile character</li>
+</ul>
+<p>These redraw an existing video. They do not turn it into interactive vector art. Neither a catalog preview nor its example character should be reused as our subject reference.</p>
+<h2 id="animal-quality-and-consistency">Animal quality and consistency</h2>
+<p>The five existing animal directions are all plausible reference subjects, but none was tested here. A bipedal hare, fox or raccoon with clear human-like shoulders/hips is the most straightforward starting hypothesis for a human-driven performance. An otter's long torso and a deer's hooves/ears add mapping risks. This is an inference about anatomy, not a measured model ranking.</p>
+<p>For a meaningful test, use one approved front/three-quarter/full-body sheet, consistent singlet and shoe colours, one uncluttered full-body take and a simple action. Compare face, silhouette, ear shape, tail, paw/hand count, shoe identity, planted feet, direction changes and first/last frames at normal playback speed. Only then expand to running or multi-shot acting.</p>
+<p>Higgsfield's own <a href="https://higgsfield.ai/blog/why-ai-characters-look-weird">character-quality guide</a> says Kling 3.0 is oriented toward realistic humans and is a weaker fit for non-human or abstract subjects. That is vendor guidance, not an independent benchmark, but it is enough reason not to promise the current animal mascot will inherit perfect human lip sync or motion transfer.</p>
+<h2 id="audio-and-voice">Audio and voice</h2>
+<div class="table-scroll" tabindex="0" role="region" aria-label="Research comparison"><table>
+<thead>
+<tr>
+<th>Capability</th>
+<th>Verified surface</th>
+<th>Application and limit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Text-to-speech / expressive voice</td>
+<td><code>generate_audio</code>; <code>seed_audio</code>, <code>qwen_audio_tts</code>, <code>elevenlabs_v4</code>, <code>elevenlabs_v4_turbo</code>, <code>text2speech_v2</code></td>
+<td>A short opt-in mascot greeting or event-film narration. Voice must be chosen from the live picker; no invented voice IDs</td>
+</tr>
+<tr>
+<td>Audio/reference conditioning</td>
+<td>Seed Audio has image/audio reference roles and speech-rate, loudness and pitch controls</td>
+<td>Test a warm, low-key character performance; not a realtime conversational voice service</td>
+</tr>
+<tr>
+<td>Native video audio</td>
+<td>Cinema Studio / Seedance and several other video models expose <code>generate_audio</code></td>
+<td>Footfalls, morning ambience or dialogue in a rendered film; audition the result before using it</td>
+</tr>
+<tr>
+<td>Revoice an existing clip</td>
+<td><code>voice_change</code> tool</td>
+<td>Replace spoken voice while preserving video/timing, with a selected preset or owned reference-element voice</td>
+</tr>
+<tr>
+<td>Offline lip sync</td>
+<td><code>sync_so</code> model</td>
+<td>Source video + source audio; duration mismatch modes are bounce/loop/cut/silence/remap. Non-human mouth performance remains untested</td>
+</tr>
+<tr>
+<td>Dubbing</td>
+<td><code>dubbing</code> catalog model</td>
+<td>Target-language selection for an approved event film; not useful to the core hero yet</td>
+</tr>
+<tr>
+<td>Game music / effects / speech</td>
+<td><code>sonilo_music</code>, <code>mirelo_text_to_audio</code>, <code>inworld_text_to_speech</code></td>
+<td>Catalog explicitly labels these <strong>game pipeline only</strong>; do not claim general audio access from their presence</td>
+</tr>
+</tbody>
+</table></div>
+<p>No observed audio tool supplies streaming recognition, realtime dialogue memory, Rive viseme bindings or autonomous character decisions. Those need separate application code and a realtime service. For this website, silent-by-default plus optional short cues is a better initial fit than an always-speaking mascot.</p>
+<h2 id="katana-and-advertised-versus-available">Katana and advertised versus available</h2>
+<p><code>/use-video-editor</code> and its verification reference explicitly identify <strong>Higgsfield Video Editor</strong>, a separate local plugin (<code>higgsfield-video-editor-local</code>, namespace <code>higgsfield_video_editor_local</code>). Its expected <code>video_editing_open_project</code>, create, outline, edit, preview and render tools are <strong>absent in the tool inventory of this chat</strong>. No setup or installation was attempted. A main Higgsfield connector, localhost page, or successful generation does not establish access to that editor.</p>
+<p>The local editor instructions describe two TSX project kinds: <code>video-editor-next</code>, and <code>craft-reel</code> with FilmCraft edits plus EffectCraft motion graphics. That is a documented possible integration, not a tested current capability. The separate hosted <code>/katana</code> recipe and its session/result tools are present, but reading them starts no session and does not magically add local editor tools.</p>
+<p>Likewise there is no callable standalone tool named <code>motion_control</code>, <code>puppeteer</code> or <code>recast</code> in this inventory. <strong>Actual motion transfer is still available through Genjutsu and Kling model IDs</strong>, as verified above. Do not confuse an absent legacy tool with absence of the supported task, or claim that a legacy Puppeteer interface has been tested.</p>
+<h2 id="production-decision">Production decision</h2>
+<p>Use Higgsfield first for (1) a 6–8s morning hero with matching still fallback, (2) a restrained mascot jog/wave performance, and (3) a 15s sponsor/event film once the character is selected. Keep the exact approved wordmark and large readable catchphrase as deterministic HTML/vector overlays; avoid asking a video model to preserve small logo text across every frame. Preserve all existing photographic directions and add new takes to the creative warehouse.</p>
+<p>The current catalog returned <strong>three shared free Genjutsu attempts</strong> limited to 480p/720p and 30s, plus <strong>35 AI Influencer sheet attempts</strong>. These account-specific counts may change. They were not consumed and do not authorize a generation. A paid model's exact cost requires a current quote with actual duration, resolution, refs and billing mode; no speculative credit estimate is given here. A model being listed or a quote succeeding does not prove generation readiness.</p>
+<p>Main pitfalls: anatomy/identity drift, false seamless-loop assumptions, imperfect background extraction, generated text/logo warping, higher webpage bandwidth, autoplay/reduced-motion needs and unverified local editor availability. No output-quality claim was made because no generation was requested or run.</p>
+<h2 id="evidence-calls">Evidence calls</h2>
+<ul>
+<li><code>models_list(type:"video",limit:100)</code> → 57 entries, no next page.</li>
+<li><code>models_list(type:"audio",limit:100)</code> → 8 entries, no next page.</li>
+<li><code>models_get</code> for Cinema Studio 4.0, Seedance 2.5, Genjutsu motion control, Kling 3.0 motion control, Draw to Video, Seed Audio, Sync Lipsync 3, Reframe and SAM3 Video.</li>
+<li><code>models_recommend</code> with the animal/performance brief: helpful discovery, not quality validation.</li>
+<li><code>get_presets(source:"genjutsu",category:"genjutsu-trending",limit:12)</code> and Styles page (20 entries, no next cursor).</li>
+<li>Read-only recipe resolution for <code>/genjutsu</code>, <code>/katana</code>, <code>/use-video-editor</code> and its <code>/references/verification</code>.</li>
+<li>Actual tool-name inventory searched for local editor, Puppeteer, Recast, standalone motion-control and cinema control-list tools. None of those names was exposed; direct model pathways above were exposed.</li>
+</ul>
+<p>Additional official context: <a href="https://higgsfield.ai/blog/how-we-built-cinema-studio">How Cinema Studio was built</a>, <a href="https://higgsfield.ai/blog/higgsfield-genjutsu">Genjutsu workflow</a>, <a href="https://higgsfield.ai/blog/two-characters-one-scene-ai-video">two-character consistency</a>. Catalog evidence is from the authenticated connector; public articles are vendor descriptions rather than independent performance tests.</p></main><footer><a href="../07%20Interactive%20Mascot/">Try the Rive hare ↗</a><a href="../03%20Website%20Concepts/?concept=compare">Website concepts ↗</a><a href="../04%20Creative%20Warehouse/">All the experiments ↗</a></footer></div></body></html>

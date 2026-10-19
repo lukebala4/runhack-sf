@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>Running Hackathon — Morning studies</title>
+  <link rel="icon" href="../../asset-sets/16b1b20313f8b04d033d305bb85ac6d78423512d7fd60e9076353b4799a96bfb/assets/running-hackathon-wordmark.svg" type="image/svg+xml">
+  <link rel="preload" href="../../asset-sets/16b1b20313f8b04d033d305bb85ac6d78423512d7fd60e9076353b4799a96bfb/assets/geist.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="hybrids.css">
+  <script src="studio.js" type="module"></script>
+</head>
+<body>
+  <a href="#page" class="skip">Skip to concept</a>
+  <aside class="studio-bar" aria-label="Website concept controls">
+    <a class="studio-label" href="/runhack-sf/creative/04%20Creative%20Warehouse/">Creative warehouse ↗</a>
+    <div class="concept-tabs" role="group" aria-label="Choose a design concept">
+      <select class="concept-picker" id="concept-picker" aria-label="Choose a concept">
+        <option value="compare">Choose a concept</option>
+        <optgroup label="Five merged concepts">
+          <option value="hybrid-1">01 / Open track</option>
+          <option value="hybrid-2">02 / Meadow lane</option>
+          <option value="hybrid-3">03 / Morning club</option>
+          <option value="hybrid-4">04 / Grass and lanes</option>
+          <option value="hybrid-5">05 / Out and back</option>
+        </optgroup>
+        <optgroup label="Original concepts">
+          <option value="track">Original / Track morning</option>
+          <option value="field">Original / Midsummer fields</option>
+        </optgroup>
+      </select>
+      <button data-choice="compare" aria-pressed="true">Compare all five</button>
+    </div>
+    <div class="studio-actions"><a class="archive-link" href="/runhack-sf/creative/04%20Creative%20Warehouse/?view=images">Image library ↗</a><button class="notes-button" id="notes-open">Concept notes <span aria-hidden="true">↗</span></button></div>
+  </aside>
+
+  <div class="saved-round"><span>Original directions</span><a href="/runhack-sf/creative/04%20Creative%20Warehouse/">All explorations ↗</a></div>
+  <main id="page">
+    <div id="concept-root"></div>
+    <section id="comparison" hidden aria-label="Compare website concepts">
+      <div class="compare-intro"><h1>The track meets the field.<br>Five ways to bring it together.</h1><p>Warm track, midsummer grass and brick-orange shoes. Five merged images. Five different layouts.</p></div>
+      <div class="compare-grid"></div>
+      <p class="compare-footnote">Open any concept to explore the full page, or visit the <a href="/runhack-sf/creative/04%20Creative%20Warehouse/" style="text-decoration:underline">creative warehouse</a> for every round, image and study.</p>
+    </section>
+  </main>
+
+  <dialog id="notes" aria-labelledby="notes-title">
+    <button class="dialog-close" id="notes-close" aria-label="Close concept notes">×</button>
+    <h2 id="notes-title">Colour belongs<br>in the real world.</h2>
+    <p>Warm track. Long grass. Sun on skin. Brick-orange shoes. Quiet pages that give the images room.</p>
+    <dl><dt>Open track</dt><dd>Big type on paper above a wide, lateral running scene.</dd><dt>Meadow lane</dt><dd>A red track winds through the field, with the headline in the open sky.</dd><dt>Morning club</dt><dd>An asymmetric split puts bold type beside the close running crew.</dd><dt>Grass and lanes</dt><dd>Photograph first. A big statement on paper follows the runners.</dd><dt>Out and back</dt><dd>A low, immersive rear view, with room for the headline on the left.</dd></dl>
+    <p class="note-small">Local design studies for San Francisco. Dates and venue remain open. All five hybrid photographs are AI-generated using both original images as references; they are imagined scenes, not photos of an SF event. Every direction remains accessible in the creative warehouse.</p>
+    <a href="/runhack-sf/creative/01%20References/Pinterest%20run%20hack/index.html" class="text-link">Open the 30-pin reference collection ↗</a><p style="margin-top:20px"><a href="/runhack-sf/creative/03%20Website%20Concepts/rive.html" class="text-link">Explore Rive capabilities ↗</a> · <a href="/runhack-sf/creative/03%20Website%20Concepts/motion.html" class="text-link">See the live runner ↗</a></p>
+  </dialog>
+
+  <template id="shared-nav">
+    <header class="site-header">
+      <a href="#top" class="wordmark" aria-label="Running Hackathon home"><img src="../../asset-sets/16b1b20313f8b04d033d305bb85ac6d78423512d7fd60e9076353b4799a96bfb/assets/running-hackathon-wordmark.svg" alt="Running Hackathon" width="160" height="58"></a>
+      <nav aria-label="Main navigation"><a href="#idea">The idea</a><a href="#format">How it works</a></nav>
+      <a href="#sf" class="city-link">San Francisco <span aria-hidden="true">↗</span></a>
+    </header>
+  </template>
+
+  <template id="track-concept">
+    <div class="concept concept-track" id="top" data-concept="track">
+      <div data-nav></div>
+      <section class="track-hero" aria-labelledby="track-title">
+        <div class="track-intro">
+          <div><h1 id="track-title">You run.<br>You build.</h1></div>
+          <div class="track-intro-copy"><p>A running hackathon<br>for people who make things.</p><a class="text-link" href="#format">See how it works <span aria-hidden="true">↘</span></a></div>
+          
+          <span class="runner-motion hero-runner" data-rive-runner aria-hidden="true"><img src="../../asset-sets/16b1b20313f8b04d033d305bb85ac6d78423512d7fd60e9076353b4799a96bfb/assets/runner-rig.svg" alt="" width="360" height="420"><canvas></canvas></span>
+        </div>
+        <figure class="track-figure"><img class="track-photo" src="../../asset-sets/16b1b20313f8b04d033d305bb85ac6d78423512d7fd60e9076353b4799a96bfb/assets/track-brick-shoes.png" alt="Two runners in cream singlets and brick-orange shoes, in full stride on a warm sunlit track" fetchpriority="high" width="1667" height="943"></figure>
+      </section>
+      <section class="idea-section track-idea" id="idea" aria-labelledby="track-idea-title">
+        <div><h2 id="track-idea-title">Good things happen<br>on the move.</h2></div>
+        <div class="idea-copy"><p>Meet people who are up for making something. Head outside. Build with AI. Come back with a story worth telling.</p><p>Part run club. Part hackathon.<br>A good day in good company.</p></div>
+        <img class="sketch sketch-track" src="../../asset-sets/16b1b20313f8b04d033d305bb85ac6d78423512d7fd60e9076353b4799a96bfb/assets/runner-sketches.png" alt="Loose pen drawings of people running" width="1905" height="825" loading="lazy">
+      </section>
+      <section class="format-section" id="format" aria-labelledby="track-format-title">
+        <div class="section-heading"><h2 id="track-format-title">Make a move.</h2></div>
+        <div class="format-grid"><article><span class="step-word">Out.</span><h3>Find your people.</h3><p>Runners, makers, first-timers. Meet at home base and get an idea going.</p></article><article><span class="step-word">Around.</span><h3>Take the idea for a run.</h3><p>Use your voice and AI to build while you move. Fresh air is part of the process.</p></article><article><span class="step-word">Back.</span><h3>Show what you made.</h3><p>Come back together. Share the work, the strange ideas and the good bits.</p></article></div>
+      </section>
+      <section class="sf-section" id="sf"><h2>See you outside,<br>San Francisco.</h2><p>Date and place coming soon.</p><a href="https://www.therunninghackathon.com/" target="_blank" rel="noopener" class="text-link">More from Running Hackathon ↗</a></section>
+      <footer class="site-footer"><a href="#top" class="footer-logo" aria-label="Running Hackathon home"><img src="../../asset-sets/16b1b20313f8b04d033d305bb85ac6d78423512d7fd60e9076353b4799a96bfb/assets/running-hackathon-wordmark.svg" alt="Running Hackathon" width="140" height="50"></a><a href="#top">Back to the start ↑</a></footer>
+    </div>
+  </template>
+
+  <template id="field-concept">
+    <div class="concept concept-field" id="top" data-concept="field">
+      <div data-nav></div>
+      <section class="field-hero" aria-labelledby="field-title">
+        <img class="field-photo" src="../../asset-sets/16b1b20313f8b04d033d305bb85ac6d78423512d7fd60e9076353b4799a96bfb/assets/midsummer-field-v2.png" alt="Friends running through a sunlit midsummer meadow, with brick-orange shoes and open sky" fetchpriority="high" width="1672" height="941">
+        <div class="field-copy"><h1 id="field-title">A little fresh air.<br>A very good idea.</h1><p>Run with your people.<br>Make something new.</p><a class="field-cta" href="#format">Discover the format <span aria-hidden="true">↘</span></a></div>
+        
+      </section>
+      <section class="field-idea" id="idea" aria-labelledby="field-idea-title"><h2 id="field-idea-title">For the ones who<br>can't sit still.</h2><p>A running hackathon for people who make things.<br>Good company, open air and a little room to try.</p><img src="../../asset-sets/16b1b20313f8b04d033d305bb85ac6d78423512d7fd60e9076353b4799a96bfb/assets/runner-sketches.png" alt="Observational ink sketches of a small running crew" width="1905" height="825" loading="lazy"></section>
+      <section class="field-format" id="format" aria-labelledby="field-format-title"><div><h2 id="field-format-title">Out into the world.<br>Back with an idea.</h2><p>Go for a run. Build with AI. Come back together and show what happened along the way.</p></div><div class="field-list"><article><span>Meet outside.</span><p>A few introductions. A team. An idea to take with you.</p></article><article><span>Make something.</span><p>Your voice, your phone and a little help from AI.</p></article><article><span>Share the good stuff.</span><p>What worked. What didn't. What you'll try next.</p></article></div></section>
+      <section class="field-sf" id="sf"><h2>San Francisco.</h2><p>A new place to get moving.<br>Date and place coming soon.</p><a href="https://www.therunninghackathon.com/" target="_blank" rel="noopener" class="text-link">Follow the Running Hackathon story ↗</a></section>
+      <footer class="site-footer"><a href="#top" class="footer-logo" aria-label="Running Hackathon home"><img src="../../asset-sets/16b1b20313f8b04d033d305bb85ac6d78423512d7fd60e9076353b4799a96bfb/assets/running-hackathon-wordmark.svg" alt="Running Hackathon" width="140" height="50"></a><a href="#top">Back to the start ↑</a></footer>
+    </div>
+  </template>
+</body>
+</html>

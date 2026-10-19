@@ -12,7 +12,17 @@ The home page is `index.html`; press coverage is in `media.html`. Styles are in 
 
 ## Assets and deployment scope
 
-The current website and its required assets were copied from the San Francisco mockup on 19 October 2026. The local-only Creative workspace footer link was removed from the initial deployment. The top navigation now includes a Creative workspace button to `http://127.0.0.1:5173/04%20Creative%20Warehouse/`. It opens the existing local collection in a new tab and requires its local preview server; the collection itself is not hosted by this repository. Historical versions, planning documents, research, private evidence and unused artwork are excluded.
+The San Francisco website and Creative workspace are hosted together in this repository. The top navigation opens https://lukebala4.github.io/runhack-sf/creative/. The workspace preserves all 163 catalog studies and 13 rounds, including linked pages, artwork, references, motion and process notes. Its Back to home button returns to the main website. Visitors do not need a local server.
+
+`creative/` is a generated static export. Its `export-manifest.json` records the complete source-file set and SHA-256 hashes. The exporter follows the catalog, page links, styles, scripts and data references; it rewrites localhost and planning-root URLs for `/runhack-sf/creative/`, resolves shared symlink assets to canonical files, retains licence notices, and generates browsable directory pages where the local Python server previously provided listings. Authoring scripts, hidden files and unrelated local files are excluded. Source studies are preserved unchanged.
+
+To refresh the shared workspace from the local authoring collection, run:
+
+```sh
+python3 scripts/export_creative_workspace.py --source '/path/to/Runninghack SF Planning'
+```
+
+Review and commit the resulting `creative/` changes, then push `main`. Publishing does not synchronise edits back to the local planning collection.
 
 The London film streams from its existing public Vercel Blob URL, so continued playback depends on that external host. It has no supplied accurate caption track.
 

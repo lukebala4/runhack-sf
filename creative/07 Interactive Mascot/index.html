@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f6f5ef">
+  <title>A running mate with a mind of its own · Running Hackathon</title>
+  <link rel="preload" href="../03%20Website%20Concepts/assets/geist.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-mode="0">
+  <a class="skip-link" href="#idea">Skip to the idea form</a>
+  <header class="site-header wrap">
+    <a class="brand" href="../04%20Creative%20Warehouse/" aria-label="Running Hackathon creative warehouse"><img src="../03%20Website%20Concepts/assets/running-hackathon-wordmark.svg" alt="Running Hackathon" width="145" height="72"></a>
+    <nav aria-label="Creative navigation"><a href="../06%20Animal%20Mascot%20Choices/">Five animals <span aria-hidden="true">↗</span></a><a href="../04%20Creative%20Warehouse/">Creative warehouse <span aria-hidden="true">↗</span></a></nav>
+  </header>
+
+  <main class="wrap">
+    <section class="intro" aria-labelledby="page-title">
+      <h1 id="page-title">Good ideas<br>need fresh air</h1>
+      <p>Meet your running mate.<br>Move your cursor, say hello,<br class="desktop-break"> or give the hare an idea.</p>
+    </section>
+
+    <section class="workbench" aria-label="Interactive hare studio">
+      <div class="character-column">
+        <div class="character-sticky">
+          <div class="character-stage">
+            <div class="photo-horizon" aria-hidden="true"></div>
+            <div class="mascot-wrap" id="mascot-wrap" data-rive-state="loading">
+              <img id="mascot-fallback" src="../05%20Mascot%20Playground/assets/hare-rig.svg" alt="Our original hare in a running singlet and brick-orange shoes" width="600" height="720">
+              <canvas id="mascot-canvas" role="img" aria-label="Interactive hare mascot. Move the pointer to meet its gaze or tap its singlet to say hello."></canvas>
+            </div>
+            <div class="character-state"><span class="state-light" aria-hidden="true"></span><p id="mascot-status" role="status" aria-live="polite">Getting ready</p></div>
+          </div>
+          <div class="movement-actions" role="group" aria-label="Move the hare">
+            <button class="button button-dark" type="button" id="say-hello">Say hello <span aria-hidden="true">↗</span></button>
+            <button class="button button-outline" type="button" id="run-toggle" aria-pressed="false">Run <span aria-hidden="true">→</span></button>
+            <button class="button button-outline" type="button" id="hop">Hop <span aria-hidden="true">↑</span></button>
+          </div>
+          <p class="character-hint">Move your cursor to catch its eye. Tap its singlet to say hello.</p>
+        </div>
+      </div>
+
+      <div class="interaction-column">
+        <section class="hello-panel" aria-labelledby="hello-title">
+          <h2 id="hello-title">A proper hello.</h2>
+          <form id="hello-form" novalidate>
+            <label for="your-name">What should we call you?</label>
+            <div class="name-row"><input id="your-name" name="name" type="text" autocomplete="given-name" maxlength="32" placeholder="Your name" aria-describedby="hello-feedback"><button class="button button-outline" type="submit">Say hello</button></div>
+            <p id="hello-feedback" class="feedback" role="status" aria-live="polite">Type your name. Watch the hare pay attention.</p>
+          </form>
+        </section>
+
+        <section class="idea-panel" id="idea" aria-labelledby="idea-title">
+          <h2 id="idea-title">Bring an idea.</h2>
+          <form id="idea-form" novalidate>
+            <label for="your-idea">What would you build after a good run?</label>
+            <textarea id="your-idea" name="idea" rows="3" minlength="8" maxlength="180" placeholder="A little idea is a good place to start…" aria-describedby="idea-feedback" required></textarea>
+            <div class="idea-submit"><button class="button button-dark" id="save-idea" type="submit">Keep this idea <span aria-hidden="true">↗</span></button><span class="character-count" id="character-count">0 / 180</span></div>
+            <p id="idea-feedback" class="feedback" role="status" aria-live="polite">Saved only on this device.</p>
+          </form>
+          <div class="saved-idea" id="saved-idea" hidden>
+            <div class="saved-heading"><h3>Your last saved idea</h3><button type="button" class="text-button" id="clear-idea">Clear</button></div>
+            <p id="saved-idea-text"></p>
+          </div>
+        </section>
+
+        <section class="expression-panel" aria-labelledby="expression-title">
+          <h2 id="expression-title">See what it’s thinking.</h2>
+          <div class="expression-actions" role="group" aria-label="Choose the hare's expression">
+            <button type="button" data-expression="0" aria-pressed="true">Idle</button>
+            <button type="button" data-expression="6" aria-pressed="false">Happy</button>
+            <button type="button" data-expression="7" aria-pressed="false">Sad</button>
+            <button type="button" data-expression="5" aria-pressed="false">Thinking</button>
+            <button type="button" data-expression="3" aria-pressed="false">Success</button>
+          </div>
+          <fieldset class="kit-picker"><legend>Try a singlet colour</legend><div class="kit-options">
+            <button class="kit-option selected" type="button" data-color="#283831" style="--kit:#283831" aria-pressed="true"><span class="colour-chip" aria-hidden="true"></span>Forest</button>
+            <button class="kit-option" type="button" data-color="#A0442F" style="--kit:#A0442F" aria-pressed="false"><span class="colour-chip" aria-hidden="true"></span>Brick</button>
+            <button class="kit-option" type="button" data-color="#354A62" style="--kit:#354A62" aria-pressed="false"><span class="colour-chip" aria-hidden="true"></span>Slate</button>
+          </div></fieldset>
+        </section>
+      </div>
+    </section>
+
+    <section class="next-studies" aria-labelledby="next-title">
+      <h2 id="next-title">Keep exploring.</h2>
+      <div><a href="../05%20Mascot%20Playground/"><span>Play the sponsor relay</span><span aria-hidden="true">↗</span></a><a href="../06%20Animal%20Mascot%20Choices/"><span>Compare all five animals</span><span aria-hidden="true">↗</span></a></div>
+    </section>
+  </main>
+
+  <footer class="site-footer wrap"><a href="../04%20Creative%20Warehouse/">All the experiments <span aria-hidden="true">↗</span></a><div><a href="assets/rive/reactive-hare.riv" download>Rive animation <span aria-hidden="true">↓</span></a><a href="assets/rive/reactive-hare.rev" download>Editable source <span aria-hidden="true">↓</span></a></div></footer>
+  <p class="sr-only" id="interaction-status" role="status" aria-live="polite" aria-atomic="true"></p>
+  <script type="module" src="interactions.js"></script>
+  <script type="module" src="reactive-rive.js"></script>
+</body>
+</html>

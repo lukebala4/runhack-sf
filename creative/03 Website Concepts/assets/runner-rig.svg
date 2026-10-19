@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="420" viewBox="0 0 360 420" fill="none">
+  <title>Morning runner — articulated ink study</title>
+  <desc>Side-profile runner facing right, in a worn cream singlet, short charcoal shorts and brick-orange running shoes. Nested groups have joint-local origins for animation.</desc>
+  <!-- Root origin is the near hip. Every limb extends down its local positive y axis. -->
+  <g id="runner" transform="translate(190 221)" stroke="#2c3028" stroke-width="1.45" stroke-linecap="round" stroke-linejoin="round">
+    <g id="rear-upper-arm" transform="translate(16 -105) rotate(-43)">
+      <path d="M-6-3C-11 5-10 18-8 29L-6 52Q-2 61 5 55C10 49 8 39 7 31L7 10Q7 0 1-5" fill="#f7f7f1"/>
+      <path d="M-6 10Q-8 25-4 40M4 14L5 27M-5 45L-3 50" stroke-width=".65"/>
+      <g id="rear-lower-arm" transform="translate(0 53) rotate(-92)">
+        <path d="M-5-3Q-9 3-7 15L-4 38L-5 45Q-5 50 0 50L4 49Q8 47 7 42L5 37L6 16Q8 4 4-3" fill="#f7f7f1"/>
+        <path d="M-3 7Q-4 21-1 34M-3 42L3 41M-2 46L4 44M1 38L5 39" stroke-width=".65"/>
+      </g>
+    </g>
+
+    <g id="rear-upper-leg" transform="translate(-9 3) rotate(43)">
+      <path d="M-11-3C-15 12-15 30-10 47L-7 81Q-2 91 7 84C12 76 8 61 9 50C12 34 15 15 10 0" fill="#f7f7f1"/>
+      <path d="M-10 13C-12 28-9 42-5 51M7 25Q6 43 4 55M-5 66L-4 75M-8 36L-6 44" stroke-width=".65"/>
+      <g id="rear-lower-leg" transform="translate(0 84) rotate(76)">
+        <path d="M-6-5C-12 4-11 21-7 34L-4 63L-5 75Q0 80 5 75L4 63C5 49 10 38 9 27C9 14 5 4 6-4" fill="#f7f7f1"/>
+        <path d="M-7 9Q-9 22-4 35L-1 59M5 22Q6 32 4 41M-4 67L-3 72" stroke-width=".65"/>
+        <g id="rear-shoe" transform="translate(0 76) rotate(-10)">
+          <path d="M-5-6L5-7L10-1Q17 1 25 3L35 5Q40 7 39 12Q38 16 29 16L-8 14Q-13 11-11 7L-8-1Z" fill="#aa4c30"/>
+          <path d="M-10 10Q6 12 20 12L38 11L37 16Q18 20-8 16Z" fill="#e5dfd0"/>
+          <path d="M1-3L12 3M4-4L16 4M9-1L20 5M-6 2L-7 7M24 7L33 8M-7 13L-3 14M4 15L8 15M15 15L19 15M26 15L30 14" stroke-width=".7"/>
+        </g>
+      </g>
+    </g>
+
+    <g id="front-upper-leg" transform="translate(1 1) rotate(-37)">
+      <path d="M-11-6C-16 10-16 29-11 45L-7 81Q-3 91 5 87C13 82 10 72 10 62C13 45 16 20 11 0" fill="#f7f7f1"/>
+      <path d="M-10 15Q-13 29-8 43M8 28C7 44 5 58 3 68M-6 62L-4 73M-11 31L-8 39M5 75L4 81" stroke-width=".65"/>
+      <g id="front-lower-leg" transform="translate(0 85) rotate(9)">
+        <path d="M-6-5C-11 5-11 22-7 34C-3 47-3 62-4 75Q0 80 5 76L5 62C7 49 11 38 10 25C10 12 6 3 6-4" fill="#f7f7f1"/>
+        <path d="M-7 10Q-8 26-3 38L-1 59M6 21Q8 34 5 45M-3 68L-2 73M-5 29L-3 36" stroke-width=".65"/>
+        <g id="front-shoe" transform="translate(0 76) rotate(22)">
+          <path d="M-5-7L5-7L10-1Q16 0 22 4L35 6Q41 8 40 13C39 17 30 19 19 18L-8 15Q-12 13-11 7L-8 0Z" fill="#aa4c30"/>
+          <path d="M-10 10Q9 15 22 14L40 12L39 17Q20 23-9 17Z" fill="#e5dfd0"/>
+          <path d="M1-3L13 3M5-4L17 4M10-1L22 6M-7 2L-7 7M26 9L35 10M-6 14L-2 15M6 17L10 18M17 18L21 18M28 17L32 16" stroke-width=".7"/>
+        </g>
+      </g>
+    </g>
+
+    <g id="torso-head">
+      <!-- Neck, head and worn singlet share the hip origin. -->
+      <path d="M7-136L8-118Q12-111 21-112L29-119L23-137" fill="#f7f7f1"/>
+      <path d="M5-163C12-173 27-171 34-161L34-151L39-146L36-143L40-138L36-136Q35-126 27-126L19-129L11-140L6-147Z" fill="#f7f7f1"/>
+      <path d="M5-147C-2-153 0-165 10-171C17-177 28-173 34-168L37-161Q27-160 24-164L20-159L14-160L11-149L9-142L5-143Z" fill="#34372f"/>
+      <path d="M3-160L10-168M8-159L17-169M14-162L21-169M24-167L29-164M4-151L6-155" stroke="#8a8d7e" stroke-width=".6"/>
+      <path d="M3-163L0-162M10-173L8-176M19-174L21-177M30-171L34-173M35-167L39-167" stroke-width=".75"/>
+      <path d="M28-151L33-150M31-147L33-147M33-137L36-137M27-132L31-130M13-145Q17-148 19-143L18-138L14-138Q11-141 13-145M15-143L16-140M18-130L22-124" stroke-width=".8"/>
+      <path d="M8-119Q14-115 21-116L28-112C32-100 31-83 25-68L18-45L18-24Q3-16-26-23L-24-43C-29-63-29-82-24-98L-15-111L-5-116Q-4-108 5-105Q16-104 20-113" fill="#eeeadd"/>
+      <path d="M-16-109Q-11-100-13-84L-22-78M27-109Q17-96 21-81L27-76M-21-94Q-22-81-18-69M-20-59Q-14-48-18-35M24-73L11-60M17-49L8-42M-16-30Q2-24 15-28M-4-96L4-92M-6-91L2-88M-8-52L-2-48M-9-47L0-41M-6-38L0-34" stroke-width=".7"/>
+      <path d="M-25-23Q-8-19 17-24L20-3L10 18L-3 14L-7 2L-13 15L-32 10L-31-7Z" fill="#45483f"/>
+      <path d="M-24-20Q-8-17 15-21M-7-15L-6-4M-7-15L-1-11M-5-14L-10-9M-27-9L-28 4M-22-10L-24 6M-18-7L-21 9M-13-9L-16 5M0-7L5 8M5-10L11 6M10-13L15-2" stroke="#bbbcae" stroke-width=".65"/>
+      <path d="M-30 7L-15 12M0 11L9 15" stroke="#d1d0c2" stroke-width=".65"/>
+    </g>
+
+    <g id="front-upper-arm" transform="translate(24 -105) rotate(35)">
+      <path d="M-5-5C-12-1-12 10-10 21L-7 48Q-6 58 2 59C10 58 10 51 8 43L7 21C8 8 5-3 0-5" fill="#f7f7f1"/>
+      <path d="M-7 8Q-10 20-5 35M5 20L4 34M-5 43L-3 50M-8 18L-6 26" stroke-width=".65"/>
+      <g id="front-lower-arm" transform="translate(0 54) rotate(-104)">
+        <path d="M-6-4C-10 3-9 15-6 25L-3 40L-4 48Q-3 54 3 54L8 51L9 46L6 40L7 21C9 10 7 1 4-4" fill="#f7f7f1"/>
+        <path d="M-5 6Q-6 20-2 33M4 16L3 31M-2 43L4 42M-2 47L5 46M0 51L6 49M3 39L7 40" stroke-width=".65"/>
+      </g>
+    </g>
+  </g>
+</svg>

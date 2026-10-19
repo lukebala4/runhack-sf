@@ -1,0 +1,182 @@
+[
+  {
+    "index": 0,
+    "slug": "front-and-centre",
+    "name": "Front and centre",
+    "trait": "Both feet dangling over the top word.",
+    "animal": "Sloth",
+    "src": "compositions/front-and-centre.svg"
+  },
+  {
+    "index": 1,
+    "slug": "left-corner",
+    "name": "Left corner",
+    "trait": "A small perch on the first letter.",
+    "animal": "Sloth",
+    "src": "compositions/left-corner.svg"
+  },
+  {
+    "index": 2,
+    "slug": "right-corner",
+    "name": "Right corner",
+    "trait": "One hand waving from the far end.",
+    "animal": "Sloth",
+    "src": "compositions/right-corner.svg"
+  },
+  {
+    "index": 3,
+    "slug": "cross-legged",
+    "name": "Cross-legged",
+    "trait": "A calm cross-legged seat above the letters.",
+    "animal": "Sloth",
+    "src": "compositions/cross-legged.svg"
+  },
+  {
+    "index": 4,
+    "slug": "side-saddle",
+    "name": "Side saddle",
+    "trait": "One foot out, the other dangling over the letters.",
+    "animal": "Sloth",
+    "src": "compositions/side-saddle.svg"
+  },
+  {
+    "index": 5,
+    "slug": "lean-back",
+    "name": "Lean back",
+    "trait": "A longer, relaxed silhouette across the top.",
+    "animal": "Sloth",
+    "src": "compositions/lean-back.svg"
+  },
+  {
+    "index": 6,
+    "slug": "one-knee-up",
+    "name": "One knee up",
+    "trait": "One knee tucked in, the other foot hanging.",
+    "animal": "Sloth",
+    "src": "compositions/one-knee-up.svg"
+  },
+  {
+    "index": 7,
+    "slug": "elbows-on-knees",
+    "name": "Leaning in",
+    "trait": "Leaning forward, elbows on the knees.",
+    "animal": "Sloth",
+    "src": "compositions/elbows-on-knees.svg"
+  },
+  {
+    "index": 8,
+    "slug": "feet-up",
+    "name": "Hands on the edge",
+    "trait": "Both hands braced beside him, with his feet dangling.",
+    "animal": "Sloth",
+    "src": "compositions/feet-up.svg"
+  },
+  {
+    "index": 9,
+    "slug": "over-the-shoulder",
+    "name": "Over the shoulder",
+    "trait": "Sitting backwards and looking back through his glasses.",
+    "animal": "Sloth",
+    "src": "compositions/over-the-shoulder.svg"
+  },
+  {
+    "index": 10,
+    "slug": "quiet-easy-seat",
+    "name": "Easy seat",
+    "trait": "Small frames, one knee up and a barely-there smile.",
+    "animal": "Sloth",
+    "src": "rounds/2026-10-18-quiet/compositions/quiet-easy-seat.svg",
+    "round": "quiet",
+    "source_png": "rounds/2026-10-18-quiet/assets/quiet-easy-seat.png"
+  },
+  {
+    "index": 11,
+    "slug": "quiet-low-perch",
+    "name": "Low perch",
+    "trait": "A low slouch and small smoked lenses.",
+    "animal": "Sloth",
+    "src": "rounds/2026-10-18-quiet/compositions/quiet-low-perch.svg",
+    "round": "quiet",
+    "source_png": "rounds/2026-10-18-quiet/assets/quiet-low-perch.png"
+  },
+  {
+    "index": 12,
+    "slug": "quiet-ankles-crossed",
+    "name": "Ankles crossed",
+    "trait": "Long legs, crossed ankles and slim oval glasses.",
+    "animal": "Sloth",
+    "src": "rounds/2026-10-18-quiet/compositions/quiet-ankles-crossed.svg",
+    "round": "quiet",
+    "source_png": "rounds/2026-10-18-quiet/assets/quiet-ankles-crossed.png"
+  },
+  {
+    "index": 13,
+    "slug": "quiet-side-profile",
+    "name": "Side profile",
+    "trait": "A quiet profile, looking past the logo.",
+    "animal": "Sloth",
+    "src": "rounds/2026-10-18-quiet/compositions/quiet-side-profile.svg",
+    "round": "quiet",
+    "source_png": "rounds/2026-10-18-quiet/assets/quiet-side-profile.png"
+  },
+  {
+    "index": 14,
+    "slug": "quiet-cap-brim",
+    "name": "Cap brim",
+    "trait": "A small running cap with no extra kit.",
+    "animal": "Sloth",
+    "src": "rounds/2026-10-18-quiet/compositions/quiet-cap-brim.svg",
+    "round": "quiet",
+    "source_png": "rounds/2026-10-18-quiet/assets/quiet-cap-brim.png"
+  },
+  {
+    "index": 15,
+    "slug": "quiet-hands-tucked",
+    "name": "Arms loose",
+    "trait": "Loose arms, a small curious glance and no extra kit.",
+    "animal": "Sloth",
+    "src": "rounds/2026-10-18-quiet/compositions/quiet-hands-tucked.svg",
+    "round": "quiet",
+    "source_png": "rounds/2026-10-18-quiet/assets/quiet-hands-tucked.png"
+  },
+  {
+    "index": 16,
+    "slug": "quiet-slow-lean",
+    "name": "Slow lean",
+    "trait": "One arm behind him and no big gesture.",
+    "animal": "Sloth",
+    "src": "rounds/2026-10-18-quiet/compositions/quiet-slow-lean.svg",
+    "round": "quiet",
+    "source_png": "rounds/2026-10-18-quiet/assets/quiet-slow-lean.png"
+  },
+  {
+    "index": 17,
+    "slug": "quiet-little-crouch",
+    "name": "Little crouch",
+    "trait": "A compact tucked-in seat and a dry expression.",
+    "animal": "Sloth",
+    "src": "rounds/2026-10-18-quiet/compositions/quiet-little-crouch.svg",
+    "round": "quiet",
+    "source_png": "rounds/2026-10-18-quiet/assets/quiet-little-crouch.png"
+  },
+  {
+    "index": 18,
+    "slug": "quiet-looking-away",
+    "name": "Looking away",
+    "trait": "A small sloth sitting sideways, minding his business.",
+    "animal": "Sloth",
+    "src": "rounds/2026-10-18-quiet/compositions/quiet-looking-away.svg",
+    "round": "quiet",
+    "source_png": "rounds/2026-10-18-quiet/assets/quiet-looking-away.png"
+  },
+  {
+    "index": 19,
+    "slug": "quiet-one-foot-swinging",
+    "name": "One foot swinging",
+    "trait": "A loose asymmetric perch and a tiny smirk.",
+    "animal": "Sloth",
+    "src": "rounds/2026-10-18-quiet/compositions/quiet-one-foot-swinging.svg",
+    "round": "quiet",
+    "source_png": "rounds/2026-10-18-quiet/assets/quiet-one-foot-swinging.png"
+  }
+]

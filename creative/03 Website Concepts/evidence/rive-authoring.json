@@ -1,0 +1,3251 @@
+{
+  "fileId": 2659506,
+  "artboard": "Morning Runner",
+  "artboardId": "0-2",
+  "size": [
+    420,
+    460
+  ],
+  "stateMachine": "Morning Run",
+  "timeline": "Morning stride",
+  "fps": 60,
+  "durationFrames": 48,
+  "loop": "loop",
+  "keyframeCount": 539,
+  "keys": [
+    {
+      "objectId": "0-14",
+      "propertyKey": 14,
+      "frame": 0,
+      "value": 1.4494310179066945
+    },
+    {
+      "objectId": "0-296",
+      "propertyKey": 15,
+      "frame": 0,
+      "value": -41.08384247174364
+    },
+    {
+      "objectId": "0-297",
+      "propertyKey": 15,
+      "frame": 0,
+      "value": 47.777659538039764
+    },
+    {
+      "objectId": "0-298",
+      "propertyKey": 15,
+      "frame": 0,
+      "value": -16.693817066296127
+    },
+    {
+      "objectId": "0-404",
+      "propertyKey": 15,
+      "frame": 0,
+      "value": -3.474627379405538
+    },
+    {
+      "objectId": "0-405",
+      "propertyKey": 15,
+      "frame": 0,
+      "value": 120.36355530971284
+    },
+    {
+      "objectId": "0-406",
+      "propertyKey": 15,
+      "frame": 0,
+      "value": -61.11969716107654
+    },
+    {
+      "objectId": "0-23",
+      "propertyKey": 15,
+      "frame": 0,
+      "value": 34
+    },
+    {
+      "objectId": "0-507",
+      "propertyKey": 15,
+      "frame": 0,
+      "value": -42
+    },
+    {
+      "objectId": "0-24",
+      "propertyKey": 15,
+      "frame": 0,
+      "value": -91
+    },
+    {
+      "objectId": "0-508",
+      "propertyKey": 15,
+      "frame": 0,
+      "value": -91
+    },
+    {
+      "objectId": "0-14",
+      "propertyKey": 14,
+      "frame": 1,
+      "value": 2.364960718533584
+    },
+    {
+      "objectId": "0-296",
+      "propertyKey": 15,
+      "frame": 1,
+      "value": -41.1852396045914
+    },
+    {
+      "objectId": "0-297",
+      "propertyKey": 15,
+      "frame": 1,
+      "value": 51.938794685523135
+    },
+    {
+      "objectId": "0-298",
+      "propertyKey": 15,
+      "frame": 1,
+      "value": -18.149388414265076
+    },
+    {
+      "objectId": "0-404",
+      "propertyKey": 15,
+      "frame": 1,
+      "value": -4.941624113523361
+    },
+    {
+      "objectId": "0-405",
+      "propertyKey": 15,
+      "frame": 1,
+      "value": 127.35572576462347
+    },
+    {
+      "objectId": "0-406",
+      "propertyKey": 15,
+      "frame": 1,
+      "value": -75.13846062545916
+    },
+    {
+      "objectId": "0-23",
+      "propertyKey": 15,
+      "frame": 1,
+      "value": 33.674904732204794
+    },
+    {
+      "objectId": "0-507",
+      "propertyKey": 15,
+      "frame": 1,
+      "value": -41.674904732204794
+    },
+    {
+      "objectId": "0-24",
+      "propertyKey": 15,
+      "frame": 1,
+      "value": -92.56631430664062
+    },
+    {
+      "objectId": "0-508",
+      "propertyKey": 15,
+      "frame": 1,
+      "value": -89.43368569335938
+    },
+    {
+      "objectId": "0-14",
+      "propertyKey": 14,
+      "frame": 2,
+      "value": 3.1193222544747874
+    },
+    {
+      "objectId": "0-296",
+      "propertyKey": 15,
+      "frame": 2,
+      "value": -40.84888374396633
+    },
+    {
+      "objectId": "0-297",
+      "propertyKey": 15,
+      "frame": 2,
+      "value": 55.33596956447452
+    },
+    {
+      "objectId": "0-298",
+      "propertyKey": 15,
+      "frame": 2,
+      "value": -19.27875248717484
+    },
+    {
+      "objectId": "0-404",
+      "propertyKey": 15,
+      "frame": 2,
+      "value": -5.870263958994106
+    },
+    {
+      "objectId": "0-405",
+      "propertyKey": 15,
+      "frame": 2,
+      "value": 134.04596128082457
+    },
+    {
+      "objectId": "0-406",
+      "propertyKey": 15,
+      "frame": 2,
+      "value": -89.39364603977913
+    },
+    {
+      "objectId": "0-23",
+      "propertyKey": 15,
+      "frame": 2,
+      "value": 32.70518139898459
+    },
+    {
+      "objectId": "0-507",
+      "propertyKey": 15,
+      "frame": 2,
+      "value": -40.70518139898459
+    },
+    {
+      "objectId": "0-24",
+      "propertyKey": 15,
+      "frame": 2,
+      "value": -94.10582854123025
+    },
+    {
+      "objectId": "0-508",
+      "propertyKey": 15,
+      "frame": 2,
+      "value": -87.89417145876975
+    },
+    {
+      "objectId": "0-14",
+      "propertyKey": 14,
+      "frame": 3,
+      "value": 3.6611071336972927
+    },
+    {
+      "objectId": "0-296",
+      "propertyKey": 15,
+      "frame": 3,
+      "value": -40.096445651798284
+    },
+    {
+      "objectId": "0-297",
+      "propertyKey": 15,
+      "frame": 3,
+      "value": 58.006247568440486
+    },
+    {
+      "objectId": "0-298",
+      "propertyKey": 15,
+      "frame": 3,
+      "value": -20.097301916642202
+    },
+    {
+      "objectId": "0-404",
+      "propertyKey": 15,
+      "frame": 3,
+      "value": -6.1554088416325685
+    },
+    {
+      "objectId": "0-405",
+      "propertyKey": 15,
+      "frame": 3,
+      "value": 140.45657560460958
+    },
+    {
+      "objectId": "0-406",
+      "propertyKey": 15,
+      "frame": 3,
+      "value": -104.01270522451549
+    },
+    {
+      "objectId": "0-23",
+      "propertyKey": 15,
+      "frame": 3,
+      "value": 31.1074222354289
+    },
+    {
+      "objectId": "0-507",
+      "propertyKey": 15,
+      "frame": 3,
+      "value": -39.1074222354289
+    },
+    {
+      "objectId": "0-24",
+      "propertyKey": 15,
+      "frame": 3,
+      "value": -95.59220118838108
+    },
+    {
+      "objectId": "0-508",
+      "propertyKey": 15,
+      "frame": 3,
+      "value": -86.40779881161892
+    },
+    {
+      "objectId": "0-14",
+      "propertyKey": 14,
+      "frame": 4,
+      "value": 3.9533936120239326
+    },
+    {
+      "objectId": "0-296",
+      "propertyKey": 15,
+      "frame": 4,
+      "value": -38.83894814296087
+    },
+    {
+      "objectId": "0-297",
+      "propertyKey": 15,
+      "frame": 4,
+      "value": 60.07541901798803
+    },
+    {
+      "objectId": "0-298",
+      "propertyKey": 15,
+      "frame": 4,
+      "value": -21.19202643058272
+    },
+    {
+      "objectId": "0-404",
+      "propertyKey": 15,
+      "frame": 4,
+      "value": -5.610338795282986
+    },
+    {
+      "objectId": "0-405",
+      "propertyKey": 15,
+      "frame": 4,
+      "value": 146.61122789790514
+    },
+    {
+      "objectId": "0-406",
+      "propertyKey": 15,
+      "frame": 4,
+      "value": -119.20601730775043
+    },
+    {
+      "objectId": "0-23",
+      "propertyKey": 15,
+      "frame": 4,
+      "value": 28.908965343808674
+    },
+    {
+      "objectId": "0-507",
+      "propertyKey": 15,
+      "frame": 4,
+      "value": -36.908965343808674
+    },
+    {
+      "objectId": "0-24",
+      "propertyKey": 15,
+      "frame": 4,
+      "value": -97
+    },
+    {
+      "objectId": "0-508",
+      "propertyKey": 15,
+      "frame": 4,
+      "value": -85
+    },
+    {
+      "objectId": "0-14",
+      "propertyKey": 14,
+      "frame": 5,
+      "value": 3.9762628489829894
+    },
+    {
+      "objectId": "0-296",
+      "propertyKey": 15,
+      "frame": 5,
+      "value": -36.528936352700306
+    },
+    {
+      "objectId": "0-297",
+      "propertyKey": 15,
+      "frame": 5,
+      "value": 61.80921834671088
+    },
+    {
+      "objectId": "0-298",
+      "propertyKey": 15,
+      "frame": 5,
+      "value": -24.95805977178835
+    },
+    {
+      "objectId": "0-404",
+      "propertyKey": 15,
+      "frame": 5,
+      "value": -7.699858463187743
+    },
+    {
+      "objectId": "0-405",
+      "propertyKey": 15,
+      "frame": 5,
+      "value": 152.05441135532416
+    },
+    {
+      "objectId": "0-406",
+      "propertyKey": 15,
+      "frame": 5,
+      "value": -130.39621955880307
+    },
+    {
+      "objectId": "0-23",
+      "propertyKey": 15,
+      "frame": 5,
+      "value": 26.147426931066935
+    },
+    {
+      "objectId": "0-507",
+      "propertyKey": 15,
+      "frame": 5,
+      "value": -34.14742693106693
+    },
+    {
+      "objectId": "0-24",
+      "propertyKey": 15,
+      "frame": 5,
+      "value": -98.30513714810465
+    },
+    {
+      "objectId": "0-508",
+      "propertyKey": 15,
+      "frame": 5,
+      "value": -83.69486285189535
+    },
+    {
+      "objectId": "0-14",
+      "propertyKey": 14,
+      "frame": 6,
+      "value": 3.7281563438689056
+    },
+    {
+      "objectId": "0-296",
+      "propertyKey": 15,
+      "frame": 6,
+      "value": -33.71123030770924
+    },
+    {
+      "objectId": "0-297",
+      "propertyKey": 15,
+      "frame": 6,
+      "value": 62.564890195830344
+    },
+    {
+      "objectId": "0-298",
+      "propertyKey": 15,
+      "frame": 6,
+      "value": -28.2536598881211
+    },
+    {
+      "objectId": "0-404",
+      "propertyKey": 15,
+      "frame": 6,
+      "value": -26.11575156198332
+    },
+    {
+      "objectId": "0-405",
+      "propertyKey": 15,
+      "frame": 6,
+      "value": 153.7455195431075
+    },
+    {
+      "objectId": "0-406",
+      "propertyKey": 15,
+      "frame": 6,
+      "value": -118.87976798112417
+    },
+    {
+      "objectId": "0-23",
+      "propertyKey": 15,
+      "frame": 6,
+      "value": 22.870057685088806
+    },
+    {
+      "objectId": "0-507",
+      "propertyKey": 15,
+      "frame": 6,
+      "value": -30.870057685088806
+    },
+    {
+      "objectId": "0-24",
+      "propertyKey": 15,
+      "frame": 6,
+      "value": -99.48528137423857
+    },
+    {
+      "objectId": "0-508",
+      "propertyKey": 15,
+      "frame": 6,
+      "value": -82.51471862576143
+    },
+    {
+      "objectId": "0-14",
+      "propertyKey": 14,
+      "frame": 7,
+      "value": 3.2259821449898185
+    },
+    {
+      "objectId": "0-296",
+      "propertyKey": 15,
+      "frame": 7,
+      "value": -30.443565280106604
+    },
+    {
+      "objectId": "0-297",
+      "propertyKey": 15,
+      "frame": 7,
+      "value": 62.384580364791205
+    },
+    {
+      "objectId": "0-298",
+      "propertyKey": 15,
+      "frame": 7,
+      "value": -31.063237306906824
+    },
+    {
+      "objectId": "0-404",
+      "propertyKey": 15,
+      "frame": 7,
+      "value": -44.68958289315504
+    },
+    {
+      "objectId": "0-405",
+      "propertyKey": 15,
+      "frame": 7,
+      "value": 152.22798200690613
+    },
+    {
+      "objectId": "0-406",
+      "propertyKey": 15,
+      "frame": 7,
+      "value": -103.99673244708447
+    },
+    {
+      "objectId": "0-23",
+      "propertyKey": 15,
+      "frame": 7,
+      "value": 19.132934302331385
+    },
+    {
+      "objectId": "0-507",
+      "propertyKey": 15,
+      "frame": 7,
+      "value": -27.132934302331385
+    },
+    {
+      "objectId": "0-24",
+      "propertyKey": 15,
+      "frame": 7,
+      "value": -100.52024008349483
+    },
+    {
+      "objectId": "0-508",
+      "propertyKey": 15,
+      "frame": 7,
+      "value": -81.47975991650517
+    },
+    {
+      "objectId": "0-14",
+      "propertyKey": 14,
+      "frame": 8,
+      "value": 2.5039625941172385
+    },
+    {
+      "objectId": "0-296",
+      "propertyKey": 15,
+      "frame": 8,
+      "value": -26.7804897244538
+    },
+    {
+      "objectId": "0-297",
+      "propertyKey": 15,
+      "frame": 8,
+      "value": 61.30762408770525
+    },
+    {
+      "objectId": "0-298",
+      "propertyKey": 15,
+      "frame": 8,
+      "value": -33.3715788076959
+    },
+    {
+      "objectId": "0-404",
+      "propertyKey": 15,
+      "frame": 8,
+      "value": -59.525601620637396
+    },
+    {
+      "objectId": "0-405",
+      "propertyKey": 15,
+      "frame": 8,
+      "value": 147.84531822095644
+    },
+    {
+      "objectId": "0-406",
+      "propertyKey": 15,
+      "frame": 8,
+      "value": -89.98638326698568
+    },
+    {
+      "objectId": "0-23",
+      "propertyKey": 15,
+      "frame": 8,
+      "value": 15.000000000000004
+    },
+    {
+      "objectId": "0-507",
+      "propertyKey": 15,
+      "frame": 8,
+      "value": -23.000000000000004
+    },
+    {
+      "objectId": "0-24",
+      "propertyKey": 15,
+      "frame": 8,
+      "value": -101.39230484541326
+    },
+    {
+      "objectId": "0-508",
+      "propertyKey": 15,
+      "frame": 8,
+      "value": -80.60769515458674
+    },
+    {
+      "objectId": "0-14",
+      "propertyKey": 14,
+      "frame": 9,
+      "value": 1.6113021304494055
+    },
+    {
+      "objectId": "0-296",
+      "propertyKey": 15,
+      "frame": 9,
+      "value": -22.770011324958293
+    },
+    {
+      "objectId": "0-297",
+      "propertyKey": 15,
+      "frame": 9,
+      "value": 59.37131066336024
+    },
+    {
+      "objectId": "0-298",
+      "propertyKey": 15,
+      "frame": 9,
+      "value": -35.167966005068614
+    },
+    {
+      "objectId": "0-404",
+      "propertyKey": 15,
+      "frame": 9,
+      "value": -69.3061540108437
+    },
+    {
+      "objectId": "0-405",
+      "propertyKey": 15,
+      "frame": 9,
+      "value": 141.42901025118474
+    },
+    {
+      "objectId": "0-406",
+      "propertyKey": 15,
+      "frame": 9,
+      "value": -78.99785624034104
+    },
+    {
+      "objectId": "0-23",
+      "propertyKey": 15,
+      "frame": 9,
+      "value": 10.541970429873414
+    },
+    {
+      "objectId": "0-507",
+      "propertyKey": 15,
+      "frame": 9,
+      "value": -18.541970429873416
+    },
+    {
+      "objectId": "0-24",
+      "propertyKey": 15,
+      "frame": 9,
+      "value": -102.08655439013543
+    },
+    {
+      "objectId": "0-508",
+      "propertyKey": 15,
+      "frame": 9,
+      "value": -79.91344560986457
+    },
+    {
+      "objectId": "0-14",
+      "propertyKey": 14,
+      "frame": 10,
+      "value": 0.6088340893941174
+    },
+    {
+      "objectId": "0-296",
+      "propertyKey": 15,
+      "frame": 10,
+      "value": -18.44920025782994
+    },
+    {
+      "objectId": "0-297",
+      "propertyKey": 15,
+      "frame": 10,
+      "value": 56.60693916894316
+    },
+    {
+      "objectId": "0-298",
+      "propertyKey": 15,
+      "frame": 10,
+      "value": -36.446627800002105
+    },
+    {
+      "objectId": "0-404",
+      "propertyKey": 15,
+      "frame": 10,
+      "value": -74.85632371518346
+    },
+    {
+      "objectId": "0-405",
+      "propertyKey": 15,
+      "frame": 10,
+      "value": 133.66197699454614
+    },
+    {
+      "objectId": "0-406",
+      "propertyKey": 15,
+      "frame": 10,
+      "value": -70.88898661269604
+    },
+    {
+      "objectId": "0-23",
+      "propertyKey": 15,
+      "frame": 10,
+      "value": 5.835123713895788
+    },
+    {
+      "objectId": "0-507",
+      "propertyKey": 15,
+      "frame": 10,
+      "value": -13.835123713895788
+    },
+    {
+      "objectId": "0-24",
+      "propertyKey": 15,
+      "frame": 10,
+      "value": -102.59110991546882
+    },
+    {
+      "objectId": "0-508",
+      "propertyKey": 15,
+      "frame": 10,
+      "value": -79.40889008453118
+    },
+    {
+      "objectId": "0-14",
+      "propertyKey": 14,
+      "frame": 11,
+      "value": -0.43512498870747307
+    },
+    {
+      "objectId": "0-296",
+      "propertyKey": 15,
+      "frame": 11,
+      "value": -13.838988321914226
+    },
+    {
+      "objectId": "0-297",
+      "propertyKey": 15,
+      "frame": 11,
+      "value": 53.030940896820375
+    },
+    {
+      "objectId": "0-298",
+      "propertyKey": 15,
+      "frame": 11,
+      "value": -37.20306368601726
+    },
+    {
+      "objectId": "0-404",
+      "propertyKey": 15,
+      "frame": 11,
+      "value": -77.38294836878242
+    },
+    {
+      "objectId": "0-405",
+      "propertyKey": 15,
+      "frame": 11,
+      "value": 124.93387632049073
+    },
+    {
+      "objectId": "0-406",
+      "propertyKey": 15,
+      "frame": 11,
+      "value": -64.84259461837493
+    },
+    {
+      "objectId": "0-23",
+      "propertyKey": 15,
+      "frame": 11,
+      "value": 0.9599953043619651
+    },
+    {
+      "objectId": "0-507",
+      "propertyKey": 15,
+      "frame": 11,
+      "value": -8.959995304361964
+    },
+    {
+      "objectId": "0-24",
+      "propertyKey": 15,
+      "frame": 11,
+      "value": -102.89733833648572
+    },
+    {
+      "objectId": "0-508",
+      "propertyKey": 15,
+      "frame": 11,
+      "value": -79.10266166351428
+    },
+    {
+      "objectId": "0-14",
+      "propertyKey": 14,
+      "frame": 12,
+      "value": -1.449431017906694
+    },
+    {
+      "objectId": "0-296",
+      "propertyKey": 15,
+      "frame": 12,
+      "value": -10.956326101534613
+    },
+    {
+      "objectId": "0-297",
+      "propertyKey": 15,
+      "frame": 12,
+      "value": 52.98525032397813
+    },
+    {
+      "objectId": "0-298",
+      "propertyKey": 15,
+      "frame": 12,
+      "value": -34.93801513153443
+    },
+    {
+      "objectId": "0-404",
+      "propertyKey": 15,
+      "frame": 12,
+      "value": -77.11207716614743
+    },
+    {
+      "objectId": "0-405",
+      "propertyKey": 15,
+      "frame": 12,
+      "value": 116.44390183286528
+    },
+    {
+      "objectId": "0-406",
+      "propertyKey": 15,
+      "frame": 12,
+      "value": -58.76039609528928
+    },
+    {
+      "objectId": "0-23",
+      "propertyKey": 15,
+      "frame": 12,
+      "value": -3.999999999999998
+    },
+    {
+      "objectId": "0-507",
+      "propertyKey": 15,
+      "frame": 12,
+      "value": -4.000000000000003
+    },
+    {
+      "objectId": "0-24",
+      "propertyKey": 15,
+      "frame": 12,
+      "value": -103
+    },
+    {
+      "objectId": "0-508",
+      "propertyKey": 15,
+      "frame": 12,
+      "value": -79
+    },
+    {
+      "objectId": "0-14",
+      "propertyKey": 14,
+      "frame": 13,
+      "value": -2.3649607185335824
+    },
+    {
+      "objectId": "0-296",
+      "propertyKey": 15,
+      "frame": 13,
+      "value": -7.951845482785212
+    },
+    {
+      "objectId": "0-297",
+      "propertyKey": 15,
+      "frame": 13,
+      "value": 52.68984642731793
+    },
+    {
+      "objectId": "0-298",
+      "propertyKey": 15,
+      "frame": 13,
+      "value": -32.34406155059335
+    },
+    {
+      "objectId": "0-404",
+      "propertyKey": 15,
+      "frame": 13,
+      "value": -75.23946573244368
+    },
+    {
+      "objectId": "0-405",
+      "propertyKey": 15,
+      "frame": 13,
+      "value": 108.65964314043545
+    },
+    {
+      "objectId": "0-406",
+      "propertyKey": 15,
+      "frame": 13,
+      "value": -51.65827264608701
+    },
+    {
+      "objectId": "0-23",
+      "propertyKey": 15,
+      "frame": 13,
+      "value": -8.959995304361954
+    },
+    {
+      "objectId": "0-507",
+      "propertyKey": 15,
+      "frame": 13,
+      "value": 0.9599953043619527
+    },
+    {
+      "objectId": "0-24",
+      "propertyKey": 15,
+      "frame": 13,
+      "value": -102.89733833648573
+    },
+    {
+      "objectId": "0-508",
+      "propertyKey": 15,
+      "frame": 13,
+      "value": -79.10266166351427
+    },
+    {
+      "objectId": "0-14",
+      "propertyKey": 14,
+      "frame": 14,
+      "value": -3.1193222544747874
+    },
+    {
+      "objectId": "0-296",
+      "propertyKey": 15,
+      "frame": 14,
+      "value": -4.782339254317226
+    },
+    {
+      "objectId": "0-297",
+      "propertyKey": 15,
+      "frame": 14,
+      "value": 52.05502472139106
+    },
+    {
+      "objectId": "0-298",
+      "propertyKey": 15,
+      "frame": 14,
+      "value": -29.57571577010412
+    },
+    {
+      "objectId": "0-404",
+      "propertyKey": 15,
+      "frame": 14,
+      "value": -72.92158471408676
+    },
+    {
+      "objectId": "0-405",
+      "propertyKey": 15,
+      "frame": 14,
+      "value": 100.57400385338273
+    },
+    {
+      "objectId": "0-406",
+      "propertyKey": 15,
+      "frame": 14,
+      "value": -44.700038186915016
+    },
+    {
+      "objectId": "0-23",
+      "propertyKey": 15,
+      "frame": 14,
+      "value": -13.835123713895792
+    },
+    {
+      "objectId": "0-507",
+      "propertyKey": 15,
+      "frame": 14,
+      "value": 5.835123713895792
+    },
+    {
+      "objectId": "0-24",
+      "propertyKey": 15,
+      "frame": 14,
+      "value": -102.59110991546882
+    },
+    {
+      "objectId": "0-508",
+      "propertyKey": 15,
+      "frame": 14,
+      "value": -79.40889008453118
+    },
+    {
+      "objectId": "0-14",
+      "propertyKey": 14,
+      "frame": 15,
+      "value": -3.6611071336972922
+    },
+    {
+      "objectId": "0-296",
+      "propertyKey": 15,
+      "frame": 15,
+      "value": -1.47276633328265
+    },
+    {
+      "objectId": "0-297",
+      "propertyKey": 15,
+      "frame": 15,
+      "value": 51.13997673802551
+    },
+    {
+      "objectId": "0-298",
+      "propertyKey": 15,
+      "frame": 15,
+      "value": -26.667210404742868
+    },
+    {
+      "objectId": "0-404",
+      "propertyKey": 15,
+      "frame": 15,
+      "value": -70.22357123408047
+    },
+    {
+      "objectId": "0-405",
+      "propertyKey": 15,
+      "frame": 15,
+      "value": 92.13985588853677
+    },
+    {
+      "objectId": "0-406",
+      "propertyKey": 15,
+      "frame": 15,
+      "value": -37.77342751159917
+    },
+    {
+      "objectId": "0-23",
+      "propertyKey": 15,
+      "frame": 15,
+      "value": -18.54197042987341
+    },
+    {
+      "objectId": "0-507",
+      "propertyKey": 15,
+      "frame": 15,
+      "value": 10.541970429873409
+    },
+    {
+      "objectId": "0-24",
+      "propertyKey": 15,
+      "frame": 15,
+      "value": -102.08655439013543
+    },
+    {
+      "objectId": "0-508",
+      "propertyKey": 15,
+      "frame": 15,
+      "value": -79.91344560986457
+    },
+    {
+      "objectId": "0-14",
+      "propertyKey": 14,
+      "frame": 16,
+      "value": -3.953393612023932
+    },
+    {
+      "objectId": "0-296",
+      "propertyKey": 15,
+      "frame": 16,
+      "value": 1.9666384544906532
+    },
+    {
+      "objectId": "0-297",
+      "propertyKey": 15,
+      "frame": 16,
+      "value": 49.974334911729294
+    },
+    {
+      "objectId": "0-298",
+      "propertyKey": 15,
+      "frame": 16,
+      "value": -23.637943063189667
+    },
+    {
+      "objectId": "0-404",
+      "propertyKey": 15,
+      "frame": 16,
+      "value": -67.16212128849449
+    },
+    {
+      "objectId": "0-405",
+      "propertyKey": 15,
+      "frame": 16,
+      "value": 83.26661033352924
+    },
+    {
+      "objectId": "0-406",
+      "propertyKey": 15,
+      "frame": 16,
+      "value": -30.771155711701425
+    },
+    {
+      "objectId": "0-23",
+      "propertyKey": 15,
+      "frame": 16,
+      "value": -22.999999999999993
+    },
+    {
+      "objectId": "0-507",
+      "propertyKey": 15,
+      "frame": 16,
+      "value": 14.999999999999993
+    },
+    {
+      "objectId": "0-24",
+      "propertyKey": 15,
+      "frame": 16,
+      "value": -101.39230484541326
+    },
+    {
+      "objectId": "0-508",
+      "propertyKey": 15,
+      "frame": 16,
+      "value": -80.60769515458674
+    },
+    {
+      "objectId": "0-14",
+      "propertyKey": 14,
+      "frame": 17,
+      "value": -3.9762628489829894
+    },
+    {
+      "objectId": "0-296",
+      "propertyKey": 15,
+      "frame": 17,
+      "value": 0.9378746256504469
+    },
+    {
+      "objectId": "0-297",
+      "propertyKey": 15,
+      "frame": 17,
+      "value": 58.36731503385899
+    },
+    {
+      "objectId": "0-298",
+      "propertyKey": 15,
+      "frame": 17,
+      "value": -25.16416401848378
+    },
+    {
+      "objectId": "0-404",
+      "propertyKey": 15,
+      "frame": 17,
+      "value": -63.70032179617834
+    },
+    {
+      "objectId": "0-405",
+      "propertyKey": 15,
+      "frame": 17,
+      "value": 73.79197724933435
+    },
+    {
+      "objectId": "0-406",
+      "propertyKey": 15,
+      "frame": 17,
+      "value": -23.567845929346475
+    },
+    {
+      "objectId": "0-23",
+      "propertyKey": 15,
+      "frame": 17,
+      "value": -27.132934302331385
+    },
+    {
+      "objectId": "0-507",
+      "propertyKey": 15,
+      "frame": 17,
+      "value": 19.132934302331385
+    },
+    {
+      "objectId": "0-24",
+      "propertyKey": 15,
+      "frame": 17,
+      "value": -100.52024008349483
+    },
+    {
+      "objectId": "0-508",
+      "propertyKey": 15,
+      "frame": 17,
+      "value": -81.47975991650517
+    },
+    {
+      "objectId": "0-14",
+      "propertyKey": 14,
+      "frame": 18,
+      "value": -3.728156343868906
+    },
+    {
+      "objectId": "0-296",
+      "propertyKey": 15,
+      "frame": 18,
+      "value": -0.915668137146442
+    },
+    {
+      "objectId": "0-297",
+      "propertyKey": 15,
+      "frame": 18,
+      "value": 69.32189997848717
+    },
+    {
+      "objectId": "0-298",
+      "propertyKey": 15,
+      "frame": 18,
+      "value": -28.1754626105715
+    },
+    {
+      "objectId": "0-404",
+      "propertyKey": 15,
+      "frame": 18,
+      "value": -59.72351507811665
+    },
+    {
+      "objectId": "0-405",
+      "propertyKey": 15,
+      "frame": 18,
+      "value": 63.419965234374835
+    },
+    {
+      "objectId": "0-406",
+      "propertyKey": 15,
+      "frame": 18,
+      "value": -15.982164441972472
+    },
+    {
+      "objectId": "0-23",
+      "propertyKey": 15,
+      "frame": 18,
+      "value": -30.870057685088803
+    },
+    {
+      "objectId": "0-507",
+      "propertyKey": 15,
+      "frame": 18,
+      "value": 22.870057685088803
+    },
+    {
+      "objectId": "0-24",
+      "propertyKey": 15,
+      "frame": 18,
+      "value": -99.48528137423857
+    },
+    {
+      "objectId": "0-508",
+      "propertyKey": 15,
+      "frame": 18,
+      "value": -82.51471862576143
+    },
+    {
+      "objectId": "0-14",
+      "propertyKey": 14,
+      "frame": 19,
+      "value": -3.2259821449898207
+    },
+    {
+      "objectId": "0-296",
+      "propertyKey": 15,
+      "frame": 19,
+      "value": -1.498851979025805
+    },
+    {
+      "objectId": "0-297",
+      "propertyKey": 15,
+      "frame": 19,
+      "value": 78.64378140226707
+    },
+    {
+      "objectId": "0-298",
+      "propertyKey": 15,
+      "frame": 19,
+      "value": -30.824416602728455
+    },
+    {
+      "objectId": "0-404",
+      "propertyKey": 15,
+      "frame": 19,
+      "value": -56.54515536856963
+    },
+    {
+      "objectId": "0-405",
+      "propertyKey": 15,
+      "frame": 19,
+      "value": 58.55563921633085
+    },
+    {
+      "objectId": "0-406",
+      "propertyKey": 15,
+      "frame": 19,
+      "value": -13.746594958872336
+    },
+    {
+      "objectId": "0-23",
+      "propertyKey": 15,
+      "frame": 19,
+      "value": -34.14742693106693
+    },
+    {
+      "objectId": "0-507",
+      "propertyKey": 15,
+      "frame": 19,
+      "value": 26.14742693106693
+    },
+    {
+      "objectId": "0-24",
+      "propertyKey": 15,
+      "frame": 19,
+      "value": -98.30513714810465
+    },
+    {
+      "objectId": "0-508",
+      "propertyKey": 15,
+      "frame": 19,
+      "value": -83.69486285189535
+    },
+    {
+      "objectId": "0-14",
+      "propertyKey": 14,
+      "frame": 20,
+      "value": -2.5039625941172385
+    },
+    {
+      "objectId": "0-296",
+      "propertyKey": 15,
+      "frame": 20,
+      "value": -0.9155015423472967
+    },
+    {
+      "objectId": "0-297",
+      "propertyKey": 15,
+      "frame": 20,
+      "value": 86.69612455912477
+    },
+    {
+      "objectId": "0-298",
+      "propertyKey": 15,
+      "frame": 20,
+      "value": -33.370366606521046
+    },
+    {
+      "objectId": "0-404",
+      "propertyKey": 15,
+      "frame": 20,
+      "value": -53.832682948340995
+    },
+    {
+      "objectId": "0-405",
+      "propertyKey": 15,
+      "frame": 20,
+      "value": 55.70238089845089
+    },
+    {
+      "objectId": "0-406",
+      "propertyKey": 15,
+      "frame": 20,
+      "value": -13.25858683899878
+    },
+    {
+      "objectId": "0-23",
+      "propertyKey": 15,
+      "frame": 20,
+      "value": -36.908965343808674
+    },
+    {
+      "objectId": "0-507",
+      "propertyKey": 15,
+      "frame": 20,
+      "value": 28.908965343808674
+    },
+    {
+      "objectId": "0-24",
+      "propertyKey": 15,
+      "frame": 20,
+      "value": -97
+    },
+    {
+      "objectId": "0-508",
+      "propertyKey": 15,
+      "frame": 20,
+      "value": -85
+    },
+    {
+      "objectId": "0-14",
+      "propertyKey": 14,
+      "frame": 21,
+      "value": -1.6113021304494068
+    },
+    {
+      "objectId": "0-296",
+      "propertyKey": 15,
+      "frame": 21,
+      "value": 0.8276436515206906
+    },
+    {
+      "objectId": "0-297",
+      "propertyKey": 15,
+      "frame": 21,
+      "value": 93.60954614154889
+    },
+    {
+      "objectId": "0-298",
+      "propertyKey": 15,
+      "frame": 21,
+      "value": -35.93718979306958
+    },
+    {
+      "objectId": "0-404",
+      "propertyKey": 15,
+      "frame": 21,
+      "value": -51.174609143584306
+    },
+    {
+      "objectId": "0-405",
+      "propertyKey": 15,
+      "frame": 21,
+      "value": 52.826658286568524
+    },
+    {
+      "objectId": "0-406",
+      "propertyKey": 15,
+      "frame": 21,
+      "value": -12.693715809650882
+    },
+    {
+      "objectId": "0-23",
+      "propertyKey": 15,
+      "frame": 21,
+      "value": -39.1074222354289
+    },
+    {
+      "objectId": "0-507",
+      "propertyKey": 15,
+      "frame": 21,
+      "value": 31.1074222354289
+    },
+    {
+      "objectId": "0-24",
+      "propertyKey": 15,
+      "frame": 21,
+      "value": -95.59220118838108
+    },
+    {
+      "objectId": "0-508",
+      "propertyKey": 15,
+      "frame": 21,
+      "value": -86.40779881161892
+    },
+    {
+      "objectId": "0-14",
+      "propertyKey": 14,
+      "frame": 22,
+      "value": -0.6088340893941206
+    },
+    {
+      "objectId": "0-296",
+      "propertyKey": 15,
+      "frame": 22,
+      "value": 3.74786484563858
+    },
+    {
+      "objectId": "0-297",
+      "propertyKey": 15,
+      "frame": 22,
+      "value": 99.39920503936544
+    },
+    {
+      "objectId": "0-298",
+      "propertyKey": 15,
+      "frame": 22,
+      "value": -38.557326295260445
+    },
+    {
+      "objectId": "0-404",
+      "propertyKey": 15,
+      "frame": 22,
+      "value": -48.51544864676601
+    },
+    {
+      "objectId": "0-405",
+      "propertyKey": 15,
+      "frame": 22,
+      "value": 49.84288384232859
+    },
+    {
+      "objectId": "0-406",
+      "propertyKey": 15,
+      "frame": 22,
+      "value": -12.021879640007029
+    },
+    {
+      "objectId": "0-23",
+      "propertyKey": 15,
+      "frame": 22,
+      "value": -40.70518139898459
+    },
+    {
+      "objectId": "0-507",
+      "propertyKey": 15,
+      "frame": 22,
+      "value": 32.70518139898459
+    },
+    {
+      "objectId": "0-24",
+      "propertyKey": 15,
+      "frame": 22,
+      "value": -94.10582854123025
+    },
+    {
+      "objectId": "0-508",
+      "propertyKey": 15,
+      "frame": 22,
+      "value": -87.89417145876975
+    },
+    {
+      "objectId": "0-14",
+      "propertyKey": 14,
+      "frame": 23,
+      "value": 0.43512498870747346
+    },
+    {
+      "objectId": "0-296",
+      "propertyKey": 15,
+      "frame": 23,
+      "value": 4.903469524235806
+    },
+    {
+      "objectId": "0-297",
+      "propertyKey": 15,
+      "frame": 23,
+      "value": 105.5773945463191
+    },
+    {
+      "objectId": "0-298",
+      "propertyKey": 15,
+      "frame": 23,
+      "value": -46.21804355773443
+    },
+    {
+      "objectId": "0-404",
+      "propertyKey": 15,
+      "frame": 23,
+      "value": -45.78268526715977
+    },
+    {
+      "objectId": "0-405",
+      "propertyKey": 15,
+      "frame": 23,
+      "value": 46.62666574503818
+    },
+    {
+      "objectId": "0-406",
+      "propertyKey": 15,
+      "frame": 23,
+      "value": -11.191202700100632
+    },
+    {
+      "objectId": "0-23",
+      "propertyKey": 15,
+      "frame": 23,
+      "value": -41.674904732204794
+    },
+    {
+      "objectId": "0-507",
+      "propertyKey": 15,
+      "frame": 23,
+      "value": 33.674904732204794
+    },
+    {
+      "objectId": "0-24",
+      "propertyKey": 15,
+      "frame": 23,
+      "value": -92.56631430664062
+    },
+    {
+      "objectId": "0-508",
+      "propertyKey": 15,
+      "frame": 23,
+      "value": -89.43368569335938
+    },
+    {
+      "objectId": "0-14",
+      "propertyKey": 14,
+      "frame": 24,
+      "value": 1.4494310179066927
+    },
+    {
+      "objectId": "0-296",
+      "propertyKey": 15,
+      "frame": 24,
+      "value": 2.987602694252164
+    },
+    {
+      "objectId": "0-297",
+      "propertyKey": 15,
+      "frame": 24,
+      "value": 113.09178795161948
+    },
+    {
+      "objectId": "0-298",
+      "propertyKey": 15,
+      "frame": 24,
+      "value": -60.31015987664088
+    },
+    {
+      "objectId": "0-404",
+      "propertyKey": 15,
+      "frame": 24,
+      "value": -42.88282432865973
+    },
+    {
+      "objectId": "0-405",
+      "propertyKey": 15,
+      "frame": 24,
+      "value": 43.005033583325734
+    },
+    {
+      "objectId": "0-406",
+      "propertyKey": 15,
+      "frame": 24,
+      "value": -10.122209254666004
+    },
+    {
+      "objectId": "0-23",
+      "propertyKey": 15,
+      "frame": 24,
+      "value": -42
+    },
+    {
+      "objectId": "0-507",
+      "propertyKey": 15,
+      "frame": 24,
+      "value": 34
+    },
+    {
+      "objectId": "0-24",
+      "propertyKey": 15,
+      "frame": 24,
+      "value": -91
+    },
+    {
+      "objectId": "0-508",
+      "propertyKey": 15,
+      "frame": 24,
+      "value": -91
+    },
+    {
+      "objectId": "0-14",
+      "propertyKey": 14,
+      "frame": 25,
+      "value": 2.3649607185335846
+    },
+    {
+      "objectId": "0-296",
+      "propertyKey": 15,
+      "frame": 25,
+      "value": 1.559378307426138
+    },
+    {
+      "objectId": "0-297",
+      "propertyKey": 15,
+      "frame": 25,
+      "value": 120.21466935574101
+    },
+    {
+      "objectId": "0-298",
+      "propertyKey": 15,
+      "frame": 25,
+      "value": -74.49840663752619
+    },
+    {
+      "objectId": "0-404",
+      "propertyKey": 15,
+      "frame": 25,
+      "value": -43.5518922671558
+    },
+    {
+      "objectId": "0-405",
+      "propertyKey": 15,
+      "frame": 25,
+      "value": 48.144450626697946
+    },
+    {
+      "objectId": "0-406",
+      "propertyKey": 15,
+      "frame": 25,
+      "value": -11.98839169287546
+    },
+    {
+      "objectId": "0-23",
+      "propertyKey": 15,
+      "frame": 25,
+      "value": -41.674904732204794
+    },
+    {
+      "objectId": "0-507",
+      "propertyKey": 15,
+      "frame": 25,
+      "value": 33.674904732204794
+    },
+    {
+      "objectId": "0-24",
+      "propertyKey": 15,
+      "frame": 25,
+      "value": -89.43368569335938
+    },
+    {
+      "objectId": "0-508",
+      "propertyKey": 15,
+      "frame": 25,
+      "value": -92.56631430664062
+    },
+    {
+      "objectId": "0-14",
+      "propertyKey": 14,
+      "frame": 26,
+      "value": 3.119322254474785
+    },
+    {
+      "objectId": "0-296",
+      "propertyKey": 15,
+      "frame": 26,
+      "value": 0.6530772838415053
+    },
+    {
+      "objectId": "0-297",
+      "propertyKey": 15,
+      "frame": 26,
+      "value": 126.982747099779
+    },
+    {
+      "objectId": "0-298",
+      "propertyKey": 15,
+      "frame": 26,
+      "value": -88.85377310156917
+    },
+    {
+      "objectId": "0-404",
+      "propertyKey": 15,
+      "frame": 26,
+      "value": -43.68379725870856
+    },
+    {
+      "objectId": "0-405",
+      "propertyKey": 15,
+      "frame": 26,
+      "value": 52.336355378098325
+    },
+    {
+      "objectId": "0-406",
+      "propertyKey": 15,
+      "frame": 26,
+      "value": -13.444224786056452
+    },
+    {
+      "objectId": "0-23",
+      "propertyKey": 15,
+      "frame": 26,
+      "value": -40.7051813989846
+    },
+    {
+      "objectId": "0-507",
+      "propertyKey": 15,
+      "frame": 26,
+      "value": 32.7051813989846
+    },
+    {
+      "objectId": "0-24",
+      "propertyKey": 15,
+      "frame": 26,
+      "value": -87.89417145876976
+    },
+    {
+      "objectId": "0-508",
+      "propertyKey": 15,
+      "frame": 26,
+      "value": -94.10582854123024
+    },
+    {
+      "objectId": "0-14",
+      "propertyKey": 14,
+      "frame": 27,
+      "value": 3.6611071336972922
+    },
+    {
+      "objectId": "0-296",
+      "propertyKey": 15,
+      "frame": 27,
+      "value": 0.33239951379727345
+    },
+    {
+      "objectId": "0-297",
+      "propertyKey": 15,
+      "frame": 27,
+      "value": 133.42650410063266
+    },
+    {
+      "objectId": "0-298",
+      "propertyKey": 15,
+      "frame": 27,
+      "value": -103.47044207596839
+    },
+    {
+      "objectId": "0-404",
+      "propertyKey": 15,
+      "frame": 27,
+      "value": -43.332277041214894
+    },
+    {
+      "objectId": "0-405",
+      "propertyKey": 15,
+      "frame": 27,
+      "value": 55.69236236273743
+    },
+    {
+      "objectId": "0-406",
+      "propertyKey": 15,
+      "frame": 27,
+      "value": -14.547585321522533
+    },
+    {
+      "objectId": "0-23",
+      "propertyKey": 15,
+      "frame": 27,
+      "value": -39.1074222354289
+    },
+    {
+      "objectId": "0-507",
+      "propertyKey": 15,
+      "frame": 27,
+      "value": 31.1074222354289
+    },
+    {
+      "objectId": "0-24",
+      "propertyKey": 15,
+      "frame": 27,
+      "value": -86.40779881161892
+    },
+    {
+      "objectId": "0-508",
+      "propertyKey": 15,
+      "frame": 27,
+      "value": -95.59220118838108
+    },
+    {
+      "objectId": "0-14",
+      "propertyKey": 14,
+      "frame": 28,
+      "value": 3.9533936120239326
+    },
+    {
+      "objectId": "0-296",
+      "propertyKey": 15,
+      "frame": 28,
+      "value": 0.7087225235355511
+    },
+    {
+      "objectId": "0-297",
+      "propertyKey": 15,
+      "frame": 28,
+      "value": 139.57398471412125
+    },
+    {
+      "objectId": "0-298",
+      "propertyKey": 15,
+      "frame": 28,
+      "value": -118.48783544278508
+    },
+    {
+      "objectId": "0-404",
+      "propertyKey": 15,
+      "frame": 28,
+      "value": -42.44913520075913
+    },
+    {
+      "objectId": "0-405",
+      "propertyKey": 15,
+      "frame": 28,
+      "value": 58.42432096036819
+    },
+    {
+      "objectId": "0-406",
+      "propertyKey": 15,
+      "frame": 28,
+      "value": -15.930741315164617
+    },
+    {
+      "objectId": "0-23",
+      "propertyKey": 15,
+      "frame": 28,
+      "value": -36.90896534380867
+    },
+    {
+      "objectId": "0-507",
+      "propertyKey": 15,
+      "frame": 28,
+      "value": 28.908965343808667
+    },
+    {
+      "objectId": "0-24",
+      "propertyKey": 15,
+      "frame": 28,
+      "value": -85
+    },
+    {
+      "objectId": "0-508",
+      "propertyKey": 15,
+      "frame": 28,
+      "value": -97
+    },
+    {
+      "objectId": "0-14",
+      "propertyKey": 14,
+      "frame": 29,
+      "value": 3.97626284898299
+    },
+    {
+      "objectId": "0-296",
+      "propertyKey": 15,
+      "frame": 29,
+      "value": -1.0867136381248519
+    },
+    {
+      "objectId": "0-297",
+      "propertyKey": 15,
+      "frame": 29,
+      "value": 145.10897212063583
+    },
+    {
+      "objectId": "0-298",
+      "propertyKey": 15,
+      "frame": 29,
+      "value": -130.0639251491776
+    },
+    {
+      "objectId": "0-404",
+      "propertyKey": 15,
+      "frame": 29,
+      "value": -40.58215463183943
+    },
+    {
+      "objectId": "0-405",
+      "propertyKey": 15,
+      "frame": 29,
+      "value": 60.99406134603878
+    },
+    {
+      "objectId": "0-406",
+      "propertyKey": 15,
+      "frame": 29,
+      "value": -20.089684491977124
+    },
+    {
+      "objectId": "0-23",
+      "propertyKey": 15,
+      "frame": 29,
+      "value": -34.147426931066946
+    },
+    {
+      "objectId": "0-507",
+      "propertyKey": 15,
+      "frame": 29,
+      "value": 26.147426931066946
+    },
+    {
+      "objectId": "0-24",
+      "propertyKey": 15,
+      "frame": 29,
+      "value": -83.69486285189535
+    },
+    {
+      "objectId": "0-508",
+      "propertyKey": 15,
+      "frame": 29,
+      "value": -98.30513714810465
+    },
+    {
+      "objectId": "0-14",
+      "propertyKey": 14,
+      "frame": 30,
+      "value": 3.728156343868906
+    },
+    {
+      "objectId": "0-296",
+      "propertyKey": 15,
+      "frame": 30,
+      "value": -15.98758074178958
+    },
+    {
+      "objectId": "0-297",
+      "propertyKey": 15,
+      "frame": 30,
+      "value": 147.8219831929345
+    },
+    {
+      "objectId": "0-298",
+      "propertyKey": 15,
+      "frame": 30,
+      "value": -123.08440245114494
+    },
+    {
+      "objectId": "0-404",
+      "propertyKey": 15,
+      "frame": 30,
+      "value": -38.1504843370166
+    },
+    {
+      "objectId": "0-405",
+      "propertyKey": 15,
+      "frame": 30,
+      "value": 62.54493869762656
+    },
+    {
+      "objectId": "0-406",
+      "propertyKey": 15,
+      "frame": 30,
+      "value": -23.79445436060996
+    },
+    {
+      "objectId": "0-23",
+      "propertyKey": 15,
+      "frame": 30,
+      "value": -30.870057685088813
+    },
+    {
+      "objectId": "0-507",
+      "propertyKey": 15,
+      "frame": 30,
+      "value": 22.870057685088813
+    },
+    {
+      "objectId": "0-24",
+      "propertyKey": 15,
+      "frame": 30,
+      "value": -82.51471862576143
+    },
+    {
+      "objectId": "0-508",
+      "propertyKey": 15,
+      "frame": 30,
+      "value": -99.48528137423857
+    },
+    {
+      "objectId": "0-14",
+      "propertyKey": 14,
+      "frame": 31,
+      "value": 3.2259821449898207
+    },
+    {
+      "objectId": "0-296",
+      "propertyKey": 15,
+      "frame": 31,
+      "value": -31.880895564161523
+    },
+    {
+      "objectId": "0-297",
+      "propertyKey": 15,
+      "frame": 31,
+      "value": 147.91921295986177
+    },
+    {
+      "objectId": "0-298",
+      "propertyKey": 15,
+      "frame": 31,
+      "value": -112.49665072903362
+    },
+    {
+      "objectId": "0-404",
+      "propertyKey": 15,
+      "frame": 31,
+      "value": -35.2230942725463
+    },
+    {
+      "objectId": "0-405",
+      "propertyKey": 15,
+      "frame": 31,
+      "value": 63.14374035615663
+    },
+    {
+      "objectId": "0-406",
+      "propertyKey": 15,
+      "frame": 31,
+      "value": -27.04286830583255
+    },
+    {
+      "objectId": "0-23",
+      "propertyKey": 15,
+      "frame": 31,
+      "value": -27.132934302331392
+    },
+    {
+      "objectId": "0-507",
+      "propertyKey": 15,
+      "frame": 31,
+      "value": 19.132934302331392
+    },
+    {
+      "objectId": "0-24",
+      "propertyKey": 15,
+      "frame": 31,
+      "value": -81.47975991650517
+    },
+    {
+      "objectId": "0-508",
+      "propertyKey": 15,
+      "frame": 31,
+      "value": -100.52024008349483
+    },
+    {
+      "objectId": "0-14",
+      "propertyKey": 14,
+      "frame": 32,
+      "value": 2.5039625941172416
+    },
+    {
+      "objectId": "0-296",
+      "propertyKey": 15,
+      "frame": 32,
+      "value": -46.34635955345392
+    },
+    {
+      "objectId": "0-297",
+      "propertyKey": 15,
+      "frame": 32,
+      "value": 145.31344268435092
+    },
+    {
+      "objectId": "0-298",
+      "propertyKey": 15,
+      "frame": 32,
+      "value": -100.63374979756362
+    },
+    {
+      "objectId": "0-404",
+      "propertyKey": 15,
+      "frame": 32,
+      "value": -31.865877166884065
+    },
+    {
+      "objectId": "0-405",
+      "propertyKey": 15,
+      "frame": 32,
+      "value": 62.849365775167506
+    },
+    {
+      "objectId": "0-406",
+      "propertyKey": 15,
+      "frame": 32,
+      "value": -29.827933052727886
+    },
+    {
+      "objectId": "0-23",
+      "propertyKey": 15,
+      "frame": 32,
+      "value": -23.000000000000018
+    },
+    {
+      "objectId": "0-507",
+      "propertyKey": 15,
+      "frame": 32,
+      "value": 15.000000000000018
+    },
+    {
+      "objectId": "0-24",
+      "propertyKey": 15,
+      "frame": 32,
+      "value": -80.60769515458674
+    },
+    {
+      "objectId": "0-508",
+      "propertyKey": 15,
+      "frame": 32,
+      "value": -101.39230484541326
+    },
+    {
+      "objectId": "0-14",
+      "propertyKey": 14,
+      "frame": 33,
+      "value": 1.6113021304494106
+    },
+    {
+      "objectId": "0-296",
+      "propertyKey": 15,
+      "frame": 33,
+      "value": -57.48448143785937
+    },
+    {
+      "objectId": "0-297",
+      "propertyKey": 15,
+      "frame": 33,
+      "value": 140.4375797139319
+    },
+    {
+      "objectId": "0-298",
+      "propertyKey": 15,
+      "frame": 33,
+      "value": -89.82809827607254
+    },
+    {
+      "objectId": "0-404",
+      "propertyKey": 15,
+      "frame": 33,
+      "value": -28.140335264047405
+    },
+    {
+      "objectId": "0-405",
+      "propertyKey": 15,
+      "frame": 33,
+      "value": 61.718670682178484
+    },
+    {
+      "objectId": "0-406",
+      "propertyKey": 15,
+      "frame": 33,
+      "value": -32.145002084797746
+    },
+    {
+      "objectId": "0-23",
+      "propertyKey": 15,
+      "frame": 33,
+      "value": -18.54197042987343
+    },
+    {
+      "objectId": "0-507",
+      "propertyKey": 15,
+      "frame": 33,
+      "value": 10.541970429873432
+    },
+    {
+      "objectId": "0-24",
+      "propertyKey": 15,
+      "frame": 33,
+      "value": -79.91344560986457
+    },
+    {
+      "objectId": "0-508",
+      "propertyKey": 15,
+      "frame": 33,
+      "value": -102.08655439013543
+    },
+    {
+      "objectId": "0-14",
+      "propertyKey": 14,
+      "frame": 34,
+      "value": 0.6088340893941175
+    },
+    {
+      "objectId": "0-296",
+      "propertyKey": 15,
+      "frame": 34,
+      "value": -64.93881615219861
+    },
+    {
+      "objectId": "0-297",
+      "propertyKey": 15,
+      "frame": 34,
+      "value": 133.88464313932639
+    },
+    {
+      "objectId": "0-298",
+      "propertyKey": 15,
+      "frame": 34,
+      "value": -81.02916032046114
+    },
+    {
+      "objectId": "0-404",
+      "propertyKey": 15,
+      "frame": 34,
+      "value": -24.100519196500464
+    },
+    {
+      "objectId": "0-405",
+      "propertyKey": 15,
+      "frame": 34,
+      "value": 59.80690366124679
+    },
+    {
+      "objectId": "0-406",
+      "propertyKey": 15,
+      "frame": 34,
+      "value": -33.99527335363521
+    },
+    {
+      "objectId": "0-23",
+      "propertyKey": 15,
+      "frame": 34,
+      "value": -13.835123713895785
+    },
+    {
+      "objectId": "0-507",
+      "propertyKey": 15,
+      "frame": 34,
+      "value": 5.8351237138957845
+    },
+    {
+      "objectId": "0-24",
+      "propertyKey": 15,
+      "frame": 34,
+      "value": -79.40889008453118
+    },
+    {
+      "objectId": "0-508",
+      "propertyKey": 15,
+      "frame": 34,
+      "value": -102.59110991546882
+    },
+    {
+      "objectId": "0-14",
+      "propertyKey": 14,
+      "frame": 35,
+      "value": -0.43512498870747296
+    },
+    {
+      "objectId": "0-296",
+      "propertyKey": 15,
+      "frame": 35,
+      "value": -69.28961694306902
+    },
+    {
+      "objectId": "0-297",
+      "propertyKey": 15,
+      "frame": 35,
+      "value": 126.11764772036572
+    },
+    {
+      "objectId": "0-298",
+      "propertyKey": 15,
+      "frame": 35,
+      "value": -74.11969744396333
+    },
+    {
+      "objectId": "0-404",
+      "propertyKey": 15,
+      "frame": 35,
+      "value": -19.789452147476066
+    },
+    {
+      "objectId": "0-405",
+      "propertyKey": 15,
+      "frame": 35,
+      "value": 57.164133281443256
+    },
+    {
+      "objectId": "0-406",
+      "propertyKey": 15,
+      "frame": 35,
+      "value": -35.38579224507831
+    },
+    {
+      "objectId": "0-23",
+      "propertyKey": 15,
+      "frame": 35,
+      "value": -8.95999530436196
+    },
+    {
+      "objectId": "0-507",
+      "propertyKey": 15,
+      "frame": 35,
+      "value": 0.9599953043619616
+    },
+    {
+      "objectId": "0-24",
+      "propertyKey": 15,
+      "frame": 35,
+      "value": -79.10266166351428
+    },
+    {
+      "objectId": "0-508",
+      "propertyKey": 15,
+      "frame": 35,
+      "value": -102.89733833648572
+    },
+    {
+      "objectId": "0-14",
+      "propertyKey": 14,
+      "frame": 36,
+      "value": -1.4494310179066956
+    },
+    {
+      "objectId": "0-296",
+      "propertyKey": 15,
+      "frame": 36,
+      "value": -70.3885247717536
+    },
+    {
+      "objectId": "0-297",
+      "propertyKey": 15,
+      "frame": 36,
+      "value": 118.2488695223734
+    },
+    {
+      "objectId": "0-298",
+      "propertyKey": 15,
+      "frame": 36,
+      "value": -67.28891617919123
+    },
+    {
+      "objectId": "0-404",
+      "propertyKey": 15,
+      "frame": 36,
+      "value": -17.17029374818165
+    },
+    {
+      "objectId": "0-405",
+      "propertyKey": 15,
+      "frame": 36,
+      "value": 57.83615760600379
+    },
+    {
+      "objectId": "0-406",
+      "propertyKey": 15,
+      "frame": 36,
+      "value": -33.57495476691305
+    },
+    {
+      "objectId": "0-23",
+      "propertyKey": 15,
+      "frame": 36,
+      "value": -4.000000000000007
+    },
+    {
+      "objectId": "0-507",
+      "propertyKey": 15,
+      "frame": 36,
+      "value": -3.999999999999993
+    },
+    {
+      "objectId": "0-24",
+      "propertyKey": 15,
+      "frame": 36,
+      "value": -79
+    },
+    {
+      "objectId": "0-508",
+      "propertyKey": 15,
+      "frame": 36,
+      "value": -103
+    },
+    {
+      "objectId": "0-14",
+      "propertyKey": 14,
+      "frame": 37,
+      "value": -2.364960718533584
+    },
+    {
+      "objectId": "0-296",
+      "propertyKey": 15,
+      "frame": 37,
+      "value": -69.47353496150592
+    },
+    {
+      "objectId": "0-297",
+      "propertyKey": 15,
+      "frame": 37,
+      "value": 110.84804056306898
+    },
+    {
+      "objectId": "0-298",
+      "propertyKey": 15,
+      "frame": 37,
+      "value": -59.612600839658285
+    },
+    {
+      "objectId": "0-404",
+      "propertyKey": 15,
+      "frame": 37,
+      "value": -14.414897873603804
+    },
+    {
+      "objectId": "0-405",
+      "propertyKey": 15,
+      "frame": 37,
+      "value": 58.259904661420045
+    },
+    {
+      "objectId": "0-406",
+      "propertyKey": 15,
+      "frame": 37,
+      "value": -31.451067393876812
+    },
+    {
+      "objectId": "0-23",
+      "propertyKey": 15,
+      "frame": 37,
+      "value": 0.9599953043619482
+    },
+    {
+      "objectId": "0-507",
+      "propertyKey": 15,
+      "frame": 37,
+      "value": -8.959995304361948
+    },
+    {
+      "objectId": "0-24",
+      "propertyKey": 15,
+      "frame": 37,
+      "value": -79.10266166351427
+    },
+    {
+      "objectId": "0-508",
+      "propertyKey": 15,
+      "frame": 37,
+      "value": -102.89733833648573
+    },
+    {
+      "objectId": "0-14",
+      "propertyKey": 14,
+      "frame": 38,
+      "value": -3.119322254474787
+    },
+    {
+      "objectId": "0-296",
+      "propertyKey": 15,
+      "frame": 38,
+      "value": -67.98401066890402
+    },
+    {
+      "objectId": "0-297",
+      "propertyKey": 15,
+      "frame": 38,
+      "value": 103.15548275309102
+    },
+    {
+      "objectId": "0-298",
+      "propertyKey": 15,
+      "frame": 38,
+      "value": -52.21909113180605
+    },
+    {
+      "objectId": "0-404",
+      "propertyKey": 15,
+      "frame": 38,
+      "value": -11.486232899637216
+    },
+    {
+      "objectId": "0-405",
+      "propertyKey": 15,
+      "frame": 38,
+      "value": 58.36110308918606
+    },
+    {
+      "objectId": "0-406",
+      "propertyKey": 15,
+      "frame": 38,
+      "value": -29.17790049257919
+    },
+    {
+      "objectId": "0-23",
+      "propertyKey": 15,
+      "frame": 38,
+      "value": 5.835123713895772
+    },
+    {
+      "objectId": "0-507",
+      "propertyKey": 15,
+      "frame": 38,
+      "value": -13.835123713895772
+    },
+    {
+      "objectId": "0-24",
+      "propertyKey": 15,
+      "frame": 38,
+      "value": -79.40889008453118
+    },
+    {
+      "objectId": "0-508",
+      "propertyKey": 15,
+      "frame": 38,
+      "value": -102.59110991546882
+    },
+    {
+      "objectId": "0-14",
+      "propertyKey": 14,
+      "frame": 39,
+      "value": -3.661107133697295
+    },
+    {
+      "objectId": "0-296",
+      "propertyKey": 15,
+      "frame": 39,
+      "value": -66.02604277936044
+    },
+    {
+      "objectId": "0-297",
+      "propertyKey": 15,
+      "frame": 39,
+      "value": 95.1493496005426
+    },
+    {
+      "objectId": "0-298",
+      "propertyKey": 15,
+      "frame": 39,
+      "value": -44.98044967832503
+    },
+    {
+      "objectId": "0-404",
+      "propertyKey": 15,
+      "frame": 39,
+      "value": -8.413012415686337
+    },
+    {
+      "objectId": "0-405",
+      "propertyKey": 15,
+      "frame": 39,
+      "value": 58.20290849663811
+    },
+    {
+      "objectId": "0-406",
+      "propertyKey": 15,
+      "frame": 39,
+      "value": -26.789896080951777
+    },
+    {
+      "objectId": "0-23",
+      "propertyKey": 15,
+      "frame": 39,
+      "value": 10.54197042987342
+    },
+    {
+      "objectId": "0-507",
+      "propertyKey": 15,
+      "frame": 39,
+      "value": -18.54197042987342
+    },
+    {
+      "objectId": "0-24",
+      "propertyKey": 15,
+      "frame": 39,
+      "value": -79.91344560986457
+    },
+    {
+      "objectId": "0-508",
+      "propertyKey": 15,
+      "frame": 39,
+      "value": -102.08655439013543
+    },
+    {
+      "objectId": "0-14",
+      "propertyKey": 14,
+      "frame": 40,
+      "value": -3.953393612023933
+    },
+    {
+      "objectId": "0-296",
+      "propertyKey": 15,
+      "frame": 40,
+      "value": -63.654000417952595
+    },
+    {
+      "objectId": "0-297",
+      "propertyKey": 15,
+      "frame": 40,
+      "value": 86.7705016527641
+    },
+    {
+      "objectId": "0-298",
+      "propertyKey": 15,
+      "frame": 40,
+      "value": -37.78316790147816
+    },
+    {
+      "objectId": "0-404",
+      "propertyKey": 15,
+      "frame": 40,
+      "value": -5.209423545103139
+    },
+    {
+      "objectId": "0-405",
+      "propertyKey": 15,
+      "frame": 40,
+      "value": 57.82054637102037
+    },
+    {
+      "objectId": "0-406",
+      "propertyKey": 15,
+      "frame": 40,
+      "value": -24.308092522886895
+    },
+    {
+      "objectId": "0-23",
+      "propertyKey": 15,
+      "frame": 40,
+      "value": 15.000000000000004
+    },
+    {
+      "objectId": "0-507",
+      "propertyKey": 15,
+      "frame": 40,
+      "value": -23.000000000000004
+    },
+    {
+      "objectId": "0-24",
+      "propertyKey": 15,
+      "frame": 40,
+      "value": -80.60769515458674
+    },
+    {
+      "objectId": "0-508",
+      "propertyKey": 15,
+      "frame": 40,
+      "value": -101.39230484541326
+    },
+    {
+      "objectId": "0-14",
+      "propertyKey": 14,
+      "frame": 41,
+      "value": -3.9762628489829894
+    },
+    {
+      "objectId": "0-296",
+      "propertyKey": 15,
+      "frame": 41,
+      "value": -60.871565470019455
+    },
+    {
+      "objectId": "0-297",
+      "propertyKey": 15,
+      "frame": 41,
+      "value": 77.90449702673493
+    },
+    {
+      "objectId": "0-298",
+      "propertyKey": 15,
+      "frame": 41,
+      "value": -30.509122032905964
+    },
+    {
+      "objectId": "0-404",
+      "propertyKey": 15,
+      "frame": 41,
+      "value": -6.098458787563867
+    },
+    {
+      "objectId": "0-405",
+      "propertyKey": 15,
+      "frame": 41,
+      "value": 65.87245101326175
+    },
+    {
+      "objectId": "0-406",
+      "propertyKey": 15,
+      "frame": 41,
+      "value": -25.63296658467229
+    },
+    {
+      "objectId": "0-23",
+      "propertyKey": 15,
+      "frame": 41,
+      "value": 19.132934302331382
+    },
+    {
+      "objectId": "0-507",
+      "propertyKey": 15,
+      "frame": 41,
+      "value": -27.132934302331382
+    },
+    {
+      "objectId": "0-24",
+      "propertyKey": 15,
+      "frame": 41,
+      "value": -81.47975991650517
+    },
+    {
+      "objectId": "0-508",
+      "propertyKey": 15,
+      "frame": 41,
+      "value": -100.52024008349483
+    },
+    {
+      "objectId": "0-14",
+      "propertyKey": 14,
+      "frame": 42,
+      "value": -3.728156343868905
+    },
+    {
+      "objectId": "0-296",
+      "propertyKey": 15,
+      "frame": 42,
+      "value": -57.620450261311404
+    },
+    {
+      "objectId": "0-297",
+      "propertyKey": 15,
+      "frame": 42,
+      "value": 68.34393261221685
+    },
+    {
+      "objectId": "0-298",
+      "propertyKey": 15,
+      "frame": 42,
+      "value": -23.009196636619727
+    },
+    {
+      "objectId": "0-404",
+      "propertyKey": 15,
+      "frame": 42,
+      "value": -7.83286060504876
+    },
+    {
+      "objectId": "0-405",
+      "propertyKey": 15,
+      "frame": 42,
+      "value": 76.42312480257026
+    },
+    {
+      "objectId": "0-406",
+      "propertyKey": 15,
+      "frame": 42,
+      "value": -28.359494966752273
+    },
+    {
+      "objectId": "0-23",
+      "propertyKey": 15,
+      "frame": 42,
+      "value": 22.8700576850888
+    },
+    {
+      "objectId": "0-507",
+      "propertyKey": 15,
+      "frame": 42,
+      "value": -30.8700576850888
+    },
+    {
+      "objectId": "0-24",
+      "propertyKey": 15,
+      "frame": 42,
+      "value": -82.51471862576143
+    },
+    {
+      "objectId": "0-508",
+      "propertyKey": 15,
+      "frame": 42,
+      "value": -99.48528137423857
+    },
+    {
+      "objectId": "0-14",
+      "propertyKey": 14,
+      "frame": 43,
+      "value": -3.225982144989819
+    },
+    {
+      "objectId": "0-296",
+      "propertyKey": 15,
+      "frame": 43,
+      "value": -54.63392470329119
+    },
+    {
+      "objectId": "0-297",
+      "propertyKey": 15,
+      "frame": 43,
+      "value": 63.64103765384987
+    },
+    {
+      "objectId": "0-298",
+      "propertyKey": 15,
+      "frame": 43,
+      "value": -20.743224061669785
+    },
+    {
+      "objectId": "0-404",
+      "propertyKey": 15,
+      "frame": 43,
+      "value": -8.387622486192196
+    },
+    {
+      "objectId": "0-405",
+      "propertyKey": 15,
+      "frame": 43,
+      "value": 85.63352710446347
+    },
+    {
+      "objectId": "0-406",
+      "propertyKey": 15,
+      "frame": 43,
+      "value": -30.925391797758408
+    },
+    {
+      "objectId": "0-23",
+      "propertyKey": 15,
+      "frame": 43,
+      "value": 26.147426931066928
+    },
+    {
+      "objectId": "0-507",
+      "propertyKey": 15,
+      "frame": 43,
+      "value": -34.14742693106693
+    },
+    {
+      "objectId": "0-24",
+      "propertyKey": 15,
+      "frame": 43,
+      "value": -83.69486285189535
+    },
+    {
+      "objectId": "0-508",
+      "propertyKey": 15,
+      "frame": 43,
+      "value": -98.30513714810465
+    },
+    {
+      "objectId": "0-14",
+      "propertyKey": 14,
+      "frame": 44,
+      "value": -2.503962594117239
+    },
+    {
+      "objectId": "0-296",
+      "propertyKey": 15,
+      "frame": 44,
+      "value": -51.92490441741868
+    },
+    {
+      "objectId": "0-297",
+      "propertyKey": 15,
+      "frame": 44,
+      "value": 60.688296711240824
+    },
+    {
+      "objectId": "0-298",
+      "propertyKey": 15,
+      "frame": 44,
+      "value": -20.152281182711036
+    },
+    {
+      "objectId": "0-404",
+      "propertyKey": 15,
+      "frame": 44,
+      "value": -7.782875159058579
+    },
+    {
+      "objectId": "0-405",
+      "propertyKey": 15,
+      "frame": 44,
+      "value": 93.74269075262612
+    },
+    {
+      "objectId": "0-406",
+      "propertyKey": 15,
+      "frame": 44,
+      "value": -33.549559183311175
+    },
+    {
+      "objectId": "0-23",
+      "propertyKey": 15,
+      "frame": 44,
+      "value": 28.90896534380866
+    },
+    {
+      "objectId": "0-507",
+      "propertyKey": 15,
+      "frame": 44,
+      "value": -36.90896534380866
+    },
+    {
+      "objectId": "0-24",
+      "propertyKey": 15,
+      "frame": 44,
+      "value": -85
+    },
+    {
+      "objectId": "0-508",
+      "propertyKey": 15,
+      "frame": 44,
+      "value": -97
+    },
+    {
+      "objectId": "0-14",
+      "propertyKey": 14,
+      "frame": 45,
+      "value": -1.6113021304494077
+    },
+    {
+      "objectId": "0-296",
+      "propertyKey": 15,
+      "frame": 45,
+      "value": -49.27454576634466
+    },
+    {
+      "objectId": "0-297",
+      "propertyKey": 15,
+      "frame": 45,
+      "value": 57.723685009659356
+    },
+    {
+      "objectId": "0-298",
+      "propertyKey": 15,
+      "frame": 45,
+      "value": -19.49080590998136
+    },
+    {
+      "objectId": "0-404",
+      "propertyKey": 15,
+      "frame": 45,
+      "value": -5.963490095618009
+    },
+    {
+      "objectId": "0-405",
+      "propertyKey": 15,
+      "frame": 45,
+      "value": 100.81992998806982
+    },
+    {
+      "objectId": "0-406",
+      "propertyKey": 15,
+      "frame": 45,
+      "value": -36.3564398924518
+    },
+    {
+      "objectId": "0-23",
+      "propertyKey": 15,
+      "frame": 45,
+      "value": 31.107422235428885
+    },
+    {
+      "objectId": "0-507",
+      "propertyKey": 15,
+      "frame": 45,
+      "value": -39.107422235428885
+    },
+    {
+      "objectId": "0-24",
+      "propertyKey": 15,
+      "frame": 45,
+      "value": -86.40779881161892
+    },
+    {
+      "objectId": "0-508",
+      "propertyKey": 15,
+      "frame": 45,
+      "value": -95.59220118838108
+    },
+    {
+      "objectId": "0-14",
+      "propertyKey": 14,
+      "frame": 46,
+      "value": -0.6088340893941145
+    },
+    {
+      "objectId": "0-296",
+      "propertyKey": 15,
+      "frame": 46,
+      "value": -46.63108133688912
+    },
+    {
+      "objectId": "0-297",
+      "propertyKey": 15,
+      "frame": 46,
+      "value": 54.66663355834098
+    },
+    {
+      "objectId": "0-298",
+      "propertyKey": 15,
+      "frame": 46,
+      "value": -18.72999666589631
+    },
+    {
+      "objectId": "0-404",
+      "propertyKey": 15,
+      "frame": 46,
+      "value": -2.854997727040108
+    },
+    {
+      "objectId": "0-405",
+      "propertyKey": 15,
+      "frame": 46,
+      "value": 106.83772087316515
+    },
+    {
+      "objectId": "0-406",
+      "propertyKey": 15,
+      "frame": 46,
+      "value": -39.39297955638139
+    },
+    {
+      "objectId": "0-23",
+      "propertyKey": 15,
+      "frame": 46,
+      "value": 32.70518139898459
+    },
+    {
+      "objectId": "0-507",
+      "propertyKey": 15,
+      "frame": 46,
+      "value": -40.70518139898459
+    },
+    {
+      "objectId": "0-24",
+      "propertyKey": 15,
+      "frame": 46,
+      "value": -87.89417145876975
+    },
+    {
+      "objectId": "0-508",
+      "propertyKey": 15,
+      "frame": 46,
+      "value": -94.10582854123025
+    },
+    {
+      "objectId": "0-14",
+      "propertyKey": 14,
+      "frame": 47,
+      "value": 0.435124988707476
+    },
+    {
+      "objectId": "0-296",
+      "propertyKey": 15,
+      "frame": 47,
+      "value": -43.92844858832149
+    },
+    {
+      "objectId": "0-297",
+      "propertyKey": 15,
+      "frame": 47,
+      "value": 51.40277420998713
+    },
+    {
+      "objectId": "0-298",
+      "propertyKey": 15,
+      "frame": 47,
+      "value": -17.82154784388787
+    },
+    {
+      "objectId": "0-404",
+      "propertyKey": 15,
+      "frame": 47,
+      "value": -1.529907518981363
+    },
+    {
+      "objectId": "0-405",
+      "propertyKey": 15,
+      "frame": 47,
+      "value": 113.04533314015181
+    },
+    {
+      "objectId": "0-406",
+      "propertyKey": 15,
+      "frame": 47,
+      "value": -47.25260510834988
+    },
+    {
+      "objectId": "0-23",
+      "propertyKey": 15,
+      "frame": 47,
+      "value": 33.674904732204794
+    },
+    {
+      "objectId": "0-507",
+      "propertyKey": 15,
+      "frame": 47,
+      "value": -41.674904732204794
+    },
+    {
+      "objectId": "0-24",
+      "propertyKey": 15,
+      "frame": 47,
+      "value": -89.43368569335938
+    },
+    {
+      "objectId": "0-508",
+      "propertyKey": 15,
+      "frame": 47,
+      "value": -92.56631430664062
+    },
+    {
+      "objectId": "0-14",
+      "propertyKey": 14,
+      "frame": 48,
+      "value": 1.4494310179066952
+    },
+    {
+      "objectId": "0-296",
+      "propertyKey": 15,
+      "frame": 48,
+      "value": -41.08384247174364
+    },
+    {
+      "objectId": "0-297",
+      "propertyKey": 15,
+      "frame": 48,
+      "value": 47.777659538039764
+    },
+    {
+      "objectId": "0-298",
+      "propertyKey": 15,
+      "frame": 48,
+      "value": -16.693817066296127
+    },
+    {
+      "objectId": "0-404",
+      "propertyKey": 15,
+      "frame": 48,
+      "value": -3.474627379405538
+    },
+    {
+      "objectId": "0-405",
+      "propertyKey": 15,
+      "frame": 48,
+      "value": 120.36355530971284
+    },
+    {
+      "objectId": "0-406",
+      "propertyKey": 15,
+      "frame": 48,
+      "value": -61.11969716107654
+    },
+    {
+      "objectId": "0-23",
+      "propertyKey": 15,
+      "frame": 48,
+      "value": 34
+    },
+    {
+      "objectId": "0-507",
+      "propertyKey": 15,
+      "frame": 48,
+      "value": -42
+    },
+    {
+      "objectId": "0-24",
+      "propertyKey": 15,
+      "frame": 48,
+      "value": -91
+    },
+    {
+      "objectId": "0-508",
+      "propertyKey": 15,
+      "frame": 48,
+      "value": -91
+    }
+  ]
+}

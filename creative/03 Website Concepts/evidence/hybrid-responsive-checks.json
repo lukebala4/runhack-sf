@@ -1,0 +1,253 @@
+{
+  "desktop": [
+    {
+      "concept": "hybrid-1",
+      "headings": [],
+      "images": [
+        {
+          "loaded": true,
+          "src": "assets/running-hackathon-wordmark.svg"
+        },
+        {
+          "loaded": true,
+          "src": "assets/hybrids/01-open-track.png"
+        },
+        {
+          "loaded": true,
+          "src": "assets/runner-sketches.png"
+        },
+        {
+          "loaded": true,
+          "src": "assets/running-hackathon-wordmark.svg"
+        }
+      ],
+      "scroll": 1445,
+      "width": 1445
+    },
+    {
+      "concept": "hybrid-2",
+      "headings": [],
+      "images": [
+        {
+          "loaded": true,
+          "src": "assets/running-hackathon-wordmark.svg"
+        },
+        {
+          "loaded": true,
+          "src": "assets/hybrids/02-meadow-lane.png"
+        },
+        {
+          "loaded": true,
+          "src": "assets/runner-sketches.png"
+        },
+        {
+          "loaded": true,
+          "src": "assets/running-hackathon-wordmark.svg"
+        }
+      ],
+      "scroll": 1445,
+      "width": 1445
+    },
+    {
+      "concept": "hybrid-3",
+      "headings": [],
+      "images": [
+        {
+          "loaded": true,
+          "src": "assets/running-hackathon-wordmark.svg"
+        },
+        {
+          "loaded": true,
+          "src": "assets/hybrids/03-morning-club.png"
+        },
+        {
+          "loaded": true,
+          "src": "assets/runner-rig.svg"
+        },
+        {
+          "loaded": true,
+          "src": "assets/running-hackathon-wordmark.svg"
+        }
+      ],
+      "scroll": 1445,
+      "width": 1445
+    },
+    {
+      "concept": "hybrid-4",
+      "headings": [],
+      "images": [
+        {
+          "loaded": true,
+          "src": "assets/running-hackathon-wordmark.svg"
+        },
+        {
+          "loaded": true,
+          "src": "assets/hybrids/04-grass-and-lanes.png"
+        },
+        {
+          "loaded": true,
+          "src": "assets/runner-sketches.png"
+        },
+        {
+          "loaded": true,
+          "src": "assets/running-hackathon-wordmark.svg"
+        }
+      ],
+      "scroll": 1445,
+      "width": 1445
+    },
+    {
+      "concept": "hybrid-5",
+      "headings": [],
+      "images": [
+        {
+          "loaded": true,
+          "src": "assets/running-hackathon-wordmark.svg"
+        },
+        {
+          "loaded": true,
+          "src": "assets/hybrids/05-out-and-back.png"
+        },
+        {
+          "loaded": true,
+          "src": "assets/runner-sketches.png"
+        },
+        {
+          "loaded": true,
+          "src": "assets/running-hackathon-wordmark.svg"
+        }
+      ],
+      "scroll": 1445,
+      "width": 1445
+    }
+  ],
+  "phone": [
+    {
+      "concept": "hybrid-1",
+      "headings": [],
+      "hero": "You run.You build.",
+      "scroll": 383,
+      "width": 383
+    },
+    {
+      "concept": "hybrid-2",
+      "headings": [],
+      "hero": "Take the ideaoutside.",
+      "scroll": 383,
+      "width": 383
+    },
+    {
+      "concept": "hybrid-3",
+      "headings": [],
+      "hero": "Go for a run. Make something.",
+      "scroll": 383,
+      "width": 383
+    },
+    {
+      "concept": "hybrid-4",
+      "headings": [],
+      "hero": "Run. Build.Go again.",
+      "scroll": 383,
+      "width": 383
+    },
+    {
+      "concept": "hybrid-5",
+      "headings": [],
+      "hero": "A good dayto build.",
+      "scroll": 383,
+      "width": 383
+    }
+  ],
+  "additionalWidths": [
+    {
+      "concept": "hybrid-1",
+      "headings": [],
+      "scroll": 980,
+      "width": 980
+    },
+    {
+      "concept": "hybrid-2",
+      "headings": [],
+      "scroll": 980,
+      "width": 980
+    },
+    {
+      "concept": "hybrid-3",
+      "headings": [],
+      "scroll": 980,
+      "width": 980
+    },
+    {
+      "concept": "hybrid-4",
+      "headings": [],
+      "scroll": 980,
+      "width": 980
+    },
+    {
+      "concept": "hybrid-5",
+      "headings": [],
+      "scroll": 980,
+      "width": 980
+    },
+    {
+      "concept": "hybrid-1",
+      "headings": [],
+      "scroll": 733,
+      "width": 733
+    },
+    {
+      "concept": "hybrid-2",
+      "headings": [],
+      "scroll": 733,
+      "width": 733
+    },
+    {
+      "concept": "hybrid-3",
+      "headings": [],
+      "scroll": 733,
+      "width": 733
+    },
+    {
+      "concept": "hybrid-4",
+      "headings": [],
+      "scroll": 733,
+      "width": 733
+    },
+    {
+      "concept": "hybrid-5",
+      "headings": [],
+      "scroll": 733,
+      "width": 733
+    },
+    {
+      "concept": "hybrid-1",
+      "headings": [],
+      "scroll": 323,
+      "width": 323
+    },
+    {
+      "concept": "hybrid-2",
+      "headings": [],
+      "scroll": 323,
+      "width": 323
+    },
+    {
+      "concept": "hybrid-3",
+      "headings": [],
+      "scroll": 323,
+      "width": 323
+    },
+    {
+      "concept": "hybrid-4",
+      "headings": [],
+      "scroll": 323,
+      "width": 323
+    },
+    {
+      "concept": "hybrid-5",
+      "headings": [],
+      "scroll": 323,
+      "width": 323
+    }
+  ]
+}

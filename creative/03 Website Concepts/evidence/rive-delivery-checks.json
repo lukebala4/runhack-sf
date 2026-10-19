@@ -1,0 +1,150 @@
+{
+  "files": [
+    {
+      "path": "assets/rive/morning-runner.riv",
+      "bytes": 14909,
+      "sha256": "d14450f3e15d23eba503633edbb44d2e10ba7b1d56edf7b85c32f81b3534cebe"
+    },
+    {
+      "path": "assets/rive/morning-runner.rev",
+      "bytes": 39194,
+      "sha256": "c826d60e410173d0c658bcf81ef9fb9a07ff0ebd73df8dbe6d9bbb7ffb7c73aa"
+    },
+    {
+      "path": "assets/runner-rig.svg",
+      "bytes": 5288,
+      "sha256": "8fad6a40d9d307f4a6becc520ffcb38006df17b91a307ffad24ae8e777566323"
+    },
+    {
+      "path": "runner-motion.js",
+      "bytes": 3731,
+      "sha256": "72da26d06f02a62d800bbd927e2f0517d60e93ecb0acc63a15b712cb09925bdb"
+    },
+    {
+      "path": "studio.js",
+      "bytes": 2343,
+      "sha256": "fdb2ca15a9a20b57a554a6eb06ec24864de76d9bb0d8315dbab8554087b798b0"
+    },
+    {
+      "path": "assets/vendor/rive/rive.js",
+      "bytes": 559005,
+      "sha256": "9b48e4cc891d8fd3f061d754c4c64dbc4eb88d7ba4dea160ba9099cef079be8e"
+    },
+    {
+      "path": "assets/vendor/rive/rive.wasm",
+      "bytes": 2178508,
+      "sha256": "987654bcd3ed5801925484e7516ccf2c02dce392cfb11ed3fb134eca7badb156"
+    },
+    {
+      "path": "assets/vendor/rive/LICENSE",
+      "bytes": 1066,
+      "sha256": "8a1efa755d19446b51a18e1c15f6308728da0b36283c4d38050698ad6954b69a"
+    }
+  ],
+  "http": [
+    {
+      "url": "motion.html",
+      "status": 200
+    },
+    {
+      "url": "rive.html",
+      "status": 200
+    },
+    {
+      "url": "?concept=track",
+      "status": 200
+    },
+    {
+      "url": "?concept=field",
+      "status": 200
+    },
+    {
+      "url": "?concept=compare",
+      "status": 200
+    },
+    {
+      "url": "assets/rive/morning-runner.riv",
+      "status": 200
+    },
+    {
+      "url": "assets/rive/morning-runner.rev",
+      "status": 200
+    },
+    {
+      "url": "assets/vendor/rive/rive.wasm",
+      "status": 200
+    }
+  ],
+  "native_riv_header": "RIVE",
+  "lifecycle": {
+    "checkedAt": "2026-10-16T22:01:06.013Z",
+    "method": "In-memory DOM and Rive runtime stubs exercising the actual runner-motion.js module; no browser or visual acceptance claimed.",
+    "checkedFile": "/Users/lukebalabanovic/Running/Runninghack SF Planning/03 Website Concepts/runner-motion.js",
+    "sourceSha256": "72da26d06f02a62d800bbd927e2f0517d60e93ecb0acc63a15b712cb09925bdb",
+    "status": "pass",
+    "passed": 4,
+    "total": 4,
+    "scenarios": [
+      {
+        "scenario": "rapid_preference_toggle",
+        "status": "pass",
+        "constructed": 1,
+        "cleaned": 1,
+        "leaked": 0,
+        "starts": 1,
+        "stops": 0,
+        "disconnectedObservers": 2,
+        "retainedListeners": 0,
+        "retainedTimers": 0,
+        "state": "still",
+        "scriptRequested": true,
+        "fallbackStillVisible": true
+      },
+      {
+        "scenario": "live_reduced_motion",
+        "status": "pass",
+        "constructed": 1,
+        "cleaned": 1,
+        "leaked": 0,
+        "starts": 1,
+        "stops": 0,
+        "disconnectedObservers": 2,
+        "retainedListeners": 0,
+        "retainedTimers": 0,
+        "state": "still",
+        "scriptRequested": true,
+        "fallbackStillVisible": true
+      },
+      {
+        "scenario": "initial_reduced_motion",
+        "status": "pass",
+        "constructed": 0,
+        "cleaned": 0,
+        "leaked": 0,
+        "starts": 0,
+        "stops": 0,
+        "disconnectedObservers": 2,
+        "retainedListeners": 0,
+        "retainedTimers": 0,
+        "state": "still",
+        "scriptRequested": false,
+        "fallbackStillVisible": true
+      },
+      {
+        "scenario": "pending_load_after_teardown",
+        "status": "pass",
+        "constructed": 0,
+        "cleaned": 0,
+        "leaked": 0,
+        "starts": 0,
+        "stops": 0,
+        "disconnectedObservers": 2,
+        "retainedListeners": 0,
+        "retainedTimers": 0,
+        "state": "still",
+        "scriptRequested": true,
+        "fallbackStillVisible": true
+      }
+    ]
+  }
+}

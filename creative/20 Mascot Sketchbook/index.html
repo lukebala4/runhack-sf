@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f3f0e6">
+  <title>30 mascot directions · Running Hackathon</title>
+  <meta name="description" content="Thirty simple character studies for the Running Hackathon mascot. The original ten, followed by twenty new directions.">
+  <link rel="stylesheet" href="sketchbook.css">
+  <script src="sketchbook.js?v=30-anchors-1" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#drawings">Skip to the drawings</a>
+  <header class="page-header page-width">
+    <a class="wordmark" href="../04%20Creative%20Warehouse/index.html" aria-label="Running Hackathon creative warehouse">
+      <img src="../19%20Sloth%20Mascot/assets/running-hackathon-wordmark.svg" alt="Running Hackathon" width="142" height="70">
+    </a>
+    <nav aria-label="Creative navigation">
+      <a href="/runhack-sf/#idea">Website ↗</a>
+      <a href="../04%20Creative%20Warehouse/index.html">Warehouse ↗</a>
+    </nav>
+  </header>
+
+  <main class="page-width">
+    <section class="introduction" aria-labelledby="page-title">
+      <h1 id="page-title">30 mascot<br class="title-break"> directions.</h1>
+      <div class="introduction-copy">
+        <p>Original ten at the top. Twenty new directions below.</p>
+        <a class="jump-new" href="#new-directions">Jump to the new twenty ↓</a>
+      </div>
+    </section>
+
+    <section id="drawings" class="drawings-section" aria-label="Ten mascot studies" tabindex="-1">
+      <p id="gallery-status" class="gallery-status" role="status">Loading the drawings…</p>
+      <div id="study-grid" class="study-grid"></div>
+      <button id="retry-load" class="text-button retry-button" type="button" hidden>Try again ↻</button>
+    </section>
+    <section id="new-directions" class="drawings-section new-directions-section" aria-labelledby="new-directions-title" tabindex="-1" hidden>
+      <h2 id="new-directions-title" class="section-title">20 new directions.</h2>
+      <div id="new-study-grid" class="study-grid"></div>
+    </section>
+    <noscript><p class="gallery-status">Enable JavaScript to browse the drawings and their large previews.</p></noscript>
+  </main>
+
+  <footer class="page-footer page-width">
+    <p>Original character studies. Still artwork, ready to explore further.</p>
+    <div class="footer-context">
+      <p>Made through Higgsfield with Google Nano Banana 2.1 and ByteDance Seedream 5.0 Pro.</p>
+      <a href="../21%20Sloth%20Tech%20Gear/">Sloth with tech gear ↗</a>
+      <a href="https://posthog.com/blog/drawing-hedgehogs" target="_blank" rel="noreferrer">The PostHog drawing guide ↗</a>
+    </div>
+  </footer>
+
+  <dialog id="drawing-dialog" class="drawing-dialog" aria-labelledby="dialog-title" aria-describedby="dialog-trait">
+    <div class="dialog-shell">
+      <div class="dialog-topbar">
+        <p id="dialog-count" class="dialog-count"></p>
+        <button id="close-dialog" class="text-button" type="button" autofocus>Close ×</button>
+      </div>
+      <div class="dialog-content">
+        <div class="dialog-artwork">
+          <img id="dialog-image" src="" alt="" width="1024" height="1024">
+          <p id="dialog-image-error" class="image-error" hidden>This drawing couldn’t load. Try opening the image below.</p>
+        </div>
+        <div class="dialog-copy">
+          <h2 id="dialog-title"></h2>
+          <p id="dialog-trait"></p>
+          <a id="download-drawing" class="download-link" href="#" download>Download drawing ↓</a>
+        </div>
+      </div>
+      <nav class="dialog-navigation" aria-label="Browse mascot drawings">
+        <button id="previous-drawing" class="text-button" type="button">← Previous</button>
+        <button id="next-drawing" class="text-button" type="button">Next →</button>
+      </nav>
+    </div>
+  </dialog>
+</body>
+</html>
