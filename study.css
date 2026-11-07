@@ -421,7 +421,7 @@ button.story-mascot{appearance:none;border:0;padding:0;background:transparent;cu
 .crew-strip{margin-top:100px}
 .photo-viewport{max-width:1344px;margin-inline:auto}
 .press-section{padding-block:112px 48px}
-.next{padding-block:40px 128px}
+.next{padding-block:40px 96px}
 .invitation{margin-top:48px}
 .site-footer{padding-block:56px;gap:40px}
 @media(max-width:900px){
@@ -461,7 +461,7 @@ button.story-mascot{appearance:none;border:0;padding:0;background:transparent;cu
  .press-copy p{font-size:22px;margin-top:24px}
  .press-read{display:block;font-size:24px;line-height:1.35;margin-top:28px}
  .press-read .arrow{display:inline-block;margin:0 0 0 8px}
- .next{padding-block:32px 72px}
+ .next{padding-block:32px 48px}
  .farewell-crew{margin-bottom:28px}
  .farewell-crew .story-mascot{width:112px}
  .invitation{margin-top:32px}
