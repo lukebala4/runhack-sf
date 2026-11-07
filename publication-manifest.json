@@ -1,9 +1,9 @@
 {
   "canonical": "https://lukebala4.github.io/runhack-sf/",
   "source_study": "24 Meadow Lilac",
-  "asset_count": 106,
+  "asset_count": 109,
   "files": {
-    "index.html": "048e21c7f488397a375fb30e1fbb6c05869a5db587caef08cb200d6ec3aadfd4",
+    "index.html": "234cb4c4aaedd0011c103a625927625ed63b26073a3a112edc2d85cf282dc265",
     "study.css": "0af11c2ee3a556220d840fe6f2793e7eaa02d9cf19e6789e6981a58eefd0cecd",
     "study.js": "e0c17a8378c6db93d04549e1439496a9907b5562a329e21b36c72aaf3ec5c83b",
     "media.html": "575df3bf6d9b908d32d83189c3d83c249ed2e282242e95801bc00198a780c7e8",
@@ -93,6 +93,9 @@
     "assets/catalogue/london/megaphone-cycle-1200.webp": "351dc35c3412747fd0f198ea1b942b512f9367c196b65aeeda8212d2b3034a00",
     "assets/catalogue/london/megaphone-cycle-2000.webp": "229f81864a9cd6a0ae897eb05a1ec55db71606acc11d53e6a20916fe04a6b23d",
     "assets/catalogue/london/megaphone-cycle-640.webp": "d49d03aa5490dc6eee8608ab9c3947eb2739c60fda1920b47c52f6f6325ced94",
+    "assets/catalogue/london/mic-on-the-run-1200.webp": "91c90ca03fc1da0037e94c4458d32fe8a7cb3bcadcd946409b217c861e6b687a",
+    "assets/catalogue/london/mic-on-the-run-2000.webp": "fabbb83c3c6392649134d5a2228d8368a9d3908192998567a2c29b7740aa2cde",
+    "assets/catalogue/london/mic-on-the-run-640.webp": "b3d66eb88217e5e3a01d58ec0c72eacfb07953b2710330d545ded570b4b75574",
     "assets/catalogue/london/pitch-on-track-1200.webp": "bfa895c140d08df12ac0f453613af287e64f880e14929b6f10cc1e5dfe3e4acc",
     "assets/catalogue/london/pitch-on-track-2000.webp": "d85176c7d9a5663046dbd834cdff0d5a49b1b9024fa724bb8f78347a0a87eeb0",
     "assets/catalogue/london/pitch-on-track-640.webp": "0fec8662f44776fbfcaacf0928cb8632f4804fabbd42bb92580ebb5197d3c2a4",
