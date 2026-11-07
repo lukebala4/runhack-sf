@@ -62,7 +62,7 @@ a:focus-visible,button:focus-visible,summary:focus-visible,video:focus-visible{o
 .film-card-image{position:relative;overflow:hidden;border-radius:18px;aspect-ratio:16/9;transform-origin:center bottom;transition:transform .85s var(--ease);background:var(--ink)}
 .film-card-image>img{width:100%;height:100%;object-fit:cover}
 .film-play{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);display:grid;place-items:center;width:88px;height:88px;padding-left:5px;border-radius:50%;background:var(--pink);color:var(--ink);font-size:24px;transition:transform .7s var(--spring)}
-.film-card:hover .film-play,.film-card:focus-visible .film-play{transform:translate(-50%,-50%) scale(1.12)}
+@media(hover:hover) and (pointer:fine){.film-card:hover .film-play,.film-card:focus-visible .film-play{transform:translate(-50%,-50%) scale(1.12)}}
 .film-card:active .film-play{transform:translate(-50%,-50%) scale(.97)}
 .film-card-caption{display:flex;align-items:center;justify-content:space-between;gap:28px;padding-top:30px;font-size:clamp(36px,4.2vw,64px);font-weight:500;line-height:1.12;letter-spacing:-.045em}
 .arrow{display:inline-block;font-family:Geist,Arial,sans-serif;transition:transform .65s var(--spring)}
@@ -265,7 +265,7 @@ a:hover .arrow{transform:translate(4px,-4px)}
 /* Inline playback keeps the film in its original page position and size. */
 .hero-film .film-card-image{transform:none!important}
 .hero-film .hero-media{transform:none;will-change:auto}
-.hero-film video{display:block;width:100%;height:100%;object-fit:contain;background:#031B3B}
+.hero-film video{position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:contain;background:#031B3B}
 .film-cover{position:absolute;inset:0;display:block;width:100%;height:100%;padding:0;border:0;background:transparent;cursor:pointer}
 .film-cover>img{width:100%;height:100%;object-fit:cover}
 .hero-film button.film-card-caption{width:100%;border:0;background:transparent;text-align:left;cursor:pointer;font-family:Geist,Arial,sans-serif}
@@ -305,6 +305,18 @@ button.story-mascot{appearance:none;border:0;padding:0;background:transparent;cu
 @media(prefers-reduced-motion:reduce){.story-mascot.is-bouncing img{animation:none!important}.story-mascot:hover img{transform:none!important}}
 
 .hero .story-mascot:focus-visible{outline-color:var(--paper)}
+.hero-companions{display:contents}
+
+/* Phones use a separate character row, leaving the film unobstructed. */
+@media(max-width:700px), (max-width:950px) and (max-height:500px) and (orientation:landscape){
+ .hero-intro{padding-bottom:18px}
+ .hero-companions{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;max-width:440px;margin:18px auto 0;padding-inline:8px}
+ .hero-companions .story-mascot{position:relative;inset:auto;width:clamp(56px,16vw,68px);flex:none;z-index:auto}
+ .hero-media-shell{padding-inline:var(--gutter)}
+ .hero-film .hero-media{max-width:min(100%,96vh);max-width:min(100%,96svh);margin-inline:auto}
+ .hero-film .film-play{width:52px;height:52px;font-size:18px;padding-left:3px;box-shadow:0 4px 16px #072C6133}
+ .hero-film .film-card-caption{font-size:28px;line-height:1.2;padding:16px 0 8px;max-width:min(100%,96vh);max-width:min(100%,96svh);margin-inline:auto}
+}
 
 /* Sponsor marks remain legible and centred at every width. */
 .brand-row a{width:220px}
@@ -391,3 +403,42 @@ button.story-mascot{appearance:none;border:0;padding:0;background:transparent;cu
 @media(max-width:380px){.photo-track{min-height:450px}.catalogue-hint{white-space:normal;max-width:130px}.catalogue-hint>span:last-child{display:none}}
 @media(prefers-reduced-motion:reduce){.photo-card,.photo-item,.photo-viewport.is-dragging .photo-card,.photo-viewport:not(.is-dragging) .photo-card:hover{transform:none!important}.photo-open{transform:none!important}}
 @media print{.photo-catalogue{background:var(--paper);color:var(--deep-blue)}.catalogue-heading h2{color:var(--deep-blue)}.photo-viewport{overflow:visible}.photo-track{display:grid;width:100%;grid-template-columns:1fr 1fr;gap:20px;padding:30px 0}.photo-item,.photo-item--portrait{width:100%;transform:none}.catalogue-tools,.catalogue-footer,.photo-viewer,[data-loop-copy]{display:none}}
+
+/* A shared centred column gives the story and media more breathing room. */
+:root{--gutter:clamp(32px,5vw,72px)}
+.section-wrap,.hero-intro,.hero-media-shell{max-width:1344px}
+.hero-media-shell{padding-inline:var(--gutter)}
+.idea{padding-block:128px 112px}
+.idea-copy{gap:72px}
+.format-grid{gap:clamp(40px,5vw,72px);margin-top:96px}
+.crew-strip{margin-top:100px}
+.photo-viewport{max-width:1344px;margin-inline:auto}
+.press-section{padding-block:112px 120px}
+.next{padding-block:140px 128px}
+.invitation{margin-top:48px}
+.site-footer{padding-block:56px;gap:40px}
+@media(max-width:900px){
+ .idea-copy{grid-template-columns:1fr;gap:40px}
+ .idea-copy .intro-copy{max-width:640px}
+ .format-grid{grid-template-columns:1fr;gap:48px;margin-top:64px}
+ .format-grid h3,.format-grid p{max-width:640px}
+ .format-grid h3{margin-bottom:20px}
+}
+@media(max-width:700px){
+ .idea{padding-block:96px 88px}
+ .crew-strip{margin-top:72px}
+ .brand-row{gap:40px}
+ .press-section{padding-block:88px 96px}
+ .press-section h2{margin-bottom:48px}
+ .press-story{grid-template-columns:minmax(0,1fr)}
+ .press-source,.press-copy{min-width:0}
+ .press-copy{padding:44px 28px 36px}
+ .press-read{display:block}
+ .press-read .arrow{display:block;margin-top:16px}
+ .next{padding-block:100px 96px}
+ .invitation{margin-top:40px}
+ .contact-actions{gap:32px}
+ .contact-actions .pill{font-size:clamp(22px,6vw,26px);gap:16px;padding:18px 16px;min-height:60px;width:100%;max-width:340px;justify-content:center;white-space:nowrap}
+ .site-footer{padding-block:44px}
+}
+@media(max-width:380px){:root{--gutter:28px}}

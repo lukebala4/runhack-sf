@@ -10,11 +10,11 @@
   if (film) {
     document.querySelectorAll('[data-play-inline]').forEach(control => {
       control.hidden = false;
-      control.addEventListener('click', () => {
+      control.addEventListener('click', event => {
         cover.hidden = true;
         filmCard.classList.add('has-started');
         message.hidden = true;
-        film.focus({preventScroll:true});
+        if (event.detail === 0) film.focus({preventScroll:true});
         film.play().catch(() => {
           messageText.textContent = film.error
             ? 'The film couldn’t load. Try opening it directly.'
