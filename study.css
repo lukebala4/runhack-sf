@@ -419,8 +419,8 @@ button.story-mascot{appearance:none;border:0;padding:0;background:transparent;cu
 .format-grid{gap:clamp(40px,5vw,72px);margin-top:96px}
 .crew-strip{margin-top:100px}
 .photo-viewport{max-width:1344px;margin-inline:auto}
-.press-section{padding-block:112px 120px}
-.next{padding-block:140px 128px}
+.press-section{padding-block:112px 48px}
+.next{padding-block:40px 128px}
 .invitation{margin-top:48px}
 .site-footer{padding-block:56px;gap:40px}
 @media(max-width:900px){
@@ -447,7 +447,7 @@ button.story-mascot{appearance:none;border:0;padding:0;background:transparent;cu
  .photo-item{transform:translateY(calc(var(--photo-offset)*.2))}
  .photo-item--portrait{width:clamp(168px,48vw,210px)}
  .catalogue-events .past-events{margin-top:32px}
- .press-section{padding-block:72px}
+ .press-section{padding-block:72px 24px}
  .press-section h2{margin-bottom:32px}
  .press-story{grid-template-columns:minmax(0,1fr);border-radius:16px;overflow:hidden;background:#EAF5FA}
  .press-source,.press-copy{min-width:0}
@@ -460,7 +460,7 @@ button.story-mascot{appearance:none;border:0;padding:0;background:transparent;cu
  .press-copy p{font-size:22px;margin-top:24px}
  .press-read{display:block;font-size:24px;line-height:1.35;margin-top:28px}
  .press-read .arrow{display:inline-block;margin:0 0 0 8px}
- .next{padding-block:72px}
+ .next{padding-block:32px 72px}
  .farewell-crew{margin-bottom:28px}
  .farewell-crew .story-mascot{width:112px}
  .invitation{margin-top:32px}
