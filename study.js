@@ -156,7 +156,7 @@
 
     cards.forEach((card, index) => {card.dataset.photoIndex = index;});
     gallery.classList.add('is-looping');
-    gallery.setAttribute('aria-label', 'Photo collection. Scroll in either direction to explore twelve photographs in a continuous loop.');
+    gallery.setAttribute('aria-label', `Photo collection. Scroll in either direction to explore ${cards.length} photographs in a continuous loop.`);
     document.querySelector('.catalogue-arrows').hidden = false;
     previous.addEventListener('click', () => moveGallery(-1));
     next.addEventListener('click', () => moveGallery(1));
