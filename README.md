@@ -8,11 +8,22 @@ GitHub Pages serves the root of the `main` branch. Push changes to `main` to pub
 
 Run `python3 -m http.server 5175 --bind 127.0.0.1` from this repository, then open http://127.0.0.1:5175/.
 
-The home page is `index.html`; press coverage is in `media.html`. Styles are in `website.css` and `media.css`; `website.js` starts the London event film only when the visitor presses Play. Sponsor and contact buttons open editable email drafts and send nothing automatically.
+The home page is `index.html`, styled by `study.css`, with inline video, the explorable twelve-photo catalogue and mascot interactions in `study.js`. Press coverage is part of the home page; `media.html` redirects old links to `/#media`. Sponsor and contact buttons open editable email drafts and send nothing automatically.
 
-## Assets and deployment scope
+## One public website
 
-The San Francisco website and Creative workspace are hosted together in this repository. The top navigation opens https://lukebala4.github.io/runhack-sf/creative/. The workspace preserves all 163 catalog studies and 13 rounds, including linked pages, artwork, references, motion and process notes. Its Back to home button returns to the main website. Visitors do not need a local server.
+Use **https://lukebala4.github.io/runhack-sf/** as the canonical shareable link. GitHub Pages still serves only `main` at `/`; deployment records are revisions of this same site. The home page does not expose internal version selectors. Existing `creative/` routes are preserved historical studies, not separate deployments.
+
+To update only the public home page from the approved local study:
+
+```sh
+python3 scripts/sync_public_study.py --source '/path/to/Runninghack SF Planning/24 Meadow Lilac'
+node --check study.js
+```
+
+This copies referenced assets and licence files into `assets/catalogue/`, strips internal workspace links, adds share metadata, and writes `publication-manifest.json` with file hashes. It preserves the Creative Warehouse, original shared assets and unrelated files. Review the changes, verify desktop and phone behavior, then push the scoped commit to `main`.
+
+## Archived creative workspace
 
 `creative/` is a generated static export. Its `export-manifest.json` records the complete source-file set and SHA-256 hashes. The exporter follows the catalog, page links, styles, scripts and data references; it rewrites localhost and planning-root URLs for `/runhack-sf/creative/`, resolves shared symlink assets to canonical files, retains licence notices, and generates browsable directory pages where the local Python server previously provided listings. Authoring scripts, hidden files and unrelated local files are excluded. Source studies are preserved unchanged.
 
