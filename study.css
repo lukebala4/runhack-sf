@@ -275,8 +275,8 @@ a:hover .arrow{transform:translate(4px,-4px)}
 /* Supporting sans-serif text is two pixels larger throughout. */
 body{font-size:24px}
 .film-card-caption{font-size:clamp(38px,calc(4.2vw + 2px),66px)}
-.past-events{font-size:clamp(38px,calc(4.5vw + 2px),70px)}
-.past-events>span{font-size:clamp(28px,calc(2.6vw + 2px),40px)}
+.past-events{font-size:clamp(28px,calc(2.6vw + 2px),40px)}
+.past-events>span{font-size:inherit}
 .press-source p,.press-source time{font-size:clamp(26px,calc(2vw + 2px),32px)}
 .press-copy p{font-size:clamp(26px,calc(2.1vw + 2px),34px)}
 .press-read{font-size:clamp(30px,calc(2.8vw + 2px),44px)}
@@ -287,8 +287,8 @@ body{font-size:24px}
  body{font-size:22px}
  .film-card-caption{font-size:clamp(34px,calc(8vw + 2px),50px)}
  .hero-film .film-card-caption{font-size:34px}
- .past-events{font-size:clamp(40px,calc(10vw + 2px),58px)}
- .past-events>span{font-size:28px}
+ .past-events{font-size:28px}
+ .past-events>span{font-size:inherit}
  .press-source p,.press-source time{font-size:26px}
  .press-copy p{font-size:24px}
  .press-read{font-size:clamp(30px,calc(7vw + 2px),38px)}
