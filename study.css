@@ -490,8 +490,8 @@ button.story-mascot{appearance:none;border:0;padding:0;background:transparent;cu
 }
 
 /* A compact, flat sponsor invitation. */
-.contact-actions #sponsor-link{width:auto;max-width:100%;min-height:56px;padding:14px 24px;border-radius:6px;box-shadow:none;background:var(--pink);color:var(--paper);font-size:24px;font-weight:600;gap:20px;transition:transform .2s ease,background-color .2s ease}
-.contact-actions #sponsor-link:hover{transform:translateY(-3px);background:#bd257e}
+.contact-actions #sponsor-link{width:auto;max-width:100%;min-height:56px;padding:14px 24px;border-radius:6px;box-shadow:none;background:var(--deep-blue);color:var(--paper);font-size:24px;font-weight:600;gap:20px;transition:transform .2s ease,background-color .2s ease}
+.contact-actions #sponsor-link:hover{transform:translateY(-3px);background:#044771}
 .contact-actions #sponsor-link:active{transform:translateY(0)}
 .contact-actions #sponsor-link:focus-visible{outline:3px solid var(--deep-blue);outline-offset:5px;transform:none}
 @media(max-width:700px){.contact-actions #sponsor-link{font-size:22px;padding:14px 22px;min-height:54px}}
