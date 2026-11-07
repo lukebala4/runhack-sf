@@ -195,7 +195,7 @@ a:focus-visible,button:focus-visible,summary:focus-visible,video:focus-visible{o
 
 /* Blue light, pink accents and overlapping photographic surfaces. */
 .hero{position:relative;isolation:isolate;background:radial-gradient(ellipse 1000px 760px at 50% 430px,var(--blue) 0%,#05699B80 58%,transparent 85%),linear-gradient(180deg,var(--deep-blue) 0%,#044771 48%,#B9E7F3 84%,var(--paper) 100%);padding-bottom:32px}
-.hero h1{font-size:clamp(92px,14.25vw,206px);line-height:.88}
+.hero h1{font-size:clamp(86px,13.4vw,194px);line-height:.88}
 .hero-intro{padding-bottom:78px}
 .hero-tracks{position:absolute;inset:0 0 auto;height:720px;overflow:hidden;pointer-events:none;z-index:-1;opacity:.14}
 .hero-tracks::before,.hero-tracks::after{content:"";position:absolute;width:1600px;height:600px;left:50%;top:-340px;transform:translateX(-50%) rotate(-18deg);border:2px solid var(--paper);border-radius:50%}
@@ -232,7 +232,7 @@ a:focus-visible,button:focus-visible,summary:focus-visible,video:focus-visible{o
 @media(max-width:1000px){.press-source{padding:32px 24px}.press-copy{padding:38px 32px 40px 44px}}
 @media(max-width:700px){
  .hero{background:linear-gradient(180deg,transparent 60%,var(--paper) 100%),radial-gradient(ellipse 450px 540px at 50% 280px,var(--blue),transparent 80%),linear-gradient(180deg,var(--deep-blue),#045381 60%,var(--paper) 100%);padding-bottom:16px}
- .hero h1{font-size:clamp(72px,16.6vw,114px);line-height:.9}
+ .hero h1{font-size:clamp(68px,15.6vw,107px);line-height:.9}
  .hero-intro{padding-bottom:65px}
  .hero-runner{bottom:-40px;right:30px}
  .hero-tracks{height:480px}
@@ -255,7 +255,7 @@ a:focus-visible,button:focus-visible,summary:focus-visible,video:focus-visible{o
 }
 @media print{.hero,.field,.press-section,.press-source,.press-copy{background:var(--paper);color:var(--ink);box-shadow:none}.hero h1,.field h2,.press-section h2,.press-copy h3{color:var(--ink)}.hero-tracks,.farewell-crew{display:none}}
 
-@media(max-width:380px){.hero h1{font-size:63px}.next h2{font-size:52px}}
+@media(max-width:380px){.hero h1{font-size:59px}.next h2{font-size:52px}}
 
 /* The film opens the story; the original running photo continues below. */
 .hero-film .film-card-image{aspect-ratio:16/9;border-radius:inherit}
@@ -329,9 +329,9 @@ button.story-mascot{appearance:none;border:0;padding:0;background:transparent;cu
 @media(max-width:1000px){.brand-row a{width:190px}.brand-row img{height:70px}}
 @media(max-width:700px){.brand-row{flex-direction:column;gap:32px}.brand-row a{width:210px}.brand-row img{height:76px}}
 
-.wordmark{width:200px}
-@media(min-width:381px) and (max-width:700px){.wordmark{width:180px}}
-@media(max-width:380px){.wordmark{width:160px}}
+.wordmark{width:188px}
+@media(min-width:381px) and (max-width:700px){.wordmark{width:170px}}
+@media(max-width:380px){.wordmark{width:150px}}
 
 /* A single, browsable photo collection. The rest of the story stays quiet. */
 .idea-intro{display:block}
