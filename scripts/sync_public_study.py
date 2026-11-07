@@ -19,6 +19,7 @@ css = (source / 'study.css').read_text()
 js = (source / 'study.js').read_text()
 # Collect only referenced assets; never copy evidence, local notes, or other studies.
 assets = set(re.findall(r'assets/[A-Za-z0-9_./-]+\.(?:svg|png|webp|jpe?g|woff2)', page + css + js))
+assets.add('assets/london-film-share.jpg')
 assets.update(str(p.relative_to(source)) for p in (source/'assets/licenses').rglob('*') if p.is_file())
 for relative in sorted(assets):
     original = source / relative
@@ -38,8 +39,13 @@ metadata = f'''  <link rel="canonical" href="{canonical}">
   <meta property="og:title" content="Running Hackathon · Build on the move">
   <meta property="og:description" content="Run together. Build with AI. Explore the Running Hackathon and help bring the next one to San Francisco.">
   <meta property="og:url" content="{canonical}">
-  <meta property="og:image" content="{canonical}assets/catalogue/london/london-05-1600.webp">
+  <meta property="og:image" content="{canonical}assets/catalogue/london-film-share.jpg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1280">
+  <meta property="og:image:height" content="720">
+  <meta property="og:image:alt" content="The London Running Hackathon track, as shown in the event film.">
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="{canonical}assets/catalogue/london-film-share.jpg">
 '''
 page = page.replace('</head>', metadata+'</head>')
 (root/'index.html').write_text(page)

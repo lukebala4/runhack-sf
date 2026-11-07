@@ -159,7 +159,6 @@
       expanded.sizes = '95vw';
       expanded.src = source.src;
       document.getElementById('photo-count').textContent = `${activePhoto+1} / ${cards.length}`;
-      document.getElementById('photo-caption').textContent = source.alt;
       viewerPrevious.disabled = activePhoto === 0;
       viewerNext.disabled = activePhoto === cards.length-1;
     }
