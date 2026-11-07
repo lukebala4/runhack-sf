@@ -333,6 +333,8 @@ button.story-mascot{appearance:none;border:0;padding:0;background:transparent;cu
 .catalogue-arrows button:disabled,.photo-viewer-bottom button:disabled{opacity:.28;cursor:default}
 .photo-viewport{margin-top:10px;width:100%;overflow-x:auto;overflow-y:hidden;overscroll-behavior-x:contain;scroll-snap-type:x proximity;scroll-padding-inline:var(--gutter);scrollbar-color:var(--pink) #FCFFFF20;scrollbar-width:thin;cursor:grab;touch-action:pan-x pan-y pinch-zoom}
 .photo-viewport:focus-visible{outline:2px solid var(--paper);outline-offset:-4px}
+.photo-viewport.is-looping{scroll-snap-type:none;scrollbar-width:none;overflow-anchor:none}
+.photo-viewport.is-looping::-webkit-scrollbar{display:none}
 .photo-track{display:flex;align-items:center;gap:42px;width:max-content;min-width:100%;min-height:660px;margin:0;padding:70px var(--gutter);list-style:none}
 .photo-item{width:clamp(320px,38vw,540px);flex:none;transform:translateY(var(--photo-offset));scroll-snap-align:start;perspective:1200px}
 .photo-item--portrait{width:clamp(240px,22vw,290px)}
@@ -388,4 +390,4 @@ button.story-mascot{appearance:none;border:0;padding:0;background:transparent;cu
 }
 @media(max-width:380px){.photo-track{min-height:450px}.catalogue-hint{white-space:normal;max-width:130px}.catalogue-hint>span:last-child{display:none}}
 @media(prefers-reduced-motion:reduce){.photo-card,.photo-item,.photo-viewport.is-dragging .photo-card,.photo-viewport:not(.is-dragging) .photo-card:hover{transform:none!important}.photo-open{transform:none!important}}
-@media print{.photo-catalogue{background:var(--paper);color:var(--deep-blue)}.catalogue-heading h2{color:var(--deep-blue)}.photo-viewport{overflow:visible}.photo-track{display:grid;width:100%;grid-template-columns:1fr 1fr;gap:20px;padding:30px 0}.photo-item,.photo-item--portrait{width:100%;transform:none}.catalogue-tools,.catalogue-footer,.photo-viewer{display:none}}
+@media print{.photo-catalogue{background:var(--paper);color:var(--deep-blue)}.catalogue-heading h2{color:var(--deep-blue)}.photo-viewport{overflow:visible}.photo-track{display:grid;width:100%;grid-template-columns:1fr 1fr;gap:20px;padding:30px 0}.photo-item,.photo-item--portrait{width:100%;transform:none}.catalogue-tools,.catalogue-footer,.photo-viewer,[data-loop-copy]{display:none}}
