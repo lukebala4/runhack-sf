@@ -334,7 +334,7 @@ button.story-mascot{appearance:none;border:0;padding:0;background:transparent;cu
 .catalogue-arrows button:disabled,.photo-viewer-bottom button:disabled{opacity:.28;cursor:default}
 .photo-viewport{margin-top:10px;width:100%;overflow-x:auto;overflow-y:hidden;overscroll-behavior-x:contain;scroll-snap-type:x proximity;scroll-padding-inline:var(--gutter);scrollbar-color:var(--pink) #FCFFFF20;scrollbar-width:thin;cursor:grab;touch-action:pan-x pan-y pinch-zoom}
 .photo-viewport:focus-visible{outline:2px solid var(--paper);outline-offset:-4px}
-.photo-track{display:flex;align-items:center;gap:42px;width:max-content;min-width:100%;min-height:660px;margin:0;padding:70px max(var(--gutter),calc((100vw - 1580px)/2 + var(--gutter)));list-style:none}
+.photo-track{display:flex;align-items:center;gap:42px;width:max-content;min-width:100%;min-height:660px;margin:0;padding:70px var(--gutter);list-style:none}
 .photo-item{width:clamp(320px,38vw,540px);flex:none;transform:translateY(var(--photo-offset));scroll-snap-align:start;perspective:1200px}
 .photo-item--portrait{width:clamp(240px,22vw,290px)}
 .photo-card{position:relative;display:block;border-radius:8px;isolation:isolate;outline-offset:9px;transform:translate3d(0,0,0);transition:transform .65s var(--spring),box-shadow .65s var(--spring);user-select:none;-webkit-user-drag:none;cursor:grab}
