@@ -1,9 +1,9 @@
 {
   "canonical": "https://lukebala4.github.io/runhack-sf/",
   "source_study": "24 Meadow Lilac",
-  "asset_count": 100,
+  "asset_count": 103,
   "files": {
-    "index.html": "39508acd5cdb0d503f814cd45e32ab0672e40cee76758eb67d6ef0f2afe4a173",
+    "index.html": "942134592087881a51208e66a0c14fbc8517e1eff9b34f951ec61015fca833f8",
     "study.css": "0af11c2ee3a556220d840fe6f2793e7eaa02d9cf19e6789e6981a58eefd0cecd",
     "study.js": "e0c17a8378c6db93d04549e1439496a9907b5562a329e21b36c72aaf3ec5c83b",
     "media.html": "575df3bf6d9b908d32d83189c3d83c249ed2e282242e95801bc00198a780c7e8",
@@ -48,6 +48,9 @@
     "assets/catalogue/licenses/geist-LICENSE.txt": "71609cbb5c78b5870d712eab73a31d76622635c6ed034ab5cee3b9ecbda8685f",
     "assets/catalogue/london-film-poster.webp": "3053f4b4520d31e574113a0622f5929f41dbbcda531059b82c7b992e7ff6d90d",
     "assets/catalogue/london-film-share.jpg": "3cb6bfb0fc40759ca581356eccda36ca25001bde8f13ee829dd076a70542e6a6",
+    "assets/catalogue/london/arsenal-running-interview-1200.webp": "7a69b9db674acb328965c950923b1ea466d149d7a6b3c10fade01599b0d42a54",
+    "assets/catalogue/london/arsenal-running-interview-2000.webp": "c91883387e51a07a388427abd6b05aa6241bd60863b473b051d7e49e1125d2db",
+    "assets/catalogue/london/arsenal-running-interview-640.webp": "12d494412c2704f9b5858db53cd7e9af2cd53532d80891473b2119460edda477",
     "assets/catalogue/london/celebrate-1200.webp": "ec20f020636b441bb6343b902efb91feb9f403a4637ac72825065c681114a063",
     "assets/catalogue/london/celebrate-2000.webp": "2e8573e5284d7b62efa23d1892020351776e3f9b84e1239e92b17b560d708cec",
     "assets/catalogue/london/celebrate-640.webp": "47bbecaee89d95956b55985dc279f4ba8bb9122acb803bec040925b1710b1af0",
