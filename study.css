@@ -65,8 +65,11 @@ a:focus-visible,button:focus-visible,summary:focus-visible,video:focus-visible{o
 @media(hover:hover) and (pointer:fine){.film-card:hover .film-play,.film-card:focus-visible .film-play{transform:translate(-50%,-50%) scale(1.12)}}
 .film-card:active .film-play{transform:translate(-50%,-50%) scale(.97)}
 .film-card-caption{display:flex;align-items:center;justify-content:space-between;gap:28px;padding-top:30px;font-size:clamp(36px,4.2vw,64px);font-weight:500;line-height:1.12;letter-spacing:-.045em}
-.arrow{display:inline-block;font-family:Geist,Arial,sans-serif;transition:transform .65s var(--spring)}
-a:hover .arrow{transform:translate(4px,-4px)}
+.icon{display:inline-block;width:24px;height:24px;flex:none;fill:none;stroke:currentColor;stroke-width:2.25;stroke-linecap:round;stroke-linejoin:round;vertical-align:middle}
+.arrow{display:inline-flex;align-items:center;flex:none;transition:transform .3s var(--ease)}
+.play-icon{display:block;width:30px;height:30px;fill:currentColor}
+.film-play-label{display:none}
+@media(hover:hover) and (pointer:fine){a:hover .arrow{transform:translate(3px,-3px)}}
 .past-events{display:grid;grid-template-columns:1fr auto auto;align-items:center;gap:40px;border-top:1px solid #FCFFFF80;margin-top:60px;padding-top:36px;font-size:clamp(36px,4.5vw,68px);font-weight:500;line-height:1.12;letter-spacing:-.045em}
 .past-events>span{font-size:clamp(26px,2.6vw,38px);font-weight:400;letter-spacing:-.025em}
 .past-events a{display:flex;align-items:center;justify-content:space-between;gap:20px;padding-block:6px}
@@ -305,13 +308,15 @@ button.story-mascot{appearance:none;border:0;padding:0;background:transparent;cu
 @media(prefers-reduced-motion:reduce){.story-mascot.is-bouncing img{animation:none!important}.story-mascot:hover img{transform:none!important}}
 
 .hero .story-mascot:focus-visible{outline-color:var(--paper)}
-.hero-companions{display:contents}
+.hero-media-shell{position:relative}
+.hero-companions{position:absolute;left:var(--gutter);right:var(--gutter);bottom:calc(100% - 4px);z-index:2;display:flex;align-items:flex-end;justify-content:space-between;pointer-events:none}
+.hero-companions .story-mascot{position:relative;inset:auto;margin:0;pointer-events:auto}
 
-/* Phones use a separate character row, leaving the film unobstructed. */
+/* Both characters sit on the same film edge at every screen size. */
 @media(max-width:700px), (max-width:950px) and (max-height:500px) and (orientation:landscape){
- .hero-intro{padding-bottom:18px}
- .hero-companions{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;max-width:440px;margin:18px auto 0;padding-inline:8px}
- .hero-companions .story-mascot{position:relative;inset:auto;width:clamp(56px,16vw,68px);flex:none;z-index:auto}
+ .hero-intro{padding-bottom:calc(18px + clamp(62px,17.72vw,76px))}
+ .hero-companions{left:50%;right:auto;width:min(calc(100% - var(--gutter) - var(--gutter)),96vh);width:min(calc(100% - var(--gutter) - var(--gutter)),96svh);transform:translateX(-50%)}
+ .hero-companions .story-mascot{width:clamp(56px,16vw,68px);flex:none;z-index:auto}
  .hero-media-shell{padding-inline:var(--gutter)}
  .hero-film .hero-media{max-width:min(100%,96vh);max-width:min(100%,96svh);margin-inline:auto}
  .hero-film .film-play{width:52px;height:52px;font-size:18px;padding-left:3px;box-shadow:0 4px 16px #072C6133}
@@ -342,7 +347,7 @@ button.story-mascot{appearance:none;border:0;padding:0;background:transparent;cu
 .catalogue-tap-hint{display:none}
 .catalogue-arrows{display:flex;gap:12px}
 .catalogue-arrows button,.photo-viewer-bottom button{display:grid;place-items:center;width:58px;height:58px;border:1px solid #FCFFFF80;border-radius:50%;color:var(--paper);background:transparent;font:400 32px/1 Geist,Arial,sans-serif;cursor:pointer;transition:background .25s,transform .45s var(--spring)}
-.catalogue-arrows button:hover:not(:disabled),.photo-viewer-bottom button:hover:not(:disabled){background:var(--pink);border-color:var(--pink);transform:scale(1.08)}
+@media(hover:hover) and (pointer:fine){.catalogue-arrows button:hover:not(:disabled),.photo-viewer-bottom button:hover:not(:disabled){background:var(--pink);border-color:var(--pink);transform:scale(1.08)}}
 .catalogue-arrows button:disabled,.photo-viewer-bottom button:disabled{opacity:.28;cursor:default}
 .photo-viewport{margin-top:10px;width:100%;overflow-x:auto;overflow-y:hidden;overscroll-behavior-x:contain;scroll-snap-type:x proximity;scroll-padding-inline:var(--gutter);scrollbar-color:var(--pink) #FCFFFF20;scrollbar-width:thin;cursor:grab;touch-action:pan-x pan-y pinch-zoom}
 .photo-viewport:focus-visible{outline:2px solid var(--paper);outline-offset:-4px}
@@ -464,3 +469,21 @@ button.story-mascot{appearance:none;border:0;padding:0;background:transparent;cu
  .site-footer{padding-block:44px}
 }
 @media(max-width:380px){:root{--gutter:28px}}
+
+/* Stable vector controls, with a quieter touch layout. */
+@media(max-width:700px), (max-width:950px) and (max-height:500px) and (orientation:landscape){
+ .hero-film .film-cover .film-play{top:auto;left:12px;bottom:12px;display:flex;align-items:center;justify-content:center;gap:8px;width:auto;min-width:104px;height:44px;padding:0 14px;border-radius:8px;background:var(--paper);color:var(--deep-blue);box-shadow:0 2px 12px #031B3B26;transform:none;transition:transform .15s}
+ .hero-film .film-play .play-icon{width:18px;height:18px}
+ .hero-film .film-play-label{display:block;font:600 22px/1 Geist,Arial,sans-serif;letter-spacing:-.02em}
+ .hero-film .film-cover:active .film-play{transform:scale(.96)}
+ .past-events .arrow,.press-read .arrow,.contact-actions .arrow,.footer-links .icon{display:none}
+ .past-events a,.footer-links>a{min-height:44px;display:flex;align-items:center}
+ .catalogue-arrows,.photo-viewer-bottom{width:max-content;gap:0;border:1px solid #FCFFFF55;border-radius:12px;background:#FCFFFF0A}
+ .photo-viewer-bottom{justify-self:center}
+ .catalogue-arrows button,.photo-viewer-bottom button{width:48px;height:44px;padding:0;border:0;border-radius:11px;background:transparent;transform:none}
+ .catalogue-arrows button:first-child,.photo-viewer-bottom button:first-child{border-right:1px solid #FCFFFF40;border-top-right-radius:0;border-bottom-right-radius:0}
+ .catalogue-arrows button:last-child,.photo-viewer-bottom button:last-child{border-top-left-radius:0;border-bottom-left-radius:0}
+ .catalogue-arrows .icon,.photo-viewer-bottom .icon{width:20px;height:20px}
+ .catalogue-arrows button:hover:not(:disabled),.photo-viewer-bottom button:hover:not(:disabled){background:#FCFFFF15;transform:none}
+ .catalogue-arrows button:active,.photo-viewer-bottom button:active{background:#FCFFFF22;transform:none}
+}

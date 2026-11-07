@@ -9,8 +9,8 @@
   <link rel="icon" href="assets/catalogue/running-hackathon-wordmark.svg" type="image/svg+xml">
   <link rel="preload" href="assets/catalogue/barlow-condensed-800.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="assets/catalogue/geist.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="study.css?v=e941d188d788">
-  <script src="study.js?v=e941d188d788" defer></script>
+  <link rel="stylesheet" href="study.css?v=39ef357e78b3">
+  <script src="study.js?v=39ef357e78b3" defer></script>
   <link rel="canonical" href="https://lukebala4.github.io/runhack-sf/">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Running Hackathon · Build on the move">
@@ -31,15 +31,16 @@
 </header>
 <main id="main">
   <section class="hero" aria-labelledby="hero-title">
-    <div class="hero-tracks" aria-hidden="true"></div><div class="hero-intro"><h1 id="hero-title">Build on<br>the move.</h1><div class="hero-companions"><button class="story-mascot hero-builder" type="button" aria-label="Animate Devin mascot"><img src="assets/catalogue/devin-official-computer.png" alt="" width="500" height="457" decoding="async"></button><button class="story-mascot hero-runner" type="button" aria-label="Animate PostHog mascot"><img src="assets/catalogue/running-hedgehog.svg" alt="" width="745" height="825" decoding="async"></button></div></div>
+    <div class="hero-tracks" aria-hidden="true"></div><div class="hero-intro"><h1 id="hero-title">Build on<br>the move.</h1></div>
     <div class="hero-media-shell">
+      <div class="hero-companions"><button class="story-mascot hero-builder" type="button" aria-label="Animate Devin mascot"><img src="assets/catalogue/devin-official-computer.png" alt="" width="500" height="457" decoding="async"></button><button class="story-mascot hero-runner" type="button" aria-label="Animate PostHog mascot"><img src="assets/catalogue/running-hedgehog.svg" alt="" width="745" height="825" decoding="async"></button></div>
       <div class="film-card hero-film">
         <div class="hero-media"><div class="film-card-image">
           <video id="london-film" controls playsinline preload="none" poster="assets/catalogue/london-film-poster.webp" width="1920" height="1080" tabindex="0" aria-label="London Running Hackathon event film" src="https://djjr1drlf4hlxylk.public.blob.vercel-storage.com/videos/runhack-overview-20260912-1080p.mp4"></video>
-          <button class="film-cover" type="button" data-play-inline aria-label="Play the London event film" hidden><img src="assets/catalogue/london-film-poster.webp" alt="" width="1280" height="720" fetchpriority="high"><span class="film-play" aria-hidden="true">▶</span></button>
+          <button class="film-cover" type="button" data-play-inline aria-label="Play the London event film" hidden><img src="assets/catalogue/london-film-poster.webp" alt="" width="1280" height="720" fetchpriority="high"><span class="film-play" aria-hidden="true"><svg class="play-icon" viewBox="0 0 24 24" focusable="false"><path d="m8 5 11 7-11 7Z"/></svg><span class="film-play-label">Play</span></span></button>
         </div></div>
         <button class="film-card-caption" type="button" data-play-inline hidden>Watch the London film</button>
-        <p id="video-message" role="status" hidden><span id="video-message-text"></span> <a href="https://djjr1drlf4hlxylk.public.blob.vercel-storage.com/videos/runhack-overview-20260912-1080p.mp4" target="_blank" rel="noopener noreferrer">Open the film directly ↗</a></p>
+        <p id="video-message" role="status" hidden><span id="video-message-text"></span> <a href="https://djjr1drlf4hlxylk.public.blob.vercel-storage.com/videos/runhack-overview-20260912-1080p.mp4" target="_blank" rel="noopener noreferrer">Open the film directly <svg class="icon icon--external" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 17 17 7M7 7h10v10"/></svg></a></p>
       </div>
     </div>
   </section>
@@ -67,10 +68,10 @@
     <div class="catalogue-heading section-wrap">
       <h2 id="london-title">Take a look around.</h2>
       <div class="catalogue-tools">
-        <p class="catalogue-hint"><span class="desktop-hint">Drag to explore <span aria-hidden="true">↔</span></span><span class="touch-hint">Swipe to explore<span class="catalogue-tap-hint">Tap to open</span></span></p>
+        <p class="catalogue-hint"><span class="desktop-hint">Drag to explore</span><span class="touch-hint">Swipe to explore<span class="catalogue-tap-hint">Tap to open</span></span></p>
         <div class="catalogue-arrows" hidden>
-          <button type="button" data-gallery-prev aria-label="Previous photos" aria-controls="event-photos">←</button>
-          <button type="button" data-gallery-next aria-label="Next photos" aria-controls="event-photos">→</button>
+          <button type="button" data-gallery-prev aria-label="Previous photos" aria-controls="event-photos"><svg class="icon icon--previous" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m14 6-6 6 6 6"/></svg></button>
+          <button type="button" data-gallery-next aria-label="Next photos" aria-controls="event-photos"><svg class="icon icon--next" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m10 6 6 6-6 6"/></svg></button>
         </div>
       </div>
     </div>
@@ -79,86 +80,86 @@
         <li class="photo-item" style="--photo-offset:18px">
           <a class="photo-card" href="assets/catalogue/london/london-05-1600.webp" data-photo aria-label="View photo 1 of 12: On the track">
             <img src="assets/catalogue/london/london-05-1600.webp" srcset="assets/catalogue/london/london-05-800.webp 800w, assets/catalogue/london/london-05-1600.webp 1600w, assets/catalogue/london/london-05-2400.webp 2400w" sizes="(max-width: 700px) 80vw, 540px" alt="Two participants running side by side on the track at the London Running Hackathon." width="2400" height="1600" loading="lazy" decoding="async" draggable="false">
-            <span class="photo-open" aria-hidden="true">View photo <span>↗</span></span>
+            <span class="photo-open" aria-hidden="true">View photo <svg class="icon icon--external" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 17 17 7M7 7h10v10"/></svg></span>
           </a>
         </li>
         <li class="photo-item photo-item--portrait" style="--photo-offset:-22px">
           <a class="photo-card" href="assets/catalogue/barcelona/lilac-close-1200.webp" data-photo aria-label="View photo 2 of 12: On the move">
             <img src="assets/catalogue/barcelona/lilac-close-1200.webp" srcset="assets/catalogue/barcelona/lilac-close-640.webp 640w, assets/catalogue/barcelona/lilac-close-1200.webp 1200w, assets/catalogue/barcelona/lilac-close-2000.webp 2000w" sizes="(max-width: 700px) 80vw, 540px" alt="A participant in lilac carries a phone and camera while running in Barcelona." width="3368" height="6000" loading="lazy" decoding="async" draggable="false">
-            <span class="photo-open" aria-hidden="true">View photo <span>↗</span></span>
+            <span class="photo-open" aria-hidden="true">View photo <svg class="icon icon--external" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 17 17 7M7 7h10v10"/></svg></span>
           </a>
         </li>
         <li class="photo-item" style="--photo-offset:-35px">
           <a class="photo-card" href="assets/catalogue/london/london-07-1600.webp" data-photo aria-label="View photo 3 of 12: A wave from the course">
             <img src="assets/catalogue/london/london-07-1600.webp" srcset="assets/catalogue/london/london-07-800.webp 800w, assets/catalogue/london/london-07-1600.webp 1600w, assets/catalogue/london/london-07-2400.webp 2400w" sizes="(max-width: 700px) 80vw, 540px" alt="A runner waves while holding a phone, with London Stadium behind her." width="2400" height="1600" loading="lazy" decoding="async" draggable="false">
-            <span class="photo-open" aria-hidden="true">View photo <span>↗</span></span>
+            <span class="photo-open" aria-hidden="true">View photo <svg class="icon icon--external" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 17 17 7M7 7h10v10"/></svg></span>
           </a>
         </li>
         <li class="photo-item photo-item--portrait" style="--photo-offset:18px">
           <a class="photo-card" href="assets/catalogue/london/london-welcome-1200.webp" data-photo aria-label="View photo 4 of 12: The welcome crew">
             <img src="assets/catalogue/london/london-welcome-1200.webp" srcset="assets/catalogue/london/london-welcome-640.webp 640w, assets/catalogue/london/london-welcome-1200.webp 1200w, assets/catalogue/london/london-welcome-1800.webp 1800w" sizes="(max-width: 700px) 80vw, 540px" alt="People at the welcome table beside the Running Hackathon banner and pink London Marathon Community Track sign." width="1800" height="2700" loading="lazy" decoding="async" draggable="false">
-            <span class="photo-open" aria-hidden="true">View photo <span>↗</span></span>
+            <span class="photo-open" aria-hidden="true">View photo <svg class="icon icon--external" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 17 17 7M7 7h10v10"/></svg></span>
           </a>
         </li>
         <li class="photo-item" style="--photo-offset:26px">
           <a class="photo-card" href="assets/catalogue/london/friends-indoors-1200.webp" data-photo aria-label="View photo 5 of 12: Behind the scenes">
             <img src="assets/catalogue/london/friends-indoors-1200.webp" srcset="assets/catalogue/london/friends-indoors-640.webp 640w, assets/catalogue/london/friends-indoors-1200.webp 1200w, assets/catalogue/london/friends-indoors-2000.webp 2000w" sizes="(max-width: 700px) 80vw, 540px" alt="Three participants smile together indoors at the London Running Hackathon." width="4200" height="2800" loading="lazy" decoding="async" draggable="false">
-            <span class="photo-open" aria-hidden="true">View photo <span>↗</span></span>
+            <span class="photo-open" aria-hidden="true">View photo <svg class="icon icon--external" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 17 17 7M7 7h10v10"/></svg></span>
           </a>
         </li>
         <li class="photo-item" style="--photo-offset:-16px">
           <a class="photo-card" href="assets/catalogue/london/london-08-1600.webp" data-photo aria-label="View photo 6 of 12: Building on the go">
             <img src="assets/catalogue/london/london-08-1600.webp" srcset="assets/catalogue/london/london-08-800.webp 800w, assets/catalogue/london/london-08-1600.webp 1600w, assets/catalogue/london/london-08-2400.webp 2400w" sizes="(max-width: 700px) 80vw, 540px" alt="A participant uses phones while moving around the track at the London Running Hackathon." width="2400" height="1600" loading="lazy" decoding="async" draggable="false">
-            <span class="photo-open" aria-hidden="true">View photo <span>↗</span></span>
+            <span class="photo-open" aria-hidden="true">View photo <svg class="icon icon--external" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 17 17 7M7 7h10v10"/></svg></span>
           </a>
         </li>
         <li class="photo-item photo-item--portrait" style="--photo-offset:12px">
           <a class="photo-card" href="assets/catalogue/barcelona/runner-1200.webp" data-photo aria-label="View photo 7 of 12: Run with it">
             <img src="assets/catalogue/barcelona/runner-1200.webp" srcset="assets/catalogue/barcelona/runner-640.webp 640w, assets/catalogue/barcelona/runner-1200.webp 1200w, assets/catalogue/barcelona/runner-2000.webp 2000w" sizes="(max-width: 700px) 80vw, 540px" alt="A smiling participant in a red shirt runs with a phone in Barcelona." width="3368" height="6000" loading="lazy" decoding="async" draggable="false">
-            <span class="photo-open" aria-hidden="true">View photo <span>↗</span></span>
+            <span class="photo-open" aria-hidden="true">View photo <svg class="icon icon--external" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 17 17 7M7 7h10v10"/></svg></span>
           </a>
         </li>
         <li class="photo-item" style="--photo-offset:32px">
           <a class="photo-card" href="assets/catalogue/london/london-10-1600.webp" data-photo aria-label="View photo 8 of 12: Better together">
             <img src="assets/catalogue/london/london-10-1600.webp" srcset="assets/catalogue/london/london-10-800.webp 800w, assets/catalogue/london/london-10-1600.webp 1600w, assets/catalogue/london/london-10-2400.webp 2400w" sizes="(max-width: 700px) 80vw, 540px" alt="Three participants look up and wave while running together at the London Running Hackathon." width="2400" height="1600" loading="lazy" decoding="async" draggable="false">
-            <span class="photo-open" aria-hidden="true">View photo <span>↗</span></span>
+            <span class="photo-open" aria-hidden="true">View photo <svg class="icon icon--external" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 17 17 7M7 7h10v10"/></svg></span>
           </a>
         </li>
         <li class="photo-item" style="--photo-offset:-28px">
           <a class="photo-card" href="assets/catalogue/london/demo-1200.webp" data-photo aria-label="View photo 9 of 12: Show what you made">
             <img src="assets/catalogue/london/demo-1200.webp" srcset="assets/catalogue/london/demo-640.webp 640w, assets/catalogue/london/demo-1200.webp 1200w, assets/catalogue/london/demo-2000.webp 2000w" sizes="(max-width: 700px) 80vw, 540px" alt="Two participants demonstrate their project on a screen beside the London track." width="4200" height="2800" loading="lazy" decoding="async" draggable="false">
-            <span class="photo-open" aria-hidden="true">View photo <span>↗</span></span>
+            <span class="photo-open" aria-hidden="true">View photo <svg class="icon icon--external" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 17 17 7M7 7h10v10"/></svg></span>
           </a>
         </li>
         <li class="photo-item photo-item--portrait" style="--photo-offset:-6px">
           <a class="photo-card" href="assets/catalogue/barcelona/red-sunglasses-1200.webp" data-photo aria-label="View photo 10 of 12: Full of energy">
             <img src="assets/catalogue/barcelona/red-sunglasses-1200.webp" srcset="assets/catalogue/barcelona/red-sunglasses-640.webp 640w, assets/catalogue/barcelona/red-sunglasses-1200.webp 1200w, assets/catalogue/barcelona/red-sunglasses-2000.webp 2000w" sizes="(max-width: 700px) 80vw, 540px" alt="A smiling runner in red sunglasses holds a phone in Barcelona." width="3368" height="6000" loading="lazy" decoding="async" draggable="false">
-            <span class="photo-open" aria-hidden="true">View photo <span>↗</span></span>
+            <span class="photo-open" aria-hidden="true">View photo <svg class="icon icon--external" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 17 17 7M7 7h10v10"/></svg></span>
           </a>
         </li>
         <li class="photo-item" style="--photo-offset:30px">
           <a class="photo-card" href="assets/catalogue/london/celebrate-1200.webp" data-photo aria-label="View photo 11 of 12: The finish-line feeling">
             <img src="assets/catalogue/london/celebrate-1200.webp" srcset="assets/catalogue/london/celebrate-640.webp 640w, assets/catalogue/london/celebrate-1200.webp 1200w, assets/catalogue/london/celebrate-2000.webp 2000w" sizes="(max-width: 700px) 80vw, 540px" alt="Three participants jump in celebration in front of the London audience." width="4200" height="2800" loading="lazy" decoding="async" draggable="false">
-            <span class="photo-open" aria-hidden="true">View photo <span>↗</span></span>
+            <span class="photo-open" aria-hidden="true">View photo <svg class="icon icon--external" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 17 17 7M7 7h10v10"/></svg></span>
           </a>
         </li>
         <li class="photo-item" style="--photo-offset:-12px">
           <a class="photo-card" href="assets/catalogue/london/community-1200.webp" data-photo aria-label="View photo 12 of 12: The whole community">
             <img src="assets/catalogue/london/community-1200.webp" srcset="assets/catalogue/london/community-640.webp 640w, assets/catalogue/london/community-1200.webp 1200w, assets/catalogue/london/community-2000.webp 2000w" sizes="(max-width: 700px) 80vw, 540px" alt="The London Running Hackathon community gathers for a group photograph on the track." width="5271" height="3514" loading="lazy" decoding="async" draggable="false">
-            <span class="photo-open" aria-hidden="true">View photo <span>↗</span></span>
+            <span class="photo-open" aria-hidden="true">View photo <svg class="icon icon--external" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 17 17 7M7 7h10v10"/></svg></span>
           </a>
         </li>
       </ol>
     </div>
-    <div class="catalogue-footer section-wrap"><span aria-hidden="true">← Keep exploring →</span></div>
-    <div class="catalogue-events section-wrap"><nav class="past-events" aria-label="Past events"><span>Past events</span><a href="https://www.therunninghackathon.com/" target="_blank" rel="noopener noreferrer">London <span class="arrow" aria-hidden="true">↗</span></a><a href="https://www.runninghackathon.com/" target="_blank" rel="noopener noreferrer">Barcelona <span class="arrow" aria-hidden="true">↗</span></a></nav></div>
+    <div class="catalogue-footer section-wrap"><span aria-hidden="true">Keep exploring</span></div>
+    <div class="catalogue-events section-wrap"><nav class="past-events" aria-label="Past events"><span>Past events</span><a href="https://www.therunninghackathon.com/" target="_blank" rel="noopener noreferrer">London <span class="arrow" aria-hidden="true"><svg class="icon icon--external" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 17 17 7M7 7h10v10"/></svg></span></a><a href="https://www.runninghackathon.com/" target="_blank" rel="noopener noreferrer">Barcelona <span class="arrow" aria-hidden="true"><svg class="icon icon--external" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 17 17 7M7 7h10v10"/></svg></span></a></nav></div>
   </section>
   <section class="press-section" id="media" aria-labelledby="media-title">
     <div class="section-wrap">
     <h2 id="media-title">Media &amp; Press.</h2>
     <article class="press-story" aria-labelledby="press-title">
       <div class="press-source"><img src="assets/catalogue/exchangewire.svg" alt="ExchangeWire" width="380" height="54" loading="lazy"><p>Press release</p><time datetime="2026-08-28">28 August 2026</time></div>
-      <div class="press-copy"><h3 id="press-title"><a href="https://www.exchangewire.com/blog/2026/08/28/thrad-backs-run-hack-europes-first-running-hackathon-alongside-elevenlabs-o2-wispr-flow/" target="_blank" rel="noopener noreferrer">Thrad backs<br>Running Hackathon.</a></h3><p>Thrad announced its sponsorship of the London event, alongside ElevenLabs, O2 and Wispr Flow.</p><a class="press-read" href="https://www.exchangewire.com/blog/2026/08/28/thrad-backs-run-hack-europes-first-running-hackathon-alongside-elevenlabs-o2-wispr-flow/" target="_blank" rel="noopener noreferrer">Read on ExchangeWire <span class="arrow" aria-hidden="true">↗</span></a></div>
+      <div class="press-copy"><h3 id="press-title"><a href="https://www.exchangewire.com/blog/2026/08/28/thrad-backs-run-hack-europes-first-running-hackathon-alongside-elevenlabs-o2-wispr-flow/" target="_blank" rel="noopener noreferrer">Thrad backs<br>Running Hackathon.</a></h3><p>Thrad announced its sponsorship of the London event, alongside ElevenLabs, O2 and Wispr Flow.</p><a class="press-read" href="https://www.exchangewire.com/blog/2026/08/28/thrad-backs-run-hack-europes-first-running-hackathon-alongside-elevenlabs-o2-wispr-flow/" target="_blank" rel="noopener noreferrer">Read on ExchangeWire <span class="arrow" aria-hidden="true"><svg class="icon icon--external" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 17 17 7M7 7h10v10"/></svg></span></a></div>
     </article>
     </div>
   </section>
@@ -168,17 +169,17 @@
       <button class="story-mascot" type="button" aria-label="Animate Devin mascot"><img src="assets/catalogue/devin-official-computer.png" alt="" width="500" height="457" loading="lazy"></button>
     </div>
     <h2 id="sf-title">See you outside,<br>San Francisco.</h2>
-    <div id="get-involved" class="invitation"><p>Help bring the next one to life.</p><div class="contact-actions"><a class="pill" id="sponsor-link" href="mailto:runninghackathon@gmail.com?subject=Sponsorship%20enquiry%20%7C%20Running%20Hackathon%20San%20Francisco&amp;body=Hi%20Running%20Hackathon%20team%2C%0D%0A%0D%0AI%E2%80%99d%20like%20to%20explore%20sponsoring%20the%20San%20Francisco%20event.%0D%0A%0D%0AName%3A%20%5BYour%20name%5D%0D%0ACompany%3A%20%5BCompany%20name%5D%0D%0AWebsite%3A%20%5BCompany%20website%5D%0D%0AHow%20we%E2%80%99d%20like%20to%20get%20involved%3A%20%5BA%20few%20words%20about%20your%20ideas%20or%20support%5D%0D%0A%0D%0APlease%20send%20over%20the%20sponsorship%20options%20and%20next%20steps.%0D%0A%0D%0AThanks%2C%0D%0A%5BYour%20name%5D">Join as a sponsor <span class="arrow" aria-hidden="true">↗</span></a><a class="text-link" id="contact-link" href="mailto:runninghackathon@gmail.com?subject=Hello%20%7C%20Running%20Hackathon%20San%20Francisco&amp;body=Hi%20Running%20Hackathon%20team%2C%0D%0A%0D%0AI%E2%80%99m%20getting%20in%20touch%20about%20the%20San%20Francisco%20event.%0D%0A%0D%0AName%3A%20%5BYour%20name%5D%0D%0AMessage%3A%20%5BWhat%20would%20you%20like%20to%20know%20or%20share%3F%5D%0D%0A%0D%0AThanks%2C%0D%0A%5BYour%20name%5D">Contact us <span class="arrow" aria-hidden="true">↗</span></a></div><a class="email" href="mailto:runninghackathon@gmail.com">runninghackathon@<wbr>gmail.com</a></div>
+    <div id="get-involved" class="invitation"><p>Help bring the next one to life.</p><div class="contact-actions"><a class="pill" id="sponsor-link" href="mailto:runninghackathon@gmail.com?subject=Sponsorship%20enquiry%20%7C%20Running%20Hackathon%20San%20Francisco&amp;body=Hi%20Running%20Hackathon%20team%2C%0D%0A%0D%0AI%E2%80%99d%20like%20to%20explore%20sponsoring%20the%20San%20Francisco%20event.%0D%0A%0D%0AName%3A%20%5BYour%20name%5D%0D%0ACompany%3A%20%5BCompany%20name%5D%0D%0AWebsite%3A%20%5BCompany%20website%5D%0D%0AHow%20we%E2%80%99d%20like%20to%20get%20involved%3A%20%5BA%20few%20words%20about%20your%20ideas%20or%20support%5D%0D%0A%0D%0APlease%20send%20over%20the%20sponsorship%20options%20and%20next%20steps.%0D%0A%0D%0AThanks%2C%0D%0A%5BYour%20name%5D">Join as a sponsor <span class="arrow" aria-hidden="true"><svg class="icon icon--external" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 17 17 7M7 7h10v10"/></svg></span></a><a class="text-link" id="contact-link" href="mailto:runninghackathon@gmail.com?subject=Hello%20%7C%20Running%20Hackathon%20San%20Francisco&amp;body=Hi%20Running%20Hackathon%20team%2C%0D%0A%0D%0AI%E2%80%99m%20getting%20in%20touch%20about%20the%20San%20Francisco%20event.%0D%0A%0D%0AName%3A%20%5BYour%20name%5D%0D%0AMessage%3A%20%5BWhat%20would%20you%20like%20to%20know%20or%20share%3F%5D%0D%0A%0D%0AThanks%2C%0D%0A%5BYour%20name%5D">Contact us <span class="arrow" aria-hidden="true"><svg class="icon icon--external" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 17 17 7M7 7h10v10"/></svg></span></a></div><a class="email" href="mailto:runninghackathon@gmail.com">runninghackathon@<wbr>gmail.com</a></div>
   </section>
 </main>
 <dialog class="photo-viewer" aria-label="Expanded photo" id="photo-viewer">
   <div class="photo-viewer-top"><p id="photo-count" aria-live="polite"></p><button type="button" class="photo-close" aria-label="Close photo viewer">Close <span aria-hidden="true">×</span></button></div>
   <div class="photo-viewer-frame"><img id="expanded-photo" alt=""></div>
-  <div class="photo-viewer-bottom"><button type="button" data-viewer-prev aria-label="Previous photo">←</button><button type="button" data-viewer-next aria-label="Next photo">→</button></div>
+  <div class="photo-viewer-bottom"><button type="button" data-viewer-prev aria-label="Previous photo"><svg class="icon icon--previous" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m14 6-6 6 6 6"/></svg></button><button type="button" data-viewer-next aria-label="Next photo"><svg class="icon icon--next" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m10 6 6 6-6 6"/></svg></button></div>
 </dialog>
 <footer class="site-footer section-wrap">
   <a class="wordmark" href="#top" aria-label="Running Hackathon home"><img src="assets/catalogue/running-hackathon-wordmark.svg" alt="Running Hackathon" width="126" height="46"></a>
-  <div class="footer-links"><a href="#london">Photos ↑</a><a href="#media">Media &amp; Press ↑</a><a href="#top">Back to top ↑</a></div>
+  <div class="footer-links"><a href="#london">Photos <svg class="icon icon--up" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 19V5m-6 6 6-6 6 6"/></svg></a><a href="#media">Media &amp; Press <svg class="icon icon--up" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 19V5m-6 6 6-6 6 6"/></svg></a><a href="#top">Back to top <svg class="icon icon--up" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 19V5m-6 6 6-6 6 6"/></svg></a></div>
 </footer>
 </body>
 </html>

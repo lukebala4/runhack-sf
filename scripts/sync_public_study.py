@@ -29,7 +29,9 @@ for relative in sorted(assets):
     target.parent.mkdir(parents=True, exist_ok=True)
     shutil.copy2(original, target)
 page = re.sub(r'  <link rel="help"[^>]+>\n', '', page)
-page = re.sub(r'<div class="footer-links">.*?</div>\s*\n</footer>', '<div class="footer-links"><a href="#london">Photos ↑</a><a href="#media">Media &amp; Press ↑</a><a href="#top">Back to top ↑</a></div>\n</footer>', page, flags=re.S)
+up_icon = '<svg class="icon icon--up" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 19V5m-6 6 6-6 6 6"/></svg>'
+public_footer = f'<div class="footer-links"><a href="#london">Photos {up_icon}</a><a href="#media">Media &amp; Press {up_icon}</a><a href="#top">Back to top {up_icon}</a></div>\n</footer>'
+page = re.sub(r'<div class="footer-links">.*?</div>\s*\n</footer>', public_footer, page, flags=re.S)
 page = page.replace('assets/', 'assets/catalogue/')
 css = css.replace('assets/', 'assets/catalogue/')
 version = hashlib.sha256((css+js).encode()).hexdigest()[:12]
