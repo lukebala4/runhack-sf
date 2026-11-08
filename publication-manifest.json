@@ -1,9 +1,9 @@
 {
   "canonical": "https://lukebala4.github.io/runhack-sf/",
   "source_study": "24 Meadow Lilac",
-  "asset_count": 138,
+  "asset_count": 141,
   "files": {
-    "index.html": "cb174748246526dbe581833768dc39e8cfd275946963d55c12ceb7c336bbc944",
+    "index.html": "f5da35fb9e9bc990a7456a385805bff458cba85a02ba2f34a9f6583d316ab839",
     "study.css": "087f125864a2fdf67ea93e1d7bd62e85d6738a7824ccb13c2c6c9c5fcb4efaee",
     "study.js": "bc38d2ce52ddf230d5f9827c651f1efb729687825600f49387ff13af141b4bb6",
     "media.html": "575df3bf6d9b908d32d83189c3d83c249ed2e282242e95801bc00198a780c7e8",
@@ -18,6 +18,9 @@
     "assets/catalogue/barcelona/barcelona-sunset-1200.webp": "ab0f350066f9f1720f4b256b2711e85320e78d101d1335639388e42a5efc20fe",
     "assets/catalogue/barcelona/barcelona-sunset-1600.webp": "a7eb68a5fd5ec845e352e3f90d7ac24de956cf70dd25d0e4a7ad1ec8af5e3d31",
     "assets/catalogue/barcelona/barcelona-sunset-640.webp": "7e0dfd2ba7bb244d70ec0b5d16bc2283c38055cc7985d6e9b1e875e6af707499",
+    "assets/catalogue/barcelona/co-hosting-1200.webp": "b040de31727f2e911ddb4f739d9aef9091edb9c22105db1dde89ffd3cd18c975",
+    "assets/catalogue/barcelona/co-hosting-2000.webp": "f39cc772b690e39418648eef50a0c7361af5d1e331cd13d42c32b7a4b70650a5",
+    "assets/catalogue/barcelona/co-hosting-640.webp": "d01a9e536e6a22d6246ee59beef907b55f3be523809bef4e2a875a3f4cedfa25",
     "assets/catalogue/barcelona/feet-and-shadows-1200.webp": "0d374d3190ffa6c4db7e2c811d1bd75ef2d3f035d5718e9566292b7a3e3ba390",
     "assets/catalogue/barcelona/feet-and-shadows-2000.webp": "b8f7c017da86a805a7ec017ae252337ea50b61173c9d9bc56b329102021a5aed",
     "assets/catalogue/barcelona/feet-and-shadows-640.webp": "01d5f6373dc742ff660f178b78515ef392bea141865d3724f2870f253582eaa9",
