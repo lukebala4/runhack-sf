@@ -278,6 +278,8 @@
         const full = preload(source);
         const sharpen = () => {
           if (token !== viewerToken || !full.naturalWidth) return;
+          // Phones often already show the right file; re-setting it can flicker.
+          if ((full.currentSrc || source.src) === expanded.src) return;
           expanded.sizes = '95vw';
           expanded.srcset = source.srcset;
           expanded.src = full.currentSrc || source.src;
@@ -323,6 +325,23 @@
     viewer.querySelector('[data-viewer-prev]').addEventListener('click', () => viewerOwner?.step(-1));
     viewer.querySelector('[data-viewer-next]').addEventListener('click', () => viewerOwner?.step(1));
     viewer.querySelector('.photo-close').addEventListener('click', () => viewer.close());
+    // Swipe the photo left or right to move through the event's photos on touch screens.
+    const viewerFrame = viewer.querySelector('.photo-viewer-frame');
+    let swipe = null;
+    viewerFrame.addEventListener('touchstart', event => {
+      if (event.touches.length !== 1) {swipe = null;return;}
+      swipe = {x:event.touches[0].clientX, y:event.touches[0].clientY, time:performance.now()};
+    }, {passive:true});
+    viewerFrame.addEventListener('touchend', event => {
+      if (!swipe || !viewerOwner) return;
+      const touch = event.changedTouches[0];
+      const dx = touch.clientX - swipe.x;
+      const dy = touch.clientY - swipe.y;
+      const quick = performance.now() - swipe.time < 700;
+      swipe = null;
+      if (quick && Math.abs(dx) > 45 && Math.abs(dx) > Math.abs(dy) * 1.4) viewerOwner.step(dx < 0 ? 1 : -1);
+    }, {passive:true});
+    viewerFrame.addEventListener('touchcancel', () => {swipe = null;}, {passive:true});
     viewer.addEventListener('keydown', event => {
       if (event.key === 'ArrowLeft' || event.key === 'ArrowRight') {
         event.preventDefault();viewerOwner?.step(event.key === 'ArrowRight' ? 1 : -1);

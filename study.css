@@ -525,3 +525,14 @@ button.story-mascot{appearance:none;border:0;padding:0;background:transparent;cu
 .brand-row a:focus-visible::before{opacity:1;transform:scale(1)}
 .brand-row a:active{transform:translateY(-2px) scale(.98)}
 @media(prefers-reduced-motion:reduce){.brand-row a,.brand-row a::before{transition:none}.brand-row a:hover,.brand-row a:focus-visible,.brand-row a:active{transform:none}}
+/* Phone viewer: two large, separate round arrows; feedback only while pressed (no sticky hover); swipe the photo too. */
+.photo-viewer-bottom button{-webkit-tap-highlight-color:transparent;user-select:none;-webkit-user-select:none}
+.photo-viewer-frame{touch-action:pan-y pinch-zoom}
+@media(max-width:700px), (max-width:950px) and (max-height:500px) and (orientation:landscape){
+ .photo-viewer{padding-bottom:max(18px,env(safe-area-inset-bottom))}
+ .photo-viewer-bottom{width:auto;gap:48px;border:0;background:none}
+ .photo-viewer-bottom button,.photo-viewer-bottom button:first-child,.photo-viewer-bottom button:last-child{width:60px;height:60px;border:1px solid #FCFFFF66;border-radius:50%;background:#FCFFFF10;transition:background-color .15s,transform .15s}
+ .photo-viewer-bottom .icon{width:24px;height:24px}
+ .photo-viewer-bottom button:hover:not(:disabled){background:#FCFFFF10;transform:none}
+ .photo-viewer-bottom button:active:not(:disabled){background:var(--pink);border-color:var(--pink);transform:scale(.94)}
+}
