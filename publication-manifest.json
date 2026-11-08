@@ -1,10 +1,10 @@
 {
   "canonical": "https://lukebala4.github.io/runhack-sf/",
   "source_study": "24 Meadow Lilac",
-  "asset_count": 127,
+  "asset_count": 130,
   "files": {
-    "index.html": "91f2584cd3a9850e4828398d01737272b7eeca2cc92f850a3e73c76b753b9c3a",
-    "study.css": "0fefd7fed91f3c9f495ae35df10dd4204a271bf98d3e384a42e0b9d175eb923c",
+    "index.html": "d8ba1f88c42616f5d65cd51f6411bd93442a2433ac99322eab15b39379fcd8cb",
+    "study.css": "087f125864a2fdf67ea93e1d7bd62e85d6738a7824ccb13c2c6c9c5fcb4efaee",
     "study.js": "bc38d2ce52ddf230d5f9827c651f1efb729687825600f49387ff13af141b4bb6",
     "media.html": "575df3bf6d9b908d32d83189c3d83c249ed2e282242e95801bc00198a780c7e8",
     "assets/catalogue/barcelona/applause-1200.webp": "8eb0d065794e0036628db5fb712db0b0606bb1b26140351d92bb931ff49a1568",
@@ -52,6 +52,9 @@
     "assets/catalogue/barcelona/taking-the-mic-1200.webp": "9998de2ff256babce03c4171c3bab29ff1d0b3b48bcafae3bbc8c123ac7b91ef",
     "assets/catalogue/barcelona/taking-the-mic-2000.webp": "0b265631dabec0fc0da9fe8b374506adf701699c92946bf6e4519f34891afb36",
     "assets/catalogue/barcelona/taking-the-mic-640.webp": "c4bb286386e69b2a71cdab5f718c8dc8962ce841ca733b04f23203574d0326a9",
+    "assets/catalogue/barcelona/the-prize-1200.webp": "6019dd22dc0b183308e907386e0bd2d00e14b932a7ba514e5e37ec7cfdbb7535",
+    "assets/catalogue/barcelona/the-prize-2000.webp": "c8dff2a5d3fe457a88f532fd5b43e1623beaa581395330e650cbdca980e95919",
+    "assets/catalogue/barcelona/the-prize-640.webp": "5f6091df3d696f2f6b4c2a2451e00dea03a44fcc9e8883775355096a50c93393",
     "assets/catalogue/barcelona/wall-selfie-edit-1200.webp": "a72e15d2b77dad892f101ca9d85cdcfbf82336190c0658a6d6eaafb5779a9157",
     "assets/catalogue/barcelona/wall-selfie-edit-1888.webp": "8bcbd1af96a57c6d4e9c8f6044365fcc0f2fd86c2d79e32f8277f5e4cff305de",
     "assets/catalogue/barcelona/wall-selfie-edit-640.webp": "cd1eae06e57d0fb905c241fc1850126a38d4f80a73f6f55e6ec8e8136397d3d7",
