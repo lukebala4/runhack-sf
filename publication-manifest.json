@@ -1,9 +1,9 @@
 {
   "canonical": "https://lukebala4.github.io/runhack-sf/",
   "source_study": "24 Meadow Lilac",
-  "asset_count": 124,
+  "asset_count": 125,
   "files": {
-    "index.html": "7d26640845245762d98405ccd13f95d4e78e88dff22d31de27e3ece61e95c06d",
+    "index.html": "463db2b5c664be461fe3a3ba4a39c40b9a381a562bc55f29f36b4b6f0e01adf3",
     "study.css": "0ae8cd20f912d6a98f65d9cf2f284c2911e2a36f6da7231dbfac061de0dc0d6b",
     "study.js": "1c9f8809a32580ae270ed76d9f35cc4c5169d96e74b8922e613f5e63b88cc9d2",
     "media.html": "575df3bf6d9b908d32d83189c3d83c249ed2e282242e95801bc00198a780c7e8",
@@ -50,8 +50,9 @@
     "assets/catalogue/barcelona/taking-the-mic-1200.webp": "9998de2ff256babce03c4171c3bab29ff1d0b3b48bcafae3bbc8c123ac7b91ef",
     "assets/catalogue/barcelona/taking-the-mic-2000.webp": "0b265631dabec0fc0da9fe8b374506adf701699c92946bf6e4519f34891afb36",
     "assets/catalogue/barcelona/taking-the-mic-640.webp": "c4bb286386e69b2a71cdab5f718c8dc8962ce841ca733b04f23203574d0326a9",
-    "assets/catalogue/barcelona/wall-selfie-640.webp": "f95b47e41f9ffef735e9ad8b293230076ad06ae111000507acb822518c1706fb",
-    "assets/catalogue/barcelona/wall-selfie-944.webp": "dee5ba24a17f6890e05a26a32c93b5c2c8c4e79f09894a6adcebfb3b3f439e22",
+    "assets/catalogue/barcelona/wall-selfie-edit-1200.webp": "a72e15d2b77dad892f101ca9d85cdcfbf82336190c0658a6d6eaafb5779a9157",
+    "assets/catalogue/barcelona/wall-selfie-edit-1888.webp": "8bcbd1af96a57c6d4e9c8f6044365fcc0f2fd86c2d79e32f8277f5e4cff305de",
+    "assets/catalogue/barcelona/wall-selfie-edit-640.webp": "cd1eae06e57d0fb905c241fc1850126a38d4f80a73f6f55e6ec8e8136397d3d7",
     "assets/catalogue/barlow-condensed-700.woff2": "e3e520cb7468f2efd60bc2ce96694567c3312f4ef414fffbe605e3ad146b24e6",
     "assets/catalogue/barlow-condensed-800.woff2": "89eec21b1a1d6fd579d3e3c518901c5a6e3579e0e7a4f8b2f17b1473117bc30d",
     "assets/catalogue/brands/cognition.png": "a4d20434d5dfdf64d2bd7ffca40431601bd09f16dc11ac1892e2660e5fb958ca",
