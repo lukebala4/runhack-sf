@@ -512,3 +512,14 @@ button.story-mascot{appearance:none;border:0;padding:0;background:transparent;cu
 .photo-stage{display:grid;grid-template-columns:minmax(0,1fr);width:100%}
 .photo-stage>.photo-viewport{grid-area:1/1;min-width:0}
 .photo-stage>.photo-viewport.is-inactive{visibility:hidden;pointer-events:none}
+/* Viewer arrows sit either side of the photo. The frame keeps the photo's aspect ratio so sharpening never resizes it. */
+.photo-viewer[open]{grid-template-rows:auto minmax(0,1fr)}
+.photo-viewer-stage{position:relative;min-height:0;display:flex;align-items:center;justify-content:center;gap:28px;padding-bottom:12px}
+.photo-viewer-stage .photo-viewer-frame{height:100%;min-width:0;flex:0 1 auto;display:flex;align-items:center;justify-content:center}
+.photo-viewer-stage .photo-viewer-frame img{height:100%;width:auto;max-width:100%;object-fit:contain}
+.photo-viewer-nav{flex:none;display:grid;place-items:center;width:58px;height:58px;padding:0;border:1px solid #FCFFFF80;border-radius:50%;color:var(--paper);background:transparent;cursor:pointer;transition:background-color .25s,border-color .25s,transform .45s var(--spring)}
+.photo-viewer-nav:focus-visible{outline:2px solid var(--paper);outline-offset:3px}
+@media(hover:hover) and (pointer:fine){.photo-viewer-nav:hover{background:var(--pink);border-color:var(--pink);transform:scale(1.08)}}
+.photo-viewer-nav:active{transform:scale(.96)}
+@media(max-width:700px), (max-width:950px) and (max-height:500px) and (orientation:landscape){.photo-viewer-stage{gap:0}.photo-viewer-nav{position:absolute;top:50%;z-index:1;width:44px;height:44px;margin-top:-28px;background:#031D42B3;border-color:#FCFFFF55;-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px)}.photo-viewer-nav .icon{width:20px;height:20px}.photo-viewer-nav[data-viewer-prev]{left:4px}.photo-viewer-nav[data-viewer-next]{right:4px}}
+@media(prefers-reduced-motion:reduce){.photo-viewer-nav{transition:none}.photo-viewer-nav:hover,.photo-viewer-nav:active{transform:none}}

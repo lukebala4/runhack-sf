@@ -273,6 +273,7 @@
         viewerCount.textContent = `${activePhoto+1} / ${cards.length}`;
         // Respond at once with the gallery-size image the browser already has, then sharpen.
         expanded.removeAttribute('srcset');
+        expanded.style.aspectRatio = `${source.getAttribute('width')} / ${source.getAttribute('height')}`;
         expanded.alt = source.alt;
         expanded.src = source.currentSrc || source.src;
         const full = preload(source);
