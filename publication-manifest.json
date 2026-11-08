@@ -1,9 +1,9 @@
 {
   "canonical": "https://lukebala4.github.io/runhack-sf/",
   "source_study": "24 Meadow Lilac",
-  "asset_count": 125,
+  "asset_count": 127,
   "files": {
-    "index.html": "463db2b5c664be461fe3a3ba4a39c40b9a381a562bc55f29f36b4b6f0e01adf3",
+    "index.html": "850896e423e941036c7e39e24e845fb67194e5b9ea32f21cf8cd05dd5b632666",
     "study.css": "0ae8cd20f912d6a98f65d9cf2f284c2911e2a36f6da7231dbfac061de0dc0d6b",
     "study.js": "1c9f8809a32580ae270ed76d9f35cc4c5169d96e74b8922e613f5e63b88cc9d2",
     "media.html": "575df3bf6d9b908d32d83189c3d83c249ed2e282242e95801bc00198a780c7e8",
@@ -44,6 +44,8 @@
     "assets/catalogue/barcelona/runner-1200.webp": "49d778f7740cf8f207838ace95717ed3d5c890c8b277a88b472e19247db6d21f",
     "assets/catalogue/barcelona/runner-2000.webp": "293fec7a1dbd8ee308767b3a901edb6593733fccf5e15bef93bf8877412f27c7",
     "assets/catalogue/barcelona/runner-640.webp": "8d524a44431458a21b12ee67eb0a0d22db4261e177f004b16f952247baefd50a",
+    "assets/catalogue/barcelona/sagrada-familia-1200.webp": "fc06d9e2dfeeeda241ad16fe9f658f9a05563dc6e1e2aa34c15b0289f7e033f7",
+    "assets/catalogue/barcelona/sagrada-familia-640.webp": "38d64f1044cecd35f611edb71c0dc71ff1fddb987e24eb49906be31c0fcdd6f5",
     "assets/catalogue/barcelona/seafront-pace-1200.webp": "247e52b176a91dd9fcbb2577fbec6934b18eb5a49a8a7bd1b998f608f1592786",
     "assets/catalogue/barcelona/seafront-pace-2000.webp": "1c4e1244b981dbba03837f6d455060b8ee229e5bc0683cfb25edce9cf53b9083",
     "assets/catalogue/barcelona/seafront-pace-640.webp": "347d12a950bbe4a65b5ed49a90b35b873e614bdf3a82b2e2ca2ec8676c8efcab",
