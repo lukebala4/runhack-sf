@@ -1,9 +1,9 @@
 {
   "canonical": "https://lukebala4.github.io/runhack-sf/",
   "source_study": "24 Meadow Lilac",
-  "asset_count": 141,
+  "asset_count": 138,
   "files": {
-    "index.html": "f5da35fb9e9bc990a7456a385805bff458cba85a02ba2f34a9f6583d316ab839",
+    "index.html": "fff371ab7a7965722ede3625a7d297751d38e3d95d23344d944d96318dfd733e",
     "study.css": "087f125864a2fdf67ea93e1d7bd62e85d6738a7824ccb13c2c6c9c5fcb4efaee",
     "study.js": "bc38d2ce52ddf230d5f9827c651f1efb729687825600f49387ff13af141b4bb6",
     "media.html": "575df3bf6d9b908d32d83189c3d83c249ed2e282242e95801bc00198a780c7e8",
@@ -49,9 +49,6 @@
     "assets/catalogue/barcelona/rooftop-banner-1200.webp": "a5feba8c1a1b38ef11314ae0ab3697661bfe6c03a3f4e785265af7e083290162",
     "assets/catalogue/barcelona/rooftop-banner-2000.webp": "e7f21bcb6cc107ae82246c03b256bf0105f7ba3f899bcd0eff44d212c279a2f2",
     "assets/catalogue/barcelona/rooftop-banner-640.webp": "22797c50b7ee78b7c1ee6890bcb04c6cd2f81204e602ac5b8fc3ea2aabf238db",
-    "assets/catalogue/barcelona/rooftop-mic-face-1200.webp": "17967a903facac421bc799270b0ee7c118cbc2385b9c7b9ee8b433279c7303c1",
-    "assets/catalogue/barcelona/rooftop-mic-face-2000.webp": "4c822e1d35eb4b7c78bcb88add67d3b7401e78d7c453cf508e5191ed92e8473c",
-    "assets/catalogue/barcelona/rooftop-mic-face-640.webp": "9333db7db486f410bd895955ccff3c9a1c6af935bfa8578a93e884e3a614a13c",
     "assets/catalogue/barcelona/runner-1200.webp": "49d778f7740cf8f207838ace95717ed3d5c890c8b277a88b472e19247db6d21f",
     "assets/catalogue/barcelona/runner-2000.webp": "293fec7a1dbd8ee308767b3a901edb6593733fccf5e15bef93bf8877412f27c7",
     "assets/catalogue/barcelona/runner-640.webp": "8d524a44431458a21b12ee67eb0a0d22db4261e177f004b16f952247baefd50a",
