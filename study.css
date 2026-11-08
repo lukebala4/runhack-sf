@@ -498,13 +498,17 @@ button.story-mascot{appearance:none;border:0;padding:0;background:transparent;cu
 @media(prefers-reduced-motion:reduce){.contact-actions #sponsor-link{transition:none}.contact-actions #sponsor-link:hover{transform:none}}
 /* Past events double as the switch between the London and Barcelona galleries. */
 .event-switch{grid-template-columns:1fr auto auto}
-.event-choice{display:flex;align-items:center;gap:10px}
-.event-button{appearance:none;margin:0;padding:6px 0;border:0;background:none;color:inherit;font:inherit;letter-spacing:inherit;line-height:inherit;cursor:pointer;opacity:.6;text-decoration-line:underline;text-decoration-thickness:1.5px;text-underline-offset:.16em;text-decoration-color:#FCFFFF66;transition:opacity .25s,text-decoration-color .25s}
-.event-button[aria-pressed="true"]{opacity:1;text-decoration-color:var(--pink);text-decoration-thickness:3px;cursor:default}
+.event-choice{display:flex;align-items:center;gap:6px}
+.event-button{appearance:none;margin:0;padding:.08em .5em .12em;border:0;border-radius:999px;background:transparent;color:inherit;font:inherit;letter-spacing:inherit;line-height:inherit;cursor:pointer;opacity:.55;transform:translateY(0);transition:background-color .4s var(--ease),color .4s var(--ease),opacity .3s var(--ease),transform .55s var(--spring),box-shadow .55s var(--spring)}
+.event-button[aria-pressed="true"]{opacity:1;background:var(--paper);color:var(--deep-blue);transform:translateY(-4px);box-shadow:0 12px 26px #0004,0 2px 6px #0003;cursor:default}
 .event-site{display:inline-grid;place-items:center;width:44px;height:44px;border-radius:50%;color:inherit;opacity:.75;text-decoration:none!important}
 .event-site .icon{width:22px;height:22px;transition:transform .3s var(--ease)}
-.event-button:focus-visible,.event-site:focus-visible{outline:2px solid var(--paper);outline-offset:4px;border-radius:6px}
-@media(hover:hover) and (pointer:fine){.event-button:hover{opacity:1}.event-site:hover{opacity:1;background:#FCFFFF18}.event-site:hover .icon{transform:translate(2px,-2px)}}
+.event-button:focus-visible,.event-site:focus-visible{outline:2px solid var(--paper);outline-offset:4px}
+@media(hover:hover) and (pointer:fine){.event-button:hover{opacity:1}.event-button:not([aria-pressed="true"]):hover{background:#FCFFFF14;transform:translateY(-2px)}.event-switch:has(.event-button:hover) .event-button:not(:hover){opacity:.35}.event-switch:has(.event-button:hover) .event-button[aria-pressed="true"]:not(:hover){opacity:.8}.event-site:hover{opacity:1;background:#FCFFFF18}.event-site:hover .icon{transform:translate(2px,-2px)}}
 @media(max-width:700px), (max-width:950px) and (max-height:500px) and (orientation:landscape){.past-events a.event-site{display:inline-grid;min-height:44px}}
-@media(max-width:700px){.event-switch{grid-template-columns:auto auto;justify-content:start;column-gap:28px;row-gap:4px}.event-switch>span{grid-column:1/-1}.event-choice{gap:2px}}
-@media(prefers-reduced-motion:reduce){.event-button,.event-site .icon{transition:none}}
+@media(max-width:700px){.event-switch{display:flex;flex-wrap:wrap;align-items:center;column-gap:18px;row-gap:10px}.event-switch>span{flex:0 0 100%}.event-choice{gap:0}.event-button{font-size:24px;padding:.06em .42em .1em}.past-events a.event-site{position:relative;width:32px;min-height:32px;height:32px}.event-site::after{content:"";position:absolute;inset:-6px}.event-site .icon{width:20px;height:20px}}
+@media(prefers-reduced-motion:reduce){.event-button,.event-site .icon{transition:none}.event-button[aria-pressed="true"],.event-button:hover{transform:none!important}}
+/* Both galleries share one grid cell, so the section keeps the taller gallery's height when switching. */
+.photo-stage{display:grid;grid-template-columns:minmax(0,1fr);width:100%}
+.photo-stage>.photo-viewport{grid-area:1/1;min-width:0}
+.photo-stage>.photo-viewport.is-inactive{visibility:hidden;pointer-events:none}

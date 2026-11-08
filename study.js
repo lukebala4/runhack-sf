@@ -57,6 +57,7 @@
     const next = document.querySelector('[data-gallery-next]');
     const eventButtons = [...document.querySelectorAll('[data-event-tab]')];
     let viewerOwner = null;
+    let viewerToken = 0;
     let activeGallery = null;
 
     function setupGallery(gallery) {
@@ -116,7 +117,7 @@
         return fragment;
       }
       function measureLoop() {
-        if (viewer.open || gallery.hidden || !gallery.clientWidth) return;
+        if (viewer.open || !gallery.clientWidth) return;
         const gap = parseFloat(getComputedStyle(track).columnGap) || 0;
         const first = items[0];
         const last = items[items.length - 1];
@@ -257,14 +258,35 @@
         viewer.showModal();
         document.body.classList.add('has-modal');
       });
+      function preload(image) {
+        const loader = new Image();
+        loader.decoding = 'async';
+        loader.sizes = '95vw';
+        loader.srcset = image.srcset;
+        loader.src = image.src;
+        return loader;
+      }
       function showPhoto(index) {
         activePhoto = modulo(index, cards.length);
         const source = cards[activePhoto].querySelector('img');
-        expanded.alt = source.alt;
-        expanded.srcset = source.srcset;
-        expanded.sizes = '95vw';
-        expanded.src = source.src;
+        const token = ++viewerToken;
         viewerCount.textContent = `${activePhoto+1} / ${cards.length}`;
+        // Respond at once with the gallery-size image the browser already has, then sharpen.
+        expanded.removeAttribute('srcset');
+        expanded.alt = source.alt;
+        expanded.src = source.currentSrc || source.src;
+        const full = preload(source);
+        const sharpen = () => {
+          if (token !== viewerToken || !full.naturalWidth) return;
+          expanded.sizes = '95vw';
+          expanded.srcset = source.srcset;
+          expanded.src = full.currentSrc || source.src;
+        };
+        // decode() can stay pending for detached srcset images in Chrome, so wait for load instead.
+        if (full.complete) sharpen();
+        else full.addEventListener('load', sharpen, {once:true});
+        // Warm the neighbours so the next arrow press shows a sharp photo without waiting.
+        [1, -1].forEach(step => preload(cards[modulo(activePhoto + step, cards.length)].querySelector('img')));
       }
       function afterViewerClose() {
         measureLoop();
@@ -285,12 +307,12 @@
       galleries.forEach(item => {
         const isTarget = item === target;
         if (!isTarget) item.stopMotion();
-        item.gallery.hidden = !isTarget;
+        item.gallery.classList.toggle('is-inactive', !isTarget);
+        item.gallery.inert = !isTarget;
       });
       eventButtons.forEach(button => button.setAttribute('aria-pressed', String(button.dataset.eventTab === target.gallery.dataset.event)));
       [previous, next].forEach(button => button?.setAttribute('aria-controls', target.gallery.id));
       activeGallery = target;
-      // A gallery measured while hidden has no width; measure it once it is visible.
       requestAnimationFrame(() => target.measureLoop());
       if (focus) target.gallery.focus({preventScroll:true});
     }
@@ -312,7 +334,7 @@
       viewerOwner = null;
     });
     const initial = location.hash.replace('#', '');
-    showEvent(galleries.some(item => item.gallery.dataset.event === initial) ? initial : (galleries.find(item => !item.gallery.hidden) || galleries[0]).gallery.dataset.event);
+    showEvent(galleries.some(item => item.gallery.dataset.event === initial) ? initial : (galleries.find(item => !item.gallery.classList.contains('is-inactive')) || galleries[0]).gallery.dataset.event);
   }
 
   const hero = document.querySelector('.hero-media-shell');
