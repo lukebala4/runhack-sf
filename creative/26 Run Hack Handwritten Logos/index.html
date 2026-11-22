@@ -1,0 +1,550 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light">
+<title>Run Hack Handwritten Logos</title>
+<link rel="icon" href="../03%20Website%20Concepts/assets/running-hackathon-wordmark.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Caveat+Brush&family=Covered+By+Your+Grace&family=Damion&family=Gochi+Hand&family=Homemade+Apple&family=Indie+Flower&family=Just+Another+Hand&family=Kaushan+Script&family=Londrina+Solid:wght@400;900&family=Mrs+Saint+Delafield&family=Nanum+Pen+Script&family=Pacifico&family=Pinyon+Script&family=Reenie+Beanie&family=Rock+Salt&family=Sedgwick+Ave+Display&family=Shadows+Into+Light&family=Special+Elite&family=Yellowtail&display=swap">
+<style>
+:root{--paper:#efe8d8;--paper-2:#e6dcc6;--ink:#1f1c17;--muted:#6a6252;--line:#cbbfa6;--red:#b8402f;--blue:#1f3b8f}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font:15px/1.55 'Special Elite','Courier New',monospace}
+body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:50;opacity:.16;mix-blend-mode:multiply;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='260' height='260'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.75' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+a{color:var(--blue)}
+.wrap{max-width:1320px;margin:0 auto;padding:0 32px}
+header.top{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:20px 0;border-bottom:2px dashed var(--line);font-size:13px}
+header.top a{color:var(--ink);text-decoration:none}
+header.top a:hover{color:var(--red)}
+.intro{display:grid;grid-template-columns:1.2fr 1fr;gap:40px;padding:48px 0 36px;align-items:end}
+.intro h1{font:400 clamp(64px,10vw,150px)/.85 'Caveat Brush',cursive;margin:0;transform:rotate(-2deg);transform-origin:left bottom}
+.intro h1 em{font:400 .42em/1 'Caveat',cursive;font-style:normal;color:var(--red);display:block;margin-top:.12em}
+.intro p{margin:0 0 14px;color:var(--muted);max-width:46ch}
+.intro p strong{color:var(--ink);font-weight:400;background:linear-gradient(transparent 55%,#f2d36a 55%,#f2d36a 88%,transparent 88%)}
+.notes{border-top:2px dashed var(--line);border-bottom:2px dashed var(--line);padding:24px 0;display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.notes h2,.toolbar h2{font:700 26px/1 'Caveat',cursive;margin:0 0 6px}
+.notes p{margin:0;font-size:13px;color:var(--muted)}
+.toolbar{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:28px 0 16px;flex-wrap:wrap}
+.toolbar h2{margin:0}
+.filters{display:flex;gap:8px}
+.filters button,.star,.close{font:inherit;font-size:13px;background:transparent;color:var(--ink);border:1.5px solid var(--ink);border-radius:255px 15px 225px 15px/15px 225px 15px 255px;padding:6px 14px;cursor:pointer}
+.filters button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:32px 24px;padding-bottom:80px}
+.tile{display:block;width:100%;padding:0;border:0;background:none;cursor:zoom-in;overflow:hidden;aspect-ratio:1;box-shadow:0 1px 0 #0000001a,0 8px 18px -12px #0000004d}
+.tile svg{display:block;width:100%;height:100%}
+.meta{display:flex;align-items:baseline;gap:10px;margin-top:12px}
+.num{font:700 22px/1 'Caveat',cursive;color:var(--red)}
+.idea h3{font:700 26px/1 'Caveat',cursive;margin:0;flex:1}
+.star{padding:2px 10px;font-size:16px;line-height:1.3}
+.star[aria-pressed="true"]{background:#f2d36a}
+.idea p{margin:6px 0 0;font-size:13px;color:var(--muted)}
+.idea p.from{font:400 17px/1.2 'Caveat',cursive;color:#8a7f69}
+dialog{border:0;padding:0;background:transparent;max-width:min(92vw,820px);width:100%}
+dialog::backdrop{background:#1f1c17e6}
+dialog .big svg{display:block;width:100%;height:auto}
+dialog .cap{display:flex;justify-content:space-between;align-items:center;gap:12px;color:var(--paper);margin-top:12px;font:700 24px 'Caveat',cursive}
+dialog .close{color:var(--paper);border-color:var(--paper)}
+footer{border-top:2px dashed var(--line);padding:22px 0 40px;font-size:13px;color:var(--muted)}
+/* Hands used inside the logos */
+.rs{font-family:'Rock Salt',cursive}
+.gh{font-family:'Gochi Hand',cursive}
+.msd{font-family:'Mrs Saint Delafield',cursive}
+.cv{font-family:'Caveat',cursive;font-weight:700}
+.cv4{font-family:'Caveat',cursive;font-weight:400}
+.cb{font-family:'Caveat Brush',cursive}
+.ifl{font-family:'Indie Flower',cursive}
+.rb{font-family:'Reenie Beanie',cursive}
+.yt{font-family:'Yellowtail',cursive}
+.sa{font-family:'Sedgwick Ave Display',cursive}
+.dm{font-family:'Damion',cursive}
+.se{font-family:'Special Elite',monospace}
+.ls{font-family:'Londrina Solid',sans-serif;font-weight:900}
+.pa{font-family:'Pacifico',cursive}
+.sil{font-family:'Shadows Into Light',cursive}
+.ha{font-family:'Homemade Apple',cursive}
+.cyg{font-family:'Covered By Your Grace',cursive}
+.ks{font-family:'Kaushan Script',cursive}
+.np{font-family:'Nanum Pen Script',cursive}
+.ps{font-family:'Pinyon Script',cursive}
+.jah{font-family:'Just Another Hand',cursive}
+@media (max-width:760px){
+  .wrap{padding:0 16px}
+  .intro{grid-template-columns:1fr;gap:20px;padding:32px 0 24px}
+  .notes{grid-template-columns:1fr;gap:16px}
+  .grid{grid-template-columns:1fr}
+  header.top span{display:none}
+}
+body.cover::before,body.cover .top,body.cover .intro,body.cover .notes,body.cover .toolbar,body.cover footer,body.cover .meta,body.cover .idea p{display:none}
+body.cover .wrap{max-width:none;padding:0}
+body.cover .grid{grid-template-columns:repeat(4,1fr);gap:0;padding:0}
+body.cover .tile{box-shadow:none}
+body.cover .idea:nth-child(n+13){display:none}
+body.cover2 .idea:nth-child(-n+8){display:none}
+body.cover2 .idea:nth-child(n+13){display:block}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <filter id="paper" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency=".8" numOctaves="3" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/></filter>
+    <!-- Slight wobble so drawn lines feel made by hand -->
+    <filter id="hand" x="-10%" y="-10%" width="120%" height="120%"><feTurbulence type="fractalNoise" baseFrequency=".035" numOctaves="2" seed="5" result="t"/><feDisplacementMap in="SourceGraphic" in2="t" scale="5" xChannelSelector="R" yChannelSelector="G"/></filter>
+    <!-- Ink that has soaked into paper a little -->
+    <filter id="ink" x="-10%" y="-10%" width="120%" height="120%"><feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="2" seed="2" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="1.6" xChannelSelector="R" yChannelSelector="G" result="d"/><feGaussianBlur in="d" stdDeviation=".35"/></filter>
+    <!-- Dry chalk / worn rubber stamp -->
+    <filter id="chalk" x="-5%" y="-5%" width="110%" height="110%"><feTurbulence type="fractalNoise" baseFrequency="1.1" numOctaves="2" seed="8" result="n"/><feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -3.2 2.3" result="a"/><feComposite in="SourceGraphic" in2="a" operator="in"/></filter>
+    <filter id="worn" x="-5%" y="-5%" width="110%" height="110%"><feTurbulence type="fractalNoise" baseFrequency=".6" numOctaves="3" seed="13" result="n"/><feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -2.6 2.15" result="a"/><feComposite in="SourceGraphic" in2="a" operator="in"/></filter>
+    <filter id="graphite" x="-5%" y="-5%" width="110%" height="110%"><feTurbulence type="fractalNoise" baseFrequency="1.4" numOctaves="1" seed="4" result="n"/><feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -2 1.75" result="a"/><feComposite in="SourceGraphic" in2="a" operator="in"/></filter>
+    <symbol id="runner" viewBox="-80 -20 125 170" overflow="visible"><g fill="none" stroke="currentColor" stroke-width="17" stroke-linecap="round" stroke-linejoin="round"><path d="M-6,26 L-20,80"/><path d="M-8,34 L14,56 L36,42"/><path d="M-10,36 L-34,54 L-50,42"/><path d="M-20,80 L6,106 L-4,142"/><path d="M-20,80 L-44,112 L-72,108"/></g><circle cx="0" cy="0" r="15" fill="currentColor"/></symbol>
+  </defs>
+</svg>
+
+<div class="wrap">
+  <header class="top">
+    <a href="../04%20Creative%20Warehouse/">← creative warehouse</a>
+    <span>round 26 · handwritten</span>
+    <a href="../25%20Run%20Hack%20Logo%20Ideas%20II/">round 25 →</a>
+  </header>
+
+  <section class="intro">
+    <h1>Run Hack<em>20 handwritten logos.</em></h1>
+    <div>
+      <p><strong>No digital, no modern.</strong> Every logo here is lettered by hand: marker, chalk, ballpoint, brush, pencil, spray paint, a fountain-pen signature, copperplate.</p>
+      <p>They're logos, not posters. Each one is a single mark on a plain background, so you can judge it as a brand. Click to see it bigger, and star the ones you like.</p>
+    </div>
+  </section>
+
+  <section class="notes" aria-label="Approach">
+    <div><h2>the rule</h2><p>Every letter should look like a person made it. Lines wobble, ink bleeds a little, and strokes aren't perfect.</p></div>
+    <div><h2>the tools</h2><p>Marker · chalk · ballpoint · pencil · brush · spray can · rubber stamp · thread · nib pen.</p></div>
+    <div><h2>the palette</h2><p>Paper cream, ink black, ballpoint blue, pen red, chalk white, mint and a little gold.</p></div>
+  </section>
+
+  <div class="toolbar">
+    <h2 id="count">20 ideas</h2>
+    <div class="filters" role="group" aria-label="Show">
+      <button type="button" data-filter="all" aria-pressed="true">all 20</button>
+      <button type="button" data-filter="starred" aria-pressed="false">starred</button>
+    </div>
+  </div>
+
+  <main class="grid" id="grid">
+
+    <!-- 41 -->
+    <article class="idea" data-id="41">
+      <button class="tile" type="button" aria-label="Enlarge Marker caps">
+        <svg viewBox="0 0 400 400" role="img" aria-label="RUN HACK in rough black marker capitals with a scribbled underline">
+          <rect width="400" height="400" fill="#efe8d8"/>
+          <g filter="url(#ink)" fill="#1f1c17" class="rs" text-anchor="middle">
+            <text x="196" y="184" font-size="58" transform="rotate(-4 200 180)">RUN</text>
+            <text x="206" y="262" font-size="58" transform="rotate(-4 200 260)">HACK</text>
+          </g>
+          <path filter="url(#hand)" d="M92,300 C160,288 240,284 316,276 M110,312 C170,304 230,300 296,296" stroke="#b8402f" stroke-width="6" fill="none" stroke-linecap="round"/>
+          <rect width="400" height="400" filter="url(#paper)" opacity=".14" style="mix-blend-mode:multiply"/>
+        </svg>
+      </button>
+      <div class="meta"><span class="num">41</span><h3>Marker caps</h3><button class="star" type="button" aria-pressed="false" aria-label="Star Marker caps">☆</button></div>
+      <p>Shaky felt-tip capitals with a fast double underline in red pen. Like a sign someone made for the start line.</p>
+      <p class="from">hand: rock salt · marker</p>
+    </article>
+
+    <!-- 42 -->
+    <article class="idea" data-id="42">
+      <button class="tile" type="button" aria-label="Enlarge Chalk">
+        <svg viewBox="0 0 400 400" role="img" aria-label="Lowercase run hack in white chalk on slate with a chalk arrow">
+          <rect width="400" height="400" fill="#2a2f2b"/>
+          <g filter="url(#chalk)" fill="#f1efe6">
+            <text x="200" y="214" text-anchor="middle" class="gh" font-size="98">run hack</text>
+            <path d="M96,252 C150,270 250,270 300,246" stroke="#f1efe6" stroke-width="5" fill="none" stroke-linecap="round"/>
+            <path d="M286,236 L302,246 L288,260" stroke="#f1efe6" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          </g>
+          <text x="200" y="300" text-anchor="middle" class="gh" font-size="22" fill="#bdf3d6" filter="url(#chalk)">5k · build · demo</text>
+        </svg>
+      </button>
+      <div class="meta"><span class="num">42</span><h3>Chalk</h3><button class="star" type="button" aria-pressed="false" aria-label="Star Chalk">☆</button></div>
+      <p>Dusty chalk lettering with an arrow pushing forward, like it's been written on the track before the start.</p>
+      <p class="from">hand: gochi hand · chalk</p>
+    </article>
+
+    <!-- 43 -->
+    <article class="idea" data-id="43">
+      <button class="tile" type="button" aria-label="Enlarge Signature">
+        <svg viewBox="0 0 400 400" role="img" aria-label="Run Hack written as a fast ink signature with a swooping underline">
+          <rect width="400" height="400" fill="#f4efe3"/>
+          <g filter="url(#ink)" fill="#1f3b8f">
+            <text x="200" y="222" text-anchor="middle" class="msd" font-size="100" textLength="318" lengthAdjust="spacingAndGlyphs">Run Hack</text>
+          </g>
+          <path filter="url(#hand)" d="M70,262 C150,244 250,236 340,214 C300,236 220,256 150,270" stroke="#1f3b8f" stroke-width="3" fill="none" stroke-linecap="round"/>
+          <text x="200" y="314" text-anchor="middle" class="cv4" font-size="22" fill="#1f3b8f">running hackathon · san francisco</text>
+          <rect width="400" height="400" filter="url(#paper)" opacity=".1" style="mix-blend-mode:multiply"/>
+        </svg>
+      </button>
+      <div class="meta"><span class="num">43</span><h3>Signature</h3><button class="star" type="button" aria-pressed="false" aria-label="Star Signature">☆</button></div>
+      <p>The name as a quick fountain-pen signature. Personal and confident, like a founder signing off.</p>
+      <p class="from">hand: mrs saint delafield · nib pen</p>
+    </article>
+
+    <!-- 44 -->
+    <article class="idea" data-id="44">
+      <button class="tile" type="button" aria-label="Enlarge Ballpoint doodle">
+        <svg viewBox="0 0 400 400" role="img" aria-label="Blue ballpoint run hack with a little stick-figure runner and stars">
+          <rect width="400" height="400" fill="#fbf8f0"/>
+          <g filter="url(#ink)" fill="#2346a8"><text x="196" y="232" text-anchor="middle" class="ifl" font-size="78">run hack</text></g>
+          <g filter="url(#hand)" stroke="#2346a8" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="318" cy="120" r="9"/><path d="M316,130 L308,158 M312,138 L326,148 L336,140 M311,138 L298,148 M308,158 L320,172 L314,186 M308,158 L294,172 L282,170"/>
+            <path d="M262,140 H284 M266,152 H286 M260,164 H280"/>
+            <path d="M80,120 l4,10 l10,0 l-8,6 l3,10 l-9,-6 l-9,6 l3,-10 l-8,-6 l10,0z"/>
+            <path d="M330,280 l3,7 l7,0 l-6,4 l2,7 l-6,-4 l-6,4 l2,-7 l-6,-4 l7,0z"/>
+          </g>
+        </svg>
+      </button>
+      <div class="meta"><span class="num">44</span><h3>Ballpoint doodle</h3><button class="star" type="button" aria-pressed="false" aria-label="Star Ballpoint doodle">☆</button></div>
+      <p>Blue biro lettering with a stick-figure runner sprinting off the end, drawn in the margin of a notebook.</p>
+      <p class="from">hand: indie flower · ballpoint</p>
+    </article>
+
+    <!-- 45 -->
+    <article class="idea" data-id="45">
+      <button class="tile" type="button" aria-label="Enlarge Ticked">
+        <svg viewBox="0 0 400 400" role="img" aria-label="A hand-drawn ticked box next to run hack in loose pencil-crayon handwriting">
+          <rect width="400" height="400" fill="#f2e27a"/>
+          <g filter="url(#hand)" fill="none" stroke="#1f1c17" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M58,170 L118,166 L122,226 L60,230 Z"/>
+            <path d="M70,196 L88,216 L136,148" stroke="#b8402f" stroke-width="7"/>
+          </g>
+          <text x="140" y="226" class="rb" font-size="100" textLength="218" lengthAdjust="spacingAndGlyphs" fill="#1f1c17" filter="url(#ink)">run hack</text>
+        </svg>
+      </button>
+      <div class="meta"><span class="num">45</span><h3>Ticked</h3><button class="star" type="button" aria-pressed="false" aria-label="Star Ticked">☆</button></div>
+      <p>A wobbly box with a big red tick, then the name in loose, skinny handwriting. "Done it." Great on a sticky note.</p>
+      <p class="from">hand: reenie beanie · felt tip</p>
+    </article>
+
+    <!-- 46 -->
+    <article class="idea" data-id="46">
+      <button class="tile" type="button" aria-label="Enlarge Jersey script">
+        <svg viewBox="0 0 400 400" role="img" aria-label="Cream brush script Run Hack with a red shadow and a tail swash, on navy">
+          <rect width="400" height="400" fill="#1c2a4a"/>
+          <g class="yt" font-size="104" text-anchor="middle" transform="rotate(-8 200 200)">
+            <text x="206" y="222" fill="#b8402f">Run Hack</text>
+            <text x="200" y="216" fill="#f4ecd6">Run Hack</text>
+          </g>
+          <path filter="url(#hand)" d="M86,262 C150,256 250,236 336,198" stroke="#f4ecd6" stroke-width="7" fill="none" stroke-linecap="round"/>
+          <text x="200" y="320" text-anchor="middle" class="cv" font-size="24" fill="#f4ecd6" letter-spacing="2">est. 2026</text>
+        </svg>
+      </button>
+      <div class="meta"><span class="num">46</span><h3>Jersey script</h3><button class="star" type="button" aria-pressed="false" aria-label="Star Jersey script">☆</button></div>
+      <p>Sign-painter brush script with a tail swash, like the lettering across an old baseball shirt. Built for kit and caps.</p>
+      <p class="from">hand: yellowtail · brush</p>
+    </article>
+
+    <!-- 47 -->
+    <article class="idea" data-id="47">
+      <button class="tile" type="button" aria-label="Enlarge Spray tag">
+        <svg viewBox="0 0 400 400" role="img" aria-label="Mint spray-painted RunHack tag with paint drips on black">
+          <rect width="400" height="400" fill="#141414"/>
+          <g fill="#bdf3d6">
+            <text x="200" y="222" text-anchor="middle" class="sa" font-size="104" transform="rotate(-6 200 200)">RunHack</text>
+            <g filter="url(#hand)"><rect x="118" y="226" width="4" height="46" rx="2"/><circle cx="120" cy="272" r="4"/><rect x="214" y="216" width="3.5" height="30" rx="2"/><circle cx="216" cy="246" r="3.5"/><rect x="286" y="200" width="4" height="58" rx="2"/><circle cx="288" cy="258" r="4"/></g>
+          </g>
+          <path filter="url(#hand)" d="M168,108 l12,-24 l12,18 l14,-22 l10,24" stroke="#bdf3d6" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <rect width="400" height="400" filter="url(#paper)" opacity=".12" style="mix-blend-mode:screen"/>
+        </svg>
+      </button>
+      <div class="meta"><span class="num">47</span><h3>Spray tag</h3><button class="star" type="button" aria-pressed="false" aria-label="Star Spray tag">☆</button></div>
+      <p>A one-line spray-can tag with drips and a little crown. The most underground option, made for stencils and stickers.</p>
+      <p class="from">hand: sedgwick ave · spray can</p>
+    </article>
+
+    <!-- 48 -->
+    <article class="idea" data-id="48">
+      <button class="tile" type="button" aria-label="Enlarge Pennant">
+        <svg viewBox="0 0 400 400" role="img" aria-label="Red felt pennant with script Run Hack and a dashed stitched edge">
+          <rect width="400" height="400" fill="#efe8d8"/>
+          <g filter="url(#hand)">
+            <path d="M70,130 L340,200 L70,270 Z" fill="#b8402f"/>
+            <rect x="56" y="124" width="18" height="152" fill="#f4ecd6" stroke="#1f1c17" stroke-width="2"/>
+            <path d="M84,146 L306,200 L84,254 Z" fill="none" stroke="#f4ecd6" stroke-width="2" stroke-dasharray="6 5"/>
+          </g>
+          <text x="178" y="214" text-anchor="middle" class="dm" font-size="42" fill="#f4ecd6" textLength="150" lengthAdjust="spacingAndGlyphs" transform="rotate(-3 178 210)">Run Hack</text>
+          <text x="168" y="236" text-anchor="middle" class="cv" font-size="13" fill="#f4ecd6" letter-spacing="2" textLength="96">SAN FRANCISCO</text>
+        </svg>
+      </button>
+      <div class="meta"><span class="num">48</span><h3>Pennant</h3><button class="star" type="button" aria-pressed="false" aria-label="Star Pennant">☆</button></div>
+      <p>A felt sports pennant with a handwritten script and a stitched edge. Old-school team spirit as a badge.</p>
+      <p class="from">hand: damion · felt and thread</p>
+    </article>
+
+    <!-- 49 -->
+    <article class="idea" data-id="49">
+      <button class="tile" type="button" aria-label="Enlarge Red pen edit">
+        <svg viewBox="0 0 400 400" role="img" aria-label="Typed RUNNING HACKATHON with NING and ATHON crossed out in red pen and Run Hack written above">
+          <rect width="400" height="400" fill="#f6f1e4"/>
+          <g class="se" font-size="31" fill="#1f1c17" filter="url(#ink)"><text x="44" y="236">RUNNING HACKATHON</text></g>
+          <g filter="url(#hand)" stroke="#c0352a" stroke-width="4" fill="none" stroke-linecap="round">
+            <path d="M104,226 L166,224"/><path d="M262,226 L358,222"/>
+            
+          </g>
+          <text x="96" y="176" class="ha" font-size="44" fill="#c0352a" transform="rotate(-4 200 170)">Run Hack</text>
+        </svg>
+      </button>
+      <div class="meta"><span class="num">49</span><h3>Red pen edit</h3><button class="star" type="button" aria-pressed="false" aria-label="Star Red pen edit">☆</button></div>
+      <p>The full name typed out, then edited down by hand to "Run Hack". It shows the name and the nickname in one mark.</p>
+      <p class="from">hand: homemade apple + typewriter</p>
+    </article>
+
+    <!-- 50 -->
+    <article class="idea" data-id="50">
+      <button class="tile" type="button" aria-label="Enlarge Letter stamps">
+        <svg viewBox="0 0 400 400" role="img" aria-label="RUN HACK built from individual rubber letter stamps, each a little crooked">
+          <rect width="400" height="400" fill="#efe6d2"/>
+          <g class="ls" font-size="82" text-anchor="middle" filter="url(#worn)">
+            <text x="146" y="186" fill="#1f1c17" transform="rotate(-6 146 160)">R</text>
+            <text x="200" y="182" fill="#b8402f" transform="rotate(4 200 156)">U</text>
+            <text x="254" y="188" fill="#1f1c17" transform="rotate(-2 254 160)">N</text>
+            <text x="118" y="282" fill="#1f1c17" transform="rotate(3 118 254)">H</text>
+            <text x="172" y="278" fill="#1f1c17" transform="rotate(-5 172 250)">A</text>
+            <text x="228" y="286" fill="#b8402f" transform="rotate(6 228 256)">C</text>
+            <text x="282" y="280" fill="#1f1c17" transform="rotate(-3 282 252)">K</text>
+          </g>
+        </svg>
+      </button>
+      <div class="meta"><span class="num">50</span><h3>Letter stamps</h3><button class="star" type="button" aria-pressed="false" aria-label="Star Letter stamps">☆</button></div>
+      <p>Each letter is a separate rubber stamp, pressed by hand and slightly crooked, with patchy ink. No two prints are the same.</p>
+      <p class="from">hand: londrina · rubber stamps</p>
+    </article>
+
+    <!-- 51 -->
+    <article class="idea" data-id="51">
+      <button class="tile" type="button" aria-label="Enlarge Stitched patch">
+        <svg viewBox="0 0 400 400" role="img" aria-label="Oval embroidered patch with Run Hack script and a stitched border">
+          <rect width="400" height="400" fill="#efe8d8"/>
+          <ellipse cx="200" cy="200" rx="160" ry="110" fill="#b8402f"/>
+          <ellipse cx="200" cy="200" rx="146" ry="96" fill="#f4ecd6"/>
+          <ellipse cx="200" cy="200" rx="138" ry="88" fill="none" stroke="#b8402f" stroke-width="2" stroke-dasharray="5 4"/>
+          <text x="200" y="210" text-anchor="middle" class="pa" font-size="58" fill="#1c2a4a">Run Hack</text>
+          <text x="200" y="250" text-anchor="middle" class="cv" font-size="19" fill="#b8402f" letter-spacing="3">san francisco</text>
+        </svg>
+      </button>
+      <div class="meta"><span class="num">51</span><h3>Stitched patch</h3><button class="star" type="button" aria-pressed="false" aria-label="Star Stitched patch">☆</button></div>
+      <p>An embroidered oval patch with chain-stitch script. Sew it onto running jackets and laptop bags.</p>
+      <p class="from">hand: pacifico · thread</p>
+    </article>
+
+    <!-- 52 -->
+    <article class="idea" data-id="52">
+      <button class="tile" type="button" aria-label="Enlarge Circled">
+        <svg viewBox="0 0 400 400" role="img" aria-label="run hack handwritten and circled twice in pen with an arrow pointing to it">
+          <rect width="400" height="400" fill="#f7f3ea"/>
+          <text x="200" y="216" text-anchor="middle" class="sil" font-size="64" fill="#1f1c17" filter="url(#ink)">run hack</text>
+          <g filter="url(#hand)" fill="none" stroke="#1f1c17" stroke-width="3" stroke-linecap="round">
+            <path d="M48,196 C42,112 352,106 362,188 C372,270 62,284 46,208 C40,154 256,128 344,160"/>
+          </g>
+          <g filter="url(#hand)" stroke="#b8402f" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M290,330 C300,300 310,280 300,262"/><path d="M288,274 L300,260 L312,272"/></g>
+          <text x="236" y="352" class="sil" font-size="24" fill="#b8402f">this one!!</text>
+        </svg>
+      </button>
+      <div class="meta"><span class="num">52</span><h3>Circled</h3><button class="star" type="button" aria-pressed="false" aria-label="Star Circled">☆</button></div>
+      <p>The name circled twice with a messy loop and a "this one!!", as if it was picked from a brainstorm. It captures the idea-generating energy.</p>
+      <p class="from">hand: shadows into light · pen</p>
+    </article>
+
+    <!-- 53 -->
+    <article class="idea" data-id="53">
+      <button class="tile" type="button" aria-label="Enlarge Hand seal">
+        <svg viewBox="0 0 400 400" role="img" aria-label="Hand-drawn circular seal with running hackathon san francisco around RH in script">
+          <rect width="400" height="400" fill="#efe8d8"/>
+          <g filter="url(#hand)" fill="none" stroke="#1f1c17" stroke-width="3"><circle cx="200" cy="200" r="150"/><circle cx="200" cy="200" r="104"/></g>
+          <path id="p53" d="M200,200 m-124,0 a124,124 0 1,1 248,0 a124,124 0 1,1 -248,0" fill="none"/>
+          <text class="cv" font-size="30" fill="#1f1c17" letter-spacing="2"><textPath href="#p53" textLength="770" lengthAdjust="spacing">running hackathon ~ san francisco ~ </textPath></text>
+          <text x="200" y="226" text-anchor="middle" class="ha" font-size="66" fill="#b8402f">RH</text>
+        </svg>
+      </button>
+      <div class="meta"><span class="num">53</span><h3>Hand seal</h3><button class="star" type="button" aria-pressed="false" aria-label="Star Hand seal">☆</button></div>
+      <p>A circular seal drawn freehand: wobbly rings, the name written round by hand and a looping RH in the middle.</p>
+      <p class="from">hand: caveat + homemade apple</p>
+    </article>
+
+    <!-- 54 -->
+    <article class="idea" data-id="54">
+      <button class="tile" type="button" aria-label="Enlarge Tape label">
+        <svg viewBox="0 0 400 400" role="img" aria-label="Two strips of masking tape with RUN and HACK written in black marker">
+          <rect width="400" height="400" fill="#efe8d8"/>
+          <g filter="url(#hand)">
+            <path d="M74,132 L300,120 L306,190 L80,202 L84,186 L76,172 L82,158 Z" fill="#e6d7ae"/>
+            <path d="M110,212 L332,222 L328,294 L104,284 L110,268 L102,254 L108,240 Z" fill="#e6d7ae"/>
+          </g>
+          <g class="cyg" fill="#1f1c17" font-size="74" filter="url(#ink)"><text x="122" y="184" transform="rotate(-3 190 160)">RUN</text><text x="138" y="276" transform="rotate(2 220 254)">HACK</text></g>
+        </svg>
+      </button>
+      <div class="meta"><span class="num">54</span><h3>Tape label</h3><button class="star" type="button" aria-pressed="false" aria-label="Star Tape label">☆</button></div>
+      <p>RUN and HACK in Sharpie on two torn strips of masking tape. DIY, scrappy and easy to recreate on anything at the event.</p>
+      <p class="from">hand: covered by your grace · sharpie</p>
+    </article>
+
+    <!-- 55 -->
+    <article class="idea" data-id="55">
+      <button class="tile" type="button" aria-label="Enlarge Sign painter">
+        <svg viewBox="0 0 400 400" role="img" aria-label="Brush-lettered Run Hack in cream with a dark red drop shadow on deep green">
+          <rect width="400" height="400" fill="#23402e"/>
+          <g class="ks" font-size="86" text-anchor="middle">
+            <text x="205" y="215" fill="#7a2a1f">Run Hack</text>
+            <text x="200" y="210" fill="#f4ecd6">Run Hack</text>
+          </g>
+          <g filter="url(#hand)" stroke="#e2b85a" stroke-width="3" fill="none" stroke-linecap="round"><path d="M110,252 H290"/><path d="M140,264 H260"/></g>
+          <text x="200" y="118" text-anchor="middle" class="cv" font-size="22" fill="#e2b85a" letter-spacing="4">— est. 2026 —</text>
+          <text x="200" y="300" text-anchor="middle" class="cv" font-size="24" fill="#e2b85a">running hackathon</text>
+        </svg>
+      </button>
+      <div class="meta"><span class="num">55</span><h3>Sign painter</h3><button class="star" type="button" aria-pressed="false" aria-label="Star Sign painter">☆</button></div>
+      <p>Brush lettering with a hand-painted drop shadow and gold pinstripes, like a sign on a café window.</p>
+      <p class="from">hand: kaushan script · lettering brush</p>
+    </article>
+
+    <!-- 56 -->
+    <article class="idea" data-id="56">
+      <button class="tile" type="button" aria-label="Enlarge Pencil draft">
+        <svg viewBox="0 0 400 400" role="img" aria-label="Graphite pencil run hack with faint guidelines and a margin note">
+          <rect width="400" height="400" fill="#fbfaf6"/>
+          <g stroke="#b9b6ae" stroke-width="1" stroke-dasharray="4 4"><path d="M40,170 H360"/><path d="M40,226 H360"/><path d="M40,248 H360"/></g>
+          <g filter="url(#graphite)" fill="#4a4a48"><text x="200" y="226" text-anchor="middle" class="np" font-size="110" textLength="292" lengthAdjust="spacingAndGlyphs">run hack</text></g>
+          <g filter="url(#hand)" fill="none" stroke="#8a8884" stroke-width="1.5"><circle cx="118" cy="190" r="34"/><path d="M296,112 C320,118 330,140 316,156"/><path d="M308,148 L316,158 L326,148"/></g>
+          <text x="260" y="104" class="np" font-size="30" fill="#6b6a66" filter="url(#graphite)">v1 — keep?</text>
+        </svg>
+      </button>
+      <div class="meta"><span class="num">56</span><h3>Pencil draft</h3><button class="star" type="button" aria-pressed="false" aria-label="Star Pencil draft">☆</button></div>
+      <p>The logo left in its pencil-sketch state, guidelines and notes included. Honest and work-in-progress, just like a hackathon.</p>
+      <p class="from">hand: nanum pen · graphite</p>
+    </article>
+
+    <!-- 57 -->
+    <article class="idea" data-id="57">
+      <button class="tile" type="button" aria-label="Enlarge Block print">
+        <svg viewBox="0 0 400 400" role="img" aria-label="Hand-carved square print block with a runner and RUN HACK in rough orange-red ink">
+          <rect width="400" height="400" fill="#efe8d8"/>
+          <g filter="url(#worn)">
+            <g filter="url(#hand)"><rect x="90" y="70" width="220" height="220" fill="#c8462a"/></g>
+            <use href="#runner" x="228" y="108" width="125" height="170" color="#efe8d8" transform="translate(-80 -20)"/>
+          </g>
+          <text x="200" y="338" text-anchor="middle" class="ls" font-size="46" fill="#c8462a" filter="url(#worn)" letter-spacing="4">RUN HACK</text>
+        </svg>
+      </button>
+      <div class="meta"><span class="num">57</span><h3>Block print</h3><button class="star" type="button" aria-pressed="false" aria-label="Star Block print">☆</button></div>
+      <p>A linocut-style block: a runner carved out of solid colour, printed by hand with patchy ink. A strong symbol that also works without the words.</p>
+      <p class="from">hand: londrina · lino block</p>
+    </article>
+
+    <!-- 58 -->
+    <article class="idea" data-id="58">
+      <button class="tile" type="button" aria-label="Enlarge Brush monogram">
+        <svg viewBox="0 0 400 400" role="img" aria-label="Lowercase rh brush monogram inside a hand-drawn square">
+          <rect width="400" height="400" fill="#efe8d8"/>
+          <g filter="url(#hand)"><path d="M104,96 L298,100 L302,300 L98,304 Z" fill="#1f1c17"/></g>
+          <text x="200" y="250" text-anchor="middle" class="cb" font-size="160" fill="#efe8d8" filter="url(#ink)">rh</text>
+          <text x="200" y="346" text-anchor="middle" class="cv" font-size="26" fill="#1f1c17" letter-spacing="3">run hack</text>
+        </svg>
+      </button>
+      <div class="meta"><span class="num">58</span><h3>Brush monogram</h3><button class="star" type="button" aria-pressed="false" aria-label="Star Brush monogram">☆</button></div>
+      <p>A fat lowercase "rh" in brush pen, knocked out of a wonky black square. The handwritten app icon and avatar.</p>
+      <p class="from">hand: caveat brush · brush pen</p>
+    </article>
+
+    <!-- 59 -->
+    <article class="idea" data-id="59">
+      <button class="tile" type="button" aria-label="Enlarge Copperplate">
+        <svg viewBox="0 0 400 400" role="img" aria-label="Gold copperplate calligraphy Run Hack with flourishes on deep green">
+          <rect width="400" height="400" fill="#1d2a1b"/>
+          <text x="200" y="222" text-anchor="middle" class="ps" font-size="84" fill="#d9b56a" textLength="300" lengthAdjust="spacingAndGlyphs">Run Hack</text>
+          <g filter="url(#hand)" stroke="#d9b56a" stroke-width="1.8" fill="none" stroke-linecap="round">
+            <path d="M120,262 C160,250 240,250 280,262 C260,272 220,272 200,262 C180,252 140,252 120,262"/>
+            <path d="M160,130 C180,118 220,118 240,130"/>
+          </g>
+          <text x="200" y="300" text-anchor="middle" class="ps" font-size="26" fill="#d9b56a">Est. MMXXVI · San Francisco</text>
+        </svg>
+      </button>
+      <div class="meta"><span class="num">59</span><h3>Copperplate</h3><button class="star" type="button" aria-pressed="false" aria-label="Star Copperplate">☆</button></div>
+      <p>Pointed-nib calligraphy in gold, with flourishes. Old-world and a bit absurd for a running hackathon, which is the fun of it.</p>
+      <p class="from">hand: pinyon script · dip pen</p>
+    </article>
+
+    <!-- 60 -->
+    <article class="idea" data-id="60">
+      <button class="tile" type="button" aria-label="Enlarge Race bib">
+        <svg viewBox="0 0 400 400" role="img" aria-label="Paper race bib with safety pins and RUN HACK written on it in marker">
+          <rect width="400" height="400" fill="#efe8d8"/>
+          <g filter="url(#hand)"><rect x="70" y="100" width="260" height="200" fill="#ffffff" stroke="#1f1c17" stroke-width="2.5"/><rect x="70" y="100" width="260" height="30" fill="#b8402f"/></g>
+          <text x="200" y="121" text-anchor="middle" class="cv" font-size="19" fill="#fff" letter-spacing="3">running hackathon · sf</text>
+          <text x="200" y="232" text-anchor="middle" class="jah" font-size="104" fill="#1f1c17" textLength="232" lengthAdjust="spacingAndGlyphs" filter="url(#ink)">RUN HACK</text>
+          <text x="200" y="280" text-anchor="middle" class="jah" font-size="36" fill="#b8402f">#26</text>
+          <g fill="none" stroke="#8a8884" stroke-width="2.5" stroke-linecap="round">
+            <path d="M84,146 L108,140 M84,146 C80,150 84,154 88,152"/><path d="M316,146 L292,140 M316,146 C320,150 316,154 312,152"/>
+            <path d="M84,284 L108,278 M84,284 C80,288 84,292 88,290"/><path d="M316,284 L292,278 M316,284 C320,288 316,292 312,290"/>
+          </g>
+        </svg>
+      </button>
+      <div class="meta"><span class="num">60</span><h3>Race bib</h3><button class="star" type="button" aria-pressed="false" aria-label="Star Race bib">☆</button></div>
+      <p>A race bib where the number has been replaced by "RUN HACK" in marker, with four safety pins. Instantly says running.</p>
+      <p class="from">hand: just another hand · marker</p>
+    </article>
+
+  </main>
+
+  <footer>round 26 · 20 handwritten Run Hack logos (numbers 41–60), drawn in code (SVG) with hand-lettered Google Fonts and paper, ink and wobble textures.</footer>
+</div>
+
+<dialog id="viewer" aria-label="Logo preview">
+  <div class="big" id="viewer-art"></div>
+  <div class="cap"><span id="viewer-title"></span><button class="close" type="button" id="viewer-close">close</button></div>
+</dialog>
+
+<script>
+(() => {
+  if (location.hash === '#cover') document.body.classList.add('cover');
+  if (location.hash === '#cover2') document.body.classList.add('cover', 'cover2');
+  const KEY = 'runhack-logo-ideas-stars';
+  let stars = new Set();
+  try { stars = new Set(JSON.parse(localStorage.getItem(KEY) || '[]')); } catch (e) {}
+  const save = () => { try { localStorage.setItem(KEY, JSON.stringify([...stars])); } catch (e) {} };
+  const ideas = [...document.querySelectorAll('.idea')];
+  const count = document.getElementById('count');
+  let filter = 'all';
+  const paint = () => {
+    let shown = 0;
+    ideas.forEach(el => {
+      const on = stars.has(el.dataset.id);
+      const b = el.querySelector('.star');
+      b.setAttribute('aria-pressed', String(on));
+      b.textContent = on ? '★' : '☆';
+      const visible = filter === 'all' || on;
+      el.hidden = !visible;
+      if (visible) shown++;
+    });
+    count.textContent = filter === 'all' ? '20 ideas' : `${shown} starred`;
+    document.querySelectorAll('[data-filter]').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.filter === filter)));
+    const mine = ideas.filter(el => stars.has(el.dataset.id)).length;
+    document.querySelector('[data-filter="starred"]').textContent = mine ? `starred (${mine})` : 'starred';
+  };
+  document.querySelectorAll('[data-filter]').forEach(b => b.addEventListener('click', () => { filter = b.dataset.filter; paint(); }));
+  ideas.forEach(el => el.querySelector('.star').addEventListener('click', () => {
+    const id = el.dataset.id; stars.has(id) ? stars.delete(id) : stars.add(id); save(); paint();
+  }));
+  const dlg = document.getElementById('viewer');
+  const art = document.getElementById('viewer-art');
+  const title = document.getElementById('viewer-title');
+  ideas.forEach(el => el.querySelector('.tile').addEventListener('click', () => {
+    art.replaceChildren(el.querySelector('svg').cloneNode(true));
+    title.textContent = `${el.querySelector('.num').textContent} · ${el.querySelector('h3').textContent}`;
+    if (dlg.showModal) dlg.showModal();
+  }));
+  document.getElementById('viewer-close').addEventListener('click', () => dlg.close());
+  dlg.addEventListener('click', e => { if (e.target === dlg) dlg.close(); });
+  paint();
+})();
+</script>
+</body>
+</html>

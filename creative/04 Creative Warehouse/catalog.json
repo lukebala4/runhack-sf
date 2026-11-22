@@ -108,6 +108,27 @@
   ],
   "items": [
     {
+      "id": "2026-11-22-run-hack-handwritten-logos",
+      "kind": "images",
+      "title": "Run Hack logos III · Twenty handwritten",
+      "description": "Twenty hand-lettered logos: marker, chalk, signature, ballpoint, spray tag, brush script, pencil, stamps and copperplate.",
+      "href": "../26%20Run%20Hack%20Handwritten%20Logos/",
+      "image": "../26%20Run%20Hack%20Handwritten%20Logos/cover.jpg",
+      "presentation": "cover",
+      "tags": [
+        "logo",
+        "brand",
+        "run hack",
+        "handwritten",
+        "lettering"
+      ],
+      "action": "Review all twenty",
+      "secondary": {
+        "label": "Round 25 logos",
+        "href": "../25%20Run%20Hack%20Logo%20Ideas%20II/"
+      }
+    },
+    {
       "id": "2026-11-22-run-hack-logo-ideas-ii",
       "kind": "images",
       "title": "Run Hack logos II · Twenty more ideas",
