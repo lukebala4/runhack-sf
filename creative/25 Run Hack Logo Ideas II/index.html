@@ -1,0 +1,628 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="dark">
+<title>Run Hack Logos II</title>
+<link rel="icon" href="../03%20Website%20Concepts/assets/running-hackathon-wordmark.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wdth,wght@62..125,100..900&family=Arimo:wght@400;700&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Instrument+Serif:ital@0;1&family=Permanent+Marker&family=Shrikhand&family=Space+Mono:wght@400;700&display=swap">
+<style>
+:root{--ink:#11130f;--line:#2c3127;--cream:#efe8d0;--mint:#bdf3d6;--muted:#a9a58f;--text:#efe8d0}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--ink);color:var(--text);font:15px/1.5 'Space Mono',ui-monospace,monospace}
+body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:50;opacity:.07;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+a{color:var(--mint)}
+.wrap{max-width:1320px;margin:0 auto;padding:0 32px}
+header.top{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:20px 0;border-bottom:1px solid var(--line);font-size:12px;letter-spacing:.12em;text-transform:uppercase}
+header.top a{color:var(--text);text-decoration:none;opacity:.8}
+header.top a:hover{opacity:1;color:var(--mint)}
+.intro{display:grid;grid-template-columns:1.3fr 1fr;gap:40px;padding:56px 0 40px;align-items:end}
+.intro h1{font:900 clamp(56px,9vw,132px)/.86 'Archivo',sans-serif;font-stretch:125%;margin:0;letter-spacing:-.02em;text-transform:uppercase}
+.intro h1 em{font:italic 400 .62em/1 'Instrument Serif',serif;text-transform:none;letter-spacing:0;color:var(--mint);display:block;margin-top:.15em}
+.intro p{margin:0 0 14px;color:var(--muted);max-width:46ch}
+.intro p strong{color:var(--text)}
+.guide{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:28px 0;display:grid;grid-template-columns:240px minmax(0,1fr);gap:32px}
+.guide h2,.toolbar h2{font:700 12px/1.3 'Space Mono',monospace;letter-spacing:.14em;text-transform:uppercase;margin:0 0 12px;color:var(--mint)}
+.swatches{display:grid;grid-template-columns:repeat(4,1fr);gap:6px}
+.swatches span{aspect-ratio:1;border-radius:3px;border:1px solid #ffffff1a}
+.guide ul{margin:14px 0 0;padding:0;list-style:none;font-size:12px;color:var(--muted)}
+.guide li{padding:3px 0}
+.inspo{display:flex;gap:10px;overflow-x:auto;padding-bottom:6px;scrollbar-width:thin}
+.inspo a{flex:0 0 auto;display:block;position:relative}
+.inspo img{height:150px;width:auto;display:block;border-radius:3px}
+.inspo a span{position:absolute;left:6px;bottom:5px;font-size:10px;background:#000a;padding:1px 5px;border-radius:2px;color:var(--cream)}
+.guide .note{font-size:11px;color:var(--muted);margin:10px 0 0}
+.toolbar{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:32px 0 18px;flex-wrap:wrap}
+.toolbar h2{margin:0}
+.filters{display:flex;gap:8px}
+.filters button,.star,.close{font:inherit;font-size:12px;letter-spacing:.08em;text-transform:uppercase;background:transparent;color:var(--text);border:1px solid var(--line);border-radius:999px;padding:7px 14px;cursor:pointer}
+.filters button[aria-pressed="true"]{background:var(--cream);color:var(--ink);border-color:var(--cream)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:28px 22px;padding-bottom:80px}
+.tile{display:block;width:100%;padding:0;border:0;background:none;cursor:zoom-in;border-radius:4px;overflow:hidden;aspect-ratio:1}
+.tile svg{display:block;width:100%;height:100%}
+.meta{display:flex;align-items:baseline;gap:10px;margin-top:12px}
+.num{font-size:12px;color:var(--mint)}
+.idea h3{font:800 20px/1.1 'Archivo',sans-serif;font-stretch:110%;margin:0;flex:1;text-transform:uppercase}
+.star{padding:3px 10px;font-size:15px;line-height:1.3}
+.star[aria-pressed="true"]{background:var(--mint);color:var(--ink);border-color:var(--mint)}
+.idea p{margin:6px 0 0;font-size:12.5px;color:var(--muted)}
+.idea p.from{font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:#7f7c69}
+dialog{border:0;padding:0;background:transparent;max-width:min(92vw,820px);width:100%}
+dialog::backdrop{background:#000d}
+dialog .big svg{display:block;width:100%;height:auto;border-radius:6px}
+dialog .cap{display:flex;justify-content:space-between;align-items:center;gap:12px;color:var(--cream);margin-top:12px;font-size:13px}
+footer{border-top:1px solid var(--line);padding:24px 0 40px;font-size:12px;color:var(--muted)}
+/* Type inside the logos */
+.a9{font-family:'Archivo',sans-serif;font-weight:900;font-stretch:125%}
+.a8n{font-family:'Archivo',sans-serif;font-weight:800;font-stretch:100%}
+.a7c{font-family:'Archivo',sans-serif;font-weight:700;font-stretch:78%}
+.a6{font-family:'Archivo',sans-serif;font-weight:600;font-stretch:100%}
+.a5{font-family:'Archivo',sans-serif;font-weight:500;font-stretch:100%}
+.ar{font-family:'Arimo',Arial,sans-serif}
+.arb{font-family:'Arimo',Arial,sans-serif;font-weight:700}
+.an{font-family:'Anton',sans-serif}
+.bo{font-family:'Bodoni Moda',serif;font-weight:500}
+.bob{font-family:'Bodoni Moda',serif;font-weight:700}
+.is{font-family:'Instrument Serif',serif}
+.isi{font-family:'Instrument Serif',serif;font-style:italic}
+.mono{font-family:'Space Mono',monospace}
+.monob{font-family:'Space Mono',monospace;font-weight:700}
+.pm{font-family:'Permanent Marker',cursive}
+.sh{font-family:'Shrikhand',cursive}
+.vd{font-family:Verdana,Tahoma,'Arimo',sans-serif}
+.vdb{font-family:Verdana,Tahoma,'Arimo',sans-serif;font-weight:700}
+.geo{font-family:Georgia,'Bodoni Moda',serif;font-weight:700}
+@media (max-width:760px){
+  .wrap{padding:0 16px}
+  .intro{grid-template-columns:1fr;gap:20px;padding:36px 0 28px}
+  .guide{grid-template-columns:minmax(0,1fr);gap:20px}
+  .grid{grid-template-columns:1fr}
+  header.top span{display:none}
+}
+body.cover::before,body.cover .top,body.cover .intro,body.cover .guide,body.cover .toolbar,body.cover footer,body.cover .meta,body.cover .idea p{display:none}
+body.cover .wrap{max-width:none;padding:0}
+body.cover .grid{grid-template-columns:repeat(4,1fr);gap:0;padding:0}
+body.cover .tile{border-radius:0}
+body.cover .idea:nth-child(n+13){display:none}
+body.cover2 .idea:nth-child(-n+8){display:none}
+body.cover2 .idea:nth-child(n+13){display:block}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <symbol id="spark" viewBox="-12 -12 24 24"><path d="M0,-12 C1,-3 3,-1 12,0 C3,1 1,3 0,12 C-1,3 -3,1 -12,0 C-3,-1 -1,-3 0,-12Z"/></symbol>
+    <filter id="noise" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="3" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/></filter>
+    <filter id="rough" x="-5%" y="-5%" width="110%" height="110%"><feTurbulence type="fractalNoise" baseFrequency=".8" numOctaves="2" seed="7" result="n"/><feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -3 2.3" result="a"/><feComposite in="SourceGraphic" in2="a" operator="in"/></filter>
+    <filter id="faded" x="-5%" y="-5%" width="110%" height="110%"><feTurbulence type="fractalNoise" baseFrequency=".55" numOctaves="3" seed="3" result="n"/><feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -3 2.5" result="a"/><feComposite in="SourceGraphic" in2="a" operator="in" result="c"/><feGaussianBlur in="c" stdDeviation=".6"/></filter>
+    <filter id="blurx2" x="-60%" y="-10%" width="220%" height="120%"><feGaussianBlur stdDeviation="22 0.5"/></filter>
+    <filter id="soft" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="22"/></filter>
+    <filter id="smear" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="7 5"/></filter>
+    <filter id="jpeg" x="-5%" y="-5%" width="110%" height="110%"><feGaussianBlur stdDeviation="1.3"/></filter>
+    <filter id="wobble" x="-10%" y="-30%" width="120%" height="160%"><feTurbulence type="fractalNoise" baseFrequency=".05" numOctaves="2" seed="11" result="t"/><feDisplacementMap in="SourceGraphic" in2="t" scale="16" xChannelSelector="R" yChannelSelector="G"/></filter>
+    <filter id="lift" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="8" stdDeviation="9" flood-color="#000" flood-opacity=".45"/></filter>
+    <pattern id="hatch" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(35)"><rect width="4" height="1.6" fill="#d8285f"/></pattern>
+    <pattern id="dots" width="11" height="11" patternUnits="userSpaceOnUse"><circle cx="5.5" cy="5.5" r="4.3" fill="#1b1b1b"/></pattern>
+    <pattern id="fuzz" width="3" height="3" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r=".6" fill="#6d655d" opacity=".5"/></pattern>
+    <mask id="m02"><rect width="400" height="400" fill="#000"/><g transform="translate(40 26)"><g fill="none" stroke="#fff" stroke-width="30" stroke-linecap="round" stroke-linejoin="round"><path d="M202,170 L176,240"/><path d="M198,184 L232,214 L262,196"/><path d="M196,188 L160,212 L140,196"/><path d="M176,240 L214,272 L198,322"/><path d="M176,240 L144,284 L104,278"/></g><circle cx="212" cy="138" r="22" fill="#fff"/></g></mask>
+    <symbol id="runner" viewBox="-80 -20 125 170" overflow="visible"><g fill="none" stroke="currentColor" stroke-width="17" stroke-linecap="round" stroke-linejoin="round"><path d="M-6,26 L-20,80"/><path d="M-8,34 L14,56 L36,42"/><path d="M-10,36 L-34,54 L-50,42"/><path d="M-20,80 L6,106 L-4,142"/><path d="M-20,80 L-44,112 L-72,108"/></g><circle cx="0" cy="0" r="15" fill="currentColor"/></symbol>
+  </defs>
+</svg>
+
+<div class="wrap">
+  <header class="top">
+    <a href="../04%20Creative%20Warehouse/">← Creative warehouse</a>
+    <span>Round 25 · Brand</span>
+    <a href="../24%20Run%20Hack%20Logo%20Ideas/">Round 24 logos ↗</a>
+  </header>
+
+  <section class="intro">
+    <h1>Run Hack<em>twenty more ideas.</em></h1>
+    <div>
+      <p><strong>Round two, built from the bigger 48-image ideas doc.</strong> This board is louder and funnier than round 24. It pulls in old stamps and tickets, barcodes and playing cards, meme captions, Y2K founder energy, whiteboard Sharpie and a bright blue track.</p>
+      <p>All 20 are new and don't repeat round 24. Click a logo to see it bigger, and star your favourites (stars are saved in this browser).</p>
+    </div>
+  </section>
+
+  <section class="guide" aria-labelledby="guide-title">
+    <div>
+      <h2 id="guide-title">Style guide II</h2>
+      <div class="swatches" aria-label="Palette">
+        <span style="background:#e8301f" title="Poster red"></span><span style="background:#2233a8" title="Cobalt"></span><span style="background:#1d8fd1" title="Track blue"></span><span style="background:#f7d23a" title="Yolk"></span>
+        <span style="background:#f4d6d2" title="Stamp pink"></span><span style="background:#3a8f5a" title="Stamp green"></span><span style="background:#f4f2ec" title="Paper"></span><span style="background:#111111" title="Ink"></span>
+      </div>
+      <ul>
+        <li>— Vintage stamps, tickets, cards</li>
+        <li>— Meme captions, deadpan slogans</li>
+        <li>— Smeared, low-res, photocopied type</li>
+        <li>— Y2K founder and Sharpie energy</li>
+      </ul>
+    </div>
+    <div>
+      <h2>From the ideas doc (40 new images)</h2>
+      <div class="inspo" id="inspo"></div>
+      <p class="note">The original 10 mood images are on the <a href="../24%20Run%20Hack%20Logo%20Ideas/">round 24 page</a>.</p>
+    </div>
+  </section>
+
+  <div class="toolbar">
+    <h2 id="count">20 ideas</h2>
+    <div class="filters" role="group" aria-label="Show">
+      <button type="button" data-filter="all" aria-pressed="true">All 20</button>
+      <button type="button" data-filter="starred" aria-pressed="false">Starred</button>
+    </div>
+  </div>
+
+  <main class="grid" id="grid">
+
+    <!-- 21 -->
+    <article class="idea" data-id="21">
+      <button class="tile" type="button" aria-label="Enlarge Chamonix stamp">
+        <svg viewBox="0 0 400 400" role="img" aria-label="Pink engraved postage stamp with a crouched runner and Running Hackathon San Francisco 2026">
+          <rect width="400" height="400" fill="#1c1c1a"/>
+          <rect x="70" y="40" width="260" height="320" fill="#f6dcd6"/>
+          <g fill="#1c1c1a">
+            <circle cx="70" cy="40" r="6"/><circle cx="70" cy="56" r="6"/><circle cx="70" cy="72" r="6"/><circle cx="70" cy="88" r="6"/><circle cx="70" cy="104" r="6"/><circle cx="70" cy="120" r="6"/><circle cx="70" cy="136" r="6"/><circle cx="70" cy="152" r="6"/><circle cx="70" cy="168" r="6"/><circle cx="70" cy="184" r="6"/><circle cx="70" cy="200" r="6"/><circle cx="70" cy="216" r="6"/><circle cx="70" cy="232" r="6"/><circle cx="70" cy="248" r="6"/><circle cx="70" cy="264" r="6"/><circle cx="70" cy="280" r="6"/><circle cx="70" cy="296" r="6"/><circle cx="70" cy="312" r="6"/><circle cx="70" cy="328" r="6"/><circle cx="70" cy="344" r="6"/><circle cx="70" cy="360" r="6"/>
+            <circle cx="330" cy="40" r="6"/><circle cx="330" cy="56" r="6"/><circle cx="330" cy="72" r="6"/><circle cx="330" cy="88" r="6"/><circle cx="330" cy="104" r="6"/><circle cx="330" cy="120" r="6"/><circle cx="330" cy="136" r="6"/><circle cx="330" cy="152" r="6"/><circle cx="330" cy="168" r="6"/><circle cx="330" cy="184" r="6"/><circle cx="330" cy="200" r="6"/><circle cx="330" cy="216" r="6"/><circle cx="330" cy="232" r="6"/><circle cx="330" cy="248" r="6"/><circle cx="330" cy="264" r="6"/><circle cx="330" cy="280" r="6"/><circle cx="330" cy="296" r="6"/><circle cx="330" cy="312" r="6"/><circle cx="330" cy="328" r="6"/><circle cx="330" cy="344" r="6"/><circle cx="330" cy="360" r="6"/>
+            <circle cx="86" cy="40" r="6"/><circle cx="102" cy="40" r="6"/><circle cx="118" cy="40" r="6"/><circle cx="134" cy="40" r="6"/><circle cx="150" cy="40" r="6"/><circle cx="166" cy="40" r="6"/><circle cx="182" cy="40" r="6"/><circle cx="198" cy="40" r="6"/><circle cx="214" cy="40" r="6"/><circle cx="230" cy="40" r="6"/><circle cx="246" cy="40" r="6"/><circle cx="262" cy="40" r="6"/><circle cx="278" cy="40" r="6"/><circle cx="294" cy="40" r="6"/><circle cx="310" cy="40" r="6"/>
+            <circle cx="86" cy="360" r="6"/><circle cx="102" cy="360" r="6"/><circle cx="118" cy="360" r="6"/><circle cx="134" cy="360" r="6"/><circle cx="150" cy="360" r="6"/><circle cx="166" cy="360" r="6"/><circle cx="182" cy="360" r="6"/><circle cx="198" cy="360" r="6"/><circle cx="214" cy="360" r="6"/><circle cx="230" cy="360" r="6"/><circle cx="246" cy="360" r="6"/><circle cx="262" cy="360" r="6"/><circle cx="278" cy="360" r="6"/><circle cx="294" cy="360" r="6"/><circle cx="310" cy="360" r="6"/>
+          </g>
+          <rect x="92" y="62" width="216" height="276" fill="none" stroke="#d8285f" stroke-width="2"/>
+          <text x="200" y="88" text-anchor="middle" class="a7c" font-size="17" letter-spacing="1.5" fill="#d8285f">RÉPUBLIQUE DU RUN</text>
+          <g fill="none" stroke="url(#hatch)" stroke-width="19" stroke-linecap="round" stroke-linejoin="round" transform="translate(212 136) rotate(18)"><path d="M-6,26 L-20,80"/><path d="M-8,34 L14,56 L36,42"/><path d="M-10,36 L-34,54 L-50,42"/><path d="M-20,80 L6,106 L-4,142"/><path d="M-20,80 L-44,112 L-72,108"/></g>
+          <circle cx="212" cy="136" r="16" fill="url(#hatch)"/>
+          <text x="292" y="172" text-anchor="end" class="an" font-size="46" fill="#d8285f">5K</text>
+          <path d="M108,268 C150,250 250,252 300,240" stroke="#d8285f" stroke-width="1.5" fill="none"/>
+          <text x="200" y="300" text-anchor="middle" class="a7c" font-size="16" letter-spacing="1" fill="#d8285f">RUNNING HACKATHON</text>
+          <text x="200" y="322" text-anchor="middle" class="a7c" font-size="16" letter-spacing="1" fill="#d8285f">SAN FRANCISCO 2026</text>
+          <rect width="400" height="400" filter="url(#noise)" opacity=".14" style="mix-blend-mode:multiply"/>
+        </svg>
+      </button>
+      <div class="meta"><span class="num">21</span><h3>Chamonix stamp</h3><button class="star" type="button" aria-pressed="false" aria-label="Star Chamonix stamp">☆</button></div>
+      <p>A perforated, engraved-pink postage stamp with a hatched runner tucked low like a downhill skier. Collectible from day one.</p>
+      <p class="from">From pinterest 01</p>
+    </article>
+
+    <!-- 22 -->
+    <article class="idea" data-id="22">
+      <button class="tile" type="button" aria-label="Enlarge Dot runner">
+        <svg viewBox="0 0 400 400" role="img" aria-label="Runner made of black halftone dots with green Run Hack 2026 type, like a 1970s stamp">
+          <rect width="400" height="400" fill="#f4f2ec"/>
+          <rect width="400" height="400" fill="url(#dots)" mask="url(#m02)"/>
+          <g class="a5" fill="#3a8f5a"><text x="40" y="72" font-size="34">Run Hack</text><text x="40" y="108" font-size="34">2026</text></g>
+          <text x="40" y="134" class="a6" font-size="13" letter-spacing="2" fill="#3a8f5a">SAN FRANCISCO · USA</text>
+          <text x="40" y="364" class="a5" fill="#3a8f5a"><tspan font-size="64">5</tspan><tspan font-size="30" dx="4">K +3H</tspan></text>
+          <rect width="400" height="400" filter="url(#noise)" opacity=".1" style="mix-blend-mode:multiply"/>
+        </svg>
+      </button>
+      <div class="meta"><span class="num">22</span><h3>Dot runner</h3><button class="star" type="button" aria-pressed="false" aria-label="Star Dot runner">☆</button></div>
+      <p>A runner made only of halftone dots, with calm green type, like an old Games stamp. Clean, iconic and easy to animate.</p>
+      <p class="from">From pinterest 48</p>
+    </article>
+
+    <!-- 23 -->
+    <article class="idea" data-id="23">
+      <button class="tile" type="button" aria-label="Enlarge You are the product">
+        <svg viewBox="0 0 400 400" role="img" aria-label="Black and white label reading RUN, a barcode, then HACK">
+          <rect width="400" height="400" fill="#ffffff"/>
+          <rect x="44" y="44" width="312" height="312" fill="none" stroke="#111" stroke-width="7"/>
+          <text x="200" y="128" text-anchor="middle" class="a9" font-size="70" fill="#111" textLength="270" lengthAdjust="spacingAndGlyphs">RUN</text>
+          <text x="200" y="146" text-anchor="middle" class="a9" font-size="13" fill="#111" textLength="270" lengthAdjust="spacing">YOU ARE THE</text>
+          <g fill="#111" transform="translate(4 8)"><rect x="92" y="150" width="4" height="92"/><rect x="99" y="150" width="2" height="92"/><rect x="103" y="150" width="2" height="92"/><rect x="109" y="150" width="6" height="92"/><rect x="117" y="150" width="2" height="92"/><rect x="122" y="150" width="4" height="92"/><rect x="128" y="150" width="2" height="92"/><rect x="135" y="150" width="2" height="92"/><rect x="139" y="150" width="8" height="92"/><rect x="149" y="150" width="2" height="92"/><rect x="154" y="150" width="4" height="92"/><rect x="160" y="150" width="2" height="92"/><rect x="166" y="150" width="6" height="92"/><rect x="174" y="150" width="2" height="92"/><rect x="179" y="150" width="2" height="92"/><rect x="183" y="150" width="4" height="92"/><rect x="189" y="150" width="2" height="92"/><rect x="195" y="150" width="8" height="92"/><rect x="205" y="150" width="2" height="92"/><rect x="210" y="150" width="2" height="92"/><rect x="214" y="150" width="4" height="92"/><rect x="220" y="150" width="6" height="92"/><rect x="229" y="150" width="2" height="92"/><rect x="235" y="150" width="2" height="92"/><rect x="239" y="150" width="4" height="92"/><rect x="245" y="150" width="2" height="92"/><rect x="250" y="150" width="6" height="92"/><rect x="258" y="150" width="2" height="92"/><rect x="262" y="150" width="4" height="92"/><rect x="269" y="150" width="2" height="92"/><rect x="275" y="150" width="2" height="92"/><rect x="279" y="150" width="8" height="92"/><rect x="289" y="150" width="2" height="92"/><rect x="294" y="150" width="4" height="92"/></g>
+          <text x="200" y="266" text-anchor="middle" class="monob" font-size="13" fill="#111" letter-spacing="1">0  05K03 H2026  5</text>
+          <text x="200" y="330" text-anchor="middle" class="a9" font-size="66" fill="#111" textLength="270" lengthAdjust="spacingAndGlyphs">HACK</text>
+          <rect width="400" height="400" filter="url(#noise)" opacity=".12" style="mix-blend-mode:multiply"/>
+        </svg>
+      </button>
+      <div class="meta"><span class="num">23</span><h3>You are the product</h3><button class="star" type="button" aria-pressed="false" aria-label="Star You are the product">☆</button></div>
+      <p>A photocopied price label: RUN, a barcode, HACK. The digits hide 5K, 3H and 2026. Built for stickers and tote bags.</p>
+      <p class="from">From pinterest 06</p>
+    </article>
+
+    <!-- 24 -->
+    <article class="idea" data-id="24">
+      <button class="tile" type="button" aria-label="Enlarge Five of diamonds">
+        <svg viewBox="0 0 400 400" role="img" aria-label="Playing card with RH and diamond indexes and a track of tiny runners and laptops">
+          <rect width="400" height="400" fill="#2f5d3a"/>
+          <g filter="url(#lift)"><rect x="80" y="30" width="240" height="340" rx="16" fill="#f3efe4"/></g>
+          <g fill="#d0263a">
+            <text x="100" y="74" class="an" font-size="34">RH</text><path d="M114,84 l10,14 l-10,14 l-10,-14z"/>
+            <g transform="rotate(180 200 200)"><text x="100" y="74" class="an" font-size="34">RH</text><path d="M114,84 l10,14 l-10,14 l-10,-14z"/></g>
+          </g>
+          <rect x="160" y="110" width="80" height="180" rx="40" fill="none" stroke="#111" stroke-width="3"/>
+          <g fill="#111">
+            <rect x="140" y="128" width="12" height="9" rx="1"/><rect x="140" y="168" width="12" height="9" rx="1"/><rect x="140" y="208" width="12" height="9" rx="1"/><rect x="140" y="248" width="12" height="9" rx="1"/>
+            <rect x="248" y="148" width="12" height="9" rx="1"/><rect x="248" y="188" width="12" height="9" rx="1"/><rect x="248" y="228" width="12" height="9" rx="1"/><rect x="248" y="268" width="12" height="9" rx="1"/>
+            <circle cx="130" cy="132" r="5"/><circle cx="130" cy="172" r="5"/><circle cx="130" cy="212" r="5"/><circle cx="130" cy="252" r="5"/>
+            <circle cx="270" cy="152" r="5"/><circle cx="270" cy="192" r="5"/><circle cx="270" cy="232" r="5"/><circle cx="270" cy="272" r="5"/>
+            <circle cx="200" cy="98" r="5"/><circle cx="200" cy="302" r="5"/>
+          </g>
+          <text x="200" y="196" text-anchor="middle" class="monob" font-size="11" fill="#111" letter-spacing="2">RUN</text>
+          <text x="200" y="212" text-anchor="middle" class="monob" font-size="11" fill="#111" letter-spacing="2">HACK</text>
+          <rect width="400" height="400" filter="url(#noise)" opacity=".12" style="mix-blend-mode:multiply"/>
+        </svg>
+      </button>
+      <div class="meta"><span class="num">24</span><h3>Five of diamonds</h3><button class="star" type="button" aria-pressed="false" aria-label="Star Five of diamonds">☆</button></div>
+      <p>A playing card where the "table" is a running track ringed with tiny people and laptops. Print a whole deck as the badge system.</p>
+      <p class="from">From pinterest 07</p>
+    </article>
+
+    <!-- 25 -->
+    <article class="idea" data-id="25">
+      <button class="tile" type="button" aria-label="Enlarge Lane four">
+        <svg viewBox="0 0 400 400" role="img" aria-label="Bright blue running track with white curved lanes and RUN HACK riding a lane">
+          <rect width="400" height="400" fill="#1d8fd1"/>
+          <g fill="none" stroke="#ffffff" stroke-width="4">
+            <circle cx="470" cy="-60" r="250"/><circle cx="470" cy="-60" r="300"/><circle cx="470" cy="-60" r="350"/><circle cx="470" cy="-60" r="400"/><circle cx="470" cy="-60" r="450"/><circle cx="470" cy="-60" r="500"/><circle cx="470" cy="-60" r="550"/>
+          </g>
+          <path id="p25" d="M470,-60 m-375,0 a375,375 0 0,0 375,375" fill="none"/>
+          <text class="a9" font-size="31" fill="#ffffff" letter-spacing="2"><textPath href="#p25" startOffset="26%">RUN HACK</textPath></text>
+          <rect x="24" y="352" width="226" height="28" fill="#1d8fd1"/>
+          <text x="32" y="371" class="monob" font-size="12" letter-spacing="3" fill="#ffffff">LANE 04 · SAN FRANCISCO</text>
+          <rect width="400" height="400" filter="url(#noise)" opacity=".14" style="mix-blend-mode:overlay"/>
+        </svg>
+      </button>
+      <div class="meta"><span class="num">25</span><h3>Lane four</h3><button class="star" type="button" aria-pressed="false" aria-label="Star Lane four">☆</button></div>
+      <p>Saturated track blue with bold white lane lines and the name riding round the curve. It reads instantly as a race.</p>
+      <p class="from">From pinterest 23</p>
+    </article>
+
+    <!-- 26 -->
+    <article class="idea" data-id="26">
+      <button class="tile" type="button" aria-label="Enlarge Made to make">
+        <svg viewBox="0 0 400 400" role="img" aria-label="Smeared black condensed RUN HACK on bright red, with made to above">
+          <rect width="400" height="400" fill="#e8301f"/>
+          <g class="an" fill="#111" text-anchor="middle">
+            <g filter="url(#smear)" opacity=".75"><text x="200" y="106" font-size="64">made to</text><text x="200" y="238" font-size="140">RUN</text><text x="200" y="360" font-size="132">HACK</text></g>
+            <text x="200" y="106" font-size="64">made to</text><text x="200" y="238" font-size="140">RUN</text><text x="200" y="360" font-size="132">HACK</text>
+          </g>
+          <rect width="400" height="400" filter="url(#noise)" opacity=".26" style="mix-blend-mode:multiply"/>
+        </svg>
+      </button>
+      <div class="meta"><span class="num">26</span><h3>Made to make</h3><button class="star" type="button" aria-pressed="false" aria-label="Star Made to make">☆</button></div>
+      <p>Tall condensed type smeared on red, like a bootleg flyer pulled off a wall. Loud, raw and a bit unhinged.</p>
+      <p class="from">From pinterest 09</p>
+    </article>
+
+    <!-- 27 -->
+    <article class="idea" data-id="27">
+      <button class="tile" type="button" aria-label="Enlarge Cobalt whisper">
+        <svg viewBox="0 0 400 400" role="img" aria-label="Small red RUN HACK on deep cobalt blue with a quiet line underneath">
+          <rect width="400" height="400" fill="#2233a8"/>
+          <text x="200" y="200" text-anchor="middle" class="a9" font-size="34" fill="#ef3a4d" textLength="200" lengthAdjust="spacingAndGlyphs">RUN HACK</text>
+          <g class="a8n" font-size="10.5" fill="#ef3a4d" text-anchor="middle" letter-spacing=".6"><text x="200" y="222">HOW SILLY OF YOU TO FORGET</text><text x="200" y="236">HOW FAR YOU'VE RUN</text></g>
+          <rect width="400" height="400" filter="url(#noise)" opacity=".18" style="mix-blend-mode:overlay"/>
+        </svg>
+      </button>
+      <div class="meta"><span class="num">27</span><h3>Cobalt whisper</h3><button class="star" type="button" aria-pressed="false" aria-label="Star Cobalt whisper">☆</button></div>
+      <p>Tiny red type floating on a huge field of cobalt. Confident by being quiet, and very good on merch.</p>
+      <p class="from">From pinterest 04</p>
+    </article>
+
+    <!-- 28 -->
+    <article class="idea" data-id="28">
+      <button class="tile" type="button" aria-label="Enlarge All it takes">
+        <svg viewBox="0 0 400 400" role="img" aria-label="Huge slightly blurry black Helvetica-style text reading Run hack is all it takes">
+          <rect width="400" height="400" fill="#ffffff"/>
+          <g filter="url(#jpeg)" class="ar" fill="#141414">
+            <text x="30" y="112" font-size="102" textLength="340" lengthAdjust="spacingAndGlyphs">Run hack</text>
+            <text x="30" y="214" font-size="102" textLength="340" lengthAdjust="spacing">is  all  it</text>
+            <text x="30" y="316" font-size="102">takes.</text>
+          </g>
+          <text x="370" y="366" text-anchor="end" class="arb" font-size="11" letter-spacing="1.5" fill="#141414">RUNNING HACKATHON — SF</text>
+        </svg>
+      </button>
+      <div class="meta"><span class="num">28</span><h3>All it takes</h3><button class="star" type="button" aria-pressed="false" aria-label="Star All it takes">☆</button></div>
+      <p>A deadpan slogan wordmark in huge, slightly crunchy Helvetica, like a screenshot of a screenshot. Pure internet.</p>
+      <p class="from">From pinterest 05</p>
+    </article>
+
+    <!-- 29 -->
+    <article class="idea" data-id="29">
+      <button class="tile" type="button" aria-label="Enlarge Chill bro">
+        <svg viewBox="0 0 400 400" role="img" aria-label="Bold lowercase white run hack, with a small subline, over a dark laundromat blur">
+          <rect width="400" height="400" fill="#191a1c"/>
+          <g filter="url(#soft)">
+            <rect x="20" y="-20" width="360" height="40" fill="#dfe7e0" opacity=".55"/>
+            <circle cx="70" cy="280" r="60" fill="#3a3f45"/><circle cx="330" cy="290" r="70" fill="#444a50"/>
+            <rect x="0" y="330" width="400" height="90" fill="#c9b79a" opacity=".55"/>
+          </g>
+          <text x="200" y="204" text-anchor="middle" class="a8n" font-size="64" fill="#fff" letter-spacing="-2.5">run hack,</text>
+          <text x="200" y="228" text-anchor="middle" class="a6" font-size="12" fill="#fff">not every idea needs a meeting.</text>
+          <rect width="400" height="400" filter="url(#noise)" opacity=".18" style="mix-blend-mode:overlay"/>
+        </svg>
+      </button>
+      <div class="meta"><span class="num">29</span><h3>Chill bro</h3><button class="star" type="button" aria-pressed="false" aria-label="Star Chill bro">☆</button></div>
+      <p>Tight, bold lowercase with a deadpan subline. It reads like a meme caption, so it's made to sit on any funny photo.</p>
+      <p class="from">From pinterest 11 · 12 · 13</p>
+    </article>
+
+    <!-- 30 -->
+    <article class="idea" data-id="30">
+      <button class="tile" type="button" aria-label="Enlarge Shades">
+        <svg viewBox="0 0 400 400" role="img" aria-label="Black wraparound sunglasses with R and H reflected in the lenses, over run hack">
+          <rect width="400" height="400" fill="#f2e74a"/>
+          <path d="M64,150 C120,134 280,134 336,150" stroke="#111" stroke-width="10" fill="none" stroke-linecap="round"/>
+          <path d="M70,152 C70,226 178,232 186,170 L190,152 Z" fill="#111"/>
+          <path d="M330,152 C330,226 222,232 214,170 L210,152 Z" fill="#111"/>
+          <path d="M186,160 Q200,150 214,160" stroke="#111" stroke-width="8" fill="none"/>
+          <text x="128" y="200" text-anchor="middle" class="an" font-size="36" fill="#f2e74a">R</text>
+          <text x="272" y="200" text-anchor="middle" class="an" font-size="36" fill="#f2e74a">H</text>
+          <text x="200" y="300" text-anchor="middle" class="a8n" font-size="52" fill="#111" letter-spacing="-2">run hack</text>
+          <text x="200" y="326" text-anchor="middle" class="mono" font-size="11" letter-spacing="3" fill="#111">STAY CHILL · SHIP FAST</text>
+          <rect width="400" height="400" filter="url(#noise)" opacity=".12" style="mix-blend-mode:multiply"/>
+        </svg>
+      </button>
+      <div class="meta"><span class="num">30</span><h3>Shades</h3><button class="star" type="button" aria-pressed="false" aria-label="Star Shades">☆</button></div>
+      <p>The sunglasses every animal on the board is wearing, made into the mark, with R and H in the lenses. It works as a sticker or an emoji.</p>
+      <p class="from">From pinterest 12 · 17 · 25 · 33</p>
+    </article>
+
+    <!-- 31 -->
+    <article class="idea" data-id="31">
+      <button class="tile" type="button" aria-label="Enlarge Fuel can">
+        <svg viewBox="0 0 400 400" role="img" aria-label="Matte black drink can with mint vertical RUN HACK type">
+          <rect width="400" height="400" fill="#d9d6cc"/>
+          <ellipse cx="200" cy="356" rx="96" ry="14" fill="#000" opacity=".18" filter="url(#soft)"/>
+          <path d="M132,70 Q132,52 150,48 L250,48 Q268,52 268,70 L268,330 Q268,350 250,352 L150,352 Q132,350 132,330 Z" fill="#141414"/>
+          <ellipse cx="200" cy="50" rx="66" ry="9" fill="#9b9b9b"/>
+          <rect x="150" y="46" width="12" height="306" fill="#fff" opacity=".1"/>
+          <text transform="translate(226 326) rotate(-90)" class="an" font-size="72" fill="#bdf3d6" textLength="262" lengthAdjust="spacingAndGlyphs">RUN HACK</text>
+          <text transform="translate(252 326) rotate(-90)" class="mono" font-size="10" fill="#bdf3d6" letter-spacing="2">FUEL FOR BUILDERS · 250ML</text>
+          <rect width="400" height="400" filter="url(#noise)" opacity=".12" style="mix-blend-mode:multiply"/>
+        </svg>
+      </button>
+      <div class="meta"><span class="num">31</span><h3>Fuel can</h3><button class="star" type="button" aria-pressed="false" aria-label="Star Fuel can">☆</button></div>
+      <p>The name set on a matte-black can, a nod to all the energy drinks at the desks on the board. It doubles as a merch prop.</p>
+      <p class="from">From pinterest 32 · 33</p>
+    </article>
+
+    <!-- 32 -->
+    <article class="idea" data-id="32">
+      <button class="tile" type="button" aria-label="Enlarge Whiteboard">
+        <svg viewBox="0 0 400 400" role="img" aria-label="Whiteboard with a hand-drawn Sharpie graph and RUN HACK written above">
+          <rect width="400" height="400" fill="#9aa0a6"/>
+          <rect x="24" y="24" width="352" height="352" fill="#f6f5ef" stroke="#c9ccd0" stroke-width="6"/>
+          <text x="52" y="90" class="pm" font-size="46" fill="#1b1b1b">RUN HACK</text>
+          <g stroke="#1b1b1b" stroke-width="4" fill="none" stroke-linecap="round"><path d="M70,120 V320 H330"/><path d="M62,130 L70,120 L78,130"/><path d="M320,312 L330,320 L320,328"/></g>
+          <path d="M76,312 C130,300 160,260 200,240 C240,220 260,170 318,136" stroke="#2f8a3c" stroke-width="5" fill="none" stroke-linecap="round"/>
+          <circle cx="250" cy="196" r="7" fill="none" stroke="#d0263a" stroke-width="3"/>
+          <text x="262" y="226" class="pm" font-size="15" fill="#d0263a">u r here</text>
+          <text x="300" y="350" class="pm" font-size="15" fill="#1b1b1b">km</text>
+          <text x="40" y="150" class="pm" font-size="15" fill="#1b1b1b" transform="rotate(-90 40 150)">ideas</text>
+        </svg>
+      </button>
+      <div class="meta"><span class="num">32</span><h3>Whiteboard</h3><button class="star" type="button" aria-pressed="false" aria-label="Star Whiteboard">☆</button></div>
+      <p>Sharpie on a whiteboard: the more kilometres, the more ideas. Scrappy, honest and very startup.</p>
+      <p class="from">From pinterest 29 · 38</p>
+    </article>
+
+    <!-- 33 -->
+    <article class="idea" data-id="33">
+      <button class="tile" type="button" aria-label="Enlarge World's most">
+        <svg viewBox="0 0 400 400" role="img" aria-label="Stacked bold text reading World's Most Running Hackathon, set like a novelty mug">
+          <rect width="400" height="400" fill="#e9e7e3"/>
+          <ellipse cx="200" cy="200" rx="160" ry="170" fill="#ffffff"/>
+          <g class="a7c" fill="#141414" text-anchor="middle">
+            <text x="200" y="138" font-size="44" textLength="180" lengthAdjust="spacingAndGlyphs">WORLD'S</text>
+            <text x="200" y="182" font-size="44" textLength="128" lengthAdjust="spacingAndGlyphs">MOST</text>
+            <text x="200" y="226" font-size="44" textLength="210" lengthAdjust="spacingAndGlyphs">RUNNING</text>
+            <text x="200" y="270" font-size="44" textLength="244" lengthAdjust="spacingAndGlyphs">HACKATHON</text>
+          </g>
+          <text x="200" y="300" text-anchor="middle" class="mono" font-size="10" letter-spacing="3" fill="#141414">SAN FRANCISCO · 2026</text>
+          <rect width="400" height="400" filter="url(#noise)" opacity=".08" style="mix-blend-mode:multiply"/>
+        </svg>
+      </button>
+      <div class="meta"><span class="num">33</span><h3>World's most</h3><button class="star" type="button" aria-pressed="false" aria-label="Star World's most">☆</button></div>
+      <p>The novelty-mug joke as a lockup: WORLD'S MOST RUNNING HACKATHON. Self-aware, and the merch writes itself.</p>
+      <p class="from">From pinterest 14</p>
+    </article>
+
+    <!-- 34 -->
+    <article class="idea" data-id="34">
+      <button class="tile" type="button" aria-label="Enlarge Pace makes products">
+        <svg viewBox="0 0 400 400" role="img" aria-label="Faded rubber-stamped text reading Pace makes products and RUN HACK">
+          <rect width="400" height="400" fill="#cbc3ba"/>
+          <rect width="400" height="400" fill="url(#fuzz)"/>
+          <circle cx="200" cy="230" r="260" fill="#b9afa5" opacity=".35" filter="url(#soft)"/>
+          <g filter="url(#faded)" fill="#2c3340" transform="rotate(-5 200 200)" text-anchor="middle">
+            <text x="200" y="160" class="monob" font-size="34" letter-spacing="2">PACE</text>
+            <text x="200" y="200" class="monob" font-size="34" letter-spacing="2">MAKES</text>
+            <text x="200" y="240" class="monob" font-size="34" letter-spacing="2">PRODUCTS</text>
+            <text x="200" y="300" class="a9" font-size="26" letter-spacing="1">RUN HACK</text>
+          </g>
+        </svg>
+      </button>
+      <div class="meta"><span class="num">34</span><h3>Pace makes products</h3><button class="star" type="button" aria-pressed="false" aria-label="Star Pace makes products">☆</button></div>
+      <p>A faded rubber stamp, as if it was inked onto skin or cardboard. A slogan-first mark with real grit.</p>
+      <p class="from">From pinterest 19</p>
+    </article>
+
+    <!-- 35 -->
+    <article class="idea" data-id="35">
+      <button class="tile" type="button" aria-label="Enlarge Run Hack 2.0">
+        <svg viewBox="0 0 400 400" role="img" aria-label="Early-2000s web window titled Run Hack 2.0 with a blue Georgia logo and a grey Start button">
+          <rect width="400" height="400" fill="#3a6ea5"/>
+          <g filter="url(#lift)">
+            <rect x="36" y="78" width="328" height="248" fill="#ece9d8"/>
+            <rect x="36" y="78" width="328" height="26" fill="#0a246a"/>
+            <rect x="36" y="78" width="328" height="26" fill="#a6caf0" opacity=".35"/>
+            <text x="48" y="96" class="vdb" font-size="12" fill="#fff">Run Hack 2.0</text>
+            <rect x="336" y="83" width="20" height="16" fill="#ece9d8" stroke="#404040"/><text x="346" y="96" text-anchor="middle" class="vdb" font-size="11" fill="#111">×</text>
+            <rect x="48" y="116" width="304" height="196" fill="#ffffff" stroke="#7f9db9"/>
+          </g>
+          <text x="200" y="196" text-anchor="middle" class="geo" font-size="48" fill="#003399">run hack</text>
+          <path d="M100,206 H300" stroke="#003399" stroke-width="2"/>
+          <text x="200" y="228" text-anchor="middle" class="vd" font-size="12" fill="#333">the running hackathon · est. 2026</text>
+          <rect x="146" y="248" width="108" height="30" fill="#ece9d8" stroke="#003c74"/>
+          <path d="M147,277 H253 V249" stroke="#7a7a7a" fill="none"/><path d="M147,277 V249 H253" stroke="#fff" fill="none"/>
+          <text x="200" y="268" text-anchor="middle" class="vd" font-size="12" fill="#111">Start ▸ 5K</text>
+        </svg>
+      </button>
+      <div class="meta"><span class="num">35</span><h3>Run Hack 2.0</h3><button class="star" type="button" aria-pressed="false" aria-label="Star Run Hack 2.0">☆</button></div>
+      <p>Pure early-2000s founder nostalgia: a Georgia logo, an underline and a bevelled Start button in a grey window.</p>
+      <p class="from">From pinterest 18 · 25</p>
+    </article>
+
+    <!-- 36 -->
+    <article class="idea" data-id="36">
+      <button class="tile" type="button" aria-label="Enlarge La piste">
+        <svg viewBox="0 0 400 400" role="img" aria-label="Wonky yellow run hack on orange red with a wavy black band, like a 1960s film poster">
+          <rect width="400" height="400" fill="#e2471c"/>
+          <text x="200" y="150" text-anchor="middle" class="sh" font-size="78" fill="#f7d23a" transform="rotate(-4 200 150)">run hack</text>
+          <g class="isi" font-size="18" fill="#111" text-anchor="middle">
+            <ellipse cx="140" cy="196" rx="58" ry="15" fill="none" stroke="#111" stroke-width="1.2"/><text x="140" y="202">Running</text>
+            <ellipse cx="262" cy="196" rx="64" ry="15" fill="none" stroke="#111" stroke-width="1.2"/><text x="262" y="202">Hackathon</text>
+          </g>
+          <g filter="url(#wobble)" fill="#111"><rect x="-10" y="236" width="70" height="26" rx="6"/><rect x="72" y="232" width="48" height="30" rx="8"/><rect x="132" y="240" width="64" height="22" rx="6"/><rect x="208" y="234" width="40" height="28" rx="8"/><rect x="260" y="238" width="62" height="24" rx="6"/><rect x="334" y="232" width="80" height="30" rx="8"/></g>
+          <text x="40" y="306" class="isi" font-size="15" fill="#111">a film about running, building,</text>
+          <text x="40" y="326" class="isi" font-size="15" fill="#111">and showing up at the demo out of breath.</text>
+          <rect width="400" height="400" filter="url(#noise)" opacity=".22" style="mix-blend-mode:multiply"/>
+        </svg>
+      </button>
+      <div class="meta"><span class="num">36</span><h3>La piste</h3><button class="star" type="button" aria-pressed="false" aria-label="Star La piste">☆</button></div>
+      <p>A 1960s French film poster: wonky yellow script, credits in ovals and a ragged black band. Romantic and a bit silly.</p>
+      <p class="from">From pinterest 31</p>
+    </article>
+
+    <!-- 37 -->
+    <article class="idea" data-id="37">
+      <button class="tile" type="button" aria-label="Enlarge Good things">
+        <svg viewBox="0 0 400 400" role="img" aria-label="Centred white serif reading Good things happen when you run over a snowy mountain">
+          <defs><linearGradient id="g37" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#466590"/><stop offset=".6" stop-color="#6f8db6"/><stop offset="1" stop-color="#94aecd"/></linearGradient></defs>
+          <rect width="400" height="400" fill="url(#g37)"/>
+          <path d="M0,118 L40,100 L70,108 L110,82 L150,104 L190,76 L230,98 L270,70 L310,96 L350,84 L400,104 V136 C260,128 120,134 0,132Z" fill="#e9dfe0" opacity=".85"/>
+          <path d="M0,392 C140,372 280,346 400,318 V400 H0Z" fill="#f4eee8"/>
+          <text x="200" y="46" text-anchor="middle" class="bob" font-size="13" fill="#fff">Run.Hack</text>
+          <g class="bo" font-size="40" fill="#fff" text-anchor="middle">
+            <text x="200" y="168">Good</text><text x="200" y="208">things</text><text x="200" y="248">happen</text><text x="200" y="288">when</text><text x="200" y="328">you run.</text>
+          </g>
+          <circle cx="330" cy="362" r="2.5" fill="#333"/><path d="M330,362 L360,356" stroke="#333" stroke-width="1"/>
+          <rect width="400" height="400" filter="url(#noise)" opacity=".14" style="mix-blend-mode:overlay"/>
+        </svg>
+      </button>
+      <div class="meta"><span class="num">37</span><h3>Good things</h3><button class="star" type="button" aria-pressed="false" aria-label="Star Good things">☆</button></div>
+      <p>A calm, editorial take: a stacked serif slogan on a snowy slope, signed with a small "Run.Hack". It feels like an old outdoor ad.</p>
+      <p class="from">From pinterest 02</p>
+    </article>
+
+    <!-- 38 -->
+    <article class="idea" data-id="38">
+      <button class="tile" type="button" aria-label="Enlarge Caption bar">
+        <svg viewBox="0 0 400 400" role="img" aria-label="Black caption bar with yellow RUN HACK over a warm motion-blurred background">
+          <rect width="400" height="400" fill="#4a3424"/>
+          <g filter="url(#blurx2)">
+            <rect x="-40" y="0" width="480" height="70" fill="#8a6a44"/><rect x="-40" y="70" width="480" height="50" fill="#d9b880"/><rect x="60" y="120" width="300" height="90" fill="#b07040"/><rect x="-40" y="210" width="480" height="40" fill="#2a1d14"/><rect x="-40" y="250" width="300" height="80" fill="#c28a52"/><rect x="-40" y="330" width="480" height="70" fill="#6b4a2a"/>
+          </g>
+          <use href="#runner" x="248" y="78" width="125" height="170" color="#3a2416" opacity=".55" transform="translate(-80 -20)" filter="url(#blurx2)"/>
+          <rect x="40" y="184" width="320" height="56" fill="#111"/>
+          <text x="200" y="226" text-anchor="middle" class="a9" font-size="38" fill="#f7d23a" textLength="290" lengthAdjust="spacingAndGlyphs">RUN HACK</text>
+          <rect x="40" y="246" width="320" height="22" fill="#111"/>
+          <text x="200" y="262" text-anchor="middle" class="a7c" font-size="13" fill="#f7d23a" letter-spacing=".5">"Build anything. Run everywhere."</text>
+          <rect width="400" height="400" filter="url(#noise)" opacity=".24" style="mix-blend-mode:overlay"/>
+        </svg>
+      </button>
+      <div class="meta"><span class="num">38</span><h3>Caption bar</h3><button class="star" type="button" aria-pressed="false" aria-label="Star Caption bar">☆</button></div>
+      <p>A 70s magazine caption: a black bar with yellow type over a motion-blurred runner. Easy to drop onto every event photo.</p>
+      <p class="from">From pinterest 37 · 21</p>
+    </article>
+
+    <!-- 39 -->
+    <article class="idea" data-id="39">
+      <button class="tile" type="button" aria-label="Enlarge Beats sleep">
+        <svg viewBox="0 0 400 400" role="img" aria-label="Elegant white serif RUN HACK in caps with beats sleep in small italic, on a dark blur">
+          <rect width="400" height="400" fill="#0f0d0c"/>
+          <g filter="url(#soft)"><circle cx="320" cy="120" r="80" fill="#3a2a22"/><circle cx="90" cy="320" r="70" fill="#22201e"/></g>
+          <text x="200" y="208" text-anchor="middle" class="bo" font-size="58" fill="#fff" letter-spacing="1" textLength="300" lengthAdjust="spacingAndGlyphs">RUN HACK</text>
+          <text x="200" y="244" text-anchor="middle" class="bo" font-size="24" font-style="italic" fill="#fff">beats sleep.</text>
+          <rect width="400" height="400" filter="url(#noise)" opacity=".14" style="mix-blend-mode:screen"/>
+        </svg>
+      </button>
+      <div class="meta"><span class="num">39</span><h3>Beats sleep</h3><button class="star" type="button" aria-pressed="false" aria-label="Star Beats sleep">☆</button></div>
+      <p>A high-contrast fashion serif with a smug little tagline, like an intense film poster. Premium, with a wink.</p>
+      <p class="from">From pinterest 39</p>
+    </article>
+
+    <!-- 40 -->
+    <article class="idea" data-id="40">
+      <button class="tile" type="button" aria-label="Enlarge Literally me">
+        <svg viewBox="0 0 400 400" role="img" aria-label="Meme-caption RUN HACK in outlined white impact type with literally me underneath, over a hazy photo">
+          <defs><linearGradient id="g40" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7f9a6a"/><stop offset=".5" stop-color="#b9b8a4"/><stop offset="1" stop-color="#7d7c74"/></linearGradient></defs>
+          <rect width="400" height="400" fill="url(#g40)"/>
+          <g filter="url(#soft)"><circle cx="90" cy="80" r="80" fill="#4d6b3a"/><circle cx="330" cy="100" r="70" fill="#5a7a46"/><ellipse cx="200" cy="300" rx="80" ry="40" fill="#b8302a" opacity=".6"/></g>
+          <g class="an" text-anchor="middle" stroke="#111" stroke-width="10" stroke-linejoin="round" paint-order="stroke" fill="#fff">
+            <text x="200" y="208" font-size="92">RUN HACK</text>
+          </g>
+          <text x="200" y="262" text-anchor="middle" class="pm" font-size="34" fill="#fff" stroke="#111" stroke-width="5" paint-order="stroke">literally me</text>
+          <rect width="400" height="400" filter="url(#noise)" opacity=".2" style="mix-blend-mode:overlay"/>
+        </svg>
+      </button>
+      <div class="meta"><span class="num">40</span><h3>Literally me</h3><button class="star" type="button" aria-pressed="false" aria-label="Star Literally me">☆</button></div>
+      <p>Classic outlined meme type with a handwritten "literally me". Made to be screenshotted, remixed and shared.</p>
+      <p class="from">From pinterest 10 · 08</p>
+    </article>
+
+  </main>
+
+  <footer>Round 25 · 20 new Run Hack logo ideas, drawn in code (SVG) from the 48-image ideas doc. Ideas are numbered 21–40 so they carry on from round 24.</footer>
+</div>
+
+<dialog id="viewer" aria-label="Logo preview">
+  <div class="big" id="viewer-art"></div>
+  <div class="cap"><span id="viewer-title"></span><button class="close" type="button" id="viewer-close">Close</button></div>
+</dialog>
+
+<script>
+(() => {
+  if (location.hash === '#cover') document.body.classList.add('cover');
+  if (location.hash === '#cover2') document.body.classList.add('cover', 'cover2');
+  const strip = document.getElementById('inspo');
+  const nums = [...Array(39)].map((_, i) => String(i + 1).padStart(2, '0')).concat('48');
+  strip.innerHTML = nums.map(n => `<a href="inspo/pinterest-${n}.jpg"><img src="inspo/pinterest-${n}.jpg" alt="Ideas doc reference ${n}" loading="lazy"><span>${n}</span></a>`).join('');
+  const KEY = 'runhack-logo-ideas-stars';
+  let stars = new Set();
+  try { stars = new Set(JSON.parse(localStorage.getItem(KEY) || '[]')); } catch (e) {}
+  const save = () => { try { localStorage.setItem(KEY, JSON.stringify([...stars])); } catch (e) {} };
+  const ideas = [...document.querySelectorAll('.idea')];
+  const count = document.getElementById('count');
+  let filter = 'all';
+  const paint = () => {
+    let shown = 0;
+    ideas.forEach(el => {
+      const on = stars.has(el.dataset.id);
+      const b = el.querySelector('.star');
+      b.setAttribute('aria-pressed', String(on));
+      b.textContent = on ? '★' : '☆';
+      const visible = filter === 'all' || on;
+      el.hidden = !visible;
+      if (visible) shown++;
+    });
+    count.textContent = filter === 'all' ? '20 ideas' : `${shown} starred`;
+    document.querySelectorAll('[data-filter]').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.filter === filter)));
+    const mine = ideas.filter(el => stars.has(el.dataset.id)).length;
+    document.querySelector('[data-filter="starred"]').textContent = mine ? `Starred (${mine})` : 'Starred';
+  };
+  document.querySelectorAll('[data-filter]').forEach(b => b.addEventListener('click', () => { filter = b.dataset.filter; paint(); }));
+  ideas.forEach(el => el.querySelector('.star').addEventListener('click', () => {
+    const id = el.dataset.id; stars.has(id) ? stars.delete(id) : stars.add(id); save(); paint();
+  }));
+  const dlg = document.getElementById('viewer');
+  const art = document.getElementById('viewer-art');
+  const title = document.getElementById('viewer-title');
+  ideas.forEach(el => el.querySelector('.tile').addEventListener('click', () => {
+    art.replaceChildren(el.querySelector('svg').cloneNode(true));
+    title.textContent = `${el.querySelector('.num').textContent} · ${el.querySelector('h3').textContent}`;
+    if (dlg.showModal) dlg.showModal();
+  }));
+  document.getElementById('viewer-close').addEventListener('click', () => dlg.close());
+  dlg.addEventListener('click', e => { if (e.target === dlg) dlg.close(); });
+  paint();
+})();
+</script>
+</body>
+</html>

@@ -108,6 +108,44 @@
   ],
   "items": [
     {
+      "id": "2026-11-22-run-hack-logo-ideas-ii",
+      "kind": "images",
+      "title": "Run Hack logos II · Twenty more ideas",
+      "description": "Twenty new logo ideas from the 48-image ideas doc: stamps, barcodes, meme captions, Y2K and a bright blue track.",
+      "href": "../25%20Run%20Hack%20Logo%20Ideas%20II/",
+      "image": "../25%20Run%20Hack%20Logo%20Ideas%20II/cover.jpg",
+      "presentation": "cover",
+      "tags": [
+        "logo",
+        "brand",
+        "run hack",
+        "stamp",
+        "meme"
+      ],
+      "action": "Review all twenty",
+      "secondary": {
+        "label": "Round 24 logos",
+        "href": "../24%20Run%20Hack%20Logo%20Ideas/"
+      }
+    },
+    {
+      "id": "2026-11-22-run-hack-logo-ideas",
+      "kind": "images",
+      "title": "Run Hack logos · Twenty ideas",
+      "description": "Twenty underground logo, emblem and wordmark ideas for a new Run Hack brand, styled from the ideas doc.",
+      "href": "../24%20Run%20Hack%20Logo%20Ideas/",
+      "image": "../24%20Run%20Hack%20Logo%20Ideas/cover.jpg",
+      "presentation": "cover",
+      "tags": [
+        "logo",
+        "brand",
+        "run hack",
+        "emblem",
+        "wordmark"
+      ],
+      "action": "Review all twenty"
+    },
+    {
       "id": "2026-10-18-sloth-logo-studies",
       "kind": "images",
       "round": "2026-10-18-sloth-logo-studies",
