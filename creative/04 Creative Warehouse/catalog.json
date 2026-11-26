@@ -108,6 +108,31 @@
   ],
   "items": [
     {
+      "id": "2026-11-26-journey-website-ii",
+      "kind": "concepts",
+      "title": "Journey website II · It only runs while you do",
+      "description": "The deck as a film edit. The event film plays only while you scroll and freezes when you stop, the sauna line lands on a hard cut, photographs run along the track's own lanes from London to Barcelona, the ExchangeWire piece sits beside the megaphone, and San Francisco is the empty track.",
+      "href": "../28%20Journey%20Website%20II/",
+      "image": "../28%20Journey%20Website%20II/cover.jpg",
+      "presentation": "cover",
+      "tags": [
+        "website",
+        "journey",
+        "scroll",
+        "film",
+        "lanes",
+        "exchangewire",
+        "london",
+        "barcelona",
+        "san francisco"
+      ],
+      "action": "Scroll the edit",
+      "secondary": {
+        "label": "First version",
+        "href": "../27%20Journey%20Website/"
+      }
+    },
+    {
       "id": "2026-11-26-journey-website",
       "kind": "concepts",
       "title": "Journey website · London, Barcelona, San Francisco",
