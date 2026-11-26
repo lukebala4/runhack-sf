@@ -108,6 +108,25 @@
   ],
   "items": [
     {
+      "id": "2026-11-26-journey-website",
+      "kind": "concepts",
+      "title": "Journey website · London, Barcelona, San Francisco",
+      "description": "A storyboard site that follows the scroll: captioned photographs from London and Barcelona, the 1,177 km route drawn between them, then the line west to San Francisco. Type and tone follow the PostHog deck.",
+      "href": "../27%20Journey%20Website/",
+      "image": "../27%20Journey%20Website/cover.jpg",
+      "presentation": "cover",
+      "tags": [
+        "website",
+        "journey",
+        "scroll",
+        "storyboard",
+        "london",
+        "barcelona",
+        "san francisco"
+      ],
+      "action": "Scroll the journey"
+    },
+    {
       "id": "2026-11-22-run-hack-handwritten-logos",
       "kind": "images",
       "title": "Run Hack logos III · Twenty handwritten",
