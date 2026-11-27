@@ -59,12 +59,13 @@
   const clip = by.press && by.press.el.querySelector('.clip');
   const paper = by.press && by.press.el.querySelector('.paper');
   const mark = clip && clip.querySelector('mark');
-  let W = 0, H = 0, pressTravel = 0;
+  let W = 0, H = 0, pressTravel = 0, drawnS = -1;
   const unit = () => (reel.offsetHeight - stage.offsetHeight) / total || 1;   // px of scroll per unit
   function measure() {
     if (lane) lane.w = lane.strip.scrollWidth;
     // the article only moves if it does not fit its panel (a phone); then it travels until the link is on the panel
     if (clip) pressTravel = Math.max(0, clip.offsetTop + clip.offsetHeight - paper.clientHeight * 0.94);
+    drawnS = -1;   // sizes changed: draw the current moment again
   }
   function layout() {
     W = stage.clientWidth; H = stage.clientHeight;
@@ -90,7 +91,7 @@
   layout();
 
   /* ---------- state ---------- */
-  let active = null, lastScroll = -1e9, last = performance.now(), lastS = -1, drawnS = -1, settled = true, snap = false, held = null;
+  let active = null, lastScroll = -1e9, last = performance.now(), lastS = -1, settled = true, snap = false, held = null;
   // ?hold=lanes:0.5 pins the edit to one moment whatever the scroll position (used to photograph a state)
   const hold = query.get('hold');
   if (hold) { const [id, t] = hold.split(':'); if (by[id]) held = by[id].from + by[id].len * clamp(+t || 0, 0, 0.999); }
@@ -194,6 +195,7 @@
     if (shot.id === 'lanes' && !snap) laneCur = forward ? 0 : 1;
     if (shot.id === 'press' && !snap) pressCur = forward ? 0 : 1;   // the highlight, once drawn, stays drawn
     near(shots.indexOf(shot));
+    if (shot.id === 'press' || shot.id === 'lanes') measure();   // sizes are only final once the shot is laid out
   }
 
   function frame(now) {
