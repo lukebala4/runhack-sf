@@ -286,3 +286,10 @@ html:not(.js) .s-press .clip{position:relative;top:0;padding-top:var(--g1t)}
 .s-sf .links .btn:hover{background:#000}
 .s-sf .links>a[data-film]{padding:.52em 0 .56em;line-height:1}
 @media (prefers-reduced-motion:reduce){.topcta svg,.s-sf .links .btn svg{transition:none}}
+
+/* rule and posts: the second line belongs to its headline, so the two sit together, starting level with the top of the window */
+@media (orientation:landscape){
+  .s-rule .words,.s-posts .words{top:calc(var(--g1t) - .35vw);bottom:auto}
+  .s-rule .head,.s-posts .head{position:static;height:auto;display:block}
+  .s-rule .sub,.s-posts .sub{position:static;margin-top:1.15em}
+}
