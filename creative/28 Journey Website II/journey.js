@@ -71,7 +71,7 @@
   const coarse = matchMedia('(pointer: coarse)').matches;
 
   /* ---------- cue sheet, read from the markup ---------- */
-  const WIPE = new Set(['rule', 'london', 'rained', 'posts', 'distance', 'bfilm']);   // drawn across the shot before; the rest are cuts
+  const WIPE = new Set(['rule', 'london', 'rained', 'posts', 'distance', 'bfilm', 'sf']);   // drawn across the shot before; the rest are cuts
   const WIPE_LEN = 28;                                                          // scroll units a wipe takes
   let total = 0;
   const shots = [...stage.querySelectorAll('.scene')].map((el, i) => {
@@ -261,7 +261,7 @@
     const land = !portraitMq.matches;
     if (shot.id === 'film' && land) return t < 0.2 ? 'dark' : 'light';
     if (shot.id === 'distance') return t < 0.45 ? 'light' : 'dark';
-    if (shot.id === 'bfilm') return !land && t < 0.9 ? 'light' : 'dark';
+    if (shot.id === 'bfilm') return 'light';
     if (shot.id === 'barcelona') return land && t > 0.15 ? 'light' : 'dark';
     return shot.el.dataset.tone || 'dark';
   }

@@ -483,3 +483,11 @@ html:not(.js) .s-press .clip{position:relative;top:0;padding-top:var(--g1t)}
   .s-posts .t2{margin-top:7vw}
   .s-posts .t3{margin-top:6vw}
 }
+/* the Barcelona film was shot on the seafront, not a track: it stands on a dark field, and the empty track is
+   drawn across afterwards for San Francisco */
+.js .scene.s-bfilm{background:var(--ink)}
+.js .s-bfilm .ground:not(.photo){display:none}
+@media (orientation:landscape){
+  .s-bfilm .term{background:none;border-color:rgba(255,255,255,.8)}
+  .s-bfilm .term-bar{border-bottom-color:rgba(255,255,255,.8)}
+}
