@@ -134,7 +134,7 @@
     // the build log is written by distance run: it only gets longer while the reader keeps moving
     const shown = Math.floor(seg(t, 0.03, 0.82) * termLines.length + 0.001);
     termLines.forEach((l, i) => l.classList.toggle('on', i < shown || (i === termLines.length - 1 && shown >= termLines.length - 1)));
-    // once "Nobody is running." is up it stays for half a second, so it never strobes between flicks
+    // once "build paused." is up it stays for half a second, so it never strobes between flicks
     const lockedOn = frozenAt && now - frozenAt < 500;
     if (moving && !lockedOn) {
       stillSince = 0; frozenAt = 0;
