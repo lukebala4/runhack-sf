@@ -129,7 +129,7 @@
     const set = (k, v) => stage.style.setProperty(k, v);
     set('--g0h', gaps[0][1] + 'px');
     set('--g1t', gaps[1][0] + 'px'); set('--g1h', (gaps[1][1] - gaps[1][0]) + 'px');
-    set('--g2t', g2t + 'px'); set('--g2h', g2h + 'px');
+    set('--g3t', gaps[3][0] + 'px'); set('--g2t', g2t + 'px'); set('--g2h', g2h + 'px');
     set('--ls', ls.toFixed(5)); set('--cellw', (W * ls) + 'px'); set('--lead', (W - W * ls) + 'px');
     set('--bs', bs.toFixed(5)); set('--bcellw', (W * bs) + 'px'); set('--blead', (W - W * bs) + 'px'); set('--py', py + 'px');
     if (lane) {
