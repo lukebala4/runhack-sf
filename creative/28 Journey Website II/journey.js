@@ -1,3 +1,12 @@
+/* On a phone the sponsor buttons hand over to the phone's own mail app; on a computer they open a Gmail draft. */
+(() => {
+  if (!matchMedia('(pointer: coarse)').matches) return;
+  for (const a of document.querySelectorAll('a[href*="mail.google.com/mail/?view=cm"]')) {
+    a.href = 'mailto:runninghackathon@gmail.com?subject=' + encodeURIComponent('Sponsorship enquiry | Running Hackathon San Francisco');
+    a.removeAttribute('target');
+  }
+})();
+
 /* The address under the sponsor button can be copied with one press. */
 (() => {
   for (const b of document.querySelectorAll('[data-copy]')) b.addEventListener('click', () => {
@@ -62,8 +71,8 @@
   const coarse = matchMedia('(pointer: coarse)').matches;
 
   /* ---------- cue sheet, read from the markup ---------- */
-  const WIPE = new Set(['rule', 'london', 'rained', 'posts', 'distance']);   // drawn across the shot before; the rest are cuts
-  const WIPE_LEN = 14;                                                          // scroll units a wipe takes
+  const WIPE = new Set(['rule', 'london', 'rained', 'posts', 'distance', 'bfilm']);   // drawn across the shot before; the rest are cuts
+  const WIPE_LEN = 28;                                                          // scroll units a wipe takes
   let total = 0;
   const shots = [...stage.querySelectorAll('.scene')].map((el, i) => {
     const id = el.dataset.scene, len = +el.dataset.len || 80;

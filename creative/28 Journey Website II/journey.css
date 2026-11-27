@@ -412,3 +412,54 @@ html:not(.js) .s-press .clip{position:relative;top:0;padding-top:var(--g1t)}
   .s-london h2{font-size:8.4vw}
   .s-london .photo{height:58svh}
 }
+@media (orientation:portrait){.s-london .photo{height:64svh}}
+
+/* ---------- after the audit of every request ---------- */
+/* London: the attribution ends before the sponsor button; on a phone the photograph starts right under the words */
+@media (orientation:landscape){.g .pair .side{left:51vw;width:23vw}}
+@media (orientation:portrait){.s-london .photo{top:calc(max(12px,3.2vw) + 61vw);height:auto;bottom:0;--fy:70%}}
+
+/* posts: the million, then two smaller figures, each a step down, filling the column beside the megaphone */
+.s-posts .sub span{display:block}
+@media (orientation:landscape){
+  .s-posts .sub{white-space:normal;max-width:44vw;margin-top:.5em}
+  .s-posts .t2{font-size:3.9vw;line-height:1.06;letter-spacing:-.022em}
+  .s-posts .t3{font-size:3vw;line-height:1.1;margin-top:.55em;font-weight:700}
+}
+@media (orientation:portrait){
+  .s-posts h2{font-size:13vw}
+  .s-posts .words p.sub{font-size:1em;margin-top:.5em}
+  .s-posts .t2{font-size:7.6vw;line-height:1.08}
+  .s-posts .t3{font-size:6vw;line-height:1.12;margin-top:.5em;font-weight:700}
+}
+
+/* phone: photographs come up to meet the words instead of leaving a blank band */
+@media (orientation:portrait){
+  .s-rule .photo{height:66svh}
+  .s-sauna .photo{height:74svh}
+  .s-rained .photo{height:74svh}
+  /* the build logs sit low, over legs and track rather than faces */
+  .term{top:auto;bottom:calc(7vw + env(safe-area-inset-bottom,0px))}
+  .js .s-barcelona .gitlog{display:block;opacity:clamp(0,calc((var(--t,1) - .55)*9999),.95)}
+  .js .s-barcelona h2{font-size:7.6vw}
+  .pack .hog{height:140%;margin-bottom:-5%}
+  .js .s-sf{--lt:max(calc(var(--g2h)*.38),calc(var(--g2h)*.04 + 26vw))}
+  .js .s-sf .filmcard{left:0;right:0;width:auto;height:calc(var(--g2h)*.32)}
+  .filmcard .play{white-space:nowrap}
+}
+
+/* "It rained," over one wide band of the wet track, so the dark field is not left half empty */
+@media (orientation:landscape){
+  .s-rained .photo{left:5vw;right:0;top:calc(var(--g1t) + 2.4vw);border-radius:var(--r) 0 0 0}
+  .js .s-rained .photo img{object-position:50% calc(40% + var(--t,1)*30%)}
+  .js .s-rained .photo{transform:translateX(calc((1 - var(--t,1))*6vw))}
+}
+
+/* the film card: a play disc in the middle, its name on one line in the corner */
+.filmcard .disc{position:absolute;left:50%;top:50%;width:clamp(44px,4.6vw,76px);aspect-ratio:1;transform:translate(-50%,-50%);border-radius:50%;background:#fff;color:var(--ink);display:grid;place-items:center;transition:transform .2s cubic-bezier(.3,0,.1,1)}
+.filmcard .disc svg{width:42%;height:42%;margin-left:6%}
+.filmcard:hover .disc,.filmcard:focus-visible .disc{transform:translate(-50%,-50%) scale(1.08)}
+.filmcard .play{padding:.5em .8em .54em;font-size:clamp(12px,1.05vw,17px)}
+@media (prefers-reduced-motion:reduce){.filmcard .disc{transition:none}}
+@media (orientation:landscape){.g .pair .side{left:58vw;width:17vw}}
+@media (orientation:portrait){.js .s-sf .filmcard{aspect-ratio:auto}}
