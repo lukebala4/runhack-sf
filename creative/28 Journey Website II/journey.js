@@ -46,7 +46,7 @@
     if (s.el.hasAttribute('data-motion') && s.id !== 'lanes') continue;
     for (const n of s.el.querySelectorAll('.words h2, .words p:not(.links), .line, .clip-h, .clip blockquote p')) {
       const p = document.createElement('p');
-      p.textContent = (n.matches('.clip-h') ? 'ExchangeWire press release, 28 August 2026: ' : '') + n.textContent.replace(/\s+/g, ' ').trim();
+      p.textContent = (n.matches('.clip-h') ? 'ExchangeWire press release, 28 August 2026: ' : '') + (c => { for (const x of c.querySelectorAll('.static-only')) x.remove(); return c; })(n.cloneNode(true)).textContent.replace(/\s+/g, ' ').trim();
       transcript.append(p);
     }
   }
@@ -101,11 +101,12 @@
   // (checked against frames at quarter-second steps, 26 Nov 2026; kept clear of the cards at 54.5 s and 55.7 s).
   const RUNS = [[48.0, 54.2], [56.8, 60.7]];
   const video = by.film && by.film.el.querySelector('video');
-  let run = 0, stillSince = 0, frozenAt = 0, playPending = false, filmLoaded = false;
+  let run = 0, stillSince = 0, frozenAt = 0, playPending = false, filmLoaded = false, ran = false, filmOff = false;
   function filmLoad() {
     if (!video || filmLoaded || held !== null || saveData) return;
     filmLoaded = true;
     video.addEventListener('loadeddata', () => by.film.el.classList.add('rolling'), { once: true });   // the film's own frame replaces the still
+    video.addEventListener('error', () => { filmOff = true; });
     video.preload = 'auto'; video.src = FILM + '#t=' + RUNS[0][0]; video.load();
   }
   function film(now, moving) {
@@ -116,17 +117,17 @@
     if (moving && !lockedOn) {
       stillSince = 0; frozenAt = 0;
       el.classList.remove('frozen', 'w');
-      if (filmLoaded && video.paused && !playPending) {
+      if (filmLoaded && !filmOff && video.paused && !playPending) {
         playPending = true;
         const p = video.play();
-        if (p && p.then) p.then(() => { playPending = false; }, () => { playPending = false; });
+        if (p && p.then) p.then(() => { playPending = false; ran = true; }, e => { playPending = false; if (e && e.name === 'NotAllowedError') filmOff = true; });
         else playPending = false;
       }
     } else if (!moving) {
       if (!video.paused) video.pause();
       if (!stillSince) stillSince = now;
       // the line is only true if something was running: it needs the film on screen
-      if (!frozenAt && now - stillSince > 450 && el.classList.contains('rolling')) { frozenAt = now; el.classList.add('frozen', 'w'); }
+      if (!frozenAt && ran && now - stillSince > 450 && el.classList.contains('rolling')) { frozenAt = now; el.classList.add('frozen', 'w'); }
     }
     const r = RUNS[run];
     if (video.readyState > 0 && (video.currentTime >= r[1] || video.currentTime < r[0] - 0.5)) {
@@ -151,7 +152,7 @@
   function press(t, dt, now) {
     const target = seg(t, 0.1, 0.6);
     pressCur = snap ? target : follow(pressCur, target, dt, 0.1);
-    clip.style.transform = pressTravel ? `translate3d(0,${(-pressTravel * pressCur).toFixed(1)}px,0)` : '';
+    clip.style.transform = pressTravel ? `translate3d(0,${Math.round(-pressTravel * pressCur)}px,0)` : '';
     const lit = pressTravel ? t > 0.55 : now - by.press.at > 650;
     if (mark) mark.classList.toggle('lit', lit);
     if (Math.abs(pressCur - target) > 0.0005 || (!lit && !pressTravel)) settled = false;
@@ -163,7 +164,8 @@
     laneCur = snap ? t : follow(laneCur, t, dt, 0.12);
     // the lane cuts on already full and travels from there, so the track is only ever empty for San Francisco
     const x = -laneCur * Math.max(0, lane.w - W);
-    lane.strip.style.transform = `translate3d(${x.toFixed(1)}px,0,0)`;
+    const d = window.devicePixelRatio || 1;
+    lane.strip.style.transform = `translate3d(${Math.round(x * d) / d}px,0,0)`;
     if (Math.abs(laneCur - t) > 0.0003) settled = false;
   }
 
@@ -182,6 +184,7 @@
 
   function enter(shot, prev, now, forward, t) {
     if (prev) prev.el.classList.remove('on', 'w', 'frozen');
+    if (prev && prev.id === 'press' && mark) mark.classList.remove('lit');
     else for (const x of shots) if (x !== shot) x.el.classList.remove('on', 'w');
     shot.el.classList.add('on');
     // arriving anywhere but a shot's edge (a reload, a link, a key) shows the settled state straight away
