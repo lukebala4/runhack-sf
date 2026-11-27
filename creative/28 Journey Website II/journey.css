@@ -472,3 +472,14 @@ html:not(.js) .s-press .clip{position:relative;top:0;padding-top:var(--g1t)}
   .s-bfilm .term{left:5vw;right:auto;width:43vw;top:calc(var(--g1t) + 1.2vw);font-size:clamp(11px,1.16vw,20px);background:rgba(21,23,28,.95);border-color:rgba(21,23,28,.95)}
   .s-bfilm .term-bar{border-bottom-color:rgba(255,255,255,.28)}
 }
+/* posts: room between the three figures */
+@media (orientation:landscape){
+  .s-posts .sub{margin-top:0}
+  .s-posts .t2{margin-top:3.4vw}
+  .s-posts .t3{margin-top:3.1vw}
+}
+@media (orientation:portrait){
+  .s-posts .words p.sub{margin-top:0}
+  .s-posts .t2{margin-top:7vw}
+  .s-posts .t3{margin-top:6vw}
+}
