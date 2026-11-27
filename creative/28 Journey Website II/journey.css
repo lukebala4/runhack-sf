@@ -336,7 +336,6 @@ html:not(.js) .s-press .clip{position:relative;top:0;padding-top:var(--g1t)}
 .pack .hog{height:118%;margin:0 -1.2vw -4% -1.6vw}
 .js .pack{left:0;bottom:calc((100lvh - var(--g3t,84.8lvh))*.03);height:calc((100lvh - var(--g3t,84.8lvh))*.97 - 1.4vh);transform:translateX(calc(-34vw + var(--t,1)*82vw));will-change:transform}
 .js .scene:not(.near) .pack{display:none}
-.js .s-sf.on .devin{animation:stride .34s steps(1) infinite}
 .js .s-sf.on .hog{animation:stride .34s steps(1) -.17s infinite}
 @keyframes stride{50%{transform:translateY(-5%) rotate(-2deg)}}
 @media (orientation:portrait){.js .pack{transform:translateX(calc(-70vw + var(--t,1)*120vw))}.pack{gap:3vw}}
