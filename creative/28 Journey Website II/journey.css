@@ -373,3 +373,32 @@ html:not(.js) .s-press .clip{position:relative;top:0;padding-top:var(--g1t)}
 @media (orientation:portrait){.s-posts .words p.sub{font-size:5.5vw;margin-top:.9em}}
 /* the Barcelona film is brighter than the London one, so its log window is darker */
 .s-bfilm .term{background:rgba(21,23,28,.62)}
+
+/* Devin sits on the sponsor button with his laptop; the hedgehog has the bottom lane to himself */
+.s-sf .links .btn{position:relative}
+.sit{position:absolute;right:.55em;bottom:calc(100% - .2em);height:5.4vw;width:auto;pointer-events:none}
+.js .s-sf .where{top:calc(var(--g2t) + var(--g2h)*.05)}
+.js .s-sf .links{top:calc(var(--g2t) + var(--g2h)*.6)}
+.js .s-sf .sit{height:calc(var(--g2h)*.6 - var(--g2h)*.05 - 4.2vw*1.28 - .5vw)}
+@media (orientation:portrait){
+  .js .s-sf .where{top:calc(var(--g2t) + var(--g2h)*.04)}
+  .js .s-sf{--lt:max(calc(var(--g2h)*.34),calc(var(--g2h)*.04 + 22vw))}
+  .js .s-sf .sit{height:13vw}
+  .js .s-sf .filmcard{height:calc(var(--g2h)*.3)}
+}
+/* both mascots a fifth bigger */
+.js .s-sf .links{top:calc(var(--g2t) + var(--g2h)*.63)}
+.js .s-sf .sit{height:calc((var(--g2h)*.55 - 4.2vw*1.28 - .5vw)*1.2)}
+.pack .hog{height:142%;margin-bottom:-5%}
+@media (orientation:portrait){.js .s-sf .sit{height:15.6vw}}
+/* the address sits beside the button on a wide screen, under it on a phone */
+@media (orientation:landscape){
+  .sponsor{flex-direction:row;align-items:center;gap:1.1em}
+  .mailrow{margin-top:0}
+}
+@media (orientation:portrait){
+  .js .s-sf{--lt:max(calc(var(--g2h)*.36),calc(var(--g2h)*.04 + 23vw))}
+  .js .s-sf .links{top:calc(var(--g2t) + var(--lt))}
+  .js .s-sf .filmcard{top:calc(var(--g2t) + max(var(--g2h)*.64,var(--lt) + 19vw));height:calc(var(--g2h)*.34)}
+  .pack .hog{height:112%;margin-bottom:-3%}
+}
