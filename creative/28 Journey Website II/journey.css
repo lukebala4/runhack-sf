@@ -402,3 +402,13 @@ html:not(.js) .s-press .clip{position:relative;top:0;padding-top:var(--g1t)}
   .js .s-sf .filmcard{top:calc(var(--g2t) + max(var(--g2h)*.64,var(--lt) + 19vw));height:calc(var(--g2h)*.34)}
   .pack .hog{height:112%;margin-bottom:-3%}
 }
+/* London: the quote takes the top row beside the button, and the photograph has everything under it */
+@media (orientation:landscape){
+  .s-london{--h:4.2vw}
+  .s-london .head{top:calc(max(14px,2.6vw) - .3vw);height:auto}
+  .s-london .photo{top:calc(max(14px,2.6vw) + 10.9vw);--fy:82%}
+}
+@media (orientation:portrait){
+  .s-london h2{font-size:8.4vw}
+  .s-london .photo{height:58svh}
+}
