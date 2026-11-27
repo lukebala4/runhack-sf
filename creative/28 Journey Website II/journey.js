@@ -210,7 +210,7 @@
   }
   const films = {};
   if (by.film) films.film = makeFilm(by.film, '../../assets/film/' + (portraitMq.matches ? 'runs-portrait.mp4' : 'runs-1600.mp4'), termLines, 0.30, 0.86);
-  if (by.bfilm) films.bfilm = makeFilm(by.bfilm, '../../assets/film/' + 'barcelona-runs.mp4', [...by.bfilm.el.querySelectorAll('.term .l')], 0.06, 0.66);
+  if (by.bfilm) films.bfilm = makeFilm(by.bfilm, '../../assets/film/' + (portraitMq.matches ? 'barcelona-runs.mp4' : 'barcelona-wide.mp4'), [...by.bfilm.el.querySelectorAll('.term .l')], 0.06, 0.66);
   // Phones ignore preload, so the first touch, wheel or key starts the download; the films are then ready when their shots arrive.
   const prime = () => {
     removeEventListener('touchstart', prime); removeEventListener('wheel', prime); removeEventListener('keydown', prime);

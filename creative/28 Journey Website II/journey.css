@@ -491,3 +491,17 @@ html:not(.js) .s-press .clip{position:relative;top:0;padding-top:var(--g1t)}
   .s-bfilm .term{background:none;border-color:rgba(255,255,255,.8)}
   .s-bfilm .term-bar{border-bottom-color:rgba(255,255,255,.8)}
 }
+
+/* Barcelona film on a wide screen: a horizontal cut made from the wide shots of the 4K edit, filling the stage
+   as the London film does, with its build log top right. The upright cut stays on phones. */
+@media (orientation:landscape){
+  .js .s-bfilm .gate{left:0;right:0;width:auto}
+  .s-bfilm .term{left:65vw;right:5vw;width:auto;top:calc(var(--g1t) - 2.5em);font-size:clamp(10px,.98vw,17px);background:rgba(21,23,28,.62);border-color:rgba(255,255,255,.8)}
+}
+/* the Barcelona log sits low on the left, over the ground rather than the runners */
+@media (orientation:landscape){.s-bfilm .term{left:5vw;right:auto;width:31vw;top:auto;bottom:6vh}}
+/* phone, last screen: the film card ends above the lane line and the hedgehog stays in his own lane under it */
+@media (orientation:portrait){
+  .js .s-sf .filmcard{height:calc(var(--g2h) - max(var(--g2h)*.64,var(--lt) + 19vw) - 2.2vw)}
+  .pack .hog{height:104%;margin-bottom:-2%}
+}
