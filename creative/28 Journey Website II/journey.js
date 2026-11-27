@@ -2,7 +2,7 @@
 (() => {
   if (!matchMedia('(pointer: coarse)').matches) return;
   for (const a of document.querySelectorAll('a[href*="mail.google.com/mail/?view=cm"]')) {
-    a.href = 'mailto:runninghackathon@gmail.com?subject=' + encodeURIComponent('Sponsorship enquiry | Running Hackathon San Francisco');
+    a.href = 'mailto:runninghackathon@gmail.com?subject=' + encodeURIComponent('Sponsorship enquiry | Running Hackathon San Francisco') + '&body=' + encodeURIComponent("Hi Running Hackathon team,\n\nI'm [your name] from [company]. We'd like to hear more about sponsoring Running Hackathon San Francisco in spring 2027.\n\nWhat we have in mind: [a line or two]\nBest person to speak to: [name, role]\n\nCould you send over the sponsor deck and a few times to talk?\n\nThanks,\n[your name]");
     a.removeAttribute('target');
   }
 })();
