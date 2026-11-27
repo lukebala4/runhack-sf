@@ -464,3 +464,11 @@ html:not(.js) .s-press .clip{position:relative;top:0;padding-top:var(--g1t)}
 @media (orientation:landscape){.g .pair .side{left:58vw;width:17vw}}
 @media (orientation:portrait){.js .s-sf .filmcard{aspect-ratio:auto}}
 @media (orientation:landscape){.g .pair .side{width:19vw;text-wrap:balance}}
+
+/* Barcelona film on a wide screen: one upright film, the height of the stage, standing on the track,
+   with its build log beside it rather than over it */
+@media (orientation:landscape){
+  .js .s-bfilm .gate{left:56vw;right:auto;width:56.25lvh}
+  .s-bfilm .term{left:5vw;right:auto;width:43vw;top:calc(var(--g1t) + 1.2vw);font-size:clamp(11px,1.16vw,20px);background:rgba(21,23,28,.95);border-color:rgba(21,23,28,.95)}
+  .s-bfilm .term-bar{border-bottom-color:rgba(255,255,255,.28)}
+}

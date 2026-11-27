@@ -210,7 +210,7 @@
   }
   const films = {};
   if (by.film) films.film = makeFilm(by.film, '../../assets/film/' + (portraitMq.matches ? 'runs-portrait.mp4' : 'runs-1600.mp4'), termLines, 0.30, 0.86);
-  if (by.bfilm) films.bfilm = makeFilm(by.bfilm, '../../assets/film/' + (portraitMq.matches ? 'barcelona-runs.mp4' : 'barcelona-tri.mp4'), [...by.bfilm.el.querySelectorAll('.term .l')], 0.06, 0.66);
+  if (by.bfilm) films.bfilm = makeFilm(by.bfilm, '../../assets/film/' + 'barcelona-runs.mp4', [...by.bfilm.el.querySelectorAll('.term .l')], 0.06, 0.66);
   // Phones ignore preload, so the first touch, wheel or key starts the download; the films are then ready when their shots arrive.
   const prime = () => {
     removeEventListener('touchstart', prime); removeEventListener('wheel', prime); removeEventListener('keydown', prime);
@@ -261,7 +261,7 @@
     const land = !portraitMq.matches;
     if (shot.id === 'film' && land) return t < 0.2 ? 'dark' : 'light';
     if (shot.id === 'distance') return t < 0.45 ? 'light' : 'dark';
-    if (shot.id === 'bfilm') return t < 0.9 ? 'light' : 'dark';
+    if (shot.id === 'bfilm') return !land && t < 0.9 ? 'light' : 'dark';
     if (shot.id === 'barcelona') return land && t > 0.15 ? 'light' : 'dark';
     return shot.el.dataset.tone || 'dark';
   }
