@@ -2,11 +2,14 @@
 @font-face{font-family:Archivo;src:url('../../assets/fonts/archivo-latin-700.woff2') format('woff2');font-weight:700;font-display:swap}
 @font-face{font-family:Martel;src:url('../../assets/fonts/martel-latin-400.woff2') format('woff2');font-weight:400;font-display:swap}
 @font-face{font-family:Martel;src:url('../../assets/fonts/martel-latin-700.woff2') format('woff2');font-weight:700;font-display:swap}
-/* Type and placement follow the deck "Posthog - Running Hackathon SF":
-   one family, sentence case, the sentence set on the quiet part of the photograph, no gradient behind it.
-   Without script (or with reduced motion) this file alone gives a plain sequence of captioned photographs.
-   journey.js turns the same shots into a pinned edit. */
-:root{--ink:#15171C;--white:#fff;--panel:#F4F3EF;--hl:rgba(245,216,36,.55);color-scheme:light}
+/* Type follows the deck "Posthog - Running Hackathon SF": one family, sentence case, no gradient behind a sentence.
+   Composition: every sentence and every photograph sits on one grid taken from the three white lane lines of the
+   empty track (assets/deck/09-empty-track.jpg). The grid is invisible until the track itself appears.
+   Without script (or with reduced motion) this file alone gives a plain sequence of shots.
+   journey.js pins the stage and drives everything from scroll distance: when the reader stops, the page stops. */
+:root{--ink:#15171C;--white:#fff;--panel:#F4F3EF;--track:#DBA2A8;--hl:rgba(245,216,36,.55);--r:clamp(4px,.5vw,8px);
+  /* the lane grid, until journey.js measures it from the photograph */
+  --g0h:17.2svh;--g1t:18.6svh;--g1h:28.7svh;--g2t:48.8svh;--g2h:34.4svh;color-scheme:light}
 *{box-sizing:border-box}
 html{background:var(--ink);-webkit-text-size-adjust:100%;text-size-adjust:100%}
 body{margin:0;background:var(--ink);color:var(--ink);font:500 18px/1.3 'Inter Tight',system-ui,-apple-system,'Segoe UI',sans-serif;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
@@ -18,110 +21,110 @@ a:focus-visible{outline:3px solid currentColor;outline-offset:6px}
 .skip{position:fixed;top:10px;left:10px;z-index:50;background:var(--ink);color:var(--white);padding:10px 14px;transform:translateY(-300%)}
 .skip:focus{transform:none}
 
-/* ---------- shots ----------
-   --vh is the height of a shot; --ih is the height its 16:9 photograph is drawn at (it covers the shot),
-   so a sentence placed at a share of --ih stays on the same part of the picture whatever the window's shape. */
+/* ---------- shots ---------- */
 .scene{--vh:100svh;--ih:max(var(--vh),56.25vw);position:relative;height:100svh;min-height:420px;overflow:hidden;background:var(--panel);color:var(--ink)}
 .scene[data-tone="light"]{color:var(--white);background:var(--ink)}
 .scene[data-motion]{display:none}
-.s-lanes,.s-sf{background:#DBA2A8}
+.scene.s-rule,.scene.s-lanes,.scene.s-sf{background:var(--track);color:var(--ink)}
 .photo{position:absolute;inset:0;display:block;overflow:hidden}
 .photo img{width:100%;height:100%;object-fit:cover;object-position:var(--fx,50%) var(--fy,50%)}
+.ground:not(.photo){position:absolute;inset:0;overflow:hidden;display:none}
+.ground:not(.photo) img{width:100%;height:100%;object-fit:cover}
+.gate{position:absolute;inset:0}
 .words{position:absolute;left:var(--x,5%);top:var(--y,auto);bottom:var(--b,auto);width:var(--w,40%);z-index:2}
 h2{font-weight:800;font-size:var(--h,5.6vw);line-height:1.04;letter-spacing:-.022em;text-wrap:balance}
 .words p{font-weight:500;font-size:var(--p,1.95vw);line-height:1.28;letter-spacing:-.008em;margin-top:.95em;max-width:var(--pw,100%);text-wrap:pretty}
 .words p b{font-weight:800}
 .ghost{visibility:hidden}
-/* the arrow in "London to Barcelona", drawn to the weight of the type around it */
 .to{white-space:nowrap}
 .to svg{display:inline-block;width:.84em;height:.56em;margin:0 .06em;vertical-align:.05em;fill:none;stroke:currentColor;stroke-width:4.1;stroke-linejoin:miter}
 p .to svg{stroke-width:2.3}
 
-/* each shot, placed as on its slide */
-.s-cover{--x:5%;--w:90%}
 .s-cover h1{position:absolute;z-index:2;left:21.5%;width:33.5%;margin:0}
 .s-cover .mark{width:100%;height:auto;filter:brightness(0) invert(1)}
-.s-cover .line{font-weight:600;font-size:2.55vw;margin:0;letter-spacing:-.012em}
-.s-rule{--x:5%;--w:36%;--h:6.5vw;--p:2.1vw}
-.s-film{--x:5%;--b:12.5%;--w:80%;--h:5.7vw}
-.s-london{--x:5%;--w:90%;--h:3.5vw;--p:1.95vw}
-.s-london h2{text-wrap:nowrap}
-.s-london .words p{margin-top:.5em}
-.s-rained,.s-sauna{--x:45.4%;--w:40%;--h:4.4vw}
-.s-posts,.s-press{--x:5%;--w:40%;--h:6.4vw;--p:2.35vw}
-.s-posts .photo,.s-press .photo{left:50%}
-.s-posts .words p{margin-top:1.5em}
-.s-distance{--x:5%;--w:44%;--h:5.7vw;--p:1.95vw}
-.s-distance h2{max-width:6.2em}
-.s-distance .words p{margin-top:.55em}
-.s-barcelona{--x:5%;--w:34%;--h:4.15vw;--p:1.95vw}
-.s-sf{--x:5%;--y:26%;--w:90%;--h:6vw;--p:3.3vw}
+.s-cover .line{font-weight:700;font-size:1.75vw;margin:0;letter-spacing:-.012em}
+.s-rained,.s-sauna,.s-lanes,.s-barcelona{--h:4.2vw}
+.s-sf{--x:5%;--y:26%;--w:90%;--p:4.2vw}
 .s-sf .where{margin-top:2.45em}
-.s-sf .links{display:flex;flex-wrap:wrap;gap:.3em 1.5em;font-weight:800;font-size:2.1vw;letter-spacing:-.012em;margin-top:1.5em}
+.s-sf .links{display:flex;flex-wrap:wrap;align-items:flex-start;gap:.3em 1.5em;font-weight:800;font-size:2.1vw;letter-spacing:-.012em;margin-top:1.5em}
+/* the two shots that are whole photographs when the page is read without script */
+.s-distance{--x:5%;--w:60%}
+.s-barcelona{--x:5%;--w:34%}
 
 @media (orientation:landscape){
-  /* photographs are held by the edge their sentence sits against, and sentences are placed on the picture */
-  .s-rule .photo,.s-london .photo,.s-rained .photo,.s-sauna .photo,.s-barcelona .photo,.s-posts .photo,.s-press .photo{--fy:0%}
-  .s-rule{--y:calc(var(--ih)*.085)}
-  .s-london{--y:calc(var(--ih)*.285)}
-  .s-rained,.s-sauna{--y:calc(var(--ih)*.044)}
-  .s-posts,.s-press{--y:calc(var(--ih)*.06)}
-  .s-barcelona{--y:calc(var(--ih)*.11)}
-  .s-distance .photo{--fy:100%}
-  .s-distance{--b:calc(var(--ih)*.125)}
-  /* the cover has the name above the runners and the line below them, so it gives up crop on both edges */
+  /* --- the grid: headline in the upper lane from the left margin, second line at the top of the lower lane --- */
+  .g .words{left:5vw;right:5vw;top:0;bottom:0;width:auto}
+  .g .head{position:absolute;left:0;right:0;top:var(--g1t);height:var(--g1h);display:flex;align-items:center}
+  .g .sub{position:absolute;left:0;top:calc(var(--g2t) + var(--g2h)*.08);margin:0}
+  .pair{position:relative;width:100%}
+  .g .pair .side,.js .s-distance .pair .side{position:absolute;left:63vw;bottom:calc(var(--h,5.6vw)*.13);width:27vw;margin:0}
+
   .s-cover{--crop:calc(var(--ih) - var(--vh))}
   .s-cover .photo{--fy:30%}
   .s-cover h1{top:max(1.2vw,calc(var(--ih)*.06 - var(--crop)*.3))}
-  .s-cover .words{top:min(calc(var(--ih)*.845 - var(--crop)*.3),calc(var(--vh) - 5.8vw))}
-  /* the posts panel uses its whole height, as the slide does */
-  .s-posts .words{bottom:calc(var(--ih)*.06);display:flex;flex-direction:column;justify-content:space-between}
-  .s-posts .words p{margin-top:0}
+
+  /* rule: the runner in a window standing on the bottom edge, the sentence on the track colour beside him */
+  .s-rule .photo{left:50vw;right:5vw;top:var(--g1t);border-radius:var(--r) var(--r) 0 0;--fx:58%;--fy:100%}
+  .s-rule h2{max-width:44vw}
+  .s-rule .sub{max-width:30vw}
+
+  /* london: the quote on ink, everyone in a band that runs off the right edge */
+  .s-london .photo{left:5vw;top:var(--g2t);border-radius:var(--r) 0 0 0;--fy:90%}
+  .s-london h2{text-indent:-.42em;padding-left:.42em}
+
+  /* rained: the window on the left this time, the line level with the button */
+  .s-rained .photo{left:5vw;right:50vw;top:var(--g1t);border-radius:var(--r) var(--r) 0 0;--fx:20%}
+  .s-sauna .photo{--fy:0%}
+  .s-rained .words,.s-sauna .words{left:50vw;top:calc(max(14px,2.6vw) - 3px);width:38vw}
+
+  /* posts and press: one megaphone window, the number and then the article beside it */
+  .s-posts .photo,.s-press .photo{left:55vw;right:5vw;top:var(--g1t);border-radius:var(--r) var(--r) 0 0;--fy:0%}
+  .s-posts h2{max-width:46vw}
+
+  .s-distance .photo{--fy:100%}
+  .s-distance{--b:calc(var(--ih)*.125)}
+  .s-barcelona .photo{--fy:0%}
+  .s-barcelona{--y:calc(var(--ih)*.11)}
 }
 
-/* ---------- the ExchangeWire press release, set as the article is set ---------- */
-.paper{position:absolute;left:0;top:0;bottom:0;width:50%;background:#F7F7F7;overflow:hidden}
-.clip{position:absolute;left:9%;top:8%;width:82%;color:#4D4D4D;font:400 1.42vw/1.5 Martel,Georgia,'Times New Roman',serif}
-.ew{width:44%;height:auto;margin-bottom:7%}
+/* ---------- the ExchangeWire press release, set as the article is set, straight on the field ---------- */
+.paper{position:absolute;left:0;top:0;bottom:0;width:51vw;background:var(--panel);overflow:hidden}
+.clip{position:absolute;left:5vw;top:var(--g1t);width:42vw;color:#4D4D4D;font:400 1.42vw/1.5 Martel,Georgia,'Times New Roman',serif}
+.ew{width:44%;height:auto;margin-bottom:6%}
 .clip-h{font:700 3.2vw/1.02 Archivo,'Helvetica Neue',Helvetica,Arial,sans-serif;color:#333;letter-spacing:0;text-wrap:balance}
 .clip p{margin-top:1.15em}
 .clip .clip-by{color:#595959;margin-top:.9em}
 .clip mark{color:inherit;background:linear-gradient(var(--hl),var(--hl)) no-repeat 0 58%/100% 82%}
 .clip-more a{color:#216CD9;font-weight:700}
 
-/* ---------- portrait: the same sentences, sized for a phone ----------
-   Where a photograph has no quiet area tall enough, the sentence sits on the deck's off-white panel
-   above the photograph, as the posts slide already does. */
+/* ---------- portrait: the sentence above, the photograph standing on the bottom edge ---------- */
 @media (orientation:portrait){
   h2{font-size:var(--hm,10.6vw)}
   .words{left:6.5%;right:6.5%;width:auto;top:var(--ym,auto);bottom:var(--bm,auto)}
   .words p{font-size:var(--pm,4.5vw);max-width:none}
+  .lb{display:none}
   .s-cover h1{left:6.5%;top:7%;width:62%}
-  .s-cover .words{top:calc(7% + 27vw)}
-  .s-cover .line{font-size:5.3vw}
   .s-cover .photo{--fx:44%}
-  .s-film{--bm:9%;--hm:12vw}
   .s-distance{--bm:9%;--hm:12vw}
   .s-distance .photo{--fx:39%}
-  .s-rule,.s-london,.s-posts,.s-press,.s-rained,.s-sauna,.s-barcelona{--ym:7%}
-  .s-rule .photo,.s-london .photo,.s-posts .photo,.s-rained .photo,.s-sauna .photo,.s-barcelona .photo{left:0;top:auto;bottom:0;height:56svh}
-  .scene.s-london,.scene.s-barcelona{color:var(--ink);background:var(--panel)}
-  .s-london h2{text-wrap:balance;font-size:9.4vw}
+  .s-rule,.s-london,.s-posts,.s-press,.s-rained,.s-sauna,.s-barcelona{--ym:calc(max(12px,3.2vw) + 14vw)}
+  .s-rule .photo,.s-london .photo,.s-posts .photo,.s-rained .photo,.s-sauna .photo,.s-barcelona .photo{top:auto;height:56svh}
+  .scene.s-barcelona{color:var(--ink);background:var(--panel)}
+  .s-london h2{font-size:9.4vw}
   .s-london .photo{height:44svh}
-  .s-london .words{top:auto;bottom:calc(44svh + 6vw)}
   .s-rule .photo{--fx:58%}
-  .s-rained .photo,.s-sauna .photo{height:62svh}
-  .s-sauna .photo{--fx:34%}
-  .s-rained .photo{--fx:26%}
+  .s-rained .photo{height:50svh;left:6.5vw;right:6.5vw;border-radius:var(--r) var(--r) 0 0;--fx:26%}
+  .s-sauna .photo{height:62svh;--fx:34%}
   .s-posts h2{font-size:11.4vw}
-  .s-posts .photo,.s-press .photo{left:0;top:auto;bottom:0;height:50svh;--fy:22%}
+  .s-posts .words p{margin-top:1.1em}
+  .s-posts .photo,.s-press .photo{top:auto;height:50svh;--fy:22%}
   .s-barcelona .photo{height:60svh;--fx:50%;--fy:12%}
   .s-barcelona h2{font-size:9.6vw}
   .s-sf{--ym:22%;--hm:11.4vw;--pm:6.4vw}
   .s-sf .where{margin-top:2.2em}
   .s-sf .links{flex-direction:column;font-size:5vw;gap:.55em}
   .paper{width:100%;bottom:auto;height:calc(var(--vh) - 50svh)}
-  .clip{left:6.5%;width:87%;top:4.5%;font-size:3.7vw}
+  .clip{left:6.5%;width:87%;top:calc(max(12px,3.2vw) + 13vw);font-size:3.7vw}
   .clip-h{font-size:6vw}
   .ew{width:40%;margin-bottom:5%}
 }
@@ -129,93 +132,128 @@ p .to svg{stroke-width:2.3}
 /* ---------- the scroll edit (the head script adds .js before first paint) ----------
    The stage is the large viewport so no band shows under it when a phone's address bar retracts;
    one scroll unit is about 1svh, capped so a tall monitor does not turn the page into a long haul. */
-.js .reel{--u:clamp(6.4px,1svh,8.6px);height:calc(var(--total,1270)*var(--u) + 100lvh)}
+.js .reel{--u:clamp(6.4px,1svh,8.6px);height:calc(var(--total,1785)*var(--u) + 100lvh)}
 .js .stage{position:sticky;top:0;height:100lvh;overflow:clip;background:var(--ink)}
 .js .scene{--vh:100lvh;position:absolute;inset:0;height:auto;min-height:0;visibility:hidden}
 .js .scene[data-motion]{display:block}
-.js .scene.on{visibility:visible}
+.js .scene.out{visibility:visible;z-index:0}
+.js .scene.on{visibility:visible;z-index:1}
+/* a new shot is drawn across the last one from the side the runners are heading to, by distance scrolled */
+.js .scene.on.wipe{clip-path:inset(0 0 0 calc((1 - var(--in,1))*100%))}
 .js .static-only{display:none}
-.js .scene .words{visibility:hidden}
-.js .scene.w .words{visibility:inherit}
-.js .push .photo img{transform:scale(calc(1 + var(--t,0)*.03))}
-.js .push.on .photo img{will-change:transform}
-.js .scene:not(.near) .photo,.js .scene:not(.near) .strip,.js .scene:not(.near) .paper{display:none}
-.js .s-film .words,.js .s-distance .words{bottom:calc(var(--b) + 100lvh - 100svh)}
+.js .scene:not(.near) .photo,.js .scene:not(.near) .ground,.js .scene:not(.near) .strip,.js .scene:not(.near) .paper{display:none}
+.js .ground:not(.photo){display:block}
+.js .ground img{transform-origin:0 50%;transform:scaleX(1.12)}
+.js .scene.on .photo,.js .scene.on .photo img,.js .s-lanes.on .strip{will-change:transform}
+
+/* what moves while a shot is held: only pictures, only sideways, only as far as the reader has scrolled */
+.js .s-cover .photo img{transform-origin:50% 0;transform:translateX(calc(1vw - var(--t,0)*6vw)) scale(1.1)}
+@media (orientation:landscape){
+  .js .s-rule .photo img{object-position:calc(30% + var(--t,1)*55%) 100%}
+  .js .s-london .photo{transform:translateX(calc((1 - var(--t,1))*8vw))}
+  .js .s-rained .photo img{object-position:calc(6% + var(--t,1)*29%) 50%}
+  .js .s-posts .photo{transform:translateX(calc((1 - var(--t,1))*4vw))}
+  .js .s-press .photo{transform:translateX(calc(var(--t,0)*-4vw))}
+  /* the film starts inside the runner's window and the window opens to the whole stage */
+  .js .scene.s-film{background:none}
+  .js .s-film .gate{--g:clamp(0,calc(var(--t,1)/.28),1);clip-path:inset(calc((1 - var(--g))*var(--g1t)) calc((1 - var(--g))*5vw) 0 calc((1 - var(--g))*50vw) round calc((1 - var(--g))*var(--r)) calc((1 - var(--g))*var(--r)) 0 0)}
+  .js .s-film .gate .photo,.js .s-film .gate video{transform:translate(calc((1 - var(--g))*28vw),calc((1 - var(--g))*11vh))}
+  .js .s-film .term{opacity:clamp(0,calc((var(--t,1) - .29)*9999),1)}
+}
+@media (orientation:portrait){
+  .js .s-rule .photo img{object-position:calc(45% + var(--t,1)*25%) 50%}
+  .js .s-london .photo{transform:translateX(calc((1 - var(--t,1))*8vw))}
+  .js .s-posts .photo img{object-position:calc(60% - var(--t,1)*10%) 22%}
+  .js .s-press .photo img{object-position:calc(50% - var(--t,0)*10%) 22%}
+}
 
 /* the film runs only while the reader does */
 .clip-film{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0}
 .s-film.rolling .clip-film{opacity:1}
-.s-film::after{content:"";position:absolute;inset:0;z-index:1;background:rgba(21,23,28,.34);visibility:hidden}
 
+/* the highlighter is drawn by distance */
+.js .clip mark{background-size:calc(clamp(0,calc((var(--t,1) - .25)/.4),1)*100%) 82%}
 
-/* the lane: a window cut on the track's own white lines; its position comes from the photograph (set in journey.js) */
+/* ---------- the track: distance, the lane, Barcelona and San Francisco are one place ---------- */
 .lane{position:absolute;left:0;right:0;top:var(--top);height:var(--height);overflow:hidden}
-.strip{display:flex;height:100%;width:max-content}
-.s-lanes.on .strip{will-change:transform}
+.strip{display:flex;gap:.7vw;height:100%;width:max-content}
 .strip img{height:100%;width:auto;aspect-ratio:var(--ar,2);object-fit:cover;object-position:var(--pos,50% 50%);flex:none}
-.js .s-lanes .words{left:5%;right:5%;width:auto;top:var(--g1t,18.7%);height:var(--g1h,28.6%);bottom:auto;display:flex;align-items:center}
-.s-lanes h2{font-size:4.5vw;max-width:14em}
+.strip .match{aspect-ratio:auto}
+.strip .m1{width:var(--cellw);margin-right:calc(var(--lead) - .7vw)}
+.strip .m2{width:var(--bcellw);margin-left:calc(var(--blead) - .7vw)}
+.js .s-lanes .words{left:5vw;right:5vw;width:auto;top:var(--g1t);height:var(--g1h);bottom:auto;display:flex;align-items:center}
+.s-lanes h2{max-width:16em}
 
-/* San Francisco: the sentence between the lane lines, then where, then how to get involved, all at once */
-.js .s-sf .words{left:5%;right:5%;width:auto;top:0;bottom:0}
-.js .s-sf h2{position:absolute;left:0;right:0;top:var(--g1t,18.7%);height:var(--g1h,28.6%);display:flex;align-items:center}
-.js .s-sf .where,.js .s-sf .links{position:absolute;left:0;right:0;margin:0}
-.js .s-sf .where{top:calc(var(--g2t,48.9%) + var(--g2h,34.3%)*.14)}
-.js .s-sf .links{top:calc(var(--g2t,48.9%) + var(--g2h,34.3%)*.6)}
+/* distance: the photograph steps down into the lane it will run along */
+.js .scene.s-distance,.js .scene.s-barcelona{background:var(--track)}
+.js .s-distance .photo{--k:clamp(0,calc((var(--t,0) - .2)/.4),1);transform-origin:0 0;transform:translateY(calc(var(--g2t)*var(--k))) scale(calc(1 - (1 - var(--ls,.344))*var(--k)))}
+.js .s-distance .words{left:5vw;right:5vw;width:auto;top:var(--g1t);height:var(--g1h);bottom:auto;display:flex;align-items:center;color:var(--ink);opacity:clamp(0,calc((var(--t,1) - .6)*9999),1)}
 
-/* the highlighter is drawn when the line is reached */
-.js .clip mark{background-size:0% 82%;transition:background-size .45s cubic-bezier(.2,.7,.2,1)}
-.js .clip mark.lit{background-size:100% 82%}
+/* Barcelona: the last picture in the lane opens to the whole stage, then runs off and leaves the track empty */
+.js .s-barcelona .photo{--k:clamp(0,calc(var(--t,1)/.3),1);--o:clamp(0,calc((var(--t,0) - .8)/.2),1);top:var(--py,0px);bottom:0;height:auto;transform-origin:100% 0;transform:translate(calc(var(--o)*-100vw),calc((var(--g2t) - var(--py,0px))*(1 - var(--k)))) scale(calc(var(--bs,.344) + (1 - var(--bs,.344))*var(--k)))}
+@media (orientation:landscape){
+  .js .s-barcelona .words{left:5vw;right:5vw;top:0;bottom:0;width:auto;opacity:clamp(0,min(calc((var(--t,1) - .3)*9999),calc((.8 - var(--t,1))*9999)),1)}
+  .js .s-barcelona .head{position:absolute;left:0;top:var(--g1t);height:var(--g1h);display:flex;align-items:center;max-width:31vw}
+  .js .s-barcelona .sub{position:absolute;left:0;top:calc(var(--g2t) + var(--g2h)*.08);max-width:31vw}
+  .js .s-barcelona .sub p{margin:0}
+}
+
+/* San Francisco: the same track, empty; the sentences land by distance and only the ground moves */
+.js .s-sf .ground img{transform:translateX(calc(var(--t,0)*-10vw)) scaleX(1.12)}
+.js .s-sf .words{left:5vw;right:5vw;width:auto;top:0;bottom:0}
+.js .s-sf h2{position:absolute;left:0;right:0;top:var(--g1t);height:var(--g1h);display:flex;align-items:center;opacity:clamp(0,calc((var(--t,1) - .1)*9999),1)}
+.js .s-sf .where,.js .s-sf .links{position:absolute;left:0;right:0;margin:0;opacity:clamp(0,calc((var(--t,1) - .2)*9999),1)}
+.js .s-sf .where{top:calc(var(--g2t) + var(--g2h)*.1)}
+.js .s-sf .links{top:calc(var(--g2t) + var(--g2h)*.56)}
 
 @media (orientation:portrait){
-  .js .s-film .words,.js .s-distance .words{bottom:calc(var(--bm) + 100lvh - 100svh)}
-  .js .s-lanes .words,.js .s-sf .words{left:6.5%;right:6.5%}
+  .js .s-lanes .words,.js .s-sf .words,.js .s-distance .words{left:6.5%;right:6.5%}
   .s-lanes h2{font-size:8.6vw}
-  .js .s-sf .where{top:calc(var(--g2t,48.9%) + var(--g2h,34.3%)*.1)}
-  .js .s-sf .links{top:calc(var(--g2t,48.9%) + var(--g2h,34.3%)*.36)}
+  .js .s-distance h2{font-size:10.6vw}
+  .js .s-distance .side{margin-top:.5em}
+  .js .scene.s-barcelona{color:var(--ink)}
+  .js .s-barcelona .words{top:var(--g1t);height:var(--g1h);display:flex;flex-direction:column;justify-content:center}
+  .js .s-barcelona h2{font-size:8.2vw}
+  .js .s-barcelona .words p{font-size:4.1vw;margin-top:.6em}
+  .js .s-barcelona .gitlog{display:none}
+  .js .s-sf .where{top:calc(var(--g2t) + var(--g2h)*.1)}
+  .js .s-sf .links{top:calc(var(--g2t) + var(--g2h)*.36)}
 }
 
 /* ---------- stacked page (no script, or reduced motion): the press shot grows to fit the article ---------- */
 html:not(.js) .s-press{height:auto;min-height:100svh}
-html:not(.js) .s-press .paper{position:relative;min-height:100svh;padding:8svh 0}
-html:not(.js) .s-press .clip{position:relative;top:0}
+html:not(.js) .s-press .paper{position:relative;min-height:100svh;padding-bottom:8svh}
+html:not(.js) .s-press .clip{position:relative;top:0;padding-top:var(--g1t)}
 @media (orientation:portrait){
   html:not(.js) .s-press{padding-bottom:50svh}
   html:not(.js) .s-press .paper{min-height:0;height:auto;padding:6svh 0}
+  html:not(.js) .s-press .clip{padding-top:0}
 }
 
-/* ---------- terminal, after the Barcelona film: an outlined window of plain monospace over the picture ---------- */
+/* ---------- terminal: an outlined window of plain monospace over the film ---------- */
 .term,.gitlog{font-family:ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,'DejaVu Sans Mono',monospace;font-weight:400;letter-spacing:0}
-.term{position:absolute;z-index:2;right:5%;top:calc(var(--ih)*.08);border:1px solid rgba(255,255,255,.8);color:#fff;background:rgba(21,23,28,.18);font-size:clamp(11px,1.02vw,17px);line-height:1.55}
-.term-bar{display:flex;align-items:center;gap:.45em;padding:.5em .95em;border-bottom:1px solid rgba(255,255,255,.8)}
+.term{position:absolute;z-index:2;left:65vw;right:5vw;top:calc(var(--g1t) - 2.5em);border:1px solid rgba(255,255,255,.8);color:#fff;background:rgba(21,23,28,.18);font-size:clamp(10px,.98vw,17px);line-height:1.55}
+.term-bar{display:flex;align-items:center;gap:.45em;padding:.5em .95em;border-bottom:1px solid rgba(255,255,255,.8);height:2.5em}
 .term-bar i{width:.62em;height:.62em;border:1px solid currentColor;border-radius:50%}
 .term-bar span{margin-left:.8em;opacity:.85}
-.term pre{margin:0;padding:.8em 1.6em 1em 1em;font:inherit;white-space:pre}
+.term pre{margin:0;padding:.8em 1em 1em 1em;font:inherit;white-space:pre}
 .term .l{visibility:hidden}
 .term .l.on{visibility:inherit}
 .caret{display:inline-block;width:.58em;height:1.05em;vertical-align:-.18em;background:currentColor}
 .s-film.frozen .caret{animation:wait 1.06s steps(1) infinite}
 @keyframes wait{50%{opacity:0}}
-.gitlog{margin:2.1em 0 0;font-size:clamp(11px,1.12vw,18px);line-height:1.6;white-space:pre;opacity:.95}
-@media (orientation:portrait){
-  .term{left:6.5%;right:6.5%;top:7%;font-size:3.05vw}
-  .gitlog{font-size:2.85vw;margin-top:1.6em}
-}
-
+.gitlog{margin:1.4em 0 0;font-size:clamp(11px,1.12vw,18px);line-height:1.6;white-space:pre;opacity:.95}
 .halt{visibility:hidden;opacity:.85}
 .s-film.frozen .halt{visibility:inherit}
 .sf-log{margin:0 0 1.2em}
-.js .s-sf .sf-log{position:absolute;left:0;right:0;top:0;height:var(--g0h,17%);margin:0;display:flex;flex-direction:column;justify-content:center;white-space:pre-wrap}
-@media (orientation:portrait){.sf-log{white-space:pre-wrap}}
+.js .s-sf .sf-log{position:absolute;left:0;right:0;top:0;height:var(--g0h);margin:0;display:flex;flex-direction:column;justify-content:flex-end;padding-bottom:1em;white-space:pre-wrap}
+@media (orientation:portrait){
+  .term{left:6.5%;right:6.5%;top:calc(max(12px,3.2vw) + 13vw);font-size:3.05vw}
+  .gitlog{font-size:2.85vw;margin-top:1.6em}
+  .sf-log{white-space:pre-wrap}
+}
 
-/* ---------- between shots: the next one is drawn across the last, from the side the runners are heading to ---------- */
-.js .scene.out{visibility:visible;z-index:0}
-.js .scene.on{z-index:1}
-.js .scene.wipe-f{animation:wipe-f .44s cubic-bezier(.45,0,.15,1) both}
-.js .scene.wipe-b{animation:wipe-b .44s cubic-bezier(.45,0,.15,1) both}
-@keyframes wipe-f{from{clip-path:inset(0 0 0 100%)}to{clip-path:inset(0 0 0 0)}}
-@keyframes wipe-b{from{clip-path:inset(0 100% 0 0)}to{clip-path:inset(0 0 0 0)}}
-
+.cch{white-space:nowrap}
 .cch img{display:inline-block;width:1.05em;height:1.05em;margin-right:.28em;vertical-align:-.16em}
 
 /* ---------- the London film, played on the page ---------- */
@@ -225,40 +263,26 @@ html:not(.js) .s-press .clip{position:relative;top:0}
 .player video{width:100%;height:100%;object-fit:contain;background:var(--ink)}
 .player-close{position:absolute;top:max(18px,env(safe-area-inset-top));right:22px;background:none;border:0;padding:6px 4px;color:inherit;font:800 18px/1 'Inter Tight',system-ui,sans-serif;text-decoration:underline;text-underline-offset:.18em;cursor:pointer}
 
-/* ---------- cover: only the mark and, top right, where and when ---------- */
-.s-cover .words{left:auto;right:5%;width:auto;bottom:auto;top:max(1.6vw,calc(var(--ih,100vh)*.075 - var(--crop,0px)*.3));text-align:right}
-.s-cover .line{font-size:1.75vw;font-weight:700}
-@media (orientation:portrait){
-  .s-cover .words{left:auto;right:6.5%;top:3.4%}
-  .s-cover .line{font-size:4.2vw}
-}
-/* ---------- the sponsor link carries its address underneath ---------- */
-.s-sf .links{align-items:flex-start}
-.sponsor{display:flex;flex-direction:column;gap:.35em}
-.sponsor .mail{font-weight:500;font-size:.62em;letter-spacing:0;text-decoration:none}
-
-/* the sponsor link is the one button on the page: ink on the track, arrow leaning the way the runners go */
-.s-sf .links .btn{display:inline-flex;align-items:center;gap:.5em;align-self:flex-start;padding:.52em .95em .56em 1em;background:var(--ink);color:#fff;border-radius:.24em;text-decoration:none;line-height:1;transition:background-color .18s}
-.s-sf .links .btn svg{width:.82em;height:.82em;flex:none;transition:transform .22s cubic-bezier(.3,0,.1,1)}
-.s-sf .links .btn:hover svg,.s-sf .links .btn:focus-visible svg{transform:translateX(.22em)}
-.s-sf .links .btn:hover{background:#000}
-.s-sf .links>a[data-film]{padding:.52em 0 .56em;line-height:1}
-.sponsor .mail{padding-left:.1em}
-@media (prefers-reduced-motion:reduce){.s-sf .links .btn svg{transition:none}}
-
 /* ---------- the sponsor button rides along the top of every shot; it takes the colour that reads on the shot under it ---------- */
-.topcta{position:absolute;z-index:6;top:max(14px,2.6vw);right:5%;display:inline-flex;align-items:center;gap:.5em;padding:.62em .95em .66em 1.05em;border-radius:.26em;background:#fff;color:var(--ink);font-weight:800;font-size:clamp(13px,1.2vw,19px);letter-spacing:-.012em;line-height:1;text-decoration:none;transition:background-color .2s,color .2s}
+.topcta{position:absolute;z-index:6;top:max(14px,2.6vw);right:5vw;display:inline-flex;align-items:center;gap:.5em;padding:.62em .95em .66em 1.05em;border-radius:.26em;background:#fff;color:var(--ink);font-weight:800;font-size:clamp(13px,1.2vw,19px);letter-spacing:-.012em;line-height:1;text-decoration:none}
 .topcta svg{width:.82em;height:.82em;flex:none;transition:transform .22s cubic-bezier(.3,0,.1,1)}
 .topcta:hover svg,.topcta:focus-visible svg{transform:translateX(.22em)}
 .stage[data-tone="dark"] .topcta{background:var(--ink);color:#fff}
 .stage[data-shot="sf"] .topcta{visibility:hidden}
-.s-cover .words{right:calc(5% + 15.5vw);top:max(14px,2.6vw);height:calc(clamp(13px,1.2vw,19px)*2.28);display:flex;align-items:center}
+.s-cover .words{left:auto;right:calc(5vw + 15.5vw);width:auto;bottom:auto;top:max(14px,2.6vw);height:calc(clamp(13px,1.2vw,19px)*2.28);display:flex;align-items:center;text-align:right}
 @media (orientation:portrait){
   .topcta{top:max(12px,3.2vw);right:6.5%;font-size:3.5vw}
   .s-cover .words{left:6.5%;right:auto;top:max(12px,3.2vw);height:calc(3.5vw*2.28)}
   .s-cover .line{font-size:3.7vw}
   .s-cover h1{top:calc(max(12px,3.2vw) + 13vw)}
 }
-@media (prefers-reduced-motion:reduce){.topcta,.topcta svg{transition:none}}
-.term{top:calc(var(--ih)*.155)}
-@media (orientation:portrait){.term{top:calc(max(12px,3.2vw) + 13vw)}}
+
+/* ---------- San Francisco's links: one button, its address under it, and the film ---------- */
+.sponsor{display:flex;flex-direction:column;gap:.35em}
+.sponsor .mail{font-weight:500;font-size:.62em;letter-spacing:0;text-decoration:none;padding-left:.1em}
+.s-sf .links .btn{display:inline-flex;align-items:center;gap:.5em;align-self:flex-start;padding:.52em .95em .56em 1em;background:var(--ink);color:#fff;border-radius:.24em;text-decoration:none;line-height:1;transition:background-color .18s}
+.s-sf .links .btn svg{width:.82em;height:.82em;flex:none;transition:transform .22s cubic-bezier(.3,0,.1,1)}
+.s-sf .links .btn:hover svg,.s-sf .links .btn:focus-visible svg{transform:translateX(.22em)}
+.s-sf .links .btn:hover{background:#000}
+.s-sf .links>a[data-film]{padding:.52em 0 .56em;line-height:1}
+@media (prefers-reduced-motion:reduce){.topcta svg,.s-sf .links .btn svg{transition:none}}
