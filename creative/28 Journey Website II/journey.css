@@ -169,7 +169,7 @@ p .to svg{stroke-width:2.3}
 
 /* the film runs only while the reader does */
 .clip-film{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0}
-.s-film.rolling .clip-film{opacity:1}
+.rolling .clip-film{opacity:1}
 
 /* the highlighter is drawn by distance */
 .js .clip mark{background-size:calc(clamp(0,calc((var(--t,1) - .25)/.4),1)*100%) 82%}
@@ -292,4 +292,40 @@ html:not(.js) .s-press .clip{position:relative;top:0;padding-top:var(--g1t)}
   .s-rule .words,.s-posts .words{top:calc(var(--g1t) - .35vw);bottom:auto}
   .s-rule .head,.s-posts .head{position:static;height:auto;display:block}
   .s-rule .sub,.s-posts .sub{position:static;margin-top:1.15em}
+}
+
+/* ---------- the Barcelona film: an upright window that crosses the empty track, right to left, as far as the reader has scrolled ---------- */
+.js .scene.s-bfilm{background:var(--track)}
+.runner{position:absolute;top:0;bottom:0;left:0;width:56.25lvh;overflow:hidden;will-change:transform;transform:translateX(calc(100vw - var(--t,.5)*(100vw + 56.25lvh)))}
+@media (orientation:portrait){
+  .runner{width:100vw;--e:clamp(0,calc(var(--t,1)/.15),1);--o:clamp(0,calc((var(--t,0) - .85)/.15),1);transform:translateX(calc((1 - var(--e))*100vw - var(--o)*100vw))}
+}
+
+/* ---------- the London film is a picture you press, not a line of text ---------- */
+.filmcard{position:relative;display:block;width:26vw;aspect-ratio:16/9;overflow:hidden;border-radius:var(--r);margin-top:1.4em;text-decoration:none}
+.filmcard img{width:100%;height:100%;object-fit:cover;transition:transform .5s cubic-bezier(.2,.7,.2,1)}
+.filmcard:hover img,.filmcard:focus-visible img{transform:scale(1.04)}
+.filmcard .play{position:absolute;left:.8em;bottom:.8em;display:inline-flex;align-items:center;gap:.55em;padding:.6em .95em .64em .85em;background:#fff;color:var(--ink);border-radius:.26em;font-weight:800;font-size:clamp(13px,1.2vw,19px);line-height:1;letter-spacing:-.012em}
+.filmcard .play svg{width:.78em;height:.78em;flex:none}
+.js .s-sf .filmcard{position:absolute;right:0;top:var(--g2t);height:var(--g2h);width:auto;margin:0;border-radius:0;opacity:clamp(0,calc((var(--t,1) - .2)*9999),1)}
+
+/* ---------- the address is text you can select, with a button that copies it ---------- */
+.mailrow{display:flex;align-items:baseline;gap:.9em;font-size:.72em;margin-top:.15em}
+.sponsor .mail{font-size:1em;font-weight:500;letter-spacing:0;padding-left:.1em;user-select:all;-webkit-user-select:all;cursor:text}
+.copy{font:inherit;font-weight:800;color:inherit;background:none;border:0;padding:.2em 0;cursor:pointer;text-decoration:underline;text-underline-offset:.18em;text-decoration-thickness:.07em}
+.copy:focus-visible{outline:3px solid currentColor;outline-offset:4px}
+
+@media (orientation:portrait){
+  .filmcard{width:60vw}
+  .filmcard .play{font-size:3.2vw}
+  .js .s-sf .where{top:calc(var(--g2t) + var(--g2h)*.06)}
+  .js .s-sf .links{top:calc(var(--g2t) + var(--g2h)*.27)}
+  .js .s-sf .filmcard{left:0;right:auto;top:calc(var(--g2t) + var(--g2h)*.6);height:calc(var(--g2h)*.37);width:auto;border-radius:var(--r)}
+}
+@media (prefers-reduced-motion:reduce){.filmcard img{transition:none}}
+/* on a phone the three things in the lower lane keep clear of each other whatever the window's shape */
+@media (orientation:portrait){
+  .js .s-sf{--lt:max(calc(var(--g2h)*.27),calc(var(--g2h)*.06 + 11vw))}
+  .js .s-sf .links{top:calc(var(--g2t) + var(--lt))}
+  .js .s-sf .filmcard{top:calc(var(--g2t) + max(var(--g2h)*.6,var(--lt) + 20vw))}
 }

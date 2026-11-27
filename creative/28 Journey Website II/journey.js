@@ -1,3 +1,18 @@
+/* The address under the sponsor button can be copied with one press. */
+(() => {
+  for (const b of document.querySelectorAll('[data-copy]')) b.addEventListener('click', () => {
+    const text = b.dataset.copy;
+    const done = () => { b.textContent = 'Copied'; setTimeout(() => { b.textContent = 'Copy'; }, 1800); };
+    const old = () => {
+      const t = document.createElement('textarea'); t.value = text; t.style.position = 'fixed'; t.style.opacity = '0';
+      document.body.append(t); t.select();
+      try { document.execCommand('copy'); done(); } catch (e) {}
+      t.remove();
+    };
+    if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(text).then(done, old); else old();
+  });
+})();
+
 /* The London film plays on the page, in a full-screen player, instead of opening the file. */
 (() => {
   const player = document.getElementById('player');
@@ -141,57 +156,63 @@
   /* ---------- the film ---------- */
   // Two stretches of the London film where people are running (0:48 to 0:54 and 0:57 to 1:01), cut into a short
   // silent loop and hosted with the page, in a wide and an upright crop.
-  const FILM = '../../assets/film/' + (portraitMq.matches ? 'runs-portrait.mp4' : 'runs-1600.mp4');
   const termLines = by.film ? [...by.film.el.querySelectorAll('.term .l')] : [];
-  const video = by.film && by.film.el.querySelector('video');
-  let stillSince = 0, frozenAt = 0, playPending = false, filmLoaded = false, ran = false, filmOff = false, pace = 1;
-  function filmLoad() {
-    if (!video || filmLoaded || held !== null || saveData) return;
-    filmLoaded = true;
-    video.addEventListener('loadeddata', () => by.film.el.classList.add('rolling'), { once: true });   // the film's own frame replaces the still
-    video.addEventListener('error', () => { filmOff = true; });
-    video.loop = true; video.preload = 'auto'; video.src = FILM; video.load();
-  }
-  function film(now, moving, t, speed, dt) {
-    const el = by.film.el;
-    filmLoad();
-    // the build log is written by distance run: it only gets longer while the reader keeps moving
-    const shown = Math.floor(seg(t, 0.30, 0.86) * termLines.length + 0.001);
-    termLines.forEach((l, i) => l.classList.toggle('on', i < shown || (i === termLines.length - 1 && shown >= termLines.length - 1)));
-    // the runners keep the reader's pace
-    pace = follow(pace, clamp(0.8 + speed / 2500, 0.8, 1.6), dt, 0.3);
-    // once "build paused." is up it stays for half a second, so it never strobes between flicks
-    const lockedOn = frozenAt && now - frozenAt < 500;
-    if (moving && !lockedOn) {
-      stillSince = 0; frozenAt = 0;
-      el.classList.remove('frozen');
-      if (filmLoaded && !filmOff) {
-        try { if (Math.abs(video.playbackRate - pace) > 0.05) video.playbackRate = pace; } catch (e) {}
-        if (video.paused && !playPending) {
-          playPending = true;
-          const p = video.play();
-          if (p && p.then) p.then(() => { playPending = false; ran = true; }, e => { playPending = false; if (e && e.name === 'NotAllowedError') filmOff = true; });
-          else playPending = false;
-        }
-      }
-    } else if (!moving) {
-      if (!video.paused) video.pause();
-      if (!stillSince) stillSince = now;
-      // the line is only true if something was running: it needs the film on screen
-      if (!frozenAt && ran && t > 0.3 && now - stillSince > 450 && el.classList.contains('rolling')) { frozenAt = now; el.classList.add('frozen'); }
+  function makeFilm(shot, src, lines) {
+    const el = shot.el, video = el.querySelector('video');
+    let stillSince = 0, frozenAt = 0, playPending = false, loaded = false, ran = false, off = false, pace = 1;
+    function load() {
+      if (!video || loaded || held !== null || saveData) return;
+      loaded = true;
+      video.addEventListener('loadeddata', () => el.classList.add('rolling'), { once: true });   // the film's own frame replaces the still
+      video.addEventListener('error', () => { off = true; });
+      video.loop = true; video.preload = 'auto'; video.src = src; video.load();
     }
+    function tick(now, moving, t, speed, dt) {
+      load();
+      // the build log is written by distance run: it only gets longer while the reader keeps moving
+      const shown = Math.floor(seg(t, 0.30, 0.86) * lines.length + 0.001);
+      lines.forEach((l, i) => l.classList.toggle('on', i < shown || (i === lines.length - 1 && shown >= lines.length - 1)));
+      // the runners keep the reader's pace
+      pace = follow(pace, clamp(0.8 + speed / 2500, 0.8, 1.6), dt, 0.3);
+      // once "build paused." is up it stays for half a second, so it never strobes between flicks
+      const lockedOn = frozenAt && now - frozenAt < 500;
+      if (moving && !lockedOn) {
+        stillSince = 0; frozenAt = 0;
+        el.classList.remove('frozen');
+        if (loaded && !off) {
+          try { if (Math.abs(video.playbackRate - pace) > 0.05) video.playbackRate = pace; } catch (e) {}
+          if (video.paused && !playPending) {
+            playPending = true;
+            const p = video.play();
+            if (p && p.then) p.then(() => { playPending = false; ran = true; }, e => { playPending = false; if (e && e.name === 'NotAllowedError') off = true; });
+            else playPending = false;
+          }
+        }
+      } else if (!moving) {
+        if (!video.paused) video.pause();
+        if (!stillSince) stillSince = now;
+        // the line is only true if something was running: it needs the film on screen
+        if (lines.length && !frozenAt && ran && t > 0.3 && now - stillSince > 450 && el.classList.contains('rolling')) { frozenAt = now; el.classList.add('frozen'); }
+      }
+    }
+    function rest() { if (video && !video.paused) video.pause(); el.classList.remove('frozen'); stillSince = 0; frozenAt = 0; }
+    return { load, tick, rest, video, isLoaded: () => loaded };
   }
-  function filmRest() { if (video && !video.paused) video.pause(); if (by.film) by.film.el.classList.remove('frozen'); stillSince = 0; frozenAt = 0; }
-  // Phones ignore preload, so the first touch, wheel or key starts the download; the film is then ready when its shot arrives.
+  const films = {};
+  if (by.film) films.film = makeFilm(by.film, '../../assets/film/' + (portraitMq.matches ? 'runs-portrait.mp4' : 'runs-1600.mp4'), termLines);
+  if (by.bfilm) films.bfilm = makeFilm(by.bfilm, '../../assets/film/barcelona-runs.mp4', []);
+  // Phones ignore preload, so the first touch, wheel or key starts the download; the films are then ready when their shots arrive.
   const prime = () => {
     removeEventListener('touchstart', prime); removeEventListener('wheel', prime); removeEventListener('keydown', prime);
-    filmLoad();
-    if (!filmLoaded) return;
-    const p = video.play();
-    if (p && p.then) p.then(() => { if (!active || active.id !== 'film') video.pause(); }, () => {});
+    for (const [id, f] of Object.entries(films)) {
+      f.load();
+      if (!f.isLoaded()) continue;
+      const p = f.video.play();
+      if (p && p.then) p.then(() => { if (!active || active.id !== id) f.video.pause(); }, () => {});
+    }
   };
   addEventListener('touchstart', prime, { passive: true }); addEventListener('wheel', prime, { passive: true }); addEventListener('keydown', prime);
-  addEventListener('load', filmLoad);
+  addEventListener('load', () => { if (films.film) films.film.load(); });
 
   /* ---------- the loop ---------- */
   addEventListener('scroll', () => { lastScroll = performance.now(); }, { passive: true });
@@ -210,7 +231,7 @@
   function show(shot, below) {
     if (shot !== active) {
       if (!active) for (const x of shots) x.el.classList.remove('on');   // the markup starts with the cover up
-      if (active) { active.el.classList.remove('on', 'wipe'); if (active.id === 'film') filmRest(); }
+      if (active) { active.el.classList.remove('on', 'wipe'); if (films[active.id]) films[active.id].rest(); }
       shot.el.classList.add('on');
       stage.dataset.shot = shot.id;
       active = shot;
@@ -230,6 +251,7 @@
     const land = !portraitMq.matches;
     if (shot.id === 'film' && land) return t < 0.2 ? 'dark' : 'light';
     if (shot.id === 'distance') return t < 0.45 ? 'light' : 'dark';
+    if (shot.id === 'bfilm') return !land && t > 0.1 && t < 0.9 ? 'light' : 'dark';
     if (shot.id === 'barcelona') return land && t > 0.15 && t < 0.9 ? 'light' : 'dark';
     return shot.el.dataset.tone || 'dark';
   }
@@ -241,7 +263,7 @@
     // the edit follows the scroll position closely rather than exactly, so a wheel notch reads as a stride, not a jump
     if (held !== null || sCur < 0 || Math.abs(s - sCur) > 70) sCur = s;
     else { sCur = follow(sCur, s, dt, coarse ? 0.04 : 0.09); if (Math.abs(sCur - s) < 0.02) sCur = s; }
-    const isFilm = active && active.id === 'film';
+    const isFilm = active && films[active.id];
     if (sCur === drawn && !isFilm) { requestAnimationFrame(frame); return; }   // nothing has changed: rest
     drawn = sCur;
     const speed = before < 0 ? 0 : Math.abs(sCur - before) * unit() / Math.max(dt, 0.001);
@@ -258,7 +280,7 @@
     shot.el.style.setProperty('--t', t.toFixed(4));
     stage.dataset.tone = tone(shot, t, inP);
 
-    if (shot.id === 'film') film(now, now - lastScroll < 200, t, speed, dt);
+    if (films[shot.id]) films[shot.id].tick(now, now - lastScroll < 200, t, speed, dt);
     if (shot.id === 'press' && clip) clip.style.transform = pressTravel ? `translate3d(0,${Math.round(-pressTravel * seg(t, 0.1, 0.6))}px,0)` : '';
     if (shot.id === 'lanes' && lane) {
       const d = window.devicePixelRatio || 1;
