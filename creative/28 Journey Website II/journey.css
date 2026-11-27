@@ -245,3 +245,20 @@ html:not(.js) .s-press .clip{position:relative;top:0}
 .s-sf .links>a[data-film]{padding:.52em 0 .56em;line-height:1}
 .sponsor .mail{padding-left:.1em}
 @media (prefers-reduced-motion:reduce){.s-sf .links .btn svg{transition:none}}
+
+/* ---------- the sponsor button rides along the top of every shot; it takes the colour that reads on the shot under it ---------- */
+.topcta{position:absolute;z-index:6;top:max(14px,2.6vw);right:5%;display:inline-flex;align-items:center;gap:.5em;padding:.62em .95em .66em 1.05em;border-radius:.26em;background:#fff;color:var(--ink);font-weight:800;font-size:clamp(13px,1.2vw,19px);letter-spacing:-.012em;line-height:1;text-decoration:none;transition:background-color .2s,color .2s}
+.topcta svg{width:.82em;height:.82em;flex:none;transition:transform .22s cubic-bezier(.3,0,.1,1)}
+.topcta:hover svg,.topcta:focus-visible svg{transform:translateX(.22em)}
+.stage[data-tone="dark"] .topcta{background:var(--ink);color:#fff}
+.stage[data-shot="sf"] .topcta{visibility:hidden}
+.s-cover .words{right:calc(5% + 15.5vw);top:max(14px,2.6vw);height:calc(clamp(13px,1.2vw,19px)*2.28);display:flex;align-items:center}
+@media (orientation:portrait){
+  .topcta{top:max(12px,3.2vw);right:6.5%;font-size:3.5vw}
+  .s-cover .words{left:6.5%;right:auto;top:max(12px,3.2vw);height:calc(3.5vw*2.28)}
+  .s-cover .line{font-size:3.7vw}
+  .s-cover h1{top:calc(max(12px,3.2vw) + 13vw)}
+}
+@media (prefers-reduced-motion:reduce){.topcta,.topcta svg{transition:none}}
+.term{top:calc(var(--ih)*.155)}
+@media (orientation:portrait){.term{top:calc(max(12px,3.2vw) + 13vw)}}

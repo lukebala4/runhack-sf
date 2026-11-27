@@ -215,6 +215,7 @@
     } else for (const x of shots) if (x !== shot) x.el.classList.remove('on', 'w');
     shot.el.classList.remove('out');
     shot.el.classList.add('on');
+    stage.dataset.tone = shot.el.dataset.tone || 'dark'; stage.dataset.shot = shot.id;
     // arriving anywhere but a shot's edge (a reload, a link, a key) shows the settled state straight away
     snap = held !== null || !prev || (t > 0.03 && t < 0.97);
     shot.at = snap ? now - BEAT : now;
