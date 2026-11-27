@@ -244,9 +244,6 @@
     console.log(['$ git log --oneline', '240926b  barcelona: did it again, by the sea', '290826a  london: 32 teams, 1,177 km, one sauna', '', '$ git log san-francisco', "fatal: your current branch 'san-francisco' does not have any commits yet", '', 'Want to make the first one? runninghackathon@gmail.com'].join(String.fromCharCode(10)));
   } catch (e) {}
 
-  // when the tab is left, nobody is running
-  const title = document.title;
-  document.addEventListener('visibilitychange', () => { document.title = document.hidden ? 'Nobody is running.' : title; });
 
   /* ---------- getting around without a wheel ---------- */
   const goTo = (shot, into = 0.45) => scrollTo({ top: reel.getBoundingClientRect().top + scrollY + (shot.from + shot.len * into) * unit() });
