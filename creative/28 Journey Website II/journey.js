@@ -2,7 +2,8 @@
 (() => {
   for (const b of document.querySelectorAll('[data-copy]')) b.addEventListener('click', () => {
     const text = b.dataset.copy;
-    const done = () => { b.textContent = 'Copied'; setTimeout(() => { b.textContent = 'Copy'; }, 1800); };
+    const note = b.parentNode.querySelector('.copied');
+    const done = () => { if (!note) return; note.textContent = 'Copied to clipboard'; clearTimeout(b._t); b._t = setTimeout(() => { note.textContent = ''; }, 2200); };
     const old = () => {
       const t = document.createElement('textarea'); t.value = text; t.style.position = 'fixed'; t.style.opacity = '0';
       document.body.append(t); t.select();
@@ -157,7 +158,7 @@
   // Two stretches of the London film where people are running (0:48 to 0:54 and 0:57 to 1:01), cut into a short
   // silent loop and hosted with the page, in a wide and an upright crop.
   const termLines = by.film ? [...by.film.el.querySelectorAll('.term .l')] : [];
-  function makeFilm(shot, src, lines) {
+  function makeFilm(shot, src, lines, from, to) {
     const el = shot.el, video = el.querySelector('video');
     let stillSince = 0, frozenAt = 0, playPending = false, loaded = false, ran = false, off = false, pace = 1;
     function load() {
@@ -170,7 +171,7 @@
     function tick(now, moving, t, speed, dt) {
       load();
       // the build log is written by distance run: it only gets longer while the reader keeps moving
-      const shown = Math.floor(seg(t, 0.30, 0.86) * lines.length + 0.001);
+      const shown = Math.floor(seg(t, from, to) * lines.length + 0.001);
       lines.forEach((l, i) => l.classList.toggle('on', i < shown || (i === lines.length - 1 && shown >= lines.length - 1)));
       // the runners keep the reader's pace
       pace = follow(pace, clamp(0.8 + speed / 2500, 0.8, 1.6), dt, 0.3);
@@ -192,15 +193,15 @@
         if (!video.paused) video.pause();
         if (!stillSince) stillSince = now;
         // the line is only true if something was running: it needs the film on screen
-        if (lines.length && !frozenAt && ran && t > 0.3 && now - stillSince > 450 && el.classList.contains('rolling')) { frozenAt = now; el.classList.add('frozen'); }
+        if (lines.length && !frozenAt && ran && t > from && now - stillSince > 450 && el.classList.contains('rolling')) { frozenAt = now; el.classList.add('frozen'); }
       }
     }
     function rest() { if (video && !video.paused) video.pause(); el.classList.remove('frozen'); stillSince = 0; frozenAt = 0; }
     return { load, tick, rest, video, isLoaded: () => loaded };
   }
   const films = {};
-  if (by.film) films.film = makeFilm(by.film, '../../assets/film/' + (portraitMq.matches ? 'runs-portrait.mp4' : 'runs-1600.mp4'), termLines);
-  if (by.bfilm) films.bfilm = makeFilm(by.bfilm, '../../assets/film/barcelona-runs.mp4', []);
+  if (by.film) films.film = makeFilm(by.film, '../../assets/film/' + (portraitMq.matches ? 'runs-portrait.mp4' : 'runs-1600.mp4'), termLines, 0.30, 0.86);
+  if (by.bfilm) films.bfilm = makeFilm(by.bfilm, '../../assets/film/' + (portraitMq.matches ? 'barcelona-runs.mp4' : 'barcelona-tri.mp4'), [...by.bfilm.el.querySelectorAll('.term .l')], 0.06, 0.66);
   // Phones ignore preload, so the first touch, wheel or key starts the download; the films are then ready when their shots arrive.
   const prime = () => {
     removeEventListener('touchstart', prime); removeEventListener('wheel', prime); removeEventListener('keydown', prime);
@@ -251,8 +252,8 @@
     const land = !portraitMq.matches;
     if (shot.id === 'film' && land) return t < 0.2 ? 'dark' : 'light';
     if (shot.id === 'distance') return t < 0.45 ? 'light' : 'dark';
-    if (shot.id === 'bfilm') return !land && t > 0.1 && t < 0.9 ? 'light' : 'dark';
-    if (shot.id === 'barcelona') return land && t > 0.15 && t < 0.9 ? 'light' : 'dark';
+    if (shot.id === 'bfilm') return t < 0.9 ? 'light' : 'dark';
+    if (shot.id === 'barcelona') return land && t > 0.15 ? 'light' : 'dark';
     return shot.el.dataset.tone || 'dark';
   }
 
