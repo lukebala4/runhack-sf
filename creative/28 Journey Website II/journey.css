@@ -463,3 +463,4 @@ html:not(.js) .s-press .clip{position:relative;top:0;padding-top:var(--g1t)}
 @media (prefers-reduced-motion:reduce){.filmcard .disc{transition:none}}
 @media (orientation:landscape){.g .pair .side{left:58vw;width:17vw}}
 @media (orientation:portrait){.js .s-sf .filmcard{aspect-ratio:auto}}
+@media (orientation:landscape){.g .pair .side{width:19vw;text-wrap:balance}}
