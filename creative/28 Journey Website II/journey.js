@@ -24,8 +24,9 @@
   const saveData = !!(navigator.connection && navigator.connection.saveData);
 
   /* ---------- cue sheet, read from the markup ---------- */
-  const BEAT = 260;                                         // ms between a photograph cutting on and its sentence
+  const BEAT = 520;                                         // ms between a photograph cutting on and its sentence
   const WITH_PICTURE = new Set(['cover', 'sauna', 'posts']);   // first paint; the joke; the panel that would be blank
+  const CUTS = new Set(['rained>sauna', 'sauna>rained', 'posts>press', 'press>posts']);   // these two stay hard cuts: the joke, and the panel swap
   const OWN_WORDS = new Set(['film', 'press']);             // the film sets its own caption; the article is the words
   const PUSH = new Set(['cover', 'rule', 'film', 'london', 'distance', 'barcelona']);
   let total = 0;
@@ -183,9 +184,20 @@
   }
 
   function enter(shot, prev, now, forward, t) {
-    if (prev) prev.el.classList.remove('on', 'w', 'frozen');
-    if (prev && prev.id === 'press' && mark) mark.classList.remove('lit');
-    else for (const x of shots) if (x !== shot) x.el.classList.remove('on', 'w');
+    const edge = t <= 0.03 || t >= 0.97;
+    const cutPair = prev && CUTS.has(prev.id + '>' + shot.id);
+    for (const x of shots) x.el.classList.remove('wipe-f', 'wipe-b');
+    if (prev) {
+      prev.el.classList.remove('on', 'frozen');
+      if (edge && !cutPair && held === null) {
+        // the last shot stays underneath, sentence and all, until the new one has covered it
+        const old = prev.el; old.classList.add('out');
+        setTimeout(() => { old.classList.remove('out'); if (!old.classList.contains('on')) old.classList.remove('w'); }, 470);
+        shot.el.classList.add(forward ? 'wipe-f' : 'wipe-b');
+      } else prev.el.classList.remove('w', 'out');
+      if (prev.id === 'press' && mark) mark.classList.remove('lit');
+    } else for (const x of shots) if (x !== shot) x.el.classList.remove('on', 'w');
+    shot.el.classList.remove('out');
     shot.el.classList.add('on');
     // arriving anywhere but a shot's edge (a reload, a link, a key) shows the settled state straight away
     snap = held !== null || !prev || (t > 0.03 && t < 0.97);

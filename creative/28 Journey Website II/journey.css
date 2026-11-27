@@ -207,3 +207,13 @@ html:not(.js) .s-press .clip{position:relative;top:0}
 .sf-log{margin:0 0 1.2em}
 .js .s-sf .sf-log{position:absolute;left:0;right:0;top:0;height:var(--g0h,17%);margin:0;display:flex;flex-direction:column;justify-content:center;white-space:pre-wrap}
 @media (orientation:portrait){.sf-log{white-space:pre-wrap}}
+
+/* ---------- between shots: the next one is drawn across the last, from the side the runners are heading to ---------- */
+.js .scene.out{visibility:visible;z-index:0}
+.js .scene.on{z-index:1}
+.js .scene.wipe-f{animation:wipe-f .44s cubic-bezier(.45,0,.15,1) both}
+.js .scene.wipe-b{animation:wipe-b .44s cubic-bezier(.45,0,.15,1) both}
+@keyframes wipe-f{from{clip-path:inset(0 0 0 100%)}to{clip-path:inset(0 0 0 0)}}
+@keyframes wipe-b{from{clip-path:inset(0 100% 0 0)}to{clip-path:inset(0 0 0 0)}}
+
+.cch img{display:inline-block;width:1.05em;height:1.05em;margin-right:.28em;vertical-align:-.16em}
