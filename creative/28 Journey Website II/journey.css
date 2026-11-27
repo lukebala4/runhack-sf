@@ -333,10 +333,11 @@ html:not(.js) .s-press .clip{position:relative;top:0;padding-top:var(--g1t)}
 /* ---------- the two mascots take the bottom lane of the empty track, and only get as far as the reader has scrolled ---------- */
 .pack{position:absolute;z-index:1;left:5vw;bottom:1.2svh;height:calc((100svh - var(--g3t,84.8svh))*.9);display:flex;align-items:flex-end;gap:1.2vw;pointer-events:none}
 .pack img{height:100%;width:auto}
-.pack .hog{height:108%}
+.pack .hog{height:118%;margin:0 -1.2vw -4% -1.6vw}
 .js .pack{left:0;bottom:calc((100lvh - var(--g3t,84.8lvh))*.03);height:calc((100lvh - var(--g3t,84.8lvh))*.97 - 1.4vh);transform:translateX(calc(-34vw + var(--t,1)*82vw));will-change:transform}
 .js .scene:not(.near) .pack{display:none}
 .js .s-sf.on .devin{animation:stride .34s steps(1) infinite}
+.js .s-sf.on .hog{animation:stride .34s steps(1) -.17s infinite}
 @keyframes stride{50%{transform:translateY(-5%) rotate(-2deg)}}
 @media (orientation:portrait){.js .pack{transform:translateX(calc(-70vw + var(--t,1)*120vw))}.pack{gap:3vw}}
-@media (prefers-reduced-motion:reduce){.js .s-sf.on .devin{animation:none}}
+@media (prefers-reduced-motion:reduce){.js .s-sf.on .devin,.js .s-sf.on .hog{animation:none}}
