@@ -1,3 +1,19 @@
+/* The London film plays on the page, in a full-screen player, instead of opening the file. */
+(() => {
+  const player = document.getElementById('player');
+  if (!player || !player.showModal) return;
+  const film = player.querySelector('video');
+  for (const a of document.querySelectorAll('[data-film]')) a.addEventListener('click', e => {
+    e.preventDefault();
+    player.showModal();
+    const p = film.play(); if (p && p.catch) p.catch(() => {});
+  });
+  const stop = () => { film.pause(); };
+  player.addEventListener('close', stop);
+  player.querySelector('.player-close').addEventListener('click', () => player.close());
+  player.addEventListener('click', e => { if (e.target === player) player.close(); });
+})();
+
 /* The scroll edit.
    Scroll chooses the shot, and every change of shot is a hard cut. The sentence lands a beat after its
    photograph. Four moments do more than cut:

@@ -217,3 +217,31 @@ html:not(.js) .s-press .clip{position:relative;top:0}
 @keyframes wipe-b{from{clip-path:inset(0 100% 0 0)}to{clip-path:inset(0 0 0 0)}}
 
 .cch img{display:inline-block;width:1.05em;height:1.05em;margin-right:.28em;vertical-align:-.16em}
+
+/* ---------- the London film, played on the page ---------- */
+.player{border:0;padding:0;margin:0;width:100vw;height:100dvh;max-width:none;max-height:none;background:var(--ink);color:var(--white)}
+.player[open]{display:grid;place-items:center}
+.player::backdrop{background:var(--ink)}
+.player video{width:100%;height:100%;object-fit:contain;background:var(--ink)}
+.player-close{position:absolute;top:max(18px,env(safe-area-inset-top));right:22px;background:none;border:0;padding:6px 4px;color:inherit;font:800 18px/1 'Inter Tight',system-ui,sans-serif;text-decoration:underline;text-underline-offset:.18em;cursor:pointer}
+
+/* ---------- cover: only the mark and, top right, where and when ---------- */
+.s-cover .words{left:auto;right:5%;width:auto;bottom:auto;top:max(1.6vw,calc(var(--ih,100vh)*.075 - var(--crop,0px)*.3));text-align:right}
+.s-cover .line{font-size:1.75vw;font-weight:700}
+@media (orientation:portrait){
+  .s-cover .words{left:auto;right:6.5%;top:3.4%}
+  .s-cover .line{font-size:4.2vw}
+}
+/* ---------- the sponsor link carries its address underneath ---------- */
+.s-sf .links{align-items:flex-start}
+.sponsor{display:flex;flex-direction:column;gap:.35em}
+.sponsor .mail{font-weight:500;font-size:.62em;letter-spacing:0;text-decoration:none}
+
+/* the sponsor link is the one button on the page: ink on the track, arrow leaning the way the runners go */
+.s-sf .links .btn{display:inline-flex;align-items:center;gap:.5em;align-self:flex-start;padding:.52em .95em .56em 1em;background:var(--ink);color:#fff;border-radius:.24em;text-decoration:none;line-height:1;transition:background-color .18s}
+.s-sf .links .btn svg{width:.82em;height:.82em;flex:none;transition:transform .22s cubic-bezier(.3,0,.1,1)}
+.s-sf .links .btn:hover svg,.s-sf .links .btn:focus-visible svg{transform:translateX(.22em)}
+.s-sf .links .btn:hover{background:#000}
+.s-sf .links>a[data-film]{padding:.52em 0 .56em;line-height:1}
+.sponsor .mail{padding-left:.1em}
+@media (prefers-reduced-motion:reduce){.s-sf .links .btn svg{transition:none}}
