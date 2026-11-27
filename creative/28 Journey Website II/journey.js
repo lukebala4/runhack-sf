@@ -74,6 +74,7 @@
     for (const s of [by.lanes, by.sf]) {
       if (!s) continue;
       s.el.style.setProperty('--g1t', gaps[1][0] + 'px'); s.el.style.setProperty('--g1h', (gaps[1][1] - gaps[1][0]) + 'px');
+      s.el.style.setProperty('--g0h', gaps[0][1] + 'px');
       s.el.style.setProperty('--g2t', gaps[2][0] + 'px'); s.el.style.setProperty('--g2h', (gaps[2][1] - gaps[2][0]) + 'px');
     }
     if (lane) {
@@ -97,22 +98,25 @@
   if (hold) { const [id, t] = hold.split(':'); if (by[id]) held = by[id].from + by[id].len * clamp(+t || 0, 0, 0.999); }
 
   /* ---------- 1. the film ---------- */
-  const FILM = 'https://djjr1drlf4hlxylk.public.blob.vercel-storage.com/videos/runhack-overview-20260912-1080p.mp4';
-  // Stretches of the film where people are running on the London track, with no title or sponsor card
-  // (checked against frames at quarter-second steps, 26 Nov 2026; kept clear of the cards at 54.5 s and 55.7 s).
-  const RUNS = [[48.0, 54.2], [56.8, 60.7]];
+  // Two stretches of the London film where people are running (0:48 to 0:54 and 0:57 to 1:01), cut into a short
+  // silent loop and hosted with the page, in a wide and an upright crop.
+  const FILM = '../../assets/film/' + (matchMedia('(orientation: portrait)').matches ? 'runs-portrait.mp4' : 'runs-1600.mp4');
+  const termLines = by.film ? [...by.film.el.querySelectorAll('.term .l')] : [];
   const video = by.film && by.film.el.querySelector('video');
-  let run = 0, stillSince = 0, frozenAt = 0, playPending = false, filmLoaded = false, ran = false, filmOff = false;
+  let stillSince = 0, frozenAt = 0, playPending = false, filmLoaded = false, ran = false, filmOff = false;
   function filmLoad() {
     if (!video || filmLoaded || held !== null || saveData) return;
     filmLoaded = true;
     video.addEventListener('loadeddata', () => by.film.el.classList.add('rolling'), { once: true });   // the film's own frame replaces the still
     video.addEventListener('error', () => { filmOff = true; });
-    video.preload = 'auto'; video.src = FILM + '#t=' + RUNS[0][0]; video.load();
+    video.loop = true; video.preload = 'auto'; video.src = FILM; video.load();
   }
-  function film(now, moving) {
+  function film(now, moving, t) {
     const el = by.film.el;
     filmLoad();
+    // the build log is written by distance run: it only gets longer while the reader keeps moving
+    const shown = Math.floor(seg(t, 0.03, 0.82) * termLines.length + 0.001);
+    termLines.forEach((l, i) => l.classList.toggle('on', i < shown || (i === termLines.length - 1 && shown >= termLines.length - 1)));
     // once "Nobody is running." is up it stays for half a second, so it never strobes between flicks
     const lockedOn = frozenAt && now - frozenAt < 500;
     if (moving && !lockedOn) {
@@ -129,11 +133,6 @@
       if (!stillSince) stillSince = now;
       // the line is only true if something was running: it needs the film on screen
       if (!frozenAt && ran && now - stillSince > 450 && el.classList.contains('rolling')) { frozenAt = now; el.classList.add('frozen', 'w'); }
-    }
-    const r = RUNS[run];
-    if (video.readyState > 0 && (video.currentTime >= r[1] || video.currentTime < r[0] - 0.5)) {
-      if (video.currentTime >= r[1]) run = (run + 1) % RUNS.length;
-      video.currentTime = RUNS[run][0];
     }
   }
   function filmRest() { if (video && !video.paused) video.pause(); }
@@ -218,7 +217,7 @@
       if (!on) settled = false;
     }
     const moving = now - lastScroll < 200;
-    if (shot.id === 'film') film(now, moving); else filmRest();
+    if (shot.id === 'film') film(now, moving, t); else filmRest();
     if (shot.id === 'press') press(t, dt, now);
     if (shot.id === 'lanes') lanes(t, dt);
     snap = false;
@@ -239,6 +238,11 @@
     layout(); drawnS = -1;
     if (keep >= 0 && held === null && Math.abs(unit() - before) > 0.05) scrollTo(0, reel.getBoundingClientRect().top + scrollY + keep * unit());
   });
+
+  try {
+    console.log('%cRunning Hackathon', 'font:800 22px Inter Tight,system-ui,sans-serif');
+    console.log(['$ git log --oneline', '240926b  barcelona: did it again, by the sea', '290826a  london: 32 teams, 1,177 km, one sauna', '', '$ git log san-francisco', "fatal: your current branch 'san-francisco' does not have any commits yet", '', 'Want to make the first one? runninghackathon@gmail.com'].join(String.fromCharCode(10)));
+  } catch (e) {}
 
   // when the tab is left, nobody is running
   const title = document.title;

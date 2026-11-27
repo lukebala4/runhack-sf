@@ -37,8 +37,20 @@
   </section>
 
   <section class="scene s-film" data-scene="film" data-len="200" data-tone="light" data-motion>
-    <picture class="photo"><source media="(orientation: portrait)" srcset="../../assets/catalogue/london/london-05-2400.webp"><img src="../../assets/deck/16-two-runners.jpg" alt="" width="1920" height="1080" loading="lazy"></picture>
+    <picture class="photo"><source media="(orientation: portrait)" srcset="../../assets/film/runs-portrait.jpg"><img src="../../assets/film/runs-1600.jpg" alt="" width="1920" height="1080" loading="lazy"></picture>
     <video class="clip-film" muted playsinline preload="none" aria-label="Runners on the London track, from the event film. It plays while you scroll and stops when you stop."></video>
+    <div class="term" aria-hidden="true">
+      <div class="term-bar"><i></i><i></i><i></i><span>run-hack/london</span></div>
+<pre><span class="l">runner@lap-14:~$ voice on</span>
+<span class="l">  * listening</span>
+<span class="l">&gt; build a live leaderboard, split by lap</span>
+<span class="l">  » spawning 3 agents</span>
+<span class="l">  ✓ agent 1  api/routes.ts     (+31 −4)</span>
+<span class="l">  ✓ agent 2  gps/stream.ts     (+18 −9)</span>
+<span class="l">  ✓ agent 3  leaderboard.ts    (+48 −6)</span>
+<span class="l">  ✓ 3/3 merged → main</span>
+<span class="l">&gt; <b class="caret"></b><span class="halt">  nobody is running. build paused.</span></span></pre>
+    </div>
     <div class="words">
       <h2>Nobody is running.</h2>
     </div>
@@ -90,7 +102,7 @@
   </section>
 
   <section class="scene s-distance" data-scene="distance" data-len="70" data-tone="light">
-    <picture class="photo"><source media="(orientation: portrait)" srcset="../../assets/catalogue/london/london-07-2400.webp"><img src="../../assets/deck/04-laughing-lap.jpg" alt="A runner laughing and waving at the camera, phone in hand, London Stadium behind her." width="1920" height="1080" loading="lazy"></picture>
+    <picture class="photo"><source media="(orientation: portrait)" srcset="../../assets/catalogue/london/london-07-2400.webp"><img src="../../assets/deck/04-laughing-lap-c.jpg" alt="A runner laughing and waving at the camera, phone in hand, London Stadium behind her." width="1920" height="1080" loading="lazy"></picture>
     <div class="words">
       <h2>They ran 1,177 km.</h2>
       <p>32 teams, five and a half hours.<span class="static-only"><br>The same distance as London <span class="to"><svg viewBox="0 0 24 16" aria-hidden="true"><path d="M1 8h20M15 2l7 6-7 6"/></svg><span class="sr">to</span></span> Barcelona.</span></p>
@@ -121,12 +133,17 @@
     <div class="words">
       <h2>So we flew to Barcelona and did it again.</h2>
       <p>September 2026, with the Claude Community House.</p>
+<pre class="gitlog" aria-hidden="true">$ git log --oneline
+● 240926b  barcelona: did it again, by the sea
+○ 290826a  london: 32 teams, 1,177 km, one sauna</pre>
     </div>
   </section>
 
   <section class="scene s-sf" data-scene="sf" data-len="110" data-tone="dark" id="end">
     <picture class="photo"><img src="../../assets/deck/09-empty-track.jpg" alt="An empty red running track with white lane lines." width="1920" height="1080" loading="lazy"></picture>
     <div class="words">
+      <pre class="gitlog sf-log" aria-hidden="true">$ git log san-francisco
+fatal: your current branch 'san-francisco' does not have any commits yet</pre>
       <h2>Nobody has run this one yet.</h2>
       <p class="where"><b>San Francisco,</b> spring 2027.</p>
       <p class="links"><a href="mailto:runninghackathon@gmail.com?subject=Sponsorship%20enquiry%20%7C%20Running%20Hackathon%20San%20Francisco">Join as a sponsor</a><a href="https://djjr1drlf4hlxylk.public.blob.vercel-storage.com/videos/runhack-overview-20260912-1080p.mp4" target="_blank" rel="noopener noreferrer">Watch London in 90 seconds</a></p>
