@@ -508,3 +508,32 @@ html:not(.js) .s-press .clip{position:relative;top:0;padding-top:var(--g1t)}
 /* the pinned edit has no scrollbar: the page still scrolls by wheel, touch, keys and arrow keys */
 html.js{scrollbar-width:none}
 html.js::-webkit-scrollbar{width:0;height:0;display:none}
+
+/* ---------- top bar: the sponsor button and, beside it, three lines that open "Our other events" ---------- */
+.topbar{position:absolute;z-index:6;top:max(14px,2.6vw);right:5vw;display:flex;align-items:stretch;gap:.5vw;font-size:clamp(13px,1.2vw,19px)}
+.topbar .topcta{position:static;font-size:1em}
+.menu{position:relative;display:flex}
+.menu-btn{width:2.28em;min-width:2.28em;border:0;border-radius:.26em;background:#fff;color:var(--ink);font:inherit;cursor:pointer;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.22em;padding:0}
+.menu-btn i{display:block;width:1em;height:.13em;background:currentColor;border-radius:1px}
+.stage[data-tone="dark"] .menu-btn{background:var(--ink);color:#fff}
+.menu-btn:focus-visible{outline:3px solid currentColor;outline-offset:3px}
+.menu-list{position:absolute;right:0;top:calc(100% + .5em);min-width:13.5em;padding:.9em 1.05em 1em;border-radius:.3em;background:var(--ink);color:#fff;font-weight:800;letter-spacing:-.012em;line-height:1.2}
+.menu-list[hidden]{display:none}
+.menu-list p{margin:0 0 .7em;font-weight:500;font-size:.82em;letter-spacing:0;opacity:.75}
+.menu-list a{display:block;padding:.38em 0;text-decoration:none;white-space:nowrap}
+.menu-list a:hover,.menu-list a:focus-visible{text-decoration:underline}
+.stage[data-tone="light"] .menu-list{background:#fff;color:var(--ink)}
+/* things that share the top row make room for the wider bar */
+.s-cover .words{right:calc(5vw + 19.6vw)}
+@media (orientation:landscape){.g .pair .side{left:55vw}}
+@media (orientation:portrait){
+  .topbar{top:max(12px,3.2vw);right:6.5%;font-size:3.5vw;gap:1.6vw}
+  .s-cover .words{right:auto}
+  .s-cover .line{font-size:3.3vw}
+}
+/* phone cover: the date takes its own row under the bar, the wordmark under that */
+@media (orientation:portrait){
+  .s-cover .words{left:6.5%;right:auto;top:calc(max(12px,3.2vw) + 11vw);height:auto}
+  .s-cover .line{font-size:3.9vw}
+  .s-cover h1{top:calc(max(12px,3.2vw) + 19vw)}
+}

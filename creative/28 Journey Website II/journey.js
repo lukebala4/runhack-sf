@@ -7,6 +7,17 @@
   }
 })();
 
+/* The three lines in the top bar open the list of other events; a press elsewhere or Escape closes it. */
+(() => {
+  const btn = document.querySelector('.menu-btn'), list = document.getElementById('menu-list');
+  if (!btn || !list) return;
+  const set = open => { list.hidden = !open; btn.setAttribute('aria-expanded', String(open)); };
+  btn.addEventListener('click', e => { e.stopPropagation(); set(list.hidden); });
+  document.addEventListener('click', e => { if (!list.hidden && !list.contains(e.target)) set(false); });
+  document.addEventListener('keydown', e => { if (e.key === 'Escape' && !list.hidden) { set(false); btn.focus(); } });
+  addEventListener('scroll', () => { if (!list.hidden) set(false); }, { passive: true });
+})();
+
 /* The address under the sponsor button can be copied with one press. */
 (() => {
   for (const b of document.querySelectorAll('[data-copy]')) b.addEventListener('click', () => {
