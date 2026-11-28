@@ -268,13 +268,14 @@
 
   // the sponsor button takes the colour that reads on whatever is under it at this moment
   function tone(shot, t, inP) {
-    if (inP < 0.12 && under) return under.el.dataset.tone;
     const land = !portraitMq.matches;
+    const base = el => (land && el.dataset.bar) || el.dataset.tone || 'dark';   // data-bar: the bar's colour where the top right is a photograph on wide screens
+    if (inP < 0.12 && under) return base(under.el);
     if (shot.id === 'film' && land) return t < 0.2 ? 'dark' : 'light';
-    if (shot.id === 'distance') return t < 0.45 ? 'light' : 'dark';
+    if (shot.id === 'distance') return t < 0.3 ? 'light' : 'dark';
     if (shot.id === 'bfilm') return 'light';
     if (shot.id === 'barcelona') return land && t > 0.15 ? 'light' : 'dark';
-    return shot.el.dataset.tone || 'dark';
+    return base(shot.el);
   }
 
   function frame(now) {

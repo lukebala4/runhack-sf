@@ -537,3 +537,31 @@ html.js::-webkit-scrollbar{width:0;height:0;display:none}
   .s-cover .line{font-size:3.9vw}
   .s-cover h1{top:calc(max(12px,3.2vw) + 19vw)}
 }
+
+/* ---------- "It rained," and the sauna: the sentence holds its place on the left, on the grid, and the picture
+   beside it smash-cuts from the wet track to the sauna as the sentence completes ---------- */
+@media (orientation:landscape){
+  .s-rained,.s-sauna{--h:5vw}
+  .s-rained .photo,.s-sauna .photo{left:42vw;right:0;top:0;bottom:0;border-radius:0}
+  .js .s-rained .photo{transform:none}
+  .s-sauna .photo{--fx:36%;--fy:35%}
+  .s-rained .words,.s-sauna .words{left:5vw;top:var(--g1t);width:33vw;height:var(--g1h);display:flex;align-items:center}
+  .s-rained h2,.s-sauna h2{text-wrap:wrap}
+}
+@media (orientation:portrait){
+  .s-sauna .photo{height:74svh}
+}
+
+/* ---------- posts: the three figures land one after another as you scroll, then all three hold ---------- */
+.js .s-posts .t2{opacity:clamp(0,calc((var(--t,1) - .22)*9999),1)}
+.js .s-posts .t3{opacity:clamp(0,calc((var(--t,1) - .4)*9999),1)}
+
+/* ---------- distance: the photograph steps into its lane sooner, so the sentence is up for longer ---------- */
+.js .s-distance .photo{--k:clamp(0,calc((var(--t,0) - .12)/.28),1)}
+.js .s-distance .words{opacity:clamp(0,calc((var(--t,1) - .4)*9999),1)}
+/* the London film card is framed: an ink border, sitting just inside its lane */
+.filmcard{border:max(2px,.24vw) solid var(--ink);border-radius:var(--r);box-sizing:border-box;background:var(--ink)}
+.js .s-sf .filmcard{top:calc(var(--g2t) + .7vw);height:calc(var(--g2h) - 1.4vw);border-radius:var(--r)}
+@media (orientation:portrait){
+  .js .s-sf .filmcard{top:calc(var(--g2t) + max(var(--g2h)*.64,var(--lt) + 19vw));height:calc(var(--g2h) - max(var(--g2h)*.64,var(--lt) + 19vw) - 2.2vw)}
+}
