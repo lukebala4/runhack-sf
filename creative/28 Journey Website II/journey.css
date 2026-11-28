@@ -505,3 +505,6 @@ html:not(.js) .s-press .clip{position:relative;top:0;padding-top:var(--g1t)}
   .js .s-sf .filmcard{height:calc(var(--g2h) - max(var(--g2h)*.64,var(--lt) + 19vw) - 2.2vw)}
   .pack .hog{height:104%;margin-bottom:-2%}
 }
+/* the pinned edit has no scrollbar: the page still scrolls by wheel, touch, keys and arrow keys */
+html.js{scrollbar-width:none}
+html.js::-webkit-scrollbar{width:0;height:0;display:none}
