@@ -10,12 +10,21 @@
   <link rel="icon" href="../../assets/catalogue/running-hackathon-wordmark.svg" type="image/svg+xml">
   <link rel="preload" as="font" type="font/woff2" crossorigin href="../../assets/fonts/inter-tight-latin.woff2">
   <link rel="stylesheet" href="journey.css">
-  <link rel="stylesheet" href="popup.css">
+  <link rel="stylesheet" href="loader.css">
+  <script>if(!/[?&]hold=/.test(location.search))document.documentElement.classList.add("loading")</script>
   <script>(function(d){if(window.CSS&&CSS.supports('height','100lvh')&&CSS.supports('overflow','clip')&&!matchMedia('(prefers-reduced-motion: reduce)').matches&&!/[?&]plain\b/.test(location.search)){d.classList.add('js');setTimeout(function(){if(!window.__journey)d.classList.remove('js')},4000)}})(document.documentElement)</script>
-  <script src="popup.js" defer></script>
+  <script src="loader.js" defer></script>
   <script src="journey.js" defer></script>
 </head>
 <body>
+<div class="loader" role="status" aria-label="Loading">
+  <div class="loader-stack">
+    <img class="loader-mark" src="../../assets/catalogue/running-hackathon-wordmark.svg" alt="Running Hackathon" width="126" height="46">
+    <p class="loader-word">On your marks</p>
+    <div class="loader-lane" aria-hidden="true"><i></i></div>
+    <p class="loader-count" aria-hidden="true">000</p>
+  </div>
+</div>
 <a class="skip" href="#end">Skip to San Francisco</a>
 <main class="reel" id="reel">
 <div class="stage" id="stage">

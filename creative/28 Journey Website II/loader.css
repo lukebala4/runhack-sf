@@ -1,0 +1,21 @@
+/* The loading screen: a race start on the track. It lives in loader.css and loader.js, plus one block of markup
+   and one line of inline script in index.html. Delete those to remove it.
+   It is only shown when script is running (html.loading is set by the inline script in the head). */
+.loader{display:none}
+html.loading{overflow:hidden}
+html.loading .loader,.loader.go,.loader.lift,.loader.fade{position:fixed;inset:0;z-index:100;display:grid;place-items:center;background:var(--track,#DBA2A8);color:var(--ink,#15171C)}
+.loader-stack{width:min(300px,68vw);display:grid;gap:16px;justify-items:start}
+.loader-mark{width:100%;height:auto;display:block;filter:brightness(0)}
+.loader-word{margin:0;font:400 13px/1.2 ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,monospace;letter-spacing:0;transform-origin:0 50%}
+/* the progress bar is a lane line being painted */
+.loader-lane{width:100%;height:3px;background:rgba(255,255,255,.4);overflow:hidden}
+.loader-lane i{display:block;height:100%;background:#fff;transform-origin:0 50%;transform:scaleX(var(--p,0));transition:transform .3s cubic-bezier(.3,0,.2,1)}
+.loader-count{margin:0;font:400 11px/1 ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,monospace;opacity:.6;font-variant-numeric:tabular-nums}
+/* go: the word steps up, holds, then the whole panel lifts off the top of the screen */
+.loader.go .loader-word{animation:loader-go .35s cubic-bezier(.2,.7,.2,1) both;font-weight:700}
+@keyframes loader-go{to{transform:scale(1.4)}}
+.loader.lift{animation:loader-lift .7s cubic-bezier(.76,0,.24,1) both}
+@keyframes loader-lift{from{clip-path:inset(0 0 0 0)}to{clip-path:inset(0 0 100% 0)}}
+.loader.fade{animation:loader-fade .3s linear both}
+@keyframes loader-fade{to{opacity:0}}
+@media (prefers-reduced-motion:reduce){.loader-lane i{transition:none}.loader.go .loader-word{animation:none}}
