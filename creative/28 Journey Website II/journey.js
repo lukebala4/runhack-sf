@@ -2,7 +2,7 @@
 (() => {
   if (!matchMedia('(pointer: coarse)').matches) return;
   for (const a of document.querySelectorAll('a[href*="mail.google.com/mail/?view=cm"]')) {
-    a.href = 'mailto:runninghackathon@gmail.com?subject=' + encodeURIComponent('Sponsorship enquiry | Running Hackathon San Francisco') + '&body=' + encodeURIComponent("Hi Running Hackathon team,\n\nI'm [your name] from [company]. We'd like to hear more about sponsoring Running Hackathon San Francisco in spring 2027.\n\nWhat we have in mind: [a line or two]\nBest person to speak to: [name, role]\n\nCould you send over the sponsor deck and a few times to talk?\n\nThanks,\n[your name]");
+    a.href = 'mailto:runninghackathon@gmail.com?subject=' + encodeURIComponent('Sponsorship enquiry | Running Hackathon San Francisco') + '&body=' + encodeURIComponent("Hi Running Hackathon team,\n\nI'm [name] from [company]. We'd like to hear more about sponsoring Running Hackathon San Francisco in spring 2027. Could you send the sponsor deck and a few times to talk?\n\nThanks");
     a.removeAttribute('target');
   }
 })();
@@ -16,6 +16,7 @@
   document.addEventListener('click', e => { if (!list.hidden && !list.contains(e.target)) set(false); });
   document.addEventListener('keydown', e => { if (e.key === 'Escape' && !list.hidden) { set(false); btn.focus(); } });
   addEventListener('scroll', () => { if (!list.hidden) set(false); }, { passive: true });
+  list.addEventListener('focusout', e => { if (!list.contains(e.relatedTarget) && e.relatedTarget !== btn) set(false); });
 })();
 
 /* The address under the sponsor button can be copied with one press. */
@@ -72,7 +73,7 @@
   const ok = reel && stage && window.CSS && CSS.supports('height', '100lvh') && CSS.supports('overflow', 'clip') &&
     !matchMedia('(prefers-reduced-motion: reduce)').matches && !query.has('plain');
   if (!ok) { root.classList.remove('js'); return; }
-  root.classList.add('js');
+  if (!root.classList.contains('js')) return;   // the head script gave up waiting: keep the plain page rather than jump
   window.__journey = true;
 
   const clamp = (v, a = 0, b = 1) => Math.min(b, Math.max(a, v));
@@ -83,7 +84,7 @@
   const coarse = matchMedia('(pointer: coarse)').matches;
 
   /* ---------- cue sheet, read from the markup ---------- */
-  const WIPE = new Set(['rule', 'london', 'rained', 'posts', 'distance', 'bfilm', 'sf']);   // drawn across the shot before; the rest are cuts
+  const WIPE = new Set(['rule', 'london', 'rained', 'posts', 'press', 'distance', 'bfilm', 'sf']);   // drawn across the shot before; the rest are cuts
   const WIPE_LEN = 28;                                                          // scroll units a wipe takes
   let total = 0;
   const shots = [...stage.querySelectorAll('.scene')].map((el, i) => {
@@ -106,6 +107,8 @@
       transcript.append(p);
     }
   }
+  { const p = document.createElement('p'); p.textContent = 'To sponsor San Francisco, email runninghackathon@gmail.com.'; transcript.append(p); }
+  transcript.setAttribute('data-nosnippet', '');
   reel.before(transcript);
 
   /* ---------- geometry that comes from the photographs ---------- */
@@ -173,7 +176,7 @@
   let active = null, under = null, lastScroll = -1e9, last = performance.now(), sCur = -1, held = null;
   // ?hold=lanes:0.5 pins the edit to one moment whatever the scroll position (used to photograph a state)
   const hold = query.get('hold');
-  if (hold) { const [id, t] = hold.split(':'); if (by[id]) held = by[id].from + by[id].len * clamp(+t || 0, 0, 0.999); }
+  if (hold) { const [id, t] = hold.split(':'); const n = parseFloat(t); if (Object.hasOwn(by, id)) held = by[id].from + by[id].len * clamp(Number.isFinite(n) ? n : 0, 0, 0.999); }
 
   /* ---------- the film ---------- */
   // Two stretches of the London film where people are running (0:48 to 0:54 and 0:57 to 1:01), cut into a short
@@ -305,6 +308,7 @@
     shot.el.style.setProperty('--in', inP.toFixed(4));
     shot.el.style.setProperty('--t', t.toFixed(4));
     stage.dataset.tone = tone(shot, t, inP);
+    stage.dataset.end = shot.id === 'sf' && t >= 0.24 ? '1' : '';   // the top button stays until the big one has landed
 
     if (films[shot.id]) films[shot.id].tick(now, now - lastScroll < 200, t, speed, dt);
     if (shot.id === 'press' && clip) clip.style.transform = pressTravel ? `translate3d(0,${Math.round(-pressTravel * seg(t, 0.1, 0.6))}px,0)` : '';
@@ -332,7 +336,7 @@
 
   try {
     console.log('%cRunning Hackathon', 'font:800 22px Inter Tight,system-ui,sans-serif');
-    console.log(['$ git log --oneline', '240926b  barcelona: did it again, by the sea', '290826a  london: 32 teams, 1,177 km, one sauna', '', '$ git log san-francisco', "fatal: your current branch 'san-francisco' does not have any commits yet", '', 'Want to make the first one? runninghackathon@gmail.com'].join(String.fromCharCode(10)));
+    console.log(['$ git log --oneline', '240926b  barcelona: second run, on the seafront', '290826a  london: 32 teams, 1,177 km, one sauna', '', '(san-francisco) $ git log', "fatal: your current branch 'san-francisco' does not have any commits yet", '', 'Want to make the first one? runninghackathon@gmail.com'].join(String.fromCharCode(10)));
   } catch (e) {}
 
   /* ---------- getting around without a wheel ---------- */
@@ -344,8 +348,8 @@
   });
   // ?at=lanes:0.5 opens the page on a given shot, part-way through it
   const at = query.get('at');
-  if (at) { const [id, t] = at.split(':'); if (by[id]) addEventListener('load', () => goTo(by[id], t === undefined ? 0.45 : +t)); }
+  if (at) { const [id, t] = at.split(':'); if (Object.hasOwn(by, id)) addEventListener('load', () => goTo(by[id], t === undefined ? 0.45 : +t)); }
   if (location.hash === '#end' && by.sf) addEventListener('load', () => goTo(by.sf, 0.5));
   const skip = document.querySelector('.skip');
-  if (skip && by.sf) skip.addEventListener('click', e => { e.preventDefault(); goTo(by.sf, 0.5); });
+  if (skip && by.sf) skip.addEventListener('click', e => { e.preventDefault(); goTo(by.sf, 0.5); setTimeout(() => { const b = by.sf.el.querySelector('.links .btn'); if (b) b.focus({ preventScroll: true }); }, 200); });
 })();
