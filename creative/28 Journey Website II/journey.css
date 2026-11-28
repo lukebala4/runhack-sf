@@ -716,3 +716,11 @@ html:has(dialog[open]){overflow:hidden}
 .js .s-sauna.on.wipe{clip-path:none;background:transparent}
 .js .s-sauna.on.wipe .photo{clip-path:inset(0 0 0 calc((1 - var(--in,1))*100%))}
 .js .s-sauna.on.wipe .rest{opacity:clamp(0,calc((var(--in,1) - .5)*9999),1)}
+/* phone: the megaphone photograph is a framed window in its own proportions, sized to the room under the words,
+   so the whole rider and bicycle are always in it and the head never slides up under the text. This replaces the
+   travelling crop above. The window stops above the browser's bottom bar. */
+@media (orientation:portrait) and (max-width:600px){
+  .js .s-posts .photo,.js .s-press .photo{left:6.5vw;right:auto;width:auto;height:auto;aspect-ratio:1200/1350;max-width:87vw;
+    bottom:max(6.5vw,calc(100lvh - 100svh + 3vw));border-radius:var(--r);transform:none}
+  .js .s-posts .photo img,.js .s-press .photo img{transform:none;object-position:50% 50%}
+}
