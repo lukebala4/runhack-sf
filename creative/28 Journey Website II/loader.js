@@ -1,4 +1,4 @@
-/* The loading screen: on your marks, get set, go, one word to a lane.
+/* The loading screen: the wordmark fills with ink as the page loads.
    Progress is real work, weighted: the headline typeface (35%), the cover photograph decoded (40%), and the next
    photograph, the first thing a scroll reveals (25%). What is shown never runs ahead of that work and never moves
    backwards; it only follows it at a pace the eye can read (shorter on a return visit). After 4 seconds the page
@@ -11,12 +11,11 @@
   if (!panel) { root.classList.remove('loading'); return; }
   if (!root.classList.contains('loading')) { panel.remove(); return; }
 
-  const rows = [...panel.querySelectorAll('.loader-row')], count = panel.querySelector('.loader-count');
+  const count = panel.querySelector('.loader-count');
   const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
   const clamp = v => Math.max(0, Math.min(1, v));
-  const SPANS = [[0, .4], [.4, .8], [.8, 1]];                      // each lane's share of the load
   const paint = d => {
-    rows.forEach((row, i) => row.style.setProperty('--f', clamp((d - SPANS[i][0]) / (SPANS[i][1] - SPANS[i][0])).toFixed(3)));
+    panel.style.setProperty('--f', clamp(d).toFixed(3));
     count.textContent = String(Math.round(d * 100)).padStart(3, '0');
   };
 
@@ -25,7 +24,7 @@
 
   let seen = false;
   try { seen = sessionStorage.getItem('rh-loaded') === '1'; sessionStorage.setItem('rh-loaded', '1'); } catch (e) {}
-  const PACE = seen ? 0.55 : 1.15;                                 // seconds for the whole start, at the fastest
+  const PACE = seen ? 0.45 : 0.9;                                 // seconds for the whole start, at the fastest
 
   const decoded = img => !img ? Promise.resolve() : new Promise(done => {
     const ok = () => (img.decode ? img.decode().then(done, done) : done());
@@ -49,13 +48,10 @@
     if (finished) return;
     finished = true;
     paint(1);
-    await wait(reduced ? 150 : 120);
+    await wait(reduced ? 150 : 260);
     root.classList.remove('loading');                              // the page can scroll again as the panel lifts
     if (reduced) { panel.classList.add('fade'); await once(panel, 400); }
-    else {
-      panel.classList.add('go'); await once(panel, 450); await wait(150);
-      panel.classList.add('lift'); await once(panel, 800);
-    }
+    else { panel.classList.add('lift'); await once(panel, 800); }
     panel.remove();
   }
 

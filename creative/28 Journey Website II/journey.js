@@ -84,7 +84,7 @@
   const coarse = matchMedia('(pointer: coarse)').matches;
 
   /* ---------- cue sheet, read from the markup ---------- */
-  const WIPE = new Set(['rule', 'london', 'rained', 'posts', 'press', 'distance', 'bfilm', 'sf']);   // drawn across the shot before; the rest are cuts
+  const WIPE = new Set(['rule', 'london', 'rained', 'sauna', 'posts', 'press', 'distance', 'bfilm', 'sf']);   // drawn across the shot before; the rest are cuts
   const WIPE_LEN = 28;                                                          // scroll units a wipe takes
   let total = 0;
   const shots = [...stage.querySelectorAll('.scene')].map((el, i) => {

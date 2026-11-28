@@ -705,3 +705,14 @@ html:has(dialog[open]){overflow:hidden}
   .js .s-sf .filmcard .disc,.js .s-sf .filmcard:hover .disc,.js .s-sf .filmcard:focus-visible .disc{left:50%;top:40%;transform:translate(-50%,-50%)}
   .js .s-sf .filmcard .play{left:8px;top:auto;bottom:8px;transform:none;font-size:13px}
 }
+/* phone: the megaphone photograph travels down inside its window across the two shots, head first and wheels last,
+   so the whole rider and bicycle are seen */
+@media (orientation:portrait){
+  .js .s-posts .photo img{transform:none;object-position:50% calc(12% + var(--t,1)*44%)}
+  .js .s-press .photo img{transform:none;object-position:50% calc(56% + var(--t,0)*44%)}
+}
+/* rain to sauna: only the photograph is drawn across. "It rained," stays exactly where it is and the rest of the
+   sentence arrives once the sauna is half in, so no word is ever cut by the edge of the wipe */
+.js .s-sauna.on.wipe{clip-path:none;background:transparent}
+.js .s-sauna.on.wipe .photo{clip-path:inset(0 0 0 calc((1 - var(--in,1))*100%))}
+.js .s-sauna.on.wipe .rest{opacity:clamp(0,calc((var(--in,1) - .5)*9999),1)}
