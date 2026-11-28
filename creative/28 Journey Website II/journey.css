@@ -565,3 +565,74 @@ html.js::-webkit-scrollbar{width:0;height:0;display:none}
 @media (orientation:portrait){
   .js .s-sf .filmcard{top:calc(var(--g2t) + max(var(--g2h)*.64,var(--lt) + 19vw));height:calc(var(--g2h) - max(var(--g2h)*.64,var(--lt) + 19vw) - 2.2vw)}
 }
+
+/* ================= fixes from the phone and computer audit ================= */
+/* the Barcelona film no longer runs off into an empty field: the track is drawn across it for San Francisco */
+.js .s-bfilm .gate{transform:none}
+.js .s-bfilm .term{opacity:clamp(0,calc((var(--t,1) - .04)*9999),1)}
+/* both build logs are the same component, readable over a pale sky */
+.term{background:rgba(21,23,28,.62)}
+/* the copied note takes the address's place for a moment instead of running under the film card */
+.mailrow{position:relative}
+.mailrow .copied{position:absolute;left:.1em;top:50%;transform:translateY(-50%);white-space:nowrap}
+.mailrow.done .mail{visibility:hidden}
+/* larger places to press, same look */
+.topbar .topcta{position:relative}
+.topbar .topcta::after,.menu-btn::after{content:"";position:absolute;inset:-8px -3px}
+.menu-btn{position:relative}
+.copy{position:relative}
+.copy::after{content:"";position:absolute;inset:-10px -10px -6px}
+.clip-more a{display:inline-block;padding:.8em 0;margin:-.8em 0}
+/* the film player: nothing scrolls behind it, and Close is a proper button clear of the notch */
+html:has(dialog[open]){overflow:hidden}
+.player-close{top:max(14px,env(safe-area-inset-top));right:max(14px,env(safe-area-inset-right));min-width:44px;min-height:44px;padding:.7em 1em;background:#fff;color:var(--ink);border-radius:.26em;text-decoration:none}
+/* San Francisco: the headline is drawn in with the track; the second beat lands once the track has arrived */
+.js .s-sf h2{opacity:1}
+.js .s-sf .where,.js .s-sf .links,.js .s-sf .filmcard{opacity:clamp(0,calc((var(--t,1) - .24)*9999),1)}
+/* the hedgehog strides only while the reader is moving */
+.js .s-sf.on .hog{animation:none}
+.js .stage.moving .s-sf.on .hog{animation:stride .34s steps(1) -.17s infinite}
+@media (prefers-reduced-motion:reduce){.js .stage.moving .s-sf.on .hog{animation:none}}
+/* posts: no word left alone on a line */
+.s-posts .sub span{text-wrap:balance}
+
+@media (orientation:landscape){
+  /* London: the attribution on two lines, clear of the bar; the quote mark hangs in the margin */
+  .s-london .pair .side{left:54vw;width:22vw}
+  .s-london h2{text-indent:-.58em;padding-left:0}
+  /* distance: the second line ends on the right margin and shares the headline's baseline */
+  .js .s-distance .pair .side{left:auto;right:0;width:auto;text-align:right;bottom:calc(var(--h,5.6vw)*.04)}
+  /* the hedgehog stops short of the film card whatever the window's shape */
+  .js .pack{transform:translateX(calc(-34vw + var(--t,1)*min(82vw,127vw - var(--g2h)*1.778 - 19lvh)))}
+}
+/* very wide windows (ultrawide, a phone on its side) keep all four lanes of the track */
+@media (min-aspect-ratio:2/1){.js .ground img{position:relative;top:-6%;height:112%;object-fit:fill}}
+
+@media (orientation:portrait){
+  /* photographs start a fixed gap under the words on every phone, whatever its height */
+  .s-rained .photo,.s-sauna .photo{top:calc(max(12px,3.2vw) + 44vw);height:auto;bottom:0}
+  .s-rule .photo{top:calc(max(12px,3.2vw) + 60vw);height:auto;bottom:0}
+  .s-posts .photo{top:calc(max(12px,3.2vw) + 106vw);height:auto;bottom:0}
+  .js .s-press .photo{top:calc(max(12px,3.2vw) + 106vw);height:auto;bottom:0}
+  .js .paper{height:calc(max(12px,3.2vw) + 106vw)}
+  /* London: the photograph moves inside its frame, so no strip shows down its edge */
+  .js .s-london .photo{transform:none}
+  .js .s-london .photo img{transform:translateX(calc((1 - var(--t,1))*4vw)) scale(1.1)}
+  /* the London log appears with its first line */
+  .js .s-film .term{opacity:clamp(0,calc((var(--t,1) - .07)*9999),1)}
+  /* distance: the headline stays on one line */
+  .js .s-distance h2{font-size:10.2vw;white-space:nowrap}
+  /* Barcelona: the second and third lines arrive sooner */
+  .js .s-barcelona .sub p{opacity:clamp(0,calc((var(--t,1) - .2)*9999),1)}
+  .js .s-barcelona .gitlog{opacity:clamp(0,calc((var(--t,1) - .38)*9999),.95)}
+  /* last screen: play disc and label in one row; Devin gives up height before the film card does */
+  .js .s-sf .filmcard .disc{left:10px;top:50%;width:40px;transform:translateY(-50%)}
+  .js .s-sf .filmcard:hover .disc,.js .s-sf .filmcard:focus-visible .disc{transform:translateY(-50%) scale(1.08)}
+  .js .s-sf .filmcard .play{left:60px;bottom:auto;top:50%;transform:translateY(-50%)}
+  .js .s-sf{--dv:clamp(8vw,calc(var(--g2h)*.96 - 31.6vw - 52px),15.6vw);--lt:max(calc(var(--g2h)*.38),calc(var(--g2h)*.04 + 10.4vw + var(--dv)))}
+  .js .s-sf .sit{height:var(--dv)}
+  /* without script the last screen grows to fit and the hedgehog keeps the bottom lane */
+  html:not(.js) .s-sf{height:auto;min-height:100svh;padding:22svh 0 calc(15.2svh + 8vw)}
+  html:not(.js) .s-sf .words{position:relative;left:auto;right:auto;top:auto;margin:0 6.5%}
+}
+.topbar .topcta{top:auto;right:auto}

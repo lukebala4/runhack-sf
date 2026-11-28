@@ -23,11 +23,12 @@
   for (const b of document.querySelectorAll('[data-copy]')) b.addEventListener('click', () => {
     const text = b.dataset.copy;
     const note = b.parentNode.querySelector('.copied');
-    const done = () => { if (!note) return; note.textContent = 'Copied to clipboard'; clearTimeout(b._t); b._t = setTimeout(() => { note.textContent = ''; }, 2200); };
+    const row = b.parentNode;
+    const done = () => { if (!note) return; note.textContent = 'Copied to clipboard'; row.classList.add('done'); clearTimeout(b._t); b._t = setTimeout(() => { note.textContent = ''; row.classList.remove('done'); }, 2200); };
     const old = () => {
       const t = document.createElement('textarea'); t.value = text; t.style.position = 'fixed'; t.style.opacity = '0';
       document.body.append(t); t.select();
-      try { document.execCommand('copy'); done(); } catch (e) {}
+      try { if (document.execCommand('copy')) done(); } catch (e) {}
       t.remove();
     };
     if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(text).then(done, old); else old();
@@ -142,7 +143,7 @@
   }
   function layout() {
     W = stage.clientWidth; H = stage.clientHeight;
-    const sc = Math.max(W / 1920, H / 1080), ih = 1080 * sc, oy = (H - ih) / 2, y = f => clamp(oy + f * ih, 0, H);
+    const sc = Math.max(W / 1920, H / 1080), ih = Math.min(1080 * sc, H * 1.12), oy = (H - ih) / 2, y = f => clamp(oy + f * ih, 0, H);
     const gaps = [[0, y(LINES[0][0])], [y(LINES[0][1]), y(LINES[1][0])], [y(LINES[1][1]), y(LINES[2][0])], [y(LINES[2][1]), H]];
     const g2t = gaps[2][0], g2h = Math.max(1, gaps[2][1] - gaps[2][0]);
     const py = portraitMq.matches ? g2t : 0;            // on a phone the Barcelona photograph opens to the stage below the upper lane
@@ -191,7 +192,7 @@
     function tick(now, moving, t, speed, dt) {
       load();
       // the build log is written by distance run: it only gets longer while the reader keeps moving
-      const shown = Math.floor(seg(t, from, to) * lines.length + 0.001);
+      const shown = t < from ? 0 : Math.min(lines.length, 1 + Math.floor(seg(t, from, to) * (lines.length - 1) + 0.001));
       lines.forEach((l, i) => l.classList.toggle('on', i < shown || (i === lines.length - 1 && shown >= lines.length - 1)));
       // the runners keep the reader's pace
       pace = follow(pace, clamp(0.8 + speed / 2500, 0.8, 1.6), dt, 0.3);
@@ -220,12 +221,13 @@
     return { load, tick, rest, video, isLoaded: () => loaded };
   }
   const films = {};
-  if (by.film) films.film = makeFilm(by.film, '../../assets/film/' + (portraitMq.matches ? 'runs-portrait.mp4' : 'runs-1600.mp4'), termLines, 0.30, 0.86);
+  if (by.film) films.film = makeFilm(by.film, '../../assets/film/' + (portraitMq.matches ? 'runs-portrait.mp4' : 'runs-1600.mp4'), termLines, portraitMq.matches ? 0.08 : 0.30, 0.86);
   if (by.bfilm) films.bfilm = makeFilm(by.bfilm, '../../assets/film/' + (portraitMq.matches ? 'barcelona-runs.mp4' : 'barcelona-wide.mp4'), [...by.bfilm.el.querySelectorAll('.term .l')], 0.06, 0.66);
   // Phones ignore preload, so the first touch, wheel or key starts the download; the films are then ready when their shots arrive.
   const prime = () => {
     removeEventListener('touchstart', prime); removeEventListener('wheel', prime); removeEventListener('keydown', prime);
     for (const [id, f] of Object.entries(films)) {
+      if (id !== 'film') continue;
       f.load();
       if (!f.isLoaded()) continue;
       const p = f.video.play();
@@ -257,11 +259,12 @@
       stage.dataset.shot = shot.id;
       active = shot;
       near(shot.i);
+      if (films.bfilm && by.bfilm && shot.i >= by.bfilm.i - 2) films.bfilm.load();
       if (shot.id === 'press' || shot.id === 'lanes') measure();   // sizes are only final once the shot is laid out
     }
     if (below !== under) {
       if (under) under.el.classList.remove('out');
-      if (below) { below.el.classList.add('out'); below.el.style.setProperty('--t', '1'); }
+      if (below) { below.el.classList.add('out'); below.el.style.setProperty('--t', '1'); if (films[below.id]) below.el.querySelectorAll('.term .l').forEach(l => l.classList.add('on')); }
       under = below;
     }
   }
@@ -271,8 +274,8 @@
     const land = !portraitMq.matches;
     const base = el => (land && el.dataset.bar) || el.dataset.tone || 'dark';   // data-bar: the bar's colour where the top right is a photograph on wide screens
     if (inP < 0.12 && under) return base(under.el);
-    if (shot.id === 'film' && land) return t < 0.2 ? 'dark' : 'light';
-    if (shot.id === 'distance') return t < 0.3 ? 'light' : 'dark';
+    if (shot.id === 'film') return 'dark';
+    if (shot.id === 'distance') return t < 0.2 ? 'light' : 'dark';
     if (shot.id === 'bfilm') return 'light';
     if (shot.id === 'barcelona') return land && t > 0.15 ? 'light' : 'dark';
     return base(shot.el);
@@ -280,6 +283,7 @@
 
   function frame(now) {
     const dt = Math.min(0.05, (now - last) / 1000); last = now;
+    stage.classList.toggle('moving', now - lastScroll < 200);
     const s = held !== null ? held : clamp(-reel.getBoundingClientRect().top / unit(), 0, total - 0.001);
     const before = sCur;
     // the edit follows the scroll position closely rather than exactly, so a wheel notch reads as a stride, not a jump
@@ -334,7 +338,7 @@
   /* ---------- getting around without a wheel ---------- */
   const goTo = (shot, into = 0.45) => scrollTo({ top: reel.getBoundingClientRect().top + scrollY + (shot.from + shot.len * into) * unit() });
   addEventListener('keydown', e => {
-    if (e.altKey || e.ctrlKey || e.metaKey || !active) return;
+    if (e.altKey || e.ctrlKey || e.metaKey || !active || document.querySelector('dialog[open]')) return;
     if (e.key === 'ArrowRight' && shots[active.i + 1]) { e.preventDefault(); goTo(shots[active.i + 1]); }
     if (e.key === 'ArrowLeft' && shots[active.i - 1]) { e.preventDefault(); goTo(shots[active.i - 1]); }
   });
